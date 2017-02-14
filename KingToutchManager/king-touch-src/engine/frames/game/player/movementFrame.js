@@ -8,7 +8,7 @@ var ANIM_DURATION = {
 
 var EventWrapper = require('event-wrapper');
 var compressPath = require("./../../../core/utils/pathfinding.js").compressPath;
-var getCellId = require("./../../../core/utils/pathfinding.js").getC
+var getMapPoint = require("./../../../core/utils/pathfinding.js").getMapPoint;
 var getCellsWithDirection = require("./../../../core/utils/pathfinding.js").getCellsWithDirection;
 exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 	if(typeof dontConfirm == "undefined"){
@@ -26,7 +26,7 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 		if(m.actorId == bot.data.characterInfos.id){
             console.log("MapMovement received !");
 			var moveMode =1;
-			var timeOut =  100; //getMovementDuration(keyMovements);
+			var timeOut =  getMovementDuration(keyMovements);
             console.log("Confirmation du movement dans : "+timeOut+ "("+keyMovements.length+" cells)");
 
 			setTimeout(function(){
@@ -50,29 +50,24 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 
 }
 
-function getMovementDuration(path,isGhost){
+function getMovementDuration(path){
     var motionSheme;
-    console.log("Calculating duration ("+path.length+")...");
-    if(typeof isGhost != "undefined" && isGhost === 1){
-        motionSheme = ANIM_DURATION.slide;
-    }
-    else if(path.length > 3){
-        motionSheme = ANIM_DURATION.running;
+    if(path.length > 3){
+        motionScheme = ANIM_DURATION.running;
     }
     else{
-        motionSheme = ANIM_DURATION.walking;
+        motionScheme = ANIM_DURATION.walking;
     }
-    
-    console.log(motionSheme);
-    
+        
     var direction;
     var prevX;
 	var prevY;
     var total = 0;
+    var duration = 0;
+
+    
     for (var i = 0; i < path.length; i++) {
         var coord = getMapPoint(path[i]);
-        console.log(coord);
-        var duration;
         if (i === 0) {
 			direction = 1;
 		} 
@@ -95,8 +90,10 @@ function getMovementDuration(path,isGhost){
 				}
 			}
 		}
-        console.log(duration+" ms added to confirmation dellay");
-        total += duration;
+        prevX = coord.x;
+		prevY = coord.y;
+        total+=duration;
+        duration = 0;
     }
     
     return total;
