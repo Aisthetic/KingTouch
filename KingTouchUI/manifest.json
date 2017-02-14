@@ -1,0 +1,13 @@
+{
+  "short_name": "KingTouch",
+  "name": "KingTouch",
+  "display": "standalone",
+  "icons": [{
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "sizes": "256x256",
+    "type": "image/png"
+  }],
+  "start_url": "index.html"
+}

@@ -1,0 +1,261 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-behavior.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-progress/paper-progress.html">
+
+<dom-module id="clients-list">
+  <template>
+
+    <style>
+
+    app-header {
+      color: #fff;
+      background-color: #aa0000;
+    }
+
+    app-toolbar {
+
+    }
+
+    .content {
+      display: block;
+      position: relative;
+      margin: 25px auto;
+	  padding:0px 25px;
+    }
+
+    .card-container {
+      display: inline-block;
+      width: 33.33%;
+      color: black;
+      text-decoration: none;
+    }
+
+    paper-card {
+      display: block;
+      margin: 5px;
+
+      --paper-card-header-image: {
+        height: 200px;
+      }
+    }
+
+    paper-card h2 {
+      margin: 4px;
+      font-weight: normal;
+    }
+
+    paper-card p {
+      margin: 4px;
+      color: #999;
+    }
+
+    paper-fab {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+
+      --paper-fab-background: #EF5458;
+      --paper-fab-keyboard-focus-background: #DF4448;
+    }
+
+    @media (max-width: 960px) {
+      .content {
+        max-width: 800px;
+      }
+
+      .card-container {
+        width: 50%;
+      }
+    }
+
+    @media (max-width: 719px) {
+	.content {
+        max-width: 400px;
+      }
+
+      .card-container {
+        width: 100%;
+      }
+    }
+
+    </style>
+	<style is="custom-style">
+	
+	paper-progress {
+		width:100%;
+		height:4px;
+	}
+	paper-progress.blue {
+	--paper-progress-active-color: var(--paper-light-blue-500);
+	--paper-progress-secondary-color: var(--paper-light-blue-100);
+	}
+
+	paper-progress.red {
+	--paper-progress-active-color: var(--paper-red-500);
+	--paper-progress-secondary-color: var(--paper-red-100);
+	}
+
+	paper-progress.green {
+	--paper-progress-active-color: var(--paper-light-green-500);
+	--paper-progress-secondary-color: var(--paper-light-green-100);
+	}
+	
+	</style>
+	<!-- login box -->
+	<paper-dialog  modal name="connectd" id="connectd">
+		<h2>Charger un client</h2>
+		<paper-input value="{{username}}" always-float-label label="Nom de compte"></paper-input>
+		<paper-input value="{{password}}" always-float-label label="Mot de passe"></paper-input>
+		<div class="buttons">
+			<paper-button dialog-dismiss>Annuler</paper-button>
+			<paper-button dialog-confirm autofocus on-click="loadClient">Charger le client</paper-button>
+		</div>
+	</paper-dialog>
+    <!-- main panel -->
+    <app-header-layout>
+
+      <app-header effects="fixed" fixed waterfall shadow>
+        <app-toolbar class="top-toolbar">
+			<content horizontal-align="left" class="menu-toggle" select="[drawer-toggle]"></content>
+			<paper-menu-button style="position: absolute;right: 5px;" horizontal-align="right">
+				<paper-icon-button icon="app:more-vert" class="dropdown-trigger" alt="menu"></paper-icon-button>
+				<paper-listbox class="dropdown-content">
+				  <paper-icon-item>
+					<iron-icon icon="icons:settings-power" item-icon></iron-icon>
+					Redémarrer le serveur
+				  </paper-icon-item>
+				</paper-listbox>
+			</paper-menu-button>
+        </app-toolbar>
+      </app-header>
+
+      <div class="content">
+        <template is="dom-repeat" items="{{clients}}"><!-- No empty text node
+        --><a on-tap="selectClient" client="{{item.accompt}}" href="#/detail/{{item.id}}" class="card-container">
+            <paper-card >
+              <div class="card-content">
+				<paper-fab on-click="disconnect" style="position:absolute; top:-15px;width: 45px;height: 45px;right:10px;" icon="icons:remove" title="Deconnecter le client"></paper-fab>
+                <h2>{{item.characterInfos.name}}<span style="font-size:12px; color:gray;"> <span></span>Niveau {{item.characterInfos.level}}</span></h2>
+				<p><span>Points de vie</span></p>
+				<paper-progress value="{{item.stats.lifePoints}}" min="0" max="{{stats.maxLifePoints}}" class="red"></paper-progress>
+				<p><span>Pods : {{item.inv.pods}} / {{item.inv.maxPods}}</span></p>
+				<paper-progress value="{{item.inv.pods}}" min="0" max="{{item.inv.maxPods}}" class="green"></paper-progress>
+                <p>
+                    <br>
+                    <span>Kamas : {{item.inv.kamas}}</span>
+                    <span style="float:right;">{{item.state}}</span>
+                </p>
+              </div>
+            </paper-card>
+          </a><!-- No empty text node
+        --></template>
+      </div>
+
+    </app-header-layout>
+    <paper-fab raised on-tap="showLoginBox" icon="icons:add"></paper-fab>
+	
+  </template>
+
+  <script>
+  
+  Polymer({
+
+		is: 'clients-list',
+		properties: {
+		clients: {
+			type: Array,
+			observe: true,
+			notify: true,
+			value: function() { return []; },
+			reflectToAttribute: true
+		},
+		username: String,
+		password: String
+    },
+	
+	ready: function(){
+		window.addEventListener("global-update",(m)=>{
+			var clients = []
+            var count = 0;
+            for(var i in m.detail){
+                count++;
+                m.detail[i].id = count;
+                clients.push(m.detail[i]);
+                this.listenClient(m.detail.accompt);
+            }
+			this.clients = clients;
+		});
+		window.addEventListener("load-client",(m)=>{
+            console.log("client added");
+			this.push("clients",m.detail);
+			this.listenClient(m.detail.accompt)
+		});
+	},
+
+    selectClient: function(e){
+        setClient(e.model.get("item"));
+    },
+      
+    listenClient: function(accompt) {
+        var id = getPacketIdentifier(accompt);
+        window.addEventListener(id,(e)=>{
+            m=e.detail;
+            switch(m.call){
+                case "state-update":
+                    var id = -1;
+                    for (var i = 0;i<this.clients.length;i++){ if(accompt == this.clients[i].accompt) { id = i }}
+                    if(id != -1){
+                        this.removeClient(this.clients[i]);
+                        m.id=id;
+                        this.push("clients",m);
+                    }
+                    else{
+                        console.log("Undefined bot to update !");
+                    }
+                    sendUI("global-update-request")//todo alleger la charge
+                break;
+            }
+        });
+    },
+      
+    unListenClient : function(accompt){
+      
+    },
+      
+    removeClient: function(client) {
+        var index = this.clients.indexOf(client);
+        this.splice('clients', index, 1);
+    },
+      
+	showLoginBox: function(){
+	     connectd.open();
+	},
+	
+	loadClient: function(){
+		console.log("Request login for "+this.username);
+		sendUI("load",{ accompt : {"username":this.username,"password":this.password}});
+	},
+      
+    disconnect: function(e){
+    }
+
+  });
+      
+  function getPacketIdentifier(accompt){
+      return "accompt-"+accompt;
+  }
+
+  </script>
+</dom-module>

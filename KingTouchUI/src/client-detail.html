@@ -1,0 +1,408 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/maps-icons.html">
+<link rel="import" href="../bower_components/iron-icons/communication-icons.html">
+
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-menu-button/paper-menu-button.html">
+
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+<link rel="import" href="../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+
+<link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
+<link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+<link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../bower_components/paper-input/paper-textarea.html">
+<link rel="import" href="../bower_components/paper-radio-group/paper-radio-group.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+
+<dom-module id="client-detail">
+
+  <template>
+
+    <style>
+
+    :host {
+      display: block;
+      background-attachment: fixed;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+    }
+
+    #header {
+      color: #fff;
+      background-color: #aa0000;
+
+    }
+
+    paper-icon-button {
+      color: white;
+      --paper-icon-button-ink-color: white;
+    }
+
+    .card-container {
+      position: relative;
+      width: 720px;
+      margin: 50px auto 40px;
+    }
+
+    paper-fab {
+      position: absolute;
+      top: -28px;
+      right: 40px;
+
+      --paper-fab-background: #EF5458;
+      --paper-fab-keyboard-focus-background: #DF4448;
+    }
+
+    paper-card {
+      padding: 16px;
+      width: 100%;
+      sizing: border-box;
+    }
+
+    paper-card p {
+      margin: 12px 0;
+      color: #999;
+    }
+
+    h4 {
+      margin: 60px 0 12px;
+    }
+        
+    .btn-right{
+        float: right;
+        margin-top: 14px;
+    }
+
+    @media (max-width: 720px) {
+        
+    .btn-right{
+        float: none;
+        margin-top: 0px;
+    }
+
+      .card-container {
+        width: 100%;
+        margin: 50px 0 0;
+      }
+
+    }
+
+    </style>
+	<!-- select trajet dialog -->
+	<paper-dialog style="max-width:50vw; max-height:50vh;" modal name="selecttrajet" id="selecttrajet">
+		<h2>Charger un trajet</h2>
+        <template style="overlow-y:scroll;" is="dom-repeat" items="{{trajets}}">
+            <div class="item">
+                <p><span style="font-weight:bold">{{item.name}}</span><br>{{item.describ}}</p>
+                <paper-fab on-tap="loadTrajet" id="{{item.id}}" style="position: absolute;width: 40px;height: 40px;font-size: 12px;top: auto;right: -20px;margin-top: -55px;" icon="icons:arrow-forward"></paper-fab>
+            </div>
+        </template>
+        <div class="buttons">
+			<paper-button dialog-dismiss>Annuler</paper-button>
+		</div>
+	</paper-dialog>
+    <!-- inventory dialog -->
+	<paper-dialog  modal name="inventorydialog" id="inventorydialog">
+		<h2>Inventaire</h2>
+        <div style="max-height:70vh;overflow-y:scroll;overflow-x:auto;">
+            <template style="overlow-y:scroll;" is="dom-repeat" items="{{inventoryObjects}}">
+                <div style="  border-top: 1px solid #848484;  padding-top: 4px;" class="inv-item">
+                    <img style="width:64px;" src="{{item.imageUrl}}"></img>
+                    <div style="display:inline-block;">
+                        <label style="display:block;">{{item.name}} x {{item.quantity}}</label>
+                        <paper-dropdown-menu label="Vende en hdv">
+                          <paper-listbox style="margin-top:-11px;" selected="{{item.sellMode}}" class="dropdown-content">
+                            <paper-item id="0">Pas de vente</paper-item>
+                            <paper-item id="1">Lot de 1</paper-item>
+                            <paper-item id="2">Lot de 10</paper-item>
+                            <paper-item id="3">Lot de 100</paper-item>
+                          </paper-listbox>
+                        </paper-dropdown-menu>
+                    </div>
+                    <paper-menu-button >
+                        <paper-icon-button style="color:black" icon="app:more-vert" class="dropdown-trigger" alt="menu"></paper-icon-button>
+                        <paper-listbox class="dropdown-content">
+                                <paper-item>Supprimer</paper-item>
+                                <paper-item>Utiliser</paper-item>
+                                <paper-item>Equiper</paper-item>
+                        </paper-listbox>
+                    </paper-menu-button>
+                </div>
+            </template>
+        </div>
+        <div class="buttons">
+            <paper-button dialog-dismiss>Annuler</paper-button>
+            <paper-button raised on-tap="saveinventory">Enregistrer</paper-button>
+		</div>
+	</paper-dialog>
+	<!-- select spells dialog -->      
+	<paper-dialog modal name="editspells" id="editspells">
+		<h2>Modifier la pile de sorts</h2>
+        <div style=" max-height:50vh; overflow:scroll;overflow-x:hidden;">
+            <template style="overlow-y:scroll;" is="dom-repeat" items="{{spells}}">
+                <div class="item">
+                    <p>
+                        <paper-checkbox checked="{{item.inPile}}"></paper-checkbox><span style="font-weight:bold; font-size:16px;">{{item.name}}</span> level {{item.level}}
+                        <paper-input label="index" value="{{item.index}}" type="number"></paper-input>
+                        <paper-dropdown-menu>
+                          <paper-listbox selected="{{item.type}}" class="dropdown-content">
+                            <paper-item id="0">Sur un ennemi</paper-item>
+                            <paper-item id="2">Sur moi</paper-item>
+                            <paper-item id="6">A cote de moi</paper-item>
+                            <paper-item id="1">Sur moi proche d'un ennemi</paper-item>
+                          </paper-listbox>
+                        </paper-dropdown-menu>
+                    </p>
+
+                </div>
+            </template>
+        </div>
+        <div class="buttons">
+			<paper-button dialog-dismiss>Annuler</paper-button>
+			<paper-button raised on-tap="savespells" class="btn-save-spells" id="btn-save-spells">Enregistrer</paper-button>
+		</div>
+	</paper-dialog>
+	<!-- chat dialog -->
+	<paper-dialog modal name="flooddialog" id="flooddialog">
+        <div style="width:90vw; height:60vh">
+            <div id="console-input">{{consoleText}}</div>
+        </div>
+        <div class="buttons">
+		</div>
+	</paper-dialog>
+      
+      
+    <!-- main panel -->
+    <div style="position:fixed;width:100vw;left:0;right:0;height:350px; background-color:#aa0000;"></div>
+    <app-header-layout>
+      <app-header id="header" >
+        <!-- top toolbar -->
+        <app-toolbar>
+          <!-- back button -->
+          <a href="#/home" tabindex="-1">
+            <paper-icon-button icon="app:arrow-back"></paper-icon-button>
+          </a>
+        </app-toolbar>
+      </app-header>
+      <!-- main infos card-->
+      <div class="card-container">
+		 <paper-card heading="{{getSelectedCharacterName}}">
+          <div class="card-content">
+                <paper-dropdown-menu label="Caractéristique auto">
+                  <paper-listbox selected="{{selectedCharacteristic}}" class="dropdown-content">
+                      <paper-item name="0">Aucune</paper-item>
+                      <paper-item name="11">Vitalité</paper-item>
+                      <paper-item name="12">Sagesse</paper-item>
+                      <paper-item name="10">Force</paper-item>
+                      <paper-item name="15">Intelligence</paper-item>
+                      <paper-item name="13">Chance</paper-item>
+                      <paper-item name="14">Agilliteé</paper-item>                     
+                  </paper-listbox>
+                </paper-dropdown-menu>
+                <paper-button raised on-tap="showUpgradeSpells" style="float: right; margin-top: 15px;" class="red">Sorts a faire evoluer</paper-button>
+          </div>
+        </paper-card>
+        <paper-fab raised style="right:180px;" on-tap="showInventoryDialog" icon="icons:archive"></paper-fab>
+        <paper-fab raised style="right:110px;" on-tap="showFloodDialog" icon="icons:speaker-notes"></paper-fab>
+        <paper-fab raised on-tap="showLoadTrajet" icon="maps:directions"></paper-fab>
+      </div>
+      <!-- fight config card -->
+      <div class="card-container">
+		 <paper-card heading="Configuration des combats">
+          <div class="card-content">
+		  
+			<label id="label1">Tactique de combat : </label>
+			<paper-radio-group selected="0" aria-labelledby="label1">
+			  <paper-radio-button name="0">Fuyard</paper-radio-button>
+			  <paper-radio-button name="1">Agressife</paper-radio-button>
+			  <paper-radio-button name="2" disabled>Neutre</paper-radio-button>
+			</paper-radio-group>
+			</br>
+			<paper-dropdown-menu label="Type d'ia">
+			  <paper-listbox selected="{{fightMode}}" class="dropdown-content">
+				<paper-item id="0" name="default">Normale</paper-item>
+				<paper-item id="1" name="sacrieur">Sacrieur eau</paper-item>
+			  </paper-listbox>
+			</paper-dropdown-menu>
+            <paper-dropdown-menu label="Placement en debut de combat">
+			  <paper-listbox selected="{{fightMode}}" class="dropdown-content">
+				<paper-item id="0">Proche des ennemies</paper-item>
+				<paper-item id="1">Loin des ennemies</paper-item>
+				<paper-item id="2">Ne rien faire</paper-item>
+			  </paper-listbox>
+			</paper-dropdown-menu>
+            <paper-button raised on-tap="showSpellsEdit" class="red btn-right" >Pile de sorts</paper-button>
+             </br>
+            <div style="display:inline-block;width:50%;"><paper-input label="Nombre minimum de monstres par combat" min-value="1" max-value="8" value="{{minFighters}}" type="number"></paper-input></div>
+            <div style="display:inline-block;width:49%;"><paper-input label="Nombre maximum de monstres par combat" min-value="1" max-value="8" value="{{maxFighters}}" type="number"></paper-input></div>
+
+          </div>
+        </paper-card>
+        <paper-fab raised style="right:110px;" on-tap="" icon="communication:portable-wifi-off"></paper-fab>
+        <paper-fab raised on-tap="" icon="icons:visibility-off"></paper-fab>
+      </div>
+      <!-- stats card -->
+       <div class="card-container">
+		 <paper-card heading="Statistiques">
+          <div class="card-content">
+		  
+          </div>
+        </paper-card>
+        <paper-fab raised on-tap="refreshStats" icon="icons:cached"></paper-fab>
+      </div>
+
+    </app-header-layout>
+
+  </template>
+
+  <script>
+      
+var consoleRunning = false;
+
+  Polymer({
+
+    is: 'client-detail',
+
+    properties: {
+        client: {
+            type: Object,
+        },
+        
+        
+        fightMode:{
+          type: Object,
+          value: "0",
+          observer: "fightModeChanged",
+        },
+        minFighters:{
+            value: "0",
+            observer: "minFightersChanged"
+        },
+        maxFighters:{
+            value: "8",
+            observer: "maxFightersChanged"
+        },
+        selectedCharacteristic:{
+            value: "0",
+            observer: "selectedCharacteristicChanged"
+        },
+        
+        
+        spells:{
+            type: Array,
+            value: []
+        },
+        inventoryObjects:{
+            type:Array,
+            value: []
+        },
+        trajets: {
+          type: Array
+        },
+        
+        consoleText: {
+            type: Array,
+			observe: true,
+			notify: true,
+			reflectToAttribute: true,
+            value: []
+        }
+    },
+      
+    minFightersChanged: function(){
+      sendToBot("update-fight-min-fighters",this.minFighters);  
+    },
+      
+    
+    maxFightersChanged: function(){
+      sendToBot("update-fight-max-fighters",this.maxFighters);  
+    },
+      
+    selectedCharacteristicChanged: function(){
+      sendToBot("update-selected-characteristic",this.selectedCharacteristic)  
+    },
+          
+    fightModeChanged: function(){
+        var fm;
+        switch(this.fightMode){
+            case 1:
+                fm="sacri";
+                break;
+            default:
+                fm="default";
+        }
+        sendToBot("set-ia-type",fm);
+        console.log("ia set to "+fm);
+    },
+      
+    savespells: function(){
+        sendToBot("update-spells",this.spells);
+        editspells.close();
+    },
+
+    showLoadTrajet: function(){
+        selecttrajet.open();
+    },
+
+    showFloodDialog: function(){
+       
+    },
+      
+      
+    showSpellsEdit: function(){
+        wrapCurrentBot("spells-update",(spells)=>{
+            this.set("spells",spells);
+            editspells.open();
+        });
+        sendToBot("spells-request");
+        console.log("Request server for spells list ...");
+    },
+      
+    saveinventory: function(){
+        console.log("Updating bot inventory ...");
+        sendToBot("inventory-update",this.inventoryObjects);
+        inventorydialog.close();
+    },
+      
+    showInventoryDialog: function(){
+        wrapCurrentBot("inventory-update",(objects)=>{
+            this.set("inventoryObjects",objects);
+            inventorydialog.open();
+        });
+        sendToBot("inventory-request");
+        console.log("Request server for inventory ...");
+    },
+
+    loadTrajet: function(e){
+        var trajetId = e.currentTarget.getAttribute("id");
+        console.log("loading trajet "+trajetId);
+        for(var i in this.trajets){
+            if(this.trajets[i].id == trajetId){
+                sendToBot("trajet-load",{trajet:this.trajets[i].trajet});
+                selecttrajet.close();
+                return;
+            }
+        }
+        console.trace("Impossible de trouver le trajet "+trajetId);
+    },
+
+
+    show_: function(){
+	     connectd.open();
+	},
+
+      
+
+  });
+
+  </script>
+
+</dom-module>
