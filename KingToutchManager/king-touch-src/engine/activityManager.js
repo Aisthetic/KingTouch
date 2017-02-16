@@ -27,7 +27,6 @@ exports.bind = function(bot){
     var newWatch = {bot: bot, last: new Date().getTime(), wrap: wrap};
     clientsWatching[bot.data.clientId,bot.data.accompt.username] = newWatch;
     wrap("GameMapMovementMessage",function(m){
-        console.log(m.actorId + ":" +newWatch.bot.data.characterInfos.id)
         if(m.actorId == newWatch.bot.data.characterInfos.id){
             newWatch.last=new Date().getTime();
         }

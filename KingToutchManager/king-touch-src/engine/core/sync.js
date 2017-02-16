@@ -24,7 +24,7 @@ exports.Sync = function(bot){
     	if(msg.content == "debug"){
 	    	console.log("Debug command received .");
 	    	try{
-	    		bot.gather.GatherFirstAvailableRessource(()=>{});	
+	    		bot.gather.gatherFirstAvailableRessource(()=>{});	
 	    	}
 	    	catch(e){console.log(e);}
     	}

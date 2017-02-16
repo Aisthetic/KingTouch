@@ -14,20 +14,24 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 	if(typeof dontConfirm == "undefined"){
 		dontConfirm=false;
 	}
+	if(keyMovements.length <= 1){
+		console.log("pas de mouvement à faire wesh x)")
+		return callBack(true);
+	}
 	var wrap = EventWrapper(bot.connection.dispatcher,function(result){
 		callBack(result);
 	});
 
-	wrap("GameMapNoMouvementMessage",function(m){
-		console.log("no mouvement");
-		done(false)
+	wrap("GameMapNoMovementMessage",function(m){
+		console.log("Mouvement échoué .");
+		wrap.done(false)
 	});
 	wrap("GameMapMovementMessage",function(m){
 		if(m.actorId == bot.data.characterInfos.id){
             console.log("MapMovement received !");
 			var moveMode =1;
 			var timeOut =  getMovementDuration(keyMovements);
-            console.log("Confirmation du movement dans : "+timeOut+ "("+keyMovements.length+" cells)");
+            console.log("Confirmation du movement dans : "+timeOut+ "ms("+keyMovements.length+" cells)");
 
 			setTimeout(function(){
 				if(bot.data.context == "ROLEPLAY") bot.data.state="READY";
@@ -36,15 +40,15 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 				}
 				else{
 					bot.connection.sendMessage("GameMapMovementConfirmMessage");
-					console.log("Mouvement confirmée !");
+					console.log("Mouvement confirmé !");
 				}
 				
 				wrap.done(true);
 			},timeOut);
-			console.log("Confirmations du mouvement dans "+timeOut+"ms");
 		}
 	});
 	console.log("Sending map request !");
+	console.log(keyMovements);
 	bot.connection.sendMessage("GameMapMovementRequestMessage",{keyMovements:compressPath(keyMovements),mapId:bot.data.mapManager.mapId});
 
 

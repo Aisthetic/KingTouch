@@ -51,6 +51,9 @@ exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUs
 	var keyMouvements;
 	if(typeof cellId == "undefined" || cellId < 0){
 		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
+		if(keyMouvements[keyMouvements.length -1] == element.elementCellId){ 
+			keyMouvements.pop();
+		}//dans le cas ou le bot est deja sur une cellule adjaçante .
 	}
 	else{
 		keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.actorsManager.getOccupiedCells(),true);
