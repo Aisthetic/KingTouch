@@ -49,7 +49,7 @@ exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUs
 		return false;
 	}
 	var keyMouvements;
-	if(typeof cellId == "undefined"){
+	if(typeof cellId == "undefined" || cellId < 0){
 		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
 	}
 	else{

@@ -14,6 +14,7 @@ var Trajet = require("./core/trajet.js").Trajet;
 var Player = require("./core/player.js").Player;
 var Fight = require("./core/fight.js").Fight;
 var Sync = require("./core/sync.js").Sync;
+var Gather = require("./core/gather.js").Gather;
 
 exports.Bot = function(groupeName,clientId,reconnectFunction){
 	this.logger = new Logger(groupeName+":"+clientId);
@@ -29,6 +30,7 @@ exports.Bot = function(groupeName,clientId,reconnectFunction){
 	this.trajet = new Trajet(this);
 	this.fight = new Fight(this);
 	this.sync = new Sync(this);
+	this.gather = new Gather(this);
 }
 
 exports.Bot.prototype.connect = function(accompt){

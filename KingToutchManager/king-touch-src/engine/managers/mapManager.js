@@ -33,6 +33,21 @@ exports.MapManager = function(bot){
 			});	
 		}
 	});
+	this.bot.connection.dispatcher.on("InteractiveMapUpdateMessage",(m)=>{
+		this.updateInteractiveElements(m.interactiveElements);
+	});
+
+	this.bot.connection.dispatcher.on("InteractiveElementUpdatedMessage",(m)=>{
+		this.updateInteractiveElements([m.interactiveElement]);
+	});
+
+	this.bot.connection.dispatcher.on("StatedMapUpdateMessage",(m)=>{
+		this.updateStatedElements(m.statedElements);
+	});
+
+	this.bot.connection.dispatcher.on("StatedElementUpdatedMessage",(m)=>{
+		this.updateStatedElements([m.statedElement]);
+	});
 	this.bot.connection.dispatcher.on("MapComplementaryInformationsDataMessage",(m)=>{
 		this.interactives = {};
 		this.statedes = {};
@@ -122,4 +137,67 @@ exports.MapManager.prototype.getRandomCellId = function(direction,source)
 	}
 
 	return selected;
+	var possibleCells =[];//todo à voir
+        for (var j = 0; j < 559; j++) {
+            if (this.checkChangeMapCell(j, direction) && i != source) {
+            	possibleCells.push(j);
+			}
+		}
+	function randomIntFromInterval(min,max)
+    {
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
+    return possibleCells[randomIntFromInterval(0,possibleCells.length - 1)];
 }
+/**
+  * @descritption gives the interactives with the desired id(static id not dynamic one)
+  * @param id - the id of the desired interactives
+  * @return list elements{interactives , stated} - Important : the list is indexed with the dynamic id
+*/
+exports.MapManager.prototype.getInteractives = function(id){
+	interactives = {};
+	for (var i in this.interactives){//le i est unique par element donc c'est le lien stated/interactive 
+		if (this.interactives[i].elementTypeId == id){
+			interactives[i] = {interactive : this.interactives[i] , stated : this.statedes[i]}
+		}
+	}
+	return interactives;
+}
+/** Update interactive elements data
+	 *
+	 * @param {Object[]} list - list of modified interactives elements
+	 *        {number}   list[*].elementId      - interactive element id
+	 *        {number}   list[*].elementTypeId  - interactive element type (-1 if none)
+	 *        {Object[]} list[*].enabledSkills  - visible skills list
+	 *        {Object[]} list[*].disabledSkills - visible but inactive skills list
+	 */
+exports.MapManager.prototype.updateInteractiveElements = function (list) {
+		for (var i = 0; i < list.length; i++) {
+			var updatedElement = list[i];
+			if (!this.interactives[updatedElement.elementId]) {
+				console.warn('Interactive element id ' + updatedElement.elementId + ' does not exist.');
+				continue;
+			}
+			this.interactives[updatedElement.elementId].disabledSkills = updatedElement.disabledSkills;
+			this.interactives[updatedElement.elementId].enabledSkills  = updatedElement.enabledSkills;
+		}
+	};
+/** Update stated element states
+ *
+ * @param {Object[]} statedElements - updated stated element
+ *        {number} statedElements[*].elementId     - element id
+ *        {number} statedElements[*].elementCellId - element position
+ *        {number} statedElements[*].elementState  - element state
+ */
+exports.MapManager.prototype.updateStatedElements = function (statedElementsData) {
+	for (var i = 0, len = statedElementsData.length; i < len; i++) {
+		var elemData = statedElementsData[i];
+		if (!this.statedes[elemData.elementId]) {
+			console.warn('Identified element ' + elemData.elementId + ' not found.');
+			continue;
+		}
+		this.statedes[elemData.elementId].elementCellId = elemData.elementCellId;
+		this.statedes[elemData.elementId].elementState = elemData.elementState;
+
+	}
+};
