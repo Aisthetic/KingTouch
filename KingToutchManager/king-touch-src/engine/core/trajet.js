@@ -52,6 +52,9 @@ exports.Trajet.prototype.trajetExecute = function(){
 	else if(this.parseFight(this.hasActionOnMap(this.currentTrajet.trajet["fights"]))){
 		this.bot.logger.log("[Trajet]Execution du fight ...")
 	}
+	else if(this.parseGather(this.hasActionOnMap(this.currentTrajet.trajet["recolte"]))){
+		this.bot.logger.log("[Trajet]Execution de la récolte...");
+	}
 	else{
 		this.bot.logger.log("[Trajet]Rien a faire sur cette map ("+this.bot.data.mapManager.mapId+") !");
 	}
@@ -95,6 +98,19 @@ exports.Trajet.prototype.parseFight = function(fight){
 	self.bot.player.attackBestAvaibleFighter(function(){
 		self.bot.logger.log("[Trajet]Aucun combat on change de carte...")
 		self.execMove(fight);
+	});
+	return true;
+}
+exports.Trajet.prototype.parseGather = function(gather){
+	if(gather=="undefined"){return false;}
+	this.bot.gather.gatherFirstAvailableRessource((result)=>{
+		if(result) {
+			this.parseGather(gather);
+		}
+		else{
+			console.log("Plus de ressources à récolter disponibles , on passe à la map suivante");
+			this.execMove(gather);
+		}
 	});
 	return true;
 }

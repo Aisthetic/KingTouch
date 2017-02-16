@@ -6,7 +6,7 @@ var FightManager = require("./managers/fightManager.js").FightManager;
 var InventoryManager = require("./managers/inventoryManager.js").InventoryManager;
 var ExchangeManager = require("./managers/exchangeManager.js").ExchangeManager;
 var ConfigManager = require("./managers/configManager.js");
-
+var JobsManager = require("./managers/jobsManager.js").JobsManager;
 exports.BotData = function(clientId,clientGroupe,bot){
 	this.dispatcher=new EventEmitter();
 
@@ -23,6 +23,7 @@ exports.BotData = function(clientId,clientGroupe,bot){
 	this.fightManager = new FightManager(bot);
 	this.inventoryManager = new InventoryManager(bot);
     this.exchangeManager = new ExchangeManager(bot);
+    this.jobsManager = new JobsManager(bot);
 
 	bot.connection.dispatcher.on("CharacterSelectedSuccessMessage",(m)=>{
 		this.characterInfos=m.infos;

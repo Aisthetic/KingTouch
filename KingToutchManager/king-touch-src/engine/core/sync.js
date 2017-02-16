@@ -20,6 +20,16 @@ exports.Sync = function(bot){
         bot.data.state = "FIGHTING";
         bot.data.context="FIGHT";
     });
+    this.bot.connection.dispatcher.on("ChatServerMessage", (msg) => {
+    	if(msg.content == "debug"){
+	    	console.log("Debug command received .");
+	    	try{
+	    		bot.gather.gatherFirstAvailableRessource(()=>{});	
+	    	}
+	    	catch(e){console.log(e);}
+    	}
+    });
+
     this.bot.connection.dispatcher.on("MapComplementaryInformationsDataMessage",(m) => {
 		if( typeof m.actors[0] == "undefined"){
 			bot.data.context="FIGHT";

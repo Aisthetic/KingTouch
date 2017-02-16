@@ -9,7 +9,7 @@ const BANK_MAPS = {
 }
 // Class
 exports.sendWebRequestToDataUrl = function SendWebRequestToDataUrl(data, callback){
-	WebRequest({ uri: "https://proxyconnection.touch.dofus.com/data/map?lang=en&v=0.56.1", method: "POST", form: data }, (error, response, body) => { callback(JSON.parse(body)); })
+	WebRequest({ uri: "https://proxyconnection.touch.dofus.com/data/map?lang=fr&v=0.56.1", method: "POST", form: data }, (error, response, body) => { callback(JSON.parse(body)); })
 }
 
 exports.getSpellsInfos = function(ids, callback){
