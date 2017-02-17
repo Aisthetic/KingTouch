@@ -37,7 +37,7 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 			var timeOut =  getMovementDuration(keyMovements);
             console.log("Confirmation du movement dans : "+timeOut+ "("+keyMovements.length+" cells)");
 
-			setTimeout(function(){
+			confirmTimeOut= setTimeout(function(){
 				if(bot.data.context == "ROLEPLAY") bot.data.state="READY";
 				if(dontConfirm){
 					console.log("Mouvement efectuer, aucune confimation !");
