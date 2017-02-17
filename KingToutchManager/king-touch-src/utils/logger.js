@@ -16,6 +16,7 @@ exports.Logger.prototype.log=function(log,level){
 }
 
 exports.redirectConsole = function(identificator){
+    let identificatorBase = identificator;
     identificator = Date.now() + identificator;
     var fs = require('fs');
     var log_file = fs.createWriteStream(__dirname + '/../../logs/'+identificator+'.log', {flags : 'w'});
@@ -23,6 +24,6 @@ exports.redirectConsole = function(identificator){
 
     console.log = function(d) { 
       log_file.write(util.format(d) + '\n');
-      log_stdout.write(util.format(d) + '\n');
+      log_stdout.write(util.format("["+identificatorBase+"]"+d) + '\n');
     };
 }

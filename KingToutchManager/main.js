@@ -1,9 +1,11 @@
-var cp = require('child_process');
-var eventWrapper = require("event-wrapper");
+var worldDataSource = require("./worldDataSource.js");
 var accomptsManager = require("./accomptsManager.js");
 var processFrame = require("./processFrame.js").ProcessFrame;
 var connection = require("./server.js");
+var cp = require('child_process');
+var eventWrapper = require("event-wrapper");
 var webSocket = require("ws");
+
 
 var botClientServer = new webSocket.Server({
   port: 8082
@@ -29,7 +31,11 @@ botClientServer.on('connection', function connection(acceptedClient) {
 var updateRequestCount = 0;
 var globalState = {};
 var onlineProcess = {};
-acceptConnection();
+console.log("Waiting for global data source ..");
+worldDataSource.init(()=>{
+    console.log("Waiting for client !");
+    acceptConnection();
+});
 
 function acceptConnection(){
 	connection.on("client-connected",()=>{
@@ -56,13 +62,28 @@ function acceptConnection(){
         accomptsManager.addAccompt(accompt);
         connection.send("accompts-list",accomptsManager.getAccompts());
     });
+    connection.on("client-update-request",(m)=>{
+        console.log("Updating client "+m.accompt);
+        for(var i in onlineProcess){
+            if(i === m.accompt){
+                console.log("Sending client infos for "+i);
+                let wrap = eventWrapper(onlineProcess[i].dispatcher,()=>{
+                    console.log("Client updated !");
+                });
+                wrap("state-update",(m)=>{
+                    connection.send("client-update",m);
+                    wrap.done();
+                });
+                onlineProcess[i].send("global-state-request");
+            }
+        }
+    });
 	connection.on("global-update-request",()=>{
 		console.log("Process update global request ...");
 		updateRequestCount = 0;
 		globalState={};
 		for(var i in onlineProcess){
 			console.log("Request for bot infos ["+i+"] ...");
-			onlineProcess[i].send("global-state-request");
             let wrap = eventWrapper(onlineProcess[i].dispatcher,()=>{
                 console.log("Client updated !");
             });
@@ -76,6 +97,7 @@ function acceptConnection(){
                 
                 wrap.done();
 			});
+            onlineProcess[i].send("global-state-request");
 			updateRequestCount++;
 		}
 	});

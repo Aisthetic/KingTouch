@@ -11,6 +11,7 @@ var compressPath = require("./../../../core/utils/pathfinding.js").compressPath;
 var getMapPoint = require("./../../../core/utils/pathfinding.js").getMapPoint;
 var getCellsWithDirection = require("./../../../core/utils/pathfinding.js").getCellsWithDirection;
 exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
+    var confirmTimeOut;
 	if(typeof dontConfirm == "undefined"){
 		dontConfirm=false;
 	}
@@ -26,6 +27,7 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 
     wrap("GameMapNoMovementMessage",function(m){
  		console.log("Mouvement échoué .");
+        clearTimeout(confirmTimeOut);
  		wrap.done(false)
   	});
 	wrap("GameMapMovementMessage",function(m){
@@ -44,7 +46,7 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 					bot.connection.sendMessage("GameMapMovementConfirmMessage");
 					console.log("Mouvement confirmée !");
 				}
-				
+    
 				wrap.done(true);
 			},timeOut);
 			console.log("Confirmations du mouvement dans "+timeOut+"ms");
