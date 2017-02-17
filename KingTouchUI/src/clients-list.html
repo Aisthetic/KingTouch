@@ -190,6 +190,7 @@
   </template>
 
   <script>
+var readyToLoad = true;
   Polymer({
 
 		is: 'clients-list',
@@ -272,6 +273,7 @@
                 break;
             }
         });
+        readyToLoad= true;
     },
       
     unListenClient : function(accompt){
@@ -289,6 +291,11 @@
 	},
       
     clientItemTap: function(e){
+        if(readyToLoad === false){
+            console.log("Server not ready !");
+            return;
+        }
+        readyToLoad= false;
         var un;
         if(typeof e.target.getElementsByTagName("span")[0] != "undefined"){
             un = e.target.getElementsByTagName("span")[0].textContent
