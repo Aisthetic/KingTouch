@@ -233,7 +233,7 @@
 			  </paper-listbox>
 			</paper-dropdown-menu>
             <paper-dropdown-menu label="Placement en debut de combat">
-			  <paper-listbox selected="{{fightMode}}" class="dropdown-content">
+			  <paper-listbox selected="{{fightSpec}}" class="dropdown-content">
 				<paper-item id="0">Proche des ennemies</paper-item>
 				<paper-item id="1">Loin des ennemies</paper-item>
 				<paper-item id="2">Ne rien faire</paper-item>
@@ -326,17 +326,24 @@ var consoleRunning = false;
     ready: function(){
         window.addEventListener("selected-client-changed",(client)=>{
             this.set("client",client.detail);
-            this.set("maxFighters",client.detail.config.fight.maxFighters);
-            this.set("minFighters",client.detail.config.fight.minFighters);
+            this.set("maxFighters",client.detail.config.fight.maxFighter);
+            this.set("minFighters",client.detail.config.fight.minFighter);
+            //this.set("selectedCharacteristic",client.detail.config.tasks.selectedCharacteristic);
+            if(client.detail.config.fight.type === "default"){
+                this.set("fightMode",0);
+            }
+            else if (client.detail.config.fight.type === "sacri"){
+                this.set("fightMode",1);
+            }
         });
     },
       
     minFightersChanged: function(){
-      sendToBot("update-fight-min-fighters",this.minFighters);  
+      sendToBot("update-fight-min-fighters",parseInt(this.minFighters));  
     },
     
     maxFightersChanged: function(){
-      sendToBot("update-fight-max-fighters",this.maxFighters);  
+      sendToBot("update-fight-max-fighters",parseInt(this.maxFighters));  
     },
       
     selectedCharacteristicChanged: function(){

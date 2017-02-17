@@ -224,6 +224,17 @@
             }
 			this.clients = clients;
 		});
+        window.addEventListener("client-update",(m)=>{
+           for(var i in this.clients){
+               if(this.clients[i].accompt===m.detail.accompt){
+                   this.clients[i] = m.detail;
+                   console.log(m.accompt+" updated !");
+                   setClient(this.clients[i])
+                   return;
+               }
+           }
+            console.log("Can't find client ("+m.detail.accompt+") !");
+        });
 		window.addEventListener("load-client",(m)=>{
             console.log("client added");
 			this.push("clients",m.detail);
@@ -238,7 +249,7 @@
 	},
 
     selectClient: function(e){
-        setClient(e.model.get("item"));
+        sendUI("client-update-request",{ accompt : e.model.get("item").accompt });
     },
       
     listenClient: function(accompt) {
