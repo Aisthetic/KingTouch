@@ -101,7 +101,6 @@
               on-iron-activate="_drawerSelected">
 			  
             <paper-item name="home">Clients</paper-item>
-			<paper-item name="accompts">Gestionaire de comptes</paper-item>
               <paper-item><a href="https://discordapp.com/channels/@me">Createur de trajet</a></paper-item>
             <paper-item name="config">Configuration</paper-item>
           </paper-listbox>
@@ -118,7 +117,7 @@
       <!-- list/detail pages -->
       <iron-pages selected="[[_pageData.page]]" attr-for-selected="name">
 
-        <clients-list id="client-list-main" username="" password="" name="home">
+        <clients-list id="client-list-main"  username="" password="" name="home">
           <paper-icon-button icon="app:menu" drawer-toggle></paper-icon-button>
         </clients-list>
 
@@ -135,6 +134,7 @@
         <client-detail
             id="detailView"
             name="detail"
+            clientId="{{_idData}}"
             trajets="[[_getTrajets()]]"
             client="[[_getClients(clients, _idData.id)]]"></client-detail>
 
