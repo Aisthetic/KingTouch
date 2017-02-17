@@ -16,20 +16,19 @@ exports.Sync = function(bot){
             bot.data.state="FIGHTING";
         }
     });
+      this.bot.connection.dispatcher.on("ChatServerMessage", (msg) => {
+     	if(msg.content == "debug"){
+ 	    	console.log("Debug command received .");
+ 	    	try{
+ 	    		bot.gather.gatherFirstAvailableRessource(()=>{});	
+ 	    	}
+ 	    	catch(e){console.log(e);}
+     	}
+     });
     this.bot.connection.dispatcher.on("GameFightStartingMessage", () => {
         bot.data.state = "FIGHTING";
         bot.data.context="FIGHT";
     });
-    this.bot.connection.dispatcher.on("ChatServerMessage", (msg) => {
-    	if(msg.content == "debug"){
-	    	console.log("Debug command received .");
-	    	try{
-	    		bot.gather.gatherFirstAvailableRessource(()=>{});	
-	    	}
-	    	catch(e){console.log(e);}
-    	}
-    });
-
     this.bot.connection.dispatcher.on("MapComplementaryInformationsDataMessage",(m) => {
 		if( typeof m.actors[0] == "undefined"){
 			bot.data.context="FIGHT";
@@ -147,13 +146,7 @@ exports.Sync.prototype.checkTasks = function(callBack){
         console.log("[Sync]Impossible d'executer les taches, on est pas en roleplay !")
     }
     if(this.bot.player.canUpgradeCharacteristic(this.bot.data.userConfig.tasks.selectedCharacteristic)){
-        if(this.bot.data.actorsManager.userActorStats.statsPoints <= 0){
-            console.log("[Sync]Aucun point de characteristics !");
-            return;
-        }
-        else{
-            console.log("[Sync]On a "+this.bot.data.actorsManager.userActorStats.statsPoints+" points de characteristics ...");
-        }
+        console.log("[Sync]Upgrading stats ...");
         
         this.bot.player.upgradeCharacteristic(this.bot.data.userConfig.tasks.selectedCharacteristic,()=>{
             console.log("[Sync]Task done !");

@@ -22,6 +22,9 @@ exports.getSpellLevelsInfos = function(ids,id,callback){
 exports.getItemsInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Items", ids}, (result) => { callBack(result); });
 }
+exports.getBreedsInfos = function(ids,callBack){
+    exports.sendWebRequestToDataUrl({class: "Breeds", ids}, (result) => { callBack(result); });
+}
 //return null if no phoenix on the map
 exports.getPhoenixInfos = function(mapId){
 	return PHOENIX_MAPS[mapId];

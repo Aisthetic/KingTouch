@@ -1,5 +1,6 @@
 var cp = require('child_process');
 var eventWrapper = require("event-wrapper");
+var accomptsManager = require("./accomptsManager.js");
 var processFrame = require("./processFrame.js").ProcessFrame;
 var connection = require("./server.js");
 var webSocket = require("ws");
@@ -35,11 +36,26 @@ function acceptConnection(){
 		connection.emit("global-update-request");
 	});
 	connection.on("load",(m)=>{
-		createBotProcess(m.accompt);
+        var accompt = accomptsManager.accompts[m.username];
+        if(typeof accompt != "undefined"){
+		  createBotProcess(accompt);            
+        }
+        else{
+            console.log("Can't find accompt data for "+m.username);
+        }
 	});
 	connection.on("unload",(m)=>{
 		
 	});
+    connection.on("accompts-request",()=>{
+        console.log("Send accompt list to client ...");
+        connection.send("accompts-list",accomptsManager.getAccompts());
+    });
+    connection.on("add-accompt",(accompt)=>{
+        console.log("Adding accompt ...");
+        accomptsManager.addAccompt(accompt);
+        connection.send("accompts-list",accomptsManager.getAccompts());
+    });
 	connection.on("global-update-request",()=>{
 		console.log("Process update global request ...");
 		updateRequestCount = 0;
@@ -76,6 +92,7 @@ function createBotProcess(accompt){
 function reloadBotProcess(accompt){
     user = accompt.username;
     console.log("********** Process frame request for reloading ... ***********");
+    onlineProcess[user].kill();
     onlineProcess[user] = null;
     var newProcess = cp.fork(__dirname + '/king-touch-src/main.js');
     onlineProcess[user] = new processFrame(newProcess,accompt,connection,reloadBotProcess,true);

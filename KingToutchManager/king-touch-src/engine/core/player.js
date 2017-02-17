@@ -1,9 +1,10 @@
-
-
 var pathfinding = require("./utils/pathfinding.js");
 var processKeyMovement = require("./../frames/game/player/movementFrame.js").processKeyMovement;
 var processUseInteractive = require("./../frames/game/player/useInteractiveFrame.js").processUseInteractive;
+var processUpgradeCharacteristic = require("./../frames/game/player/upgradeCharacteristicFrame.js").processUprgradeCharacteristic;
 var delayManager = require("./../managers/delayManager.js");
+
+
 exports.Player = function(bot){
 	this.bot = bot;
     this.blackList = [];
@@ -50,12 +51,12 @@ exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUs
 	}
 	var keyMouvements;
 	if(typeof cellId == "undefined" || cellId < 0){
-		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
-		if(keyMouvements[keyMouvements.length -1] == element.elementCellId){ 
-			keyMouvements.pop();
-		}//dans le cas ou le bot est deja sur une cellule adjaçante .
+  		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
+ 		if(keyMouvements[keyMouvements.length -1] == element.elementCellId){ 
+ 			keyMouvements.pop();
+ 		}//dans le cas ou le bot est deja sur une cellule adjaçante .
 	}
-	else{
+	else{//au cas ou la map est full
 		keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.actorsManager.getOccupiedCells(),true);
 	}
 	processUseInteractive(self.bot,id,skill,keyMouvements,cb,waitForeUse);
@@ -165,13 +166,98 @@ exports.Player.prototype.processRegen = function(life,callBack){
 	setTimeout(callBack,(life*getRegenRate())+2500);
 }
 
-exports.Player.prototype.upgradeCharacteristic = function(chracteristic, callBack){
+exports.Player.prototype.upgradeCharacteristic = function(characteristic, callBack){
+    console.log("Upgrading characteristic id "+characteristic);
+    var stats = this.bot.data.actorsManager.userActorStats;
+    var breed = this.bot.data.breedInfos;
+    var updatedStatsPoints = stats.statsPoints;
+    var statsPointsToUpdate = 0;
+    var count = 0;
+    var bot = this.bot;
     
-    callBack();
+    if(characteristic === 11){//11=vie
+         updateBlock(breed.statsPointsForVitality,stats.vitality.base);
+    }
+    else if(characteristic === 12){
+         updateBlock(breed.statsPointsForIntelligence,stats.wisdom.base);
+    }
+    else if(characteristic === 10){
+         updateBlock(breed.statsPointsForStrength,stats.strength.base);
+    }
+    else if(characteristic === 15){
+          updateBlock(breed.statsPointsForIntelligence,stats.intelligence.base);
+    }
+    else if(characteristic === 13){
+          updateBlock(breed.statsPointsForChance,stats.chance.base);  
+    }
+    else if(characteristic === 14){
+         updateBlock(breed.statsPointsForAgility,stats.agility.base);        
+    }
+    
+
+
+    function updateBlock(paliers,base){
+        for(var i = 0;i<paliers.length;i++){
+            var pal = paliers[i];
+            var next = paliers[i+1];
+            if((i === paliers.length-1 || (base+statsPointsToUpdate) < next[0] ) && updatedStatsPoints >= pal[1]){
+                updatedStatsPoints -= pal[1];
+                count+= pal[1];
+                statsPointsToUpdate += 1;
+                updateBlock(paliers,base);
+                return;
+            }
+        }
+        console.log("Request server for adding "+statsPointsToUpdate +"stats point ("+characteristic+", "+count+")");
+        processUpgradeCharacteristic(bot,characteristic,count,(result)=>{
+            if(result){
+                console.log("Upgrade characteristic success !");
+            }
+            else 
+            {
+                console.log("Cant upgrade characteristics !")
+            }
+            callBack();
+        });
+    }
+    
 }
 
 exports.Player.prototype.canUpgradeCharacteristic = function(characteristic){
+    var stats = this.bot.data.actorsManager.userActorStats;
+    var breed = this.bot.data.breedInfos;
     
+    if(characteristic === 11 && stats.statsPoints > 0){//11=vie
+        return true;   
+    }
+    else if(characteristic === 12){
+        return canUpdate(breed.statsPointsForIntelligence,stats.wisdom.base);
+    }
+    else if(characteristic === 10){
+        return canUpdate(breed.statsPointsForStrength,stats.strength.base);
+    }
+    else if(characteristic === 15){
+         return canUpdate(breed.statsPointsForIntelligence,stats.intelligence.base);
+    }
+    else if(characteristic === 13){
+         return canUpdate(breed.statsPointsForChance,stats.chance.base);  
+    }
+    else if(characteristic === 14){
+        return canUpdate(breed.statsPointsForAgility,stats.agility.base);        
+    }
+    
+    function canUpdate(paliers,base){
+        console.log(paliers);
+        console.log(base);
+        for(var i = 0;i<paliers.length;i++){
+            if(i == paliers.length-1 || paliers[i+1][0] > base){
+                console.log(paliers[i]);
+                return paliers[i][1] <= stats.statsPoints;
+            }
+        }
+    }
+    
+    return false;
 }
 
 function getRegenRate(){

@@ -105,9 +105,11 @@ exports.InventoryManager.prototype.destroyForOverload = function(callBack,podsTo
         }
         let poid = this.objects[selected].realWeight;
         let count = Math.floor(podsToClear / poid);
+        
         if(count > selected.quantity){
             count=selected.quantity;
         }
+        
         processDeleteObject(this.bot,selected,podsToClear,()=>{
            console.log("Destruction ok !");
             callBack();
