@@ -1,0 +1,4293 @@
+Server request connecting ...
+Inventory : 0
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"T+BNUPKB2OptxNB4"}
+Config loaded !
+{"key":"dd4e8993-44b3-4dcc-89f0-8b97f91f85ad","account_id":112214161,"ip":"41.248.238.38","added_date":"2017-02-18T15:42:58+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-18T18:42:58+01:00"}
+Api key : dd4e8993-44b3-4dcc-89f0-8b97f91f85ad
+Game token : 4ad21c491a08319a6823347740b26dca
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=T%2BBNUPKB2OptxNB4) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]Identification success (1465968706061452998) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 403) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Aim-Fire) ...
+[Aucun groupe:0:info][Inventory]Object : 95176037 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 95176038 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 95176039 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 95176040 selected for regen !
+Checking pods ...
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+Checking pods ...
+[Aucun groupe:0:info][Infos]You have 1 {openSocial,0,0::friend(s)} online.
+[InventoryManager]Items infos loaded !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Trajet]No trajet loaded !
+{"call":"trajet-load","data":{"trajet":{"trajet":{"recolte":[],"fights":[{"map":80216581,"dir":"right"},{"map":80217093,"dir":"bottom"},{"map":80217094,"dir":"left"},{"map":80216582,"dir":"left"},{"map":80216070,"dir":"left"},{"map":80347654,"dir":"top"},{"map":80347653,"dir":"right"},{"map":80216069,"dir":"right"}],"interactives":[],"moves":[],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 56=56 , target : 405=405} , let's process it !
+[ 56,
+  70,
+  98,
+  113,
+  127,
+  142,
+  156,
+  171,
+  172,
+  186,
+  201,
+  215,
+  230,
+  244,
+  259,
+  273,
+  274,
+  289,
+  303,
+  318,
+  332,
+  347,
+  361,
+  376,
+  390,
+  405 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3810(26 cells)
+Confirmations du mouvement dans 3810ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 362)
+[DEBUG] Path calculated {source : 392=392 , target : 362=362} , let's process it !
+[ 392,
+  393,
+  379,
+  366,
+  367,
+  368,
+  354,
+  341,
+  327,
+  314,
+  315,
+  316,
+  317,
+  331,
+  332,
+  347,
+  361,
+  362 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3340(18 cells)
+Confirmations du mouvement dans 3340ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 215
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 203
+[Aucun groupe:0:info][Infos]<b>Aim-Fire</b> has failed the $challenge5 challenge.
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 361=361 , target : 551=551} , let's process it !
+[ 361, 375, 388, 402, 415, 429, 442, 456, 469, 483, 496, 510, 538, 551 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3230(14 cells)
+Confirmations du mouvement dans 3230ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 535)
+[DEBUG] Path calculated {source : 19=19 , target : 535=535} , let's process it !
+[ 19,
+  47,
+  62,
+  90,
+  118,
+  146,
+  174,
+  202,
+  216,
+  231,
+  259,
+  272,
+  300,
+  314,
+  327,
+  355,
+  369,
+  397,
+  410,
+  438,
+  452,
+  480,
+  493,
+  507,
+  535 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4700(25 cells)
+Confirmations du mouvement dans 4700ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 437
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 438
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Checking pods ...
+[InventoryManager]Can't find object for add : {"_messageType":"ObjectAddedMessage","object":{"_type":"ObjectItem","position":63,"objectGID":2477,"effects":[{"_type":"ObjectEffectInteger","actionId":118,"value":2},{"_type":"ObjectEffectInteger","actionId":126,"value":2},{"_type":"ObjectEffectInteger","actionId":123,"value":2},{"_type":"ObjectEffectInteger","actionId":119,"value":2},{"_type":"ObjectEffectInteger","actionId":124,"value":2}],"objectUID":95198366,"quantity":1},"_isInitialized":true}
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 507=507 , target : 56=56} , let's process it !
+[ 507,
+  479,
+  465,
+  437,
+  409,
+  381,
+  368,
+  340,
+  326,
+  313,
+  299,
+  286,
+  272,
+  259,
+  231,
+  216,
+  202,
+  174,
+  159,
+  145,
+  130,
+  116,
+  101,
+  87,
+  86,
+  71,
+  57,
+  56 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5070(28 cells)
+Confirmations du mouvement dans 5070ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 69=69 , target : 490=490} , let's process it !
+[ 69,
+  82,
+  96,
+  109,
+  108,
+  107,
+  121,
+  134,
+  148,
+  161,
+  175,
+  188,
+  202,
+  215,
+  229,
+  242,
+  270,
+  284,
+  312,
+  325,
+  353,
+  367,
+  380,
+  394,
+  407,
+  435,
+  463,
+  477,
+  490 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 6545(29 cells)
+Confirmations du mouvement dans 6545ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 184)
+[DEBUG] Path calculated {source : 503=503 , target : 184=184} , let's process it !
+[ 503,
+  489,
+  474,
+  460,
+  445,
+  431,
+  416,
+  402,
+  401,
+  386,
+  372,
+  357,
+  343,
+  328,
+  314,
+  299,
+  285,
+  270,
+  256,
+  241,
+  227,
+  212,
+  184 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3340(23 cells)
+Confirmations du mouvement dans 3340ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 393
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 406
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 387)
+[DEBUG] Path calculated {source : 212=212 , target : 387=387} , let's process it !
+[ 212, 227, 241, 256, 270, 285, 299, 314, 328, 343, 357, 372, 386, 387 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1970(14 cells)
+Confirmations du mouvement dans 1970ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 244
+[Aucun groupe:0:info][Infos]<b>Aim-Fire</b> has failed the $challenge10 challenge.
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 271
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 386=386 , target : 350=350} , let's process it !
+[ 386, 385, 399, 398, 397, 396, 395, 394, 379, 365, 350 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1725(11 cells)
+Confirmations du mouvement dans 1725ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 541)
+[DEBUG] Path calculated {source : 363=363 , target : 541=541} , let's process it !
+[ 363, 377, 390, 404, 417, 431, 444, 472, 500, 514, 527, 541 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2635(12 cells)
+Confirmations du mouvement dans 2635ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+[Aucun groupe:0:info][Infos]<b>Aim-Fire</b> has failed the $challenge2 challenge.
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 263
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 209
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 205
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 527=527 , target : 23=23} , let's process it !
+[ 527,
+  514,
+  500,
+  472,
+  444,
+  416,
+  403,
+  375,
+  347,
+  319,
+  291,
+  263,
+  235,
+  220,
+  206,
+  191,
+  163,
+  135,
+  107,
+  79,
+  51,
+  23 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3765(22 cells)
+Confirmations du mouvement dans 3765ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 555=555 , target : 545=545} , let's process it !
+[ 555, 556, 543, 544, 545 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 765(5 cells)
+Confirmations du mouvement dans 765ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 532=532 , target : 447=447} , let's process it !
+[ 532,
+  533,
+  519,
+  520,
+  521,
+  522,
+  523,
+  510,
+  511,
+  497,
+  498,
+  485,
+  486,
+  472,
+  473,
+  460,
+  446,
+  447 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3485(18 cells)
+Confirmations du mouvement dans 3485ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 434=434 , target : 279=279} , let's process it !
+[ 434,
+  421,
+  407,
+  379,
+  380,
+  381,
+  368,
+  369,
+  355,
+  356,
+  357,
+  344,
+  330,
+  317,
+  318,
+  304,
+  305,
+  292,
+  278,
+  279 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4080(20 cells)
+Confirmations du mouvement dans 4080ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 266=266 , target : 553=553} , let's process it !
+[ 266,
+  281,
+  295,
+  310,
+  324,
+  339,
+  353,
+  381,
+  409,
+  424,
+  438,
+  453,
+  467,
+  482,
+  496,
+  511,
+  539,
+  553 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2610(18 cells)
+Confirmations du mouvement dans 2610ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 21=21 , target : 476=476} , let's process it !
+[ 21,
+  35,
+  63,
+  91,
+  119,
+  147,
+  175,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  340,
+  368,
+  381,
+  395,
+  408,
+  422,
+  435,
+  449,
+  462,
+  476 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5355(25 cells)
+Confirmations du mouvement dans 5355ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 31)
+[DEBUG] Path calculated {source : 489=489 , target : 31=31} , let's process it !
+[ 489,
+  474,
+  460,
+  445,
+  431,
+  416,
+  402,
+  374,
+  346,
+  331,
+  317,
+  302,
+  288,
+  273,
+  259,
+  244,
+  216,
+  202,
+  187,
+  173,
+  158,
+  130,
+  116,
+  88,
+  73,
+  59,
+  31 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4020(27 cells)
+Confirmations du mouvement dans 4020ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 216
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 159
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 59=59 , target : 476=476} , let's process it !
+[ 59,
+  87,
+  115,
+  143,
+  171,
+  199,
+  227,
+  255,
+  269,
+  284,
+  312,
+  325,
+  353,
+  367,
+  380,
+  394,
+  407,
+  435,
+  463,
+  477,
+  476 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3870(21 cells)
+Confirmations du mouvement dans 3870ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 489=489 , target : 378=378} , let's process it !
+[ 489,
+  474,
+  473,
+  472,
+  471,
+  470,
+  456,
+  455,
+  440,
+  439,
+  425,
+  424,
+  409,
+  408,
+  394,
+  379,
+  378 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2580(17 cells)
+Confirmations du mouvement dans 2580ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 391=391 , target : 19=19} , let's process it !
+[ 391,
+  377,
+  349,
+  334,
+  320,
+  305,
+  291,
+  276,
+  248,
+  234,
+  219,
+  205,
+  190,
+  176,
+  161,
+  133,
+  119,
+  104,
+  76,
+  62,
+  47,
+  19 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3250(22 cells)
+Confirmations du mouvement dans 3250ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 551=551 , target : 307=307} , let's process it !
+[ 551,
+  538,
+  524,
+  511,
+  497,
+  484,
+  470,
+  457,
+  443,
+  430,
+  416,
+  403,
+  389,
+  376,
+  362,
+  349,
+  335,
+  307 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4250(18 cells)
+Confirmations du mouvement dans 4250ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 294=294 , target : 489=489} , let's process it !
+[ 294,
+  309,
+  323,
+  324,
+  339,
+  340,
+  341,
+  355,
+  370,
+  384,
+  399,
+  413,
+  428,
+  442,
+  443,
+  458,
+  459,
+  473,
+  488,
+  489 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2970(20 cells)
+Confirmations du mouvement dans 2970ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 476=476 , target : 433=433} , let's process it !
+[ 476,
+  477,
+  478,
+  479,
+  480,
+  481,
+  482,
+  483,
+  469,
+  456,
+  442,
+  429,
+  415,
+  402,
+  403,
+  417,
+  432,
+  433 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3360(18 cells)
+Confirmations du mouvement dans 3360ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 420=420 , target : 556=556} , let's process it !
+[ 420,
+  421,
+  422,
+  423,
+  424,
+  438,
+  453,
+  467,
+  482,
+  496,
+  511,
+  525,
+  526,
+  541,
+  555,
+  556 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2370(16 cells)
+Confirmations du mouvement dans 2370ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 24=24 , target : 238=238} , let's process it !
+[ 24,
+  38,
+  51,
+  65,
+  93,
+  121,
+  149,
+  162,
+  176,
+  189,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  312,
+  311,
+  296,
+  282,
+  281,
+  266,
+  238 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4785(24 cells)
+Confirmations du mouvement dans 4785ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 251=251 , target : 476=476} , let's process it !
+[ 251,
+  265,
+  278,
+  292,
+  305,
+  319,
+  332,
+  331,
+  330,
+  344,
+  357,
+  371,
+  384,
+  398,
+  411,
+  425,
+  424,
+  437,
+  451,
+  450,
+  463,
+  477,
+  476 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5185(23 cells)
+Confirmations du mouvement dans 5185ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 489=489 , target : 378=378} , let's process it !
+[ 489,
+  474,
+  473,
+  472,
+  471,
+  470,
+  456,
+  455,
+  440,
+  439,
+  425,
+  424,
+  409,
+  408,
+  394,
+  379,
+  378 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2580(17 cells)
+Confirmations du mouvement dans 2580ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 391=391 , target : 12=12} , let's process it !
+[ 391, 363, 335, 307, 279, 251, 223, 195, 167, 153, 138, 110, 82, 54, 40, 12 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2490(16 cells)
+Confirmations du mouvement dans 2490ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 544=544 , target : 391=391} , let's process it !
+[ 544, 530, 502, 474, 446, 433, 419, 391 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1445(8 cells)
+Confirmations du mouvement dans 1445ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 378=378 , target : 475=378} , let's process it !
+pas de mouvement à faire wesh x)
+Key movements proccesed !
+Movement ok 
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+[INACTIVITY] Soft debug on zahidoy .
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 378=378 , target : 97=97} , let's process it !
+[ 378,
+  350,
+  337,
+  323,
+  310,
+  296,
+  283,
+  269,
+  270,
+  257,
+  243,
+  230,
+  216,
+  203,
+  189,
+  176,
+  177,
+  163,
+  150,
+  136,
+  123,
+  109,
+  96,
+  97 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5525(24 cells)
+Confirmations du mouvement dans 5525ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 84=84 , target : 503=503} , let's process it !
+[ 84,
+  98,
+  113,
+  127,
+  142,
+  156,
+  171,
+  185,
+  200,
+  214,
+  229,
+  243,
+  258,
+  272,
+  287,
+  288,
+  302,
+  317,
+  331,
+  346,
+  360,
+  375,
+  389,
+  404,
+  418,
+  446,
+  461,
+  475,
+  503 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4260(29 cells)
+Confirmations du mouvement dans 4260ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 490=490 , target : 544=544} , let's process it !
+[ 490,
+  477,
+  463,
+  450,
+  436,
+  423,
+  424,
+  438,
+  439,
+  454,
+  455,
+  469,
+  484,
+  498,
+  499,
+  514,
+  528,
+  543,
+  544 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3325(19 cells)
+Confirmations du mouvement dans 3325ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 12=12 , target : 294=294} , let's process it !
+[ 12,
+  25,
+  39,
+  52,
+  66,
+  79,
+  93,
+  121,
+  149,
+  162,
+  176,
+  189,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  312,
+  311,
+  310,
+  295,
+  294 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5080(24 cells)
+Confirmations du mouvement dans 5080ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 307=307 , target : 518=518} , let's process it !
+[ 307,
+  321,
+  334,
+  348,
+  361,
+  375,
+  388,
+  387,
+  386,
+  400,
+  413,
+  427,
+  440,
+  454,
+  467,
+  481,
+  480,
+  493,
+  492,
+  506,
+  519,
+  518 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4930(22 cells)
+Confirmations du mouvement dans 4930ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 184)
+[DEBUG] Path calculated {source : 531=531 , target : 184=184} , let's process it !
+[ 531,
+  517,
+  502,
+  474,
+  460,
+  445,
+  431,
+  416,
+  415,
+  401,
+  386,
+  372,
+  357,
+  343,
+  328,
+  314,
+  286,
+  271,
+  257,
+  242,
+  228,
+  213,
+  199,
+  184 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3510(24 cells)
+Confirmations du mouvement dans 3510ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+novement ok
+Proceed!
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 429
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 317
+Ack ready !
+Turn ready ...
+Sequence ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 387)
+[DEBUG] Path calculated {source : 199=199 , target : 387=387} , let's process it !
+[ 199, 213, 228, 242, 257, 271, 286, 300, 315, 329, 344, 358, 373, 387 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1950(14 cells)
+Confirmations du mouvement dans 1950ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+novement ok
+Proceed!
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 373
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 288
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 164
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 373=373 , target : 154=154} , let's process it !
+[ 373,
+  358,
+  344,
+  329,
+  315,
+  300,
+  286,
+  271,
+  257,
+  242,
+  228,
+  213,
+  199,
+  184,
+  170,
+  169,
+  154 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2420(17 cells)
+Confirmations du mouvement dans 2420ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 167=167 , target : 6=6} , let's process it !
+[ 167, 153, 138, 124, 109, 95, 80, 79, 78, 64, 49, 35, 20, 6 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1990(14 cells)
+Confirmations du mouvement dans 1990ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 538=538 , target : 321=321} , let's process it !
+[ 538,
+  524,
+  511,
+  497,
+  484,
+  470,
+  457,
+  443,
+  430,
+  416,
+  403,
+  389,
+  376,
+  362,
+  349,
+  321 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3740(16 cells)
+Confirmations du mouvement dans 3740ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 308=308 , target : 167=167} , let's process it !
+[ 308,
+  294,
+  281,
+  282,
+  268,
+  269,
+  270,
+  257,
+  243,
+  230,
+  231,
+  217,
+  218,
+  205,
+  191,
+  178,
+  164,
+  165,
+  166,
+  167 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4165(20 cells)
+Confirmations du mouvement dans 4165ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Unknow game context remove element {"_messageType":"GameContextRemoveElementMessage","id":-5,"_isInitialized":true}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 154=154 , target : 405=405} , let's process it !
+[ 154,
+  169,
+  183,
+  198,
+  199,
+  200,
+  201,
+  215,
+  230,
+  244,
+  259,
+  273,
+  288,
+  302,
+  317,
+  331,
+  346,
+  360,
+  375,
+  389,
+  404,
+  405 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3230(22 cells)
+Confirmations du mouvement dans 3230ms
+Unknow game context remove element {"_messageType":"GameContextRemoveElementMessage","id":-6,"_isInitialized":true}
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 392=392 , target : 540=540} , let's process it !
+[ 392, 406, 421, 422, 423, 424, 438, 453, 467, 482, 496, 511, 525, 540 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2010(14 cells)
+Confirmations du mouvement dans 2010ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 8=8 , target : 518=518} , let's process it !
+[ 8,
+  21,
+  35,
+  63,
+  91,
+  119,
+  147,
+  175,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  340,
+  368,
+  381,
+  395,
+  408,
+  422,
+  435,
+  463,
+  477,
+  490,
+  518 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5695(27 cells)
+Confirmations du mouvement dans 5695ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 531=531 , target : 280=280} , let's process it !
+[ 531,
+  517,
+  502,
+  488,
+  473,
+  459,
+  444,
+  430,
+  415,
+  401,
+  386,
+  372,
+  357,
+  356,
+  342,
+  327,
+  313,
+  298,
+  284,
+  269,
+  255,
+  254,
+  253,
+  266,
+  280 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3870(25 cells)
+Confirmations du mouvement dans 3870ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 387)
+[DEBUG] Path calculated {source : 293=293 , target : 387=387} , let's process it !
+[ 293, 278, 277, 291, 304, 318, 331, 359, 387 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1680(9 cells)
+Confirmations du mouvement dans 1680ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 231
+[Aucun groupe:0:info][Infos]<b>Aim-Fire</b> has failed the $challenge35 challenge.
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 219
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 359=359 , target : 266=266} , let's process it !
+[ 359, 358, 344, 343, 328, 327, 313, 298, 297, 296, 282, 267, 266 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1920(13 cells)
+Confirmations du mouvement dans 1920ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 279=279 , target : 5=5} , let's process it !
+[ 279,
+  265,
+  250,
+  236,
+  221,
+  207,
+  206,
+  191,
+  163,
+  149,
+  134,
+  120,
+  105,
+  91,
+  76,
+  62,
+  34,
+  19,
+  5 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2760(19 cells)
+Confirmations du mouvement dans 2760ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 537=537 , target : 279=279} , let's process it !
+[ 537,
+  523,
+  510,
+  496,
+  483,
+  469,
+  456,
+  442,
+  429,
+  415,
+  402,
+  388,
+  375,
+  361,
+  348,
+  334,
+  321,
+  307,
+  279 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4505(19 cells)
+Confirmations du mouvement dans 4505ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 383)
+[DEBUG] Path calculated {source : 266=266 , target : 383=383} , let's process it !
+[ 266, 281, 295, 310, 324, 339, 353, 368, 382, 383 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1370(10 cells)
+Confirmations du mouvement dans 1370ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 433
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 376
+[Aucun groupe:0:info]IA on a fini
+[Aucun groupe:0:info][Infos]You cannot cast that spell as an obstacle is blocking your line of sight.
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 419
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 248
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 382=382 , target : 307=307} , let's process it !
+[ 382, 383, 370, 371, 357, 358, 345, 346, 332, 333, 320, 306, 307 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2550(13 cells)
+Confirmations du mouvement dans 2550ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 294=294 , target : 307=307} , let's process it !
+[ 294, 295, 296, 297, 298, 299, 300, 287, 288, 289, 290, 291, 292, 306, 307 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2445(15 cells)
+Confirmations du mouvement dans 2445ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 294=294 , target : 554=554} , let's process it !
+[ 294,
+  309,
+  323,
+  338,
+  352,
+  367,
+  381,
+  396,
+  410,
+  425,
+  439,
+  454,
+  482,
+  496,
+  511,
+  525,
+  540,
+  554 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2570(18 cells)
+Confirmations du mouvement dans 2570ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 22=22 , target : 420=420} , let's process it !
+[ 22,
+  36,
+  49,
+  63,
+  91,
+  119,
+  147,
+  175,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  340,
+  368,
+  381,
+  395,
+  394,
+  407,
+  421,
+  420 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5015(24 cells)
+Confirmations du mouvement dans 5015ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 433=433 , target : 476=476} , let's process it !
+[ 433,
+  432,
+  431,
+  430,
+  429,
+  428,
+  427,
+  426,
+  425,
+  438,
+  437,
+  451,
+  450,
+  463,
+  477,
+  476 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2890(16 cells)
+Confirmations du mouvement dans 2890ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 489=489 , target : 518=518} , let's process it !
+[ 489, 502, 501, 500, 499, 498, 497, 496, 510, 509, 508, 507, 506, 519, 518 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2635(15 cells)
+Confirmations du mouvement dans 2635ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 531=531 , target : 21=21} , let's process it !
+[ 531,
+  503,
+  489,
+  461,
+  433,
+  418,
+  390,
+  376,
+  348,
+  333,
+  305,
+  291,
+  263,
+  248,
+  234,
+  206,
+  191,
+  163,
+  149,
+  121,
+  106,
+  78,
+  64,
+  49,
+  21 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3840(25 cells)
+Confirmations du mouvement dans 3840ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 553=553 , target : 251=251} , let's process it !
+[ 553,
+  540,
+  526,
+  513,
+  485,
+  457,
+  429,
+  415,
+  402,
+  388,
+  375,
+  361,
+  348,
+  334,
+  321,
+  293,
+  279,
+  251 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3910(18 cells)
+Confirmations du mouvement dans 3910ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 252=252 , target : 531=531} , let's process it !
+[ 252,
+  266,
+  281,
+  295,
+  310,
+  324,
+  339,
+  340,
+  341,
+  355,
+  370,
+  384,
+  399,
+  413,
+  428,
+  442,
+  443,
+  458,
+  472,
+  487,
+  501,
+  516,
+  530,
+  531 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3530(24 cells)
+Confirmations du mouvement dans 3530ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 518=518 , target : 405=405} , let's process it !
+[ 518,
+  519,
+  506,
+  507,
+  493,
+  494,
+  481,
+  467,
+  468,
+  455,
+  456,
+  442,
+  429,
+  415,
+  402,
+  403,
+  404,
+  405 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3655(18 cells)
+Confirmations du mouvement dans 3655ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 392=392 , target : 551=551} , let's process it !
+[ 392, 406, 421, 422, 423, 424, 438, 453, 467, 495, 509, 537, 551 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2005(13 cells)
+Confirmations du mouvement dans 2005ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 19=19 , target : 350=350} , let's process it !
+[ 19,
+  47,
+  62,
+  90,
+  118,
+  146,
+  174,
+  202,
+  216,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  312,
+  325,
+  324,
+  338,
+  351,
+  350 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3935(21 cells)
+Confirmations du mouvement dans 3935ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 363=363 , target : 490=490} , let's process it !
+[ 363,
+  377,
+  376,
+  389,
+  388,
+  402,
+  401,
+  414,
+  428,
+  427,
+  440,
+  439,
+  453,
+  452,
+  465,
+  464,
+  478,
+  491,
+  490 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3910(19 cells)
+Confirmations du mouvement dans 3910ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 503=503 , target : 294=294} , let's process it !
+[ 503,
+  489,
+  474,
+  460,
+  445,
+  431,
+  416,
+  415,
+  414,
+  400,
+  385,
+  371,
+  356,
+  342,
+  327,
+  313,
+  298,
+  297,
+  296,
+  295,
+  294 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3120(21 cells)
+Confirmations du mouvement dans 3120ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 307=307 , target : 5=5} , let's process it !
+[ 307,
+  293,
+  278,
+  264,
+  249,
+  235,
+  220,
+  206,
+  191,
+  177,
+  149,
+  134,
+  120,
+  105,
+  91,
+  76,
+  62,
+  47,
+  33,
+  5 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2890(20 cells)
+Confirmations du mouvement dans 2890ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 537=537 , target : 251=251} , let's process it !
+[ 537,
+  523,
+  510,
+  496,
+  483,
+  469,
+  456,
+  442,
+  429,
+  415,
+  402,
+  388,
+  375,
+  361,
+  348,
+  334,
+  321,
+  293,
+  279,
+  251 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4675(20 cells)
+Confirmations du mouvement dans 4675ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 252=252 , target : 139=139} , let's process it !
+[ 252,
+  266,
+  281,
+  282,
+  268,
+  269,
+  270,
+  257,
+  243,
+  230,
+  216,
+  203,
+  189,
+  190,
+  177,
+  178,
+  164,
+  165,
+  152,
+  138,
+  139 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4295(21 cells)
+Confirmations du mouvement dans 4295ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 126=126 , target : 433=433} , let's process it !
+[ 126,
+  141,
+  155,
+  170,
+  184,
+  199,
+  213,
+  214,
+  215,
+  230,
+  244,
+  259,
+  273,
+  288,
+  302,
+  317,
+  331,
+  346,
+  360,
+  375,
+  389,
+  404,
+  418,
+  433 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3490(24 cells)
+Confirmations du mouvement dans 3490ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 420=420 , target : 555=555} , let's process it !
+[ 420, 421, 422, 423, 424, 438, 453, 467, 482, 496, 511, 525, 540, 554, 555 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2200(15 cells)
+Confirmations du mouvement dans 2200ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 23=23 , target : 462=462} , let's process it !
+[ 23,
+  37,
+  50,
+  64,
+  92,
+  120,
+  148,
+  161,
+  175,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  340,
+  368,
+  381,
+  395,
+  408,
+  422,
+  435,
+  449,
+  462 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5780(26 cells)
+Confirmations du mouvement dans 5780ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 475=475 , target : 196=196} , let's process it !
+[ 475,
+  461,
+  446,
+  432,
+  431,
+  430,
+  429,
+  414,
+  400,
+  385,
+  371,
+  356,
+  342,
+  327,
+  313,
+  298,
+  284,
+  269,
+  255,
+  240,
+  226,
+  211,
+  197,
+  196 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3530(24 cells)
+Confirmations du mouvement dans 3530ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 209=209 , target : 532=532} , let's process it !
+[ 209,
+  222,
+  236,
+  249,
+  263,
+  276,
+  290,
+  303,
+  317,
+  330,
+  344,
+  357,
+  371,
+  370,
+  383,
+  397,
+  410,
+  424,
+  437,
+  451,
+  464,
+  478,
+  491,
+  505,
+  518,
+  532 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 6290(26 cells)
+Confirmations du mouvement dans 6290ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 545=545 , target : 6=6} , let's process it !
+[ 545,
+  517,
+  502,
+  474,
+  460,
+  445,
+  417,
+  403,
+  375,
+  360,
+  332,
+  304,
+  276,
+  262,
+  247,
+  233,
+  218,
+  190,
+  176,
+  148,
+  133,
+  105,
+  91,
+  63,
+  48,
+  34,
+  6 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4140(27 cells)
+Confirmations du mouvement dans 4140ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 538=538 , target : 447=447} , let's process it !
+[ 538, 524, 511, 497, 498, 485, 486, 472, 473, 460, 446, 447 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2465(12 cells)
+Confirmations du mouvement dans 2465ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 434=434 , target : 97=97} , let's process it !
+[ 434,
+  421,
+  407,
+  408,
+  395,
+  381,
+  368,
+  354,
+  341,
+  327,
+  314,
+  300,
+  287,
+  273,
+  260,
+  246,
+  233,
+  219,
+  206,
+  192,
+  164,
+  151,
+  137,
+  124,
+  110,
+  97 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 6205(26 cells)
+Confirmations du mouvement dans 6205ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 84=84 , target : 433=433} , let's process it !
+[ 84,
+  98,
+  113,
+  127,
+  142,
+  156,
+  171,
+  185,
+  200,
+  214,
+  229,
+  243,
+  258,
+  272,
+  287,
+  288,
+  302,
+  317,
+  331,
+  346,
+  360,
+  375,
+  389,
+  404,
+  418,
+  433 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3770(26 cells)
+Confirmations du mouvement dans 3770ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 420=420 , target : 551=551} , let's process it !
+[ 420, 421, 422, 423, 424, 438, 453, 467, 495, 509, 537, 551 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1875(12 cells)
+Confirmations du mouvement dans 1875ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 19=19 , target : 448=448} , let's process it !
+[ 19,
+  47,
+  62,
+  90,
+  118,
+  146,
+  174,
+  202,
+  216,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  340,
+  368,
+  381,
+  395,
+  408,
+  422,
+  435,
+  449,
+  448 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5040(25 cells)
+Confirmations du mouvement dans 5040ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 461=461 , target : 238=238} , let's process it !
+[ 461,
+  446,
+  432,
+  417,
+  416,
+  415,
+  414,
+  400,
+  385,
+  371,
+  356,
+  342,
+  327,
+  313,
+  298,
+  284,
+  269,
+  255,
+  254,
+  239,
+  238 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3100(21 cells)
+Confirmations du mouvement dans 3100ms
+Sequence ready !
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 251=251 , target : 154=154} , let's process it !
+[ 251,
+  250,
+  249,
+  248,
+  247,
+  246,
+  245,
+  231,
+  216,
+  215,
+  201,
+  200,
+  185,
+  184,
+  170,
+  169,
+  154 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2600(17 cells)
+Confirmations du mouvement dans 2600ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 167=167 , target : 7=7} , let's process it !
+[ 167, 153, 138, 124, 109, 95, 80, 66, 51, 37, 22, 8, 7 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1820(13 cells)
+Confirmations du mouvement dans 1820ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 539=539 , target : 335=335} , let's process it !
+[ 539, 525, 512, 498, 485, 471, 458, 444, 431, 417, 404, 390, 377, 363, 335 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3485(15 cells)
+Confirmations du mouvement dans 3485ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 322=322 , target : 167=167} , let's process it !
+[ 322,
+  309,
+  295,
+  282,
+  283,
+  284,
+  285,
+  286,
+  272,
+  259,
+  245,
+  232,
+  218,
+  205,
+  191,
+  178,
+  164,
+  165,
+  166,
+  167 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4250(20 cells)
+Confirmations du mouvement dans 4250ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 154=154 , target : 335=335} , let's process it !
+[ 154,
+  169,
+  183,
+  198,
+  199,
+  200,
+  201,
+  215,
+  230,
+  244,
+  259,
+  273,
+  274,
+  289,
+  290,
+  304,
+  305,
+  320,
+  334,
+  335 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2990(20 cells)
+Confirmations du mouvement dans 2990ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 322=322 , target : 541=541} , let's process it !
+[ 322,
+  337,
+  351,
+  366,
+  367,
+  381,
+  396,
+  410,
+  438,
+  453,
+  467,
+  482,
+  496,
+  511,
+  525,
+  540,
+  541 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2460(17 cells)
+Confirmations du mouvement dans 2460ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 9=9 , target : 364=364} , let's process it !
+[ 9,
+  22,
+  36,
+  49,
+  77,
+  105,
+  133,
+  147,
+  175,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  325,
+  324,
+  338,
+  351,
+  365,
+  364 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4760(23 cells)
+Confirmations du mouvement dans 4760ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 377=377 , target : 252=252} , let's process it !
+[ 377,
+  376,
+  361,
+  360,
+  359,
+  358,
+  344,
+  329,
+  328,
+  327,
+  313,
+  298,
+  284,
+  269,
+  255,
+  254,
+  253,
+  252 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2730(18 cells)
+Confirmations du mouvement dans 2730ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 265=265 , target : 140=140} , let's process it !
+[ 265,
+  264,
+  249,
+  248,
+  247,
+  246,
+  245,
+  231,
+  216,
+  202,
+  201,
+  186,
+  185,
+  171,
+  170,
+  169,
+  154,
+  140 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2730(18 cells)
+Confirmations du mouvement dans 2730ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 153=153 , target : 22=22} , let's process it !
+[ 153, 138, 124, 109, 95, 80, 66, 51, 37, 22 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1350(10 cells)
+Confirmations du mouvement dans 1350ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 554=554 , target : 531=531} , let's process it !
+[ 554, 555, 542, 543, 544, 530, 531 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1190(7 cells)
+Confirmations du mouvement dans 1190ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 518=518 , target : 153=153} , let's process it !
+[ 518,
+  505,
+  491,
+  478,
+  464,
+  451,
+  437,
+  409,
+  381,
+  368,
+  354,
+  341,
+  327,
+  314,
+  300,
+  287,
+  259,
+  245,
+  232,
+  218,
+  205,
+  191,
+  178,
+  164,
+  165,
+  152,
+  153 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 6205(27 cells)
+Confirmations du mouvement dans 6205ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 140=140 , target : 489=489} , let's process it !
+[ 140,
+  154,
+  169,
+  183,
+  184,
+  185,
+  186,
+  201,
+  215,
+  230,
+  244,
+  259,
+  273,
+  288,
+  302,
+  317,
+  331,
+  346,
+  360,
+  375,
+  389,
+  404,
+  432,
+  446,
+  461,
+  489 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3850(26 cells)
+Confirmations du mouvement dans 3850ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 476=476 , target : 553=553} , let's process it !
+[ 476, 477, 463, 450, 436, 423, 424, 438, 453, 467, 482, 496, 511, 525, 553 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2580(15 cells)
+Confirmations du mouvement dans 2580ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 21=21 , target : 420=420} , let's process it !
+[ 21,
+  35,
+  63,
+  91,
+  119,
+  147,
+  175,
+  203,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  326,
+  340,
+  368,
+  381,
+  395,
+  394,
+  407,
+  421,
+  420 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4675(23 cells)
+Confirmations du mouvement dans 4675ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 433=433 , target : 238=238} , let's process it !
+[ 433,
+  418,
+  404,
+  389,
+  388,
+  387,
+  386,
+  372,
+  357,
+  343,
+  328,
+  327,
+  313,
+  298,
+  284,
+  269,
+  255,
+  254,
+  239,
+  238 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2970(20 cells)
+Confirmations du mouvement dans 2970ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 251=251 , target : 196=196} , let's process it !
+[ 251,
+  250,
+  249,
+  248,
+  247,
+  246,
+  245,
+  244,
+  243,
+  242,
+  241,
+  227,
+  226,
+  211,
+  197,
+  196 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2490(16 cells)
+Confirmations du mouvement dans 2490ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 209=209 , target : 7=7} , let's process it !
+[ 209, 194, 180, 165, 151, 136, 122, 107, 93, 78, 64, 49, 35, 7 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1970(14 cells)
+Confirmations du mouvement dans 1970ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 539=539 , target : 475=475} , let's process it !
+[ 539, 525, 526, 513, 499, 486, 472, 473, 474, 475 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 1955(10 cells)
+Confirmations du mouvement dans 1955ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 67)
+[DEBUG] Path calculated {source : 462=462 , target : 67=67} , let's process it !
+[ 462,
+  449,
+  435,
+  422,
+  408,
+  395,
+  381,
+  368,
+  354,
+  341,
+  327,
+  314,
+  300,
+  287,
+  273,
+  260,
+  246,
+  233,
+  205,
+  191,
+  163,
+  150,
+  122,
+  108,
+  95,
+  67 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 6035(26 cells)
+Confirmations du mouvement dans 6035ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+novement ok
+Proceed!
+[Aucun groupe:0:info][Infos]<b>Aim-Fire</b> has failed the $challenge41 challenge.
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 386
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 372
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 95=95 , target : 83=83} , let's process it !
+[ 95, 96, 82, 83 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 595(4 cells)
+Confirmations du mouvement dans 595ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 70=70 , target : 265=265} , let's process it !
+[ 70,
+  98,
+  113,
+  127,
+  142,
+  143,
+  144,
+  158,
+  173,
+  187,
+  188,
+  203,
+  204,
+  218,
+  219,
+  234,
+  235,
+  249,
+  264,
+  265 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3010(20 cells)
+Confirmations du mouvement dans 3010ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 252=252 , target : 557=557} , let's process it !
+[ 252,
+  266,
+  281,
+  295,
+  310,
+  324,
+  339,
+  353,
+  368,
+  382,
+  397,
+  411,
+  439,
+  454,
+  455,
+  469,
+  484,
+  498,
+  499,
+  514,
+  528,
+  543,
+  557 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3360(23 cells)
+Confirmations du mouvement dans 3360ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 190)
+[DEBUG] Path calculated {source : 25=25 , target : 190=190} , let's process it !
+[ 25, 39, 52, 66, 94, 107, 135, 149, 162, 190 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2040(10 cells)
+Confirmations du mouvement dans 2040ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 452
+[Aucun groupe:0:info][Infos]<b>Aim-Fire</b> has failed the $challenge32 challenge.
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Explosive on cell : 466
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on se raproche
+Checking pods ...
+Checking pods ...
+Combat terminer !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 162=162 , target : 476=476} , let's process it !
+[ 162,
+  176,
+  189,
+  203,
+  231,
+  259,
+  287,
+  300,
+  314,
+  327,
+  341,
+  354,
+  368,
+  381,
+  395,
+  408,
+  422,
+  435,
+  449,
+  462,
+  476 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4845(21 cells)
+Confirmations du mouvement dans 4845ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 489=489 , target : 532=532} , let's process it !
+[ 489,
+  488,
+  473,
+  472,
+  471,
+  470,
+  456,
+  455,
+  468,
+  482,
+  481,
+  494,
+  493,
+  507,
+  506,
+  519,
+  533,
+  532 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3360(18 cells)
+Confirmations du mouvement dans 3360ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 545=545 , target : 266=266} , let's process it !
+[ 545,
+  530,
+  516,
+  501,
+  487,
+  472,
+  458,
+  443,
+  429,
+  414,
+  400,
+  385,
+  371,
+  356,
+  342,
+  327,
+  313,
+  298,
+  297,
+  296,
+  282,
+  267,
+  266 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3360(23 cells)
+Confirmations du mouvement dans 3360ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 279=279 , target : 8=8} , let's process it !
+[ 279, 265, 250, 236, 208, 180, 152, 137, 123, 108, 94, 79, 65, 50, 36, 8 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2330(16 cells)
+Confirmations du mouvement dans 2330ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 540=540 , target : 447=447} , let's process it !
+[ 540, 526, 513, 499, 486, 472, 473, 460, 461, 447 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2125(10 cells)
+Confirmations du mouvement dans 2125ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 434=434 , target : 349=349} , let's process it !
+[ 434,
+  435,
+  422,
+  423,
+  424,
+  425,
+  411,
+  412,
+  399,
+  400,
+  386,
+  387,
+  374,
+  375,
+  361,
+  348,
+  349 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3315(17 cells)
+Confirmations du mouvement dans 3315ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216581 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 336=336 , target : 321=321} , let's process it !
+[ 336,
+  337,
+  338,
+  339,
+  340,
+  341,
+  342,
+  356,
+  357,
+  358,
+  359,
+  346,
+  347,
+  333,
+  320,
+  321 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2785(16 cells)
+Confirmations du mouvement dans 2785ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217093 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 308=308 , target : 537=537} , let's process it !
+[ 308, 322, 337, 351, 366, 367, 395, 409, 424, 438, 453, 467, 495, 509, 537 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2285(15 cells)
+Confirmations du mouvement dans 2285ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80217094 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 5=5 , target : 280=280} , let's process it !
+[ 5,
+  33,
+  61,
+  89,
+  117,
+  145,
+  159,
+  174,
+  202,
+  216,
+  231,
+  259,
+  272,
+  286,
+  299,
+  313,
+  312,
+  311,
+  310,
+  295,
+  281,
+  280 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 3790(22 cells)
+Confirmations du mouvement dans 3790ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216582 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 293=293 , target : 518=518} , let's process it !
+[ 293,
+  306,
+  320,
+  333,
+  347,
+  360,
+  374,
+  373,
+  372,
+  385,
+  399,
+  412,
+  426,
+  439,
+  453,
+  466,
+  465,
+  479,
+  492,
+  506,
+  519,
+  518 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 5015(22 cells)
+Confirmations du mouvement dans 5015ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216070 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 531=531 , target : 448=448} , let's process it !
+[ 531,
+  530,
+  529,
+  528,
+  527,
+  526,
+  525,
+  524,
+  510,
+  509,
+  494,
+  493,
+  479,
+  478,
+  463,
+  449,
+  448 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2620(17 cells)
+Confirmations du mouvement dans 2620ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347654 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 461=461 , target : 24=24} , let's process it !
+[ 461,
+  433,
+  405,
+  377,
+  349,
+  321,
+  293,
+  265,
+  237,
+  209,
+  194,
+  166,
+  152,
+  124,
+  109,
+  81,
+  67,
+  52,
+  24 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2960(19 cells)
+Confirmations du mouvement dans 2960ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80347653 .
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+[DEBUG] Path calculated {source : 556=556 , target : 293=293} , let's process it !
+[ 556, 528, 514, 486, 472, 459, 431, 417, 389, 376, 348, 334, 321, 293 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 2700(14 cells)
+Confirmations du mouvement dans 2700ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 80216069 .
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 67)
+[DEBUG] Path calculated {source : 280=280 , target : 67=67} , let's process it !
+[ 280,
+  281,
+  282,
+  268,
+  269,
+  256,
+  257,
+  243,
+  230,
+  216,
+  203,
+  189,
+  176,
+  177,
+  163,
+  150,
+  122,
+  108,
+  95,
+  67 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution du fight ...
+MapMovement received !
+Confirmation du movement dans : 4250(20 cells)
+Confirmations du mouvement dans 4250ms

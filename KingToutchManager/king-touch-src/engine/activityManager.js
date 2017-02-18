@@ -10,7 +10,7 @@ exports.startWatching = function(softInterval , hardInterval){
     if(typeof interval != "undefined"){
         watchingInterval = interval;
     }
-    watching  = setInterval(watch,watchingInterval);
+    watching  = setInterval(watch,softDebugInterval);
 }
 exports.stopWatching = function(){
     clearInterval(watching);
