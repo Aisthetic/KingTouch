@@ -20,7 +20,7 @@ exports.Sync = function(bot){
      	if(msg.content == "debug"){
  	    	console.log("Debug command received .");
  	    	try{
- 	    		bot.gather.gatherFirstAvailableRessource(()=>{});	
+ 	    		bot.player.npcActionRequest(0,[],0,()=>{});
  	    	}
  	    	catch(e){console.log(e);}
      	}
@@ -97,7 +97,7 @@ exports.Sync.prototype.process = function(){
            return; 
         }
         
-        if(this.bot.data.inventoryManager.checkOverload() === true){
+        /*if(this.bot.data.inventoryManager.checkOverload() === true){
             console.log("[Sync]Plus de pods !");
             if(this.bot.data.userConfig.inventory.destroyObjectsOnOverload === true){
                 console.log("[Sync]On detruit des objets pour continuer !");
@@ -109,11 +109,11 @@ exports.Sync.prototype.process = function(){
                 console.log("[Sync]Fin d'execution");
             }
             return;
-        }
+        }*/
         
 		console.log("[Sync]Trajet ready ...");
 		this.bot.data.context="ROLEPLAY";
-		this.bot.data.state = "READY";
+		if(!this.bot.data.inventoryManager.checkOverload()) this.bot.data.state = "READY";
 		processDelay("trajet_map_loaded",() => {
 			if(this.bot.player.checkLife()){
 				this.bot.trajet.trajetExecute();

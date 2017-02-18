@@ -28,7 +28,7 @@ exports.Trajet.prototype.startPhoenix = function(){
 	this.trajetRunning=false;
 }
 exports.Trajet.prototype.trajetExecute = function(){
-
+	var self = this;
     if(this.bot.data.context != "ROLEPLAY" || typeof this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id] == "undefined"){
         console.log("**Trajet execution canceled !**");
         return;
@@ -37,10 +37,21 @@ exports.Trajet.prototype.trajetExecute = function(){
 		console.log("[Trajet]No trajet loaded !");
 		return;
 	}
-	this.bot.logger.log("[Trajt]Execution ...");
+	this.bot.logger.log("[Trajet]Execution map " + this.bot.data.mapManager.mapId +' .');
+	if(self.bot.data.state == "OVERLOAD" && !this.bankMode){
+			self.bankMode = true;
+			console.log("[TRAJET]Execution du trajet banque .");
+	}
+	if(self.bankMode){
+		if(!this.parseMove(this.hasActionOnMap(this.currentTrajet.trajet["bank"]))) {
+			console.log("Le bot est full pods mais pas de trajet de banque sur la map " + this.bot.data.mapManager.mapId +" , arrêt du trajet .");
+			this.stop();
+		}
+		return;
+    }
 	if(this.bot.data.context =="GHOST"){
 		if(this.parsePhoenix(this.hasActionOnMap(this.currentTrajet["phoenix"]))){
-			console.log("[Trajt]Execution du trajet vers le phoenix ...");
+			console.log("[Trajet]Execution du trajet vers le phoenix ...");
 		}
 		else{
 			console.log("[Trajet]Aucun trajet vers le phoenix !");//todo worldpath <3
@@ -52,9 +63,9 @@ exports.Trajet.prototype.trajetExecute = function(){
 	else if(this.parseFight(this.hasActionOnMap(this.currentTrajet.trajet["fights"]))){
 		this.bot.logger.log("[Trajet]Execution du fight ...")
 	}
-    else if(this.parseGather(this.hasActionOnMap(this.currentTrajet.trajet["recolte"]))){
- 		this.bot.logger.log("[Trajet]Execution de la récolte...");
- 	}
+	else if(this.parseGather(this.hasActionOnMap(this.currentTrajet.trajet["recolte"]))){
+		this.bot.logger.log("[Trajet]Execution de la récolte...");
+	}
 	else{
 		this.bot.logger.log("[Trajet]Rien a faire sur cette map ("+this.bot.data.mapManager.mapId+") !");
 	}
@@ -102,18 +113,19 @@ exports.Trajet.prototype.parseFight = function(fight){
 	return true;
 }
 exports.Trajet.prototype.parseGather = function(gather){
- 	if(gather=="undefined"){return false;}
- 	this.bot.gather.gatherFirstAvailableRessource((result)=>{
- 		if(result) {
- 			this.parseGather(gather);
- 		}
- 		else{
-            console.log("Plus de ressources à récolter disponibles , on passe à la map suivante");
- 			this.execMove(gather);
- 		}
- 	});
- 	return true;
+	if(gather=="undefined"){return false;}
+	this.bot.gather.gatherFirstAvailableRessource((result)=>{
+		if(result) {
+			this.parseGather(gather);
+		}
+		else{
+			console.log("Plus de ressources à récolter disponibles , on passe à la map suivante .");
+			this.execMove(gather);
+		}
+	});
+	return true;
 }
+
 exports.Trajet.prototype.parseMove = function(move){
 	if(move=="undefined"){return false}
 	this.execMove(move);
@@ -121,6 +133,7 @@ exports.Trajet.prototype.parseMove = function(move){
 }
 
 exports.Trajet.prototype.execMove = function(action){
+	var self = this;
 	if(typeof(action.sun) != "undefined"){
 		this.bot.player.move(action.sun);
 		this.bot.logger.log("On va sur le soleil...");
@@ -128,6 +141,9 @@ exports.Trajet.prototype.execMove = function(action){
 	}
 	else if(typeof action.interactive != "undefined" && typeof action.skill !="undefined"){
 		self.bot.player.useInteractive(action.interactive,action.skill);
+	}
+	else if(typeof action.npc != "undefined"){
+		self.bot.player.npcActionRequest(action.npc , action.replies , action.actionId);//gestion interne des inconnus .
 	}
 	else if (typeof action.cell !="undefined" && action.dir == "undefined"){
 		this.bot.player.gotoNeighbourMap(action.cell);
@@ -138,7 +154,7 @@ exports.Trajet.prototype.execMove = function(action){
 	}
 	else if(typeof action.dir != "undefined"){
 		this.bot.player.gotoNeighbourMap(-1,action.dir);
-		this.bot.logger.log("[Trajet]Changement de carte, premiere cellid disponble");
+		this.bot.logger.log("[Trajet]Changement de carte sur une cellule aléatoire .");
 	}
 	else{
 		this.bot.logger.log("[Trajet]Action invalide ("+JSON.stringify(action)+") !");
