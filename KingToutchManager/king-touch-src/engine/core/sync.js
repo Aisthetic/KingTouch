@@ -19,15 +19,17 @@ exports.Sync = function(bot){
       this.bot.connection.dispatcher.on("ChatServerMessage", (msg) => {
      	if(msg.content == "debug"){
  	    	console.log("Debug command received .");
- 	    	try{
- 	    		bot.player.npcActionRequest(0,[],0,()=>{});
+ 	    	try{	
+ 	    		console.log(Object.keys(this.bot.data.jobsManager.list));
+ 	    		console.dir(this.bot.data.jobsManager.list);
+ 	    		//staticContent.getInteractivesInfos(ids,(data)=>{console.dir(data)});
  	    	}
  	    	catch(e){console.log(e);}
      	}
      });
     this.bot.connection.dispatcher.on("GameFightStartingMessage", () => {
-        bot.data.state = "FIGHTING";
-        bot.data.context="FIGHT";
+        this.bot.data.state = "FIGHTING";
+        this.bot.data.context="FIGHT";
     });
     this.bot.connection.dispatcher.on("MapComplementaryInformationsDataMessage",(m) => {
 		if( typeof m.actors[0] == "undefined"){
@@ -79,12 +81,13 @@ exports.Sync.prototype.process = function(){
 			this.bot.player.useInteractive(phoenix.id,phoenix.skill,phoenix.cell,()=>{
 				console.log("[Sync]On reviens a la vie !");
 				this.bot.data.context="ROLEPLAY";
-					this.bot.trajet.trajetExecute();
+				this.bot.trajet.start();
 			},false);
 		}
 		else{
 			console.log("[Sync]Pas de phoenix on execute le trajet ...");
-			this.bot.trajet.trajetExecute();
+			this.bot.trajet.start();
+
 		}
 	}
 	//--
@@ -113,28 +116,31 @@ exports.Sync.prototype.process = function(){
         
 		console.log("[Sync]Trajet ready ...");
 		this.bot.data.context="ROLEPLAY";
-		if(!this.bot.data.inventoryManager.checkOverload()) this.bot.data.state = "READY";
+		if(!this.bot.data.inventoryManager.checkOverload()){
+			this.bot.data.state = "READY";
+			console.log("[DEBUG] Bot state set to : " + this.bot.data.state + ' .');
+		} 
 		processDelay("trajet_map_loaded",() => {
 			if(this.bot.player.checkLife()){
-				this.bot.trajet.trajetExecute();
+				this.bot.trajet.start();
 			}
 			else if(this.bot.data.userConfig.regen.useObject == true){
 				console.log("[Sync]Regen par objet...");
 				if(this.bot.data.inventoryManager.processRegen(()=>{
 					console.log("[Sync]Regen par objet terminer !");
-					this.bot.trajet.trajetExecute();
+					this.bot.trajet.start();
 				}) == false){
 					console.log("[Sync]Impossible de faire la regen par objet, regen normale ...");
 					this.bot.player.processRegen(this.bot.data.actorsManager.userActorStats.maxLifePoints-this.bot.data.actorsManager.userActorStats.lifePoints,()=>{
 						console.log("[Sync]Regen terminer !");
-						this.bot.trajet.trajetExecute();
+						this.bot.trajet.start();
 					});
 				}
 			}
 			else{
 				this.bot.player.processRegen(this.bot.data.actorsManager.userActorStats.maxLifePoints-this.bot.data.actorsManager.userActorStats.lifePoints,()=>{
 					console.log("[Sync]Regen terminer !");
-					this.bot.trajet.trajetExecute();
+					this.bot.trajet.start();
 				});
 			}
 		});

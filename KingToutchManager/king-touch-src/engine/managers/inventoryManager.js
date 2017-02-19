@@ -42,7 +42,10 @@ exports.InventoryManager = function(bot){
        if(msg.exchangeType = ExchangeTypeEnum.STORAGE || this.bot.data.state == "OVERLOAD"){
             console.log("Coffre détecté , on se vide .");
             transfertAll(bot);
+            bot.data.state = 'READY';
+            bot.trajet.bankMode = false;
             npcFrame.processLeaveDialog(bot);
+            bot.trajet.trajetExecute();
        }
     });
     bot.connection.dispatcher.on("ObjectAddedMessage",(m)=>{

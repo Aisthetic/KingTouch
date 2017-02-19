@@ -40,53 +40,35 @@ exports.Player.prototype.move = function(cb,cellId, allowDiagonals, stopNextToTa
 		cb(result);
 	});
 }
-exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUse){//To do gérer la fonction sans cellId
+exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUse){
     if(!cb) cb =()=>{};
-    pathfinding.fillPathGrid(this.bot.data.mapManager.map,this.bot.data.mapManager.mapId);
-    var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
-    for(var i in this.bot.data.mapManager.interactives){
-        console.log(i);
-        console.log(this.bot.data.mapManager.statedes[i]);
-        console.log(this.bot.data.mapManager.interactives[i]);
-    }
-    return;
-    var element = this.bot.data.mapManager.statedes[id];
-    if(typeof element == "undefined"){
-        console.log("utilisation de la premiere interactive de la map .");
-        element = this.bot.data.mapManager.statedes[Object.keys(this.bot.data.mapManager.statedes)[0]];
-    }
-    var keyMouvements;
-    if(typeof cellId == "undefined"){
-        keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
-    }
-    else{
-        keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.actorsManager.getOccupiedCells(),true);
-    }
-    console.log(element);
-    processUseInteractive(this.bot,id,skill,keyMouvements,cb,waitForeUse);
-}
-/*exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUse){
-    if(!cb) cb =()=>{};
+   
 	var self=this;
 	pathfinding.fillPathGrid(self.bot.data.mapManager.map,self.bot.data.mapManager.mapId);
 	var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
-	var element = this.bot.data.mapManager.statedes[id];
-	if(typeof element == "undefined" && typeof cellId == "undefined"){
+	if(typeof this.bot.data.mapManager.interactives[id] == "undefined" && typeof cellId == "undefined"){
+        console.log("Can't find the desired interactive on the map :( .");
 		cb(false);
 		return false;
 	}
 	var keyMouvements;
 	if(typeof cellId == "undefined" || cellId < 0){
-  		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
- 		if(keyMouvements[keyMouvements.length -1] == element.elementCellId){ 
- 			keyMouvements.pop();
- 		}//dans le cas ou le bot est deja sur une cellule adjaçante .
+        if(!this.bot.data.mapManager.identifiedElements[id]){
+            console.log("Can't find interactive " + id + " 's trivial informations , blackListing it ...");
+            return cb("blacklist");
+        }
+        console.log("No cellid defined for the interactive with cellId : " + this.bot.data.mapManager.identifiedElements[id].position);
+  		keyMouvements = pathfinding.getPath(currentCellId,this.bot.data.mapManager.identifiedElements[id].position,this.bot.data.actorsManager.getOccupiedCells(),true,true);
 	}
 	else{//au cas ou la map est full
 		keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.actorsManager.getOccupiedCells(),true);
 	}
+    if(keyMouvements[keyMouvements.length -1] == this.bot.data.mapManager.identifiedElements[id].position){ 
+        keyMouvements.pop();
+    }//On se met jamais sur une interactive pour l'utiliser . 
+    console.log("Mouvement vers l'interactive sur la cellule : " + cellId + '=' + keyMouvements[keyMouvements.length-1])
 	processUseInteractive(self.bot,id,skill,keyMouvements,cb,waitForeUse);
-}*/
+}
 //si lataque echoue la fonction essaye tout les monstre dispo (chaque fois qu´une attaque echou le monstre est blacklist)
 //actor
 var failAtemp = 0;

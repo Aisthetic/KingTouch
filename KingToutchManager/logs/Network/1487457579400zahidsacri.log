@@ -1,0 +1,476 @@
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: 'login' }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1534,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloConnectMessage',
+  salt: 'izbtu8fiQ%Y@z)lG~kRLL=v],\\g17<8h',
+  key: 
+   [ 102,
+     -78,
+     19,
+     -113,
+     72,
+     -42,
+     -72,
+     -30,
+     80,
+     -89,
+     -32,
+     -89,
+     -79,
+     -65,
+     -123,
+     -54,
+     116,
+     -99,
+     60,
+     105,
+     43,
+     101,
+     92,
+     123,
+     23,
+     -87,
+     -85,
+     -114,
+     -19,
+     109,
+     -25,
+     13,
+     -4,
+     -38,
+     -10,
+     2,
+     -70,
+     112,
+     -118,
+     36,
+     -124,
+     -103,
+     -54,
+     -127,
+     -95,
+     -96,
+     -87,
+     -89,
+     -107,
+     60,
+     81,
+     40,
+     18,
+     -63,
+     -101,
+     43,
+     -28,
+     -49,
+     -88,
+     -40,
+     16,
+     46,
+     27,
+     -22,
+     -126,
+     109,
+     -90,
+     108,
+     -77,
+     -74,
+     19,
+     44,
+     -10,
+     33,
+     19,
+     -41,
+     -69,
+     -16,
+     58,
+     60,
+     -13,
+     -71,
+     -32,
+     -58,
+     -122,
+     -127,
+     0,
+     -103,
+     46,
+     109,
+     -117,
+     117,
+     54,
+     -92,
+     -17,
+     4,
+     109,
+     -25,
+     -96,
+     -31,
+     ... 205 more items ],
+  _isInitialized: true }
+'Message sent :'
+'checkAssetsVersion'
+{ assetsVersion: '2.15.15', staticDataVersion: '25' }
+'Packet Received : '
+{ assetsVersion: null,
+  staticDataVersion: null,
+  _messageType: 'assetsVersionChecked' }
+'Message sent :'
+'login'
+{ username: 'zahidsacri',
+  token: '58b55a953cb106601f1e1f6abdcbde6e',
+  salt: 'izbtu8fiQ%Y@z)lG~kRLL=v],\\g17<8h',
+  key: 
+   [ 102,
+     -78,
+     19,
+     -113,
+     72,
+     -42,
+     -72,
+     -30,
+     80,
+     -89,
+     -32,
+     -89,
+     -79,
+     -65,
+     -123,
+     -54,
+     116,
+     -99,
+     60,
+     105,
+     43,
+     101,
+     92,
+     123,
+     23,
+     -87,
+     -85,
+     -114,
+     -19,
+     109,
+     -25,
+     13,
+     -4,
+     -38,
+     -10,
+     2,
+     -70,
+     112,
+     -118,
+     36,
+     -124,
+     -103,
+     -54,
+     -127,
+     -95,
+     -96,
+     -87,
+     -89,
+     -107,
+     60,
+     81,
+     40,
+     18,
+     -63,
+     -101,
+     43,
+     -28,
+     -49,
+     -88,
+     -40,
+     16,
+     46,
+     27,
+     -22,
+     -126,
+     109,
+     -90,
+     108,
+     -77,
+     -74,
+     19,
+     44,
+     -10,
+     33,
+     19,
+     -41,
+     -69,
+     -16,
+     58,
+     60,
+     -13,
+     -71,
+     -32,
+     -58,
+     -122,
+     -127,
+     0,
+     -103,
+     46,
+     109,
+     -117,
+     117,
+     54,
+     -92,
+     -17,
+     4,
+     109,
+     -25,
+     -96,
+     -31,
+     ... 205 more items ] }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 3,
+  total: 3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CredentialsAcknowledgementMessage' }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 2,
+  total: 2,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'IdentificationSuccessMessage',
+  login: '1465968706063412197',
+  nickname: 'XxXVikingsXxX',
+  accountId: 112984462,
+  communityId: 0,
+  hasRights: false,
+  secretQuestion: '',
+  subscriptionEndDate: 0,
+  wasAlreadyConnected: false,
+  accountCreation: 1482954291000,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServersListMessage',
+  servers: 
+   [ { _type: 'GameServerInformations',
+       id: 405,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Herdegrize',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 407,
+       status: 3,
+       completion: 0,
+       isSelectable: false,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Brutas',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 404,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Terra Cogita',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 401,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Grandapan',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 406,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Dodge',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 403,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 1,
+       date: 1487457370735,
+       _name: 'Oshimo',
+       _gameTypeId: 0 } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'ServerSelectionMessage', data: { serverId: 403 } }
+'Packet Received : '
+{ _messageType: 'SelectedServerDataMessage',
+  serverId: 403,
+  address: '172.31.17.136',
+  port: 5555,
+  canCreateNewCharacter: true,
+  ticket: '42de6815879d8e734f17febc5b2799ce',
+  _isInitialized: true,
+  _access: 'https://oshimogameproxy.touch.dofus.com' }
+'Message sent :'
+'disconnecting'
+'SWITCHING_TO_GAME'
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: { address: '172.31.17.136', port: 5555, id: 403 } }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1547,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloGameMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'AuthenticationTicketMessage',
+  data: { ticket: '42de6815879d8e734f17febc5b2799ce', lang: 'en' } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 0,
+  lastPacketId: 110,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AuthenticationTicketAcceptedMessage' }
+'Packet Received : '
+{ _messageType: 'BasicTimeMessage',
+  timestamp: 1487457586,
+  timezoneOffset: 60,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSettingsMessage',
+  lang: 'fr',
+  community: 0,
+  gameType: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerOptionalFeaturesMessage',
+  features: [ 1, 2, 3, 5 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSessionConstantsMessage',
+  variables: 
+   [ { _type: 'ServerSessionConstantInteger', id: 1, value: 1500000 },
+     { _type: 'ServerSessionConstantLong', id: 2, value: 7200000 },
+     { _type: 'ServerSessionConstantInteger', id: 3, value: 30 },
+     { _type: 'ServerSessionConstantLong', id: 4, value: 86400000 },
+     { _type: 'ServerSessionConstantLong', id: 5, value: 60000 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AccountCapabilitiesMessage',
+  accountId: 112984462,
+  tutorialAvailable: true,
+  breedsVisible: 32767,
+  breedsAvailable: 32767,
+  status: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'TrustStatusMessage',
+  trusted: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'CharactersListRequestMessage', data: undefined }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 1,
+  lastPacketId: 150,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 1,
+  total: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharactersListMessage',
+  hasStartupActions: false,
+  characters: 
+   [ { _type: 'CharacterBaseInformations',
+       id: 610200,
+       level: 15,
+       name: 'Miss-Lagertha',
+       entityLook: [Object],
+       breed: 11,
+       sex: true } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'CharacterSelectionMessage', data: { id: 610200 } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 2,
+  lastPacketId: 152,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'NotificationListMessage',
+  flags: [ 11517938 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterSelectedSuccessMessage',
+  infos: 
+   { _type: 'CharacterBaseInformations',
+     id: 610200,
+     level: 15,
+     name: 'Miss-Lagertha',
+     entityLook: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     breed: 11,
+     sex: true },
+  _isInitialized: true }
+'Packet Received : '

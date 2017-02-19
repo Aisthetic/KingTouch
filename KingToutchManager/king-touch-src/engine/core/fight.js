@@ -55,11 +55,11 @@ exports.Fight.prototype.move = function(data,callBack){
 		var keyMouvements = pathfinding.getPath(currentCellId,cible.disposition.cellId,self.bot.data.fightManager.getOccupiedCells(cible.contextualId),false);
 		keyMouvements = keyMouvements.splice(0,maxMp+1);//maxMP+1 car la premiére cell du path corespond a ma cellId
 		console.log("Process key movements...");
-		if(self.bot.data.context == "ROLEPLAY"){
+		/*if(self.bot.data.context == "ROLEPLAY"){//euh what the kappa ? 
 			console.log("Fight move canceled !");
 			callBack(false);
 			return;
-		}
+		}*/
 		processKeyMovement(self.bot,keyMouvements,function(result){
 			console.log("Proceed!");
 			self.bot.data.fightManager.getUserFighter().stats.movementPoints -= maxMp;

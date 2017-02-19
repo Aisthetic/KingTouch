@@ -9,6 +9,7 @@ exports.Trajet = function(bot){
 	this.trajetRunning = false;
 	this.lastChangMapCell = 0;
 	this.hasTrajet=false;
+	this.trajetOnExecution = false;
 	this.bot=bot;
 	var self=this;
 }
@@ -18,10 +19,11 @@ exports.Trajet.prototype.load = function(trajet){
 	this.trajetRunning=true;
 }
 exports.Trajet.prototype.stop = function(){
-	trajetRunning=false;
+	console.log("Trajet arrêté .");
+	this.trajetRunning=false;
 }
 exports.Trajet.prototype.start = function(){
-	trajetRunning=true;
+	this.trajetRunning=true;
 	this.trajetExecute();
 }
 exports.Trajet.prototype.startPhoenix = function(){
@@ -29,13 +31,21 @@ exports.Trajet.prototype.startPhoenix = function(){
 }
 exports.Trajet.prototype.trajetExecute = function(){
 	var self = this;
+	if(this.trajetOnExecution) return  console.log("Trajet already on execution ...");
+	this.trajetOnExecution = true;
     if(this.bot.data.context != "ROLEPLAY" || typeof this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id] == "undefined"){
         console.log("**Trajet execution canceled !**");
+        this.trajetOnExecution = false;
         return;
     }
 	if(this.hasTrajet === false){
 		console.log("[Trajet]No trajet loaded !");
+		this.trajetOnExecution = false;
 		return;
+	}
+	if(!this.trajetRunning){
+		this.trajetOnExecution = false;
+		return console.log("Can't execute the trajet , it's has already been stopped .");
 	}
 	this.bot.logger.log("[Trajet]Execution map " + this.bot.data.mapManager.mapId +' .');
 	if(self.bot.data.state == "OVERLOAD" && !this.bankMode){
@@ -47,6 +57,7 @@ exports.Trajet.prototype.trajetExecute = function(){
 			console.log("Le bot est full pods mais pas de trajet de banque sur la map " + this.bot.data.mapManager.mapId +" , arrêt du trajet .");
 			this.stop();
 		}
+		this.trajetOnExecution = false;
 		return;
     }
 	if(this.bot.data.context =="GHOST"){
@@ -69,6 +80,7 @@ exports.Trajet.prototype.trajetExecute = function(){
 	else{
 		this.bot.logger.log("[Trajet]Rien a faire sur cette map ("+this.bot.data.mapManager.mapId+") !");
 	}
+	this.trajetOnExecution = false;
 }
 exports.Trajet.prototype.hasActionOnMap = function(actions){
 	try{
@@ -113,7 +125,14 @@ exports.Trajet.prototype.parseFight = function(fight){
 	return true;
 }
 exports.Trajet.prototype.parseGather = function(gather){
-	if(gather=="undefined"){return false;}
+	//if(!this.trajetRunning) return console.log("Trajet arrêté , récolte annulée .");
+	console.log("------------------------------------------------------");
+	console.log(this.bot.data.state);
+	if(!this.trajetRunning) return console.log("Trajet not running , gathering action stopped .");
+	if(this.bot.data.state != "READY"){
+		console.log("Bot not ready for gathering : " + this.bot.data.state);
+		return true;
+	}
 	this.bot.gather.gatherFirstAvailableRessource((result)=>{
 		if(result) {
 			this.parseGather(gather);
@@ -135,7 +154,7 @@ exports.Trajet.prototype.parseMove = function(move){
 exports.Trajet.prototype.execMove = function(action){
 	var self = this;
 	if(typeof(action.sun) != "undefined"){
-		this.bot.player.move(action.sun);
+		this.bot.player.move(()=>{} , action.sun , true , false);
 		this.bot.logger.log("On va sur le soleil...");
 		return;
 	}

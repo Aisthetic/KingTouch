@@ -47,14 +47,14 @@ function watch(){
     for(var i in clientsWatching){
         var w = clientsWatching[i];
         if(w.last + softDebugInterval < current  && w.bot.data.state!="REGEN" && w.last != -1){
-            if(w.last + hardDebugInterval < current){
+            /*if(w.last + hardDebugInterval < current){
                 console.log("[INACTIVITY] Hard debug on "+w.bot.data.accompt.username+" .");
                 w.wrap.done(false);
             }
-            else{
+            else{*/
                 console.log("[INACTIVITY] Soft debug on "+w.bot.data.accompt.username+" .");
                 w.bot.trajet.trajetExecute();
-            }
+            //}
         }
 		else if(w.last!=-1){
 			w.last=new Date().getTime();

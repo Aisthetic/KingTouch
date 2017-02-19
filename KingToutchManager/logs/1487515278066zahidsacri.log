@@ -1,0 +1,714 @@
+Server request connecting ...
+Inventory : 0
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"mucEaTQDqaafSJP3"}
+Config loaded !
+{"key":"a3773cd4-6813-464c-a598-7d38c9a91f26","account_id":112984462,"ip":"105.157.44.165","added_date":"2017-02-19T15:41:20+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-19T18:41:20+01:00"}
+Api key : a3773cd4-6813-464c-a598-7d38c9a91f26
+Game token : a15cdcb0236df7ce765f2c239f94ba81
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=mucEaTQDqaafSJP3) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]2/4 in login queue...
+[Aucun groupe:0:info]2/5 in login queue...
+[Aucun groupe:0:info]1/4 in login queue...
+[Aucun groupe:0:info]1/3 in login queue...
+[Aucun groupe:0:info]0/3 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706065888345) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 403) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Miss-Lagertha) ...
+[Aucun groupe:0:info][Inventory]Object : 135376479 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 135376480 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 135376481 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 135376482 selected for regen !
+[InventoryManager]Items infos loaded !
+Checking pods ...
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Trajet]No trajet loaded !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Miss-Lagertha saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Miss-Lagertha saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Miss-Lagertha saved !
+[mainProcessFrame]Fight mode updated to default
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Gathering element :{id : 478329 , cellid : 430 }
+Mouvement vers l'interactive sur la cellule : 430=458
+Exectution du trajet vers l'interactive .
+[ 554, 526, 513, 485, 471, 458 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1105(6 cells)
+Confirmations du mouvement dans 1105ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478329,skill : 151511)
+{"call":"global-state-request"}
+Server request for state ...
+Gathering element :{id : 478313 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=417
+Exectution du trajet vers l'interactive .
+[ 458, 444, 431, 417 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 765(4 cells)
+Confirmations du mouvement dans 765ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478313,skill : 151510)
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=506
+Exectution du trajet vers l'interactive .
+[ 417, 431, 444, 458, 457, 456, 455, 454, 467, 466, 465, 479, 492, 506 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2805(14 cells)
+Confirmations du mouvement dans 2805ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478366,skill : 151519)
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 506,
+  478,
+  450,
+  422,
+  394,
+  366,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 4505(22 cells)
+Confirmations du mouvement dans 4505ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478314,skill : 151509)
+no best match on i =38 : 43
+Gathering element :{id : 478296 , cellid : 125 }
+Mouvement vers l'interactive sur la cellule : 125=124
+Exectution du trajet vers l'interactive .
+[ 164, 151, 137, 124 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 765(4 cells)
+Confirmations du mouvement dans 765ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478296,skill : 151503)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 124=124 , target : 6=6} , let's process it !
+[ 124, 109, 108, 94, 79, 65, 50, 36, 35, 20, 6 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1540(11 cells)
+Confirmations du mouvement dans 1540ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675332 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 538=538 , target : 126=126} , let's process it !
+[ 538,
+  510,
+  496,
+  468,
+  440,
+  412,
+  399,
+  385,
+  357,
+  329,
+  301,
+  273,
+  245,
+  232,
+  218,
+  190,
+  176,
+  175,
+  174,
+  173,
+  172,
+  157,
+  156,
+  142,
+  127,
+  126 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 4595(26 cells)
+Confirmations du mouvement dans 4595ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674820 .
+Gathering element :{id : 478432 , cellid : 274 }
+Mouvement vers l'interactive sur la cellule : 274=261
+Exectution du trajet vers l'interactive .
+[ 139, 153, 166, 180, 193, 207, 220, 234, 247, 261 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 2295(10 cells)
+Confirmations du mouvement dans 2295ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478432,skill : 151316)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 261=261 , target : 24=24} , let's process it !
+[ 261, 233, 205, 177, 149, 121, 93, 65, 51, 38, 24 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 1955(11 cells)
+Confirmations du mouvement dans 1955ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674821 .
+Gathering element :{id : 478790 , cellid : 381 }
+Mouvement vers l'interactive sur la cellule : 381=368
+Exectution du trajet vers l'interactive .
+[ 556, 528, 500, 486, 471, 457, 456, 441, 427, 412, 398, 383, 369, 368 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 2030(14 cells)
+Confirmations du mouvement dans 2030ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478790,skill : 151164)
+Gathering element :{id : 478788 , cellid : 257 }
+Mouvement vers l'interactive sur la cellule : 257=270
+Exectution du trajet vers l'interactive .
+[ 368, 340, 326, 298, 270 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 765(5 cells)
+Confirmations du mouvement dans 765ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478788,skill : 151161)
+Gathering element :{id : 478765 , cellid : 94 }
+Mouvement vers l'interactive sur la cellule : 94=122
+Exectution du trajet vers l'interactive .
+[ 270,
+  298,
+  313,
+  327,
+  342,
+  343,
+  329,
+  316,
+  288,
+  260,
+  232,
+  218,
+  190,
+  177,
+  149,
+  135,
+  122 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 3170(17 cells)
+Confirmations du mouvement dans 3170ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478765,skill : 151154)
+Gathering element :{id : 478770 , cellid : 135 }
+Mouvement vers l'interactive sur la cellule : 135=122
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478770,skill : 151158)
+Checking pods ...
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 122=122 , target : 6=6} , let's process it !
+[ 122, 107, 93, 78, 64, 49, 35, 20, 6 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1200(9 cells)
+Confirmations du mouvement dans 1200ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674822 .
+Gathering element :{id : 478809 , cellid : 442 }
+Mouvement vers l'interactive sur la cellule : 442=441
+Exectution du trajet vers l'interactive .
+[ 538, 524, 511, 497, 469, 441 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1105(6 cells)
+Confirmations du mouvement dans 1105ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478809,skill : 151046)
+Gathering element :{id : 478810 , cellid : 414 }
+Mouvement vers l'interactive sur la cellule : 414=428
+Exectution du trajet vers l'interactive .
+[ 441, 428 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478810,skill : 151044)
+Gathering element :{id : 478817 , cellid : 399 }
+Mouvement vers l'interactive sur la cellule : 399=413
+Exectution du trajet vers l'interactive .
+[ 428, 413 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478817,skill : 151043)
+Gathering element :{id : 478808 , cellid : 373 }
+Mouvement vers l'interactive sur la cellule : 373=386
+Exectution du trajet vers l'interactive .
+[ 413, 400, 386 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1020(3 cells)
+Confirmations du mouvement dans 1020ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478808,skill : 151040)
+Gathering element :{id : 478805 , cellid : 415 }
+Mouvement vers l'interactive sur la cellule : 415=401
+Exectution du trajet vers l'interactive .
+[ 386, 401 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478805,skill : 151045)
+Gathering element :{id : 478806 , cellid : 387 }
+Mouvement vers l'interactive sur la cellule : 387=401
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478806,skill : 151041)
+Checking pods ...
+Gathering element :{id : 478811 , cellid : 358 }
+Mouvement vers l'interactive sur la cellule : 358=386
+Exectution du trajet vers l'interactive .
+[ 401, 386 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478811,skill : 151038)
+Gathering element :{id : 478815 , cellid : 357 }
+Mouvement vers l'interactive sur la cellule : 357=385
+Exectution du trajet vers l'interactive .
+[ 386, 385 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478815,skill : 151037)
+Gathering element :{id : 478819 , cellid : 356 }
+Mouvement vers l'interactive sur la cellule : 356=371
+Exectution du trajet vers l'interactive .
+[ 385, 371 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478819,skill : 151036)
+Gathering element :{id : 478818 , cellid : 343 }
+Mouvement vers l'interactive sur la cellule : 343=371
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478818,skill : 151033)
+Checking pods ...
+Gathering element :{id : 478812 , cellid : 330 }
+Mouvement vers l'interactive sur la cellule : 330=344
+Exectution du trajet vers l'interactive .
+[ 371, 357, 344 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1020(3 cells)
+Confirmations du mouvement dans 1020ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478812,skill : 151031)
+Gathering element :{id : 478816 , cellid : 329 }
+Mouvement vers l'interactive sur la cellule : 329=344
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478816,skill : 151030)
+Checking pods ...
+Gathering element :{id : 478813 , cellid : 302 }
+Mouvement vers l'interactive sur la cellule : 302=330
+Exectution du trajet vers l'interactive .
+[ 344, 330 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478813,skill : 151027)
+Gathering element :{id : 478802 , cellid : 346 }
+Mouvement vers l'interactive sur la cellule : 346=345
+Exectution du trajet vers l'interactive .
+[ 330, 345 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478802,skill : 151034)
+Gathering element :{id : 478803 , cellid : 318 }
+Mouvement vers l'interactive sur la cellule : 318=331
+Exectution du trajet vers l'interactive .
+[ 345, 331 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478803,skill : 151028)
+Gathering element :{id : 478799 , cellid : 319 }
+Mouvement vers l'interactive sur la cellule : 319=318
+Exectution du trajet vers l'interactive .
+[ 331, 318 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478799,skill : 151029)
+Gathering element :{id : 478795 , cellid : 333 }
+Mouvement vers l'interactive sur la cellule : 333=332
+Exectution du trajet vers l'interactive .
+[ 318, 332 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478795,skill : 151032)
+Gathering element :{id : 478807 , cellid : 275 }
+Mouvement vers l'interactive sur la cellule : 275=303
+Exectution du trajet vers l'interactive .
+[ 332, 318, 303 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 850(3 cells)
+Confirmations du mouvement dans 850ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478807,skill : 151025)
+Sequence ready !
+Gathering element :{id : 478814 , cellid : 274 }
+Mouvement vers l'interactive sur la cellule : 274=289
+Exectution du trajet vers l'interactive .
+[ 303, 289 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478814,skill : 151024)
+Gathering element :{id : 478823 , cellid : 266 }
+Mouvement vers l'interactive sur la cellule : 266=281
+Exectution du trajet vers l'interactive .
+[ 289, 288, 287, 286, 285, 284, 283, 282, 281 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1360(9 cells)
+Confirmations du mouvement dans 1360ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478823,skill : 151023)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 281=281 , target : 433=433} , let's process it !
+[ 281,
+  295,
+  310,
+  311,
+  325,
+  326,
+  327,
+  342,
+  356,
+  371,
+  385,
+  386,
+  387,
+  402,
+  403,
+  417,
+  432,
+  433 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2690(18 cells)
+Confirmations du mouvement dans 2690ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+no best match on i =38 : 43
+Gathering element :{id : 478251 , cellid : 373 }
+Mouvement vers l'interactive sur la cellule : 373=372
+Exectution du trajet vers l'interactive .
+[ 420, 421, 407, 408, 409, 410, 411, 398, 399, 385, 372 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 2040(11 cells)
+Confirmations du mouvement dans 2040ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478251,skill : 151067)
+no best match on i =38 : 43
+Gathering element :{id : 478248 , cellid : 359 }
+Mouvement vers l'interactive sur la cellule : 359=373
+Exectution du trajet vers l'interactive .
+[ 372, 373 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478248,skill : 151064)
+no best match on i =38 : 43
+Gathering element :{id : 478243 , cellid : 402 }
+Mouvement vers l'interactive sur la cellule : 402=387
+Exectution du trajet vers l'interactive .
+[ 373, 387 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478243,skill : 151072)
+no best match on i =38 : 43
+Gathering element :{id : 478244 , cellid : 374 }
+Mouvement vers l'interactive sur la cellule : 374=387
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478244,skill : 151068)
+Checking pods ...
+no best match on i =38 : 43
+Gathering element :{id : 478239 , cellid : 360 }
+Mouvement vers l'interactive sur la cellule : 360=374
+Exectution du trajet vers l'interactive .
+[ 387, 374 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478239,skill : 151065)
+no best match on i =38 : 43
+Gathering element :{id : 478236 , cellid : 375 }
+Mouvement vers l'interactive sur la cellule : 375=374
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478236,skill : 151069)
+Checking pods ...
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Miss-Lagertha saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Miss-Lagertha saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Miss-Lagertha saved !
+[mainProcessFrame]Fight mode updated to default
+no best match on i =38 : 43
+Gathering element :{id : 478234 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=388
+Exectution du trajet vers l'interactive .
+[ 374, 388 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+{"call":"spells-request"}
+[{"id":"0","name":"Coup de poing","level":1,"inPile":false},{"id":"431","name":"Châtiment Forcé","level":1,"inPile":false},{"id":"432","name":"Pied du Sacrieur","level":1,"inPile":true,"index":"1","type":0},{"id":"434","name":"Attirance","level":1,"inPile":false},{"id":"436","name":"Assaut","level":1,"inPile":false},{"id":"437","name":"Châtiment Agile","level":1,"inPile":false},{"id":"444","name":"Dérobade","level":1,"inPile":false},{"id":"449","name":"Détour","level":1,"inPile":false}]
+[mainProcessFrame]Spells sended to ui
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478234,skill : 151071)
+no best match on i =38 : 43
+Gathering element :{id : 478235 , cellid : 361 }
+Mouvement vers l'interactive sur la cellule : 361=375
+Exectution du trajet vers l'interactive .
+[ 388, 375 ]
+Sending map request !
+Checking pods ...
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478235,skill : 151066)
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Gathering element :{id : 478262 , cellid : 481 }
+Mouvement vers l'interactive sur la cellule : 481=467
+Exectution du trajet vers l'interactive .
+[ 375, 388, 402, 415, 429, 442, 456, 455, 454, 467 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+Trajet arrêté , récolte annulée .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+Trajet arrêté , récolte annulée .
+Checking pods ...
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+Sequence ready !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675334) !

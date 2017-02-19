@@ -1,0 +1,733 @@
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: 'login' }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1534,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloConnectMessage',
+  salt: 'izbt2kf8fhA\'ox@&\'_@$E;]O1xG>7:1Y',
+  key: 
+   [ 44,
+     19,
+     80,
+     -87,
+     -92,
+     46,
+     -4,
+     127,
+     25,
+     71,
+     -84,
+     87,
+     -81,
+     -82,
+     -17,
+     -58,
+     -73,
+     -35,
+     29,
+     -3,
+     -106,
+     -46,
+     100,
+     -124,
+     28,
+     25,
+     -10,
+     26,
+     -89,
+     -56,
+     12,
+     -48,
+     58,
+     15,
+     -12,
+     -117,
+     -36,
+     -105,
+     52,
+     33,
+     112,
+     21,
+     20,
+     104,
+     -10,
+     -87,
+     119,
+     113,
+     11,
+     79,
+     -108,
+     48,
+     1,
+     -87,
+     -118,
+     28,
+     -111,
+     -79,
+     -90,
+     126,
+     39,
+     -39,
+     78,
+     64,
+     116,
+     -4,
+     -109,
+     -114,
+     -50,
+     47,
+     104,
+     56,
+     92,
+     109,
+     81,
+     17,
+     -9,
+     74,
+     3,
+     -104,
+     14,
+     -34,
+     1,
+     -61,
+     108,
+     2,
+     -80,
+     68,
+     -125,
+     108,
+     -57,
+     93,
+     90,
+     16,
+     -113,
+     6,
+     -24,
+     112,
+     -83,
+     127,
+     ... 205 more items ],
+  _isInitialized: true }
+'Message sent :'
+'checkAssetsVersion'
+{ assetsVersion: '2.15.15', staticDataVersion: '25' }
+'Packet Received : '
+{ assetsVersion: null,
+  staticDataVersion: null,
+  _messageType: 'assetsVersionChecked' }
+'Message sent :'
+'login'
+{ username: 'zahidsacri',
+  token: '23cd1d5e8367579f9392c8477a1d1c5a',
+  salt: 'izbt2kf8fhA\'ox@&\'_@$E;]O1xG>7:1Y',
+  key: 
+   [ 44,
+     19,
+     80,
+     -87,
+     -92,
+     46,
+     -4,
+     127,
+     25,
+     71,
+     -84,
+     87,
+     -81,
+     -82,
+     -17,
+     -58,
+     -73,
+     -35,
+     29,
+     -3,
+     -106,
+     -46,
+     100,
+     -124,
+     28,
+     25,
+     -10,
+     26,
+     -89,
+     -56,
+     12,
+     -48,
+     58,
+     15,
+     -12,
+     -117,
+     -36,
+     -105,
+     52,
+     33,
+     112,
+     21,
+     20,
+     104,
+     -10,
+     -87,
+     119,
+     113,
+     11,
+     79,
+     -108,
+     48,
+     1,
+     -87,
+     -118,
+     28,
+     -111,
+     -79,
+     -90,
+     126,
+     39,
+     -39,
+     78,
+     64,
+     116,
+     -4,
+     -109,
+     -114,
+     -50,
+     47,
+     104,
+     56,
+     92,
+     109,
+     81,
+     17,
+     -9,
+     74,
+     3,
+     -104,
+     14,
+     -34,
+     1,
+     -61,
+     108,
+     2,
+     -80,
+     68,
+     -125,
+     108,
+     -57,
+     93,
+     90,
+     16,
+     -113,
+     6,
+     -24,
+     112,
+     -83,
+     127,
+     ... 205 more items ] }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 3,
+  total: 3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CredentialsAcknowledgementMessage' }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 3,
+  total: 4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 2,
+  total: 3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 0,
+  total: 2,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'IdentificationSuccessMessage',
+  login: '1465968706063340236',
+  nickname: 'XxXVikingsXxX',
+  accountId: 112984462,
+  communityId: 0,
+  hasRights: false,
+  secretQuestion: '',
+  subscriptionEndDate: 0,
+  wasAlreadyConnected: true,
+  accountCreation: 1482954291000,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServersListMessage',
+  servers: 
+   [ { _type: 'GameServerInformations',
+       id: 405,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Herdegrize',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 407,
+       status: 3,
+       completion: 0,
+       isSelectable: false,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Brutas',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 404,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Terra Cogita',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 401,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Grandapan',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 406,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Dodge',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 403,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 1,
+       date: 1487456111258,
+       _name: 'Oshimo',
+       _gameTypeId: 0 } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'ServerSelectionMessage', data: { serverId: 403 } }
+'Packet Received : '
+{ _messageType: 'SelectedServerDataMessage',
+  serverId: 403,
+  address: '172.31.17.136',
+  port: 5555,
+  canCreateNewCharacter: true,
+  ticket: '919534159bfde7930f4bbe6e37653d15',
+  _isInitialized: true,
+  _access: 'https://oshimogameproxy.touch.dofus.com' }
+'Message sent :'
+'disconnecting'
+'SWITCHING_TO_GAME'
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: { address: '172.31.17.136', port: 5555, id: 403 } }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1547,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloGameMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'AuthenticationTicketMessage',
+  data: { ticket: '919534159bfde7930f4bbe6e37653d15', lang: 'en' } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 0,
+  lastPacketId: 110,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AuthenticationTicketAcceptedMessage' }
+'Packet Received : '
+{ _messageType: 'BasicTimeMessage',
+  timestamp: 1487456294,
+  timezoneOffset: 60,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSettingsMessage',
+  lang: 'fr',
+  community: 0,
+  gameType: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerOptionalFeaturesMessage',
+  features: [ 1, 2, 3, 5 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSessionConstantsMessage',
+  variables: 
+   [ { _type: 'ServerSessionConstantInteger', id: 1, value: 1500000 },
+     { _type: 'ServerSessionConstantLong', id: 2, value: 7200000 },
+     { _type: 'ServerSessionConstantInteger', id: 3, value: 30 },
+     { _type: 'ServerSessionConstantLong', id: 4, value: 86400000 },
+     { _type: 'ServerSessionConstantLong', id: 5, value: 60000 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AccountCapabilitiesMessage',
+  accountId: 112984462,
+  tutorialAvailable: true,
+  breedsVisible: 32767,
+  breedsAvailable: 32767,
+  status: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'TrustStatusMessage',
+  trusted: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'CharactersListRequestMessage', data: undefined }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 1,
+  lastPacketId: 150,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 1,
+  total: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharactersListMessage',
+  hasStartupActions: false,
+  characters: 
+   [ { _type: 'CharacterBaseInformations',
+       id: 610200,
+       level: 15,
+       name: 'Miss-Lagertha',
+       entityLook: [Object],
+       breed: 11,
+       sex: true } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'CharacterSelectionMessage', data: { id: 610200 } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 2,
+  lastPacketId: 152,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'NotificationListMessage',
+  flags: [ 11517938 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterSelectedSuccessMessage',
+  infos: 
+   { _type: 'CharacterBaseInformations',
+     id: 610200,
+     level: 15,
+     name: 'Miss-Lagertha',
+     entityLook: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     breed: 11,
+     sex: true },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InventoryContentMessage',
+  objects: 
+   [ { _type: 'ObjectItem',
+       position: 5,
+       objectGID: 2476,
+       effects: [Object],
+       objectUID: 111913829,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 2,
+       objectGID: 10785,
+       effects: [Object],
+       objectUID: 111913830,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 7,
+       objectGID: 2473,
+       effects: [Object],
+       objectUID: 111913831,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 4,
+       objectGID: 2475,
+       effects: [Object],
+       objectUID: 111913832,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 15,
+       objectGID: 10798,
+       effects: [Object],
+       objectUID: 111913833,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 6,
+       objectGID: 2474,
+       effects: [Object],
+       objectUID: 111913834,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 3,
+       objectGID: 2477,
+       effects: [Object],
+       objectUID: 111913835,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 0,
+       objectGID: 2478,
+       effects: [Object],
+       objectUID: 111913836,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10792,
+       effects: [Object],
+       objectUID: 111913837,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10793,
+       effects: [Object],
+       objectUID: 111913838,
+       quantity: 2 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10795,
+       effects: [Object],
+       objectUID: 111913839,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10796,
+       effects: [Object],
+       objectUID: 111913840,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10801,
+       effects: [Object],
+       objectUID: 111913841,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10794,
+       effects: [Object],
+       objectUID: 111913842,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10800,
+       effects: [Object],
+       objectUID: 111913843,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10799,
+       effects: [Object],
+       objectUID: 111913844,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10784,
+       effects: [Object],
+       objectUID: 111913845,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 1008,
+       effects: [],
+       objectUID: 111913846,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 1009,
+       effects: [],
+       objectUID: 111913847,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10797,
+       effects: [Object],
+       objectUID: 111913848,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 289,
+       effects: [],
+       objectUID: 111913849,
+       quantity: 474 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 519,
+       effects: [],
+       objectUID: 111913850,
+       quantity: 3 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 371,
+       effects: [],
+       objectUID: 111913851,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 307,
+       effects: [],
+       objectUID: 111913852,
+       quantity: 1 } ],
+  kamas: 30165,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetUpdateMessage',
+  setId: 5,
+  setObjects: [ 2476, 2473, 2475, 2474, 2477, 2478 ],
+  setEffects: 
+   [ { _type: 'ObjectEffectInteger', actionId: 126, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 124, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 123, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 119, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 125, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 118, value: 40 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetUpdateMessage',
+  setId: 150,
+  setObjects: [ 10785, 10798 ],
+  setEffects: 
+   [ { _type: 'ObjectEffectInteger', actionId: 125, value: 2 },
+     { _type: 'ObjectEffectInteger', actionId: 174, value: 2 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 0,
+  shortcuts: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 1,
+  shortcuts: 
+   [ { _type: 'ShortcutSpell', slot: 5, spellId: 449 },
+     { _type: 'ShortcutSpell', slot: 2, spellId: 432 },
+     { _type: 'ShortcutSpell', slot: 7, spellId: 437 },
+     { _type: 'ShortcutSpell', slot: 4, spellId: 444 },
+     { _type: 'ShortcutSpell', slot: 1, spellId: 431 },
+     { _type: 'ShortcutSpell', slot: 6, spellId: 436 },
+     { _type: 'ShortcutSpell', slot: 3, spellId: 434 },
+     { _type: 'ShortcutSpell', slot: 0, spellId: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'EmoteListMessage',
+  emoteIds: [ 1 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobDescriptionMessage',
+  jobsDescription: [ { _type: 'JobDescription', jobId: 28, skills: [Object] } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobExperienceMultiUpdateMessage',
+  experiencesUpdate: 
+   [ { _type: 'JobExperience',
+       jobId: 28,
+       jobLevel: 17,
+       jobXP: 6148,
+       jobXpLevelFloor: 5762,
+       jobXpNextLevelFloor: 6493 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobCrafterDirectorySettingsMessage',
+  craftersSettings: 
+   [ { _type: 'JobCrafterDirectorySettings',
+       jobId: 28,
+       minSlot: 0,
+       userDefinedParams: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AlignmentRankUpdateMessage',
+  alignmentRank: 0,
+  verbose: false,
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'QuestListRequestMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'FriendsGetListMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'IgnoredGetListMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'SpouseGetInformationsMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'bakSoftToHardCurrentRateRequest'
+undefined
+'Message sent :'
+'bakHardToSoftCurrentRateRequest'
+undefined
+'Message sent :'
+'kpiStartSession'
+{ accountSessionId: '1465968706063340236', isSubscriber: false }
+'Message sent :'
+'sendMessage'
+{ type: 'ClientKeyMessage',
+  data: { key: 'jq8Xyzjx2q6vGdWfSImR2' } }
+'Message sent :'
+'sendMessage'
+{ type: 'GameContextCreateRequestMessage', data: undefined }

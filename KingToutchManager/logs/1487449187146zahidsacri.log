@@ -1,0 +1,228 @@
+Server request connecting ...
+Inventory : 0
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"5qEOuni9tsB0fqNF"}
+Config loaded !
+{"key":"03192a26-c928-4742-809c-a796d85b93d4","account_id":112984462,"ip":"41.141.138.119","added_date":"2017-02-18T21:19:49+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-19T00:19:49+01:00"}
+Api key : 03192a26-c928-4742-809c-a796d85b93d4
+Game token : f4c103709c6a19ea8668cb81bc469c24
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=5qEOuni9tsB0fqNF) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706062861069) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 403) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Miss-Lagertha) ...
+[Aucun groupe:0:info][Inventory]Object : 107696882 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 107696883 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 107696884 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 107696885 selected for regen !
+[InventoryManager]Items infos loaded !
+Checking pods ...
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Trajet]No trajet loaded !
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84674821 .
+Gathering element :{id : 478751 , cellid : 502 }
+No cellid defined for the interactive with cellId : 502
+Mouvement vers l'interactive sur la cellule : -1=488
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478751,skill : 151167)
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Aucun groupe:0:info][Trajet]Execution map 84674821 .
+Bot not ready for gathering .(GATHER)
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Gathering element :{id : 478750 , cellid : 489 }
+No cellid defined for the interactive with cellId : 489
+Mouvement vers l'interactive sur la cellule : -1=488
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478750,skill : 151166)
+Checking pods ...
+Gathering element :{id : 478788 , cellid : 257 }
+No cellid defined for the interactive with cellId : 257
+Mouvement vers l'interactive sur la cellule : -1=270
+Exectution du trajet vers l'interactive .
+[ 488,
+  473,
+  459,
+  444,
+  430,
+  415,
+  401,
+  386,
+  372,
+  357,
+  343,
+  342,
+  327,
+  313,
+  298,
+  270 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2290(16 cells)
+Confirmations du mouvement dans 2290ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478788,skill : 151161)
+Gathering element :{id : 478791 , cellid : 296 }
+No cellid defined for the interactive with cellId : 296
+Mouvement vers l'interactive sur la cellule : -1=297
+Exectution du trajet vers l'interactive .
+[ 270, 284, 297 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1020(3 cells)
+Confirmations du mouvement dans 1020ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478791,skill : 151162)
+Gathering element :{id : 478770 , cellid : 135 }
+No cellid defined for the interactive with cellId : 135
+Mouvement vers l'interactive sur la cellule : -1=163
+Exectution du trajet vers l'interactive .
+[ 297, 298, 313, 327, 342, 343, 329, 316, 288, 260, 232, 218, 205, 191, 163 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2745(15 cells)
+Confirmations du mouvement dans 2745ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478770,skill : 151158)
+Gathering element :{id : 478760 , cellid : 136 }
+No cellid defined for the interactive with cellId : 136
+Mouvement vers l'interactive sur la cellule : -1=150
+Exectution du trajet vers l'interactive .
+[ 163, 150 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478760,skill : 151159)
+Gathering element :{id : 478756 , cellid : 123 }
+No cellid defined for the interactive with cellId : 123
+Mouvement vers l'interactive sur la cellule : -1=136
+Exectution du trajet vers l'interactive .
+[ 150, 136 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478756,skill : 151157)
+Gathering element :{id : 478753 , cellid : 137 }
+No cellid defined for the interactive with cellId : 137
+Mouvement vers l'interactive sur la cellule : -1=136
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478753,skill : 151160)
+Checking pods ...
+Gathering element :{id : 478754 , cellid : 109 }
+No cellid defined for the interactive with cellId : 109
+Mouvement vers l'interactive sur la cellule : -1=123
+Exectution du trajet vers l'interactive .
+[ 136, 123 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478754,skill : 151156)
+Gathering element :{id : 478761 , cellid : 108 }
+No cellid defined for the interactive with cellId : 108
+Mouvement vers l'interactive sur la cellule : -1=123
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478761,skill : 151155)
+Checking pods ...
+Gathering element :{id : 478765 , cellid : 94 }
+No cellid defined for the interactive with cellId : 94
+Mouvement vers l'interactive sur la cellule : -1=108
+Exectution du trajet vers l'interactive .
+[ 123, 108 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478765,skill : 151154)
+Gathering element :{id : 478790 , cellid : 381 }
+No cellid defined for the interactive with cellId : 381
+Mouvement vers l'interactive sur la cellule : -1=368
+Exectution du trajet vers l'interactive .
+[ 108,
+  122,
+  135,
+  149,
+  177,
+  205,
+  233,
+  246,
+  260,
+  288,
+  316,
+  329,
+  343,
+  356,
+  355,
+  369,
+  368 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 3485(17 cells)
+Confirmations du mouvement dans 3485ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478790,skill : 151164)
+Gathering element :{id : 478752 , cellid : 488 }
+No cellid defined for the interactive with cellId : 488
+Mouvement vers l'interactive sur la cellule : -1=487
+Exectution du trajet vers l'interactive .
+[ 368, 369, 383, 398, 412, 413, 414, 429, 443, 458, 472, 487 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1710(12 cells)
+Confirmations du mouvement dans 1710ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478752,skill : 151165)
+38

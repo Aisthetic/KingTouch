@@ -15,7 +15,7 @@ exports.MapManager = function(bot){
 	this.hasMap = false;
 	this.interactives = {};
 	this.statedes = {};
-
+	this.identifiedElements = {};
 	this.bot.connection.dispatcher.on("CurrentMapMessage",function(m){
 		self.mapId=m.mapId;
 		var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
@@ -33,6 +33,13 @@ exports.MapManager = function(bot){
 			});	
 		}
 	});
+
+	this.bot.connection.dispatcher.on("GameMapNoMovementMessage",(m)=>{
+ 		console.log("Detection d'un NoMovement . AVADANTIBUGADABRA !");
+        this.bot.trajet.stop();
+        this.refresh();
+  	});
+
 	this.bot.connection.dispatcher.on("InteractiveMapUpdateMessage",(m)=>{
 		this.updateInteractiveElements(m.interactiveElements);
 	});
@@ -60,17 +67,37 @@ exports.MapManager = function(bot){
 	});
 
 };
+/*
+	*en gros là j'ai trouvé que certains édifices (interactives) n'était pas associés à des stated elements du coup pas 
+	de cellId pour useInteractive , la solution c'est l'indentifiedElements . ggwp
+*/
 exports.MapManager.prototype.update = function(map,mapId){
 	this.map=map;
 	this.mapId=mapId;
 	this.hasMap = true;
-	this.path
+	this.path;
+	var mapElements = map.midgroundLayer;
+	var cellIds  = Object.keys(mapElements);
+	for (var c = 0; c < cellIds.length; c++) {
+		var cellId = cellIds[c];
+		var cellElements = mapElements[cellId];
+		for (var e = 0; e < cellElements.length; e++) {
+			var element = cellElements[e];
+			element.position = parseInt(cellId, 10);
+			if (element.id) {
+				this.identifiedElements[element.id] = element;
+			}
+		}
+	}
 	this.dispatcher.emit("loaded",map);
 };
 exports.MapManager.prototype.isWalkable = function (cellId, isFightMode) {
 	var mask = isFightMode ? 5 : 1;
 	return (this.map.cells[cellId].l & mask) === 1;
 };
+exports.MapManager.prototype.refresh = function(){
+	this.bot.connection.sendMessage('MapInformationsRequestMessage', { mapId: this.mapId });
+}
 exports.MapManager.prototype.getChangeMapFlag = function (cellId) {
 	var mapChangeData = this.map.cells[cellId].c || 0;
 	if (mapChangeData === 0) { return {}; }
@@ -186,6 +213,7 @@ exports.MapManager.prototype.updateInteractiveElements = function (list) {
 			}
 			this.interactives[updatedElement.elementId].disabledSkills = updatedElement.disabledSkills;
 			this.interactives[updatedElement.elementId].enabledSkills  = updatedElement.enabledSkills;
+			if(updatedElement.enabledSkills.length > 0) this.bot.gather.blacklist = false;
 		}
 	};
 /** Update stated element states
@@ -204,6 +232,7 @@ exports.MapManager.prototype.updateStatedElements = function (statedElementsData
 		}
 		this.statedes[elemData.elementId].elementCellId = elemData.elementCellId;
 		this.statedes[elemData.elementId].elementState = elemData.elementState;
+		if(elemData.elementState == 1) this.bot.gather.blacklist[elemData.elementId] = false;
 
 	}
 };

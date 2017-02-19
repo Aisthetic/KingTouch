@@ -1,0 +1,8688 @@
+Server request connecting ...
+Inventory : 0
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"accu7MVtBY30rZcE"}
+Config loaded !
+{"key":"668d7ca3-0b8c-4955-91bc-637c4b2143d3","account_id":112984462,"ip":"105.157.44.165","added_date":"2017-02-19T16:28:07+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-19T19:28:07+01:00"}
+Api key : 668d7ca3-0b8c-4955-91bc-637c4b2143d3
+Game token : d26f6c315d964aeacfcced9dd5bdaa8b
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=accu7MVtBY30rZcE) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]3/3 in login queue...
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]0/2 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706066100536) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 403) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Miss-Lagertha) ...
+[Aucun groupe:0:info][Inventory]Object : 137237563 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 137237564 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 137237565 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 137237566 selected for regen !
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+[InventoryManager]Items infos loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Trajet]No trajet loaded !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Miss-Lagertha saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Miss-Lagertha saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Miss-Lagertha saved !
+[mainProcessFrame]Fight mode updated to default
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+[TRAJET]Execution du trajet banque .
+[DEBUG] Path calculated {source : 109=109 , target : 555=555} , let's process it !
+[ 109,
+  123,
+  136,
+  150,
+  163,
+  177,
+  176,
+  189,
+  188,
+  202,
+  215,
+  229,
+  242,
+  256,
+  269,
+  283,
+  296,
+  310,
+  338,
+  352,
+  367,
+  381,
+  396,
+  410,
+  425,
+  439,
+  454,
+  468,
+  483,
+  497,
+  512,
+  526,
+  541,
+  555 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 6585(34 cells)
+Confirmations du mouvement dans 6585ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84675330 .
+[DEBUG] Path calculated {source : 23=23 , target : 534=534} , let's process it !
+[ 23,
+  37,
+  50,
+  78,
+  92,
+  120,
+  148,
+  161,
+  175,
+  203,
+  216,
+  230,
+  258,
+  271,
+  299,
+  313,
+  326,
+  354,
+  368,
+  396,
+  409,
+  437,
+  451,
+  479,
+  492,
+  506,
+  534 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 5695(27 cells)
+Confirmations du mouvement dans 5695ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":1,"skins":[101,2164,1662],"indexedColors":[31363677,46714859,61346330,76484630,98750865],"scales":[145],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":318,"direction":3},"npcId":524,"sex":true,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[43]},"_npcData":{"_type":"Npc","id":524,"nameId":"Louse Degraine","dialogMessages":[[2245,15904],[2295,15418],[2343,12991],[9794,13106]],"dialogReplies":[[1878,25656],[1949,27124],[10473,21230]],"actions":[3],"gender":1,"look":"{1|101,2164,1662|5=#e2d191,2=#c8cfeb,4=#8f1016,1=#de925d,3=#a8121a|145}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84675329 .
+[DEBUG] Path calculated {source : 2=2 , target : 557=557} , let's process it !
+[ 2,
+  30,
+  58,
+  72,
+  87,
+  101,
+  129,
+  144,
+  158,
+  186,
+  214,
+  229,
+  257,
+  271,
+  299,
+  327,
+  342,
+  356,
+  371,
+  385,
+  400,
+  414,
+  429,
+  443,
+  458,
+  486,
+  500,
+  515,
+  529,
+  557 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 4550(30 cells)
+Confirmations du mouvement dans 4550ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-2,"look":{"_type":"EntityLook","bonesId":62,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":283,"direction":1},"npcId":451,"sex":true,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[11]},"_npcData":{"_type":"Npc","id":451,"nameId":"Kry Babby","dialogMessages":[[1910,86740],[2212,10206],[2213,86739],[2239,15944],[2431,17776]],"dialogReplies":[[1856,86741],[1875,26814],[1876,29165],[1877,25614]],"actions":[3],"gender":1,"look":"{62}","animFunList":[{"_type":"AnimFunNpcData","animName":"AnimAttaque0","animWeight":1},{"_type":"AnimFunNpcData","animName":"AnimAttaque1","animWeight":2},{"_type":"AnimFunNpcData","animName":"AnimAttaque2","animWeight":3}],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84675072 .
+[DEBUG] Path calculated {source : 25=25 , target : 504=504} , let's process it !
+[ 25,
+  39,
+  52,
+  66,
+  94,
+  122,
+  150,
+  163,
+  177,
+  190,
+  204,
+  217,
+  231,
+  244,
+  258,
+  271,
+  285,
+  298,
+  312,
+  325,
+  339,
+  352,
+  366,
+  379,
+  407,
+  421,
+  449,
+  462,
+  476,
+  504 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 6885(30 cells)
+Confirmations du mouvement dans 6885ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674560 .
+[DEBUG] Path calculated {source : 517=517 , target : 550=550} , let's process it !
+[ 517, 516, 515, 514, 513, 512, 525, 524, 538, 551, 550 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 1955(11 cells)
+Confirmations du mouvement dans 1955ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674561 .
+[DEBUG] Path calculated {source : 18=18 , target : 544=544} , let's process it !
+[ 18,
+  33,
+  47,
+  75,
+  90,
+  118,
+  146,
+  160,
+  175,
+  189,
+  217,
+  245,
+  273,
+  301,
+  329,
+  344,
+  358,
+  373,
+  387,
+  402,
+  416,
+  444,
+  459,
+  487,
+  501,
+  516,
+  544 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 4120(27 cells)
+Confirmations du mouvement dans 4120ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674562 .
+[DEBUG] Path calculated {source : 12=12 , target : 557=557} , let's process it !
+[ 12,
+  40,
+  53,
+  67,
+  80,
+  94,
+  107,
+  121,
+  134,
+  148,
+  176,
+  204,
+  232,
+  260,
+  288,
+  302,
+  317,
+  345,
+  373,
+  387,
+  415,
+  430,
+  458,
+  472,
+  500,
+  515,
+  529,
+  557 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 5130(28 cells)
+Confirmations du mouvement dans 5130ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674563 .
+[DEBUG] Path calculated {source : 25=25 , target : 533=533} , let's process it !
+[ 25,
+  39,
+  52,
+  66,
+  79,
+  93,
+  106,
+  134,
+  162,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  285,
+  298,
+  312,
+  325,
+  353,
+  381,
+  409,
+  437,
+  451,
+  464,
+  478,
+  491,
+  505,
+  533 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 6715(30 cells)
+Confirmations du mouvement dans 6715ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674564 .
+[DEBUG] Path calculated {source : 1=1 , target : 548=548} , let's process it !
+[ 1,
+  29,
+  43,
+  71,
+  86,
+  100,
+  115,
+  129,
+  144,
+  172,
+  200,
+  228,
+  256,
+  284,
+  312,
+  340,
+  353,
+  367,
+  380,
+  408,
+  436,
+  464,
+  492,
+  520,
+  548 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 4215(25 cells)
+Confirmations du mouvement dans 4215ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674565 .
+[DEBUG] Path calculated {source : 16=16 , target : 543=543} , let's process it !
+[ 16,
+  31,
+  45,
+  60,
+  88,
+  116,
+  144,
+  158,
+  173,
+  187,
+  202,
+  216,
+  231,
+  259,
+  273,
+  288,
+  302,
+  317,
+  331,
+  346,
+  360,
+  388,
+  416,
+  431,
+  445,
+  460,
+  488,
+  501,
+  515,
+  543 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+MapMovement received !
+Confirmation du movement dans : 4720(30 cells)
+Confirmations du mouvement dans 4720ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 84674566 .
+No cellid defined for the interactive with cellId : 303
+Mouvement vers l'interactive sur la cellule : undefined=302
+Exectution du trajet vers l'interactive .
+[ 11, 39, 67, 95, 123, 151, 179, 192, 206, 219, 233, 246, 260, 288, 302 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2870(15 cells)
+Confirmations du mouvement dans 2870ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 465440,skill : 140242)
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Inventory]Full pods !
+[Aucun groupe:0:info][Trajet]Execution map 83887104 .
+undefined
+NpcId non défini , on parle au premier npc disponible sur la map . (id = -1)
+On parle à le npc {npcId : -1,actionId : 3}
+Envoie de la reponse : 259
+Fin du dialogue
+[Aucun groupe:0:info][Infos]It cost you 22 kamas to access your bank account.
+Coffre détecté , on se vide .
+[Aucun groupe:0:info][Trajet]Execution map 83887104 .
+[DEBUG] Path calculated {source : 382=382 , target : 396=396} , let's process it !
+[ 382, 396 ]
+Sending map request !
+[Aucun groupe:0:info]On va sur le soleil...
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674566 .
+[DEBUG] Path calculated {source : 317=317 , target : 15=15} , let's process it !
+[ 317,
+  302,
+  288,
+  273,
+  245,
+  231,
+  216,
+  202,
+  174,
+  159,
+  145,
+  130,
+  116,
+  101,
+  87,
+  72,
+  44,
+  30,
+  15 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 2760(19 cells)
+Confirmations du mouvement dans 2760ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674565 .
+[DEBUG] Path calculated {source : 547=547 , target : 4=4} , let's process it !
+[ 547,
+  519,
+  491,
+  463,
+  435,
+  407,
+  379,
+  351,
+  323,
+  295,
+  282,
+  268,
+  255,
+  241,
+  228,
+  214,
+  186,
+  158,
+  130,
+  102,
+  74,
+  46,
+  32,
+  4 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 4400(24 cells)
+Confirmations du mouvement dans 4400ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674564 .
+[DEBUG] Path calculated {source : 536=536 , target : 3=3} , let's process it !
+[ 536,
+  508,
+  480,
+  452,
+  424,
+  396,
+  368,
+  340,
+  312,
+  284,
+  256,
+  228,
+  214,
+  186,
+  158,
+  130,
+  102,
+  88,
+  60,
+  45,
+  31,
+  3 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Key movements proccesed !
+No movement
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674564 .
+[DEBUG] Path calculated {source : 536=536 , target : 1=1} , let's process it !
+[ 536,
+  508,
+  493,
+  465,
+  437,
+  423,
+  408,
+  380,
+  352,
+  324,
+  296,
+  268,
+  240,
+  212,
+  199,
+  185,
+  172,
+  144,
+  129,
+  115,
+  100,
+  86,
+  58,
+  43,
+  29,
+  1 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 4325(26 cells)
+Confirmations du mouvement dans 4325ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674563 .
+[DEBUG] Path calculated {source : 533=533 , target : 7=7} , let's process it !
+[ 533,
+  505,
+  491,
+  463,
+  435,
+  407,
+  394,
+  366,
+  352,
+  324,
+  311,
+  283,
+  269,
+  241,
+  228,
+  214,
+  201,
+  187,
+  159,
+  131,
+  103,
+  90,
+  62,
+  48,
+  35,
+  7 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 5270(26 cells)
+Confirmations du mouvement dans 5270ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674562 .
+[DEBUG] Path calculated {source : 539=539 , target : 9=9} , let's process it !
+[ 539,
+  511,
+  483,
+  455,
+  427,
+  399,
+  384,
+  370,
+  342,
+  314,
+  286,
+  258,
+  230,
+  216,
+  188,
+  175,
+  147,
+  119,
+  105,
+  92,
+  64,
+  50,
+  37,
+  9 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 4380(24 cells)
+Confirmations du mouvement dans 4380ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674561 .
+[DEBUG] Path calculated {source : 541=541 , target : 1=1} , let's process it !
+[ 541,
+  526,
+  512,
+  497,
+  469,
+  441,
+  413,
+  399,
+  384,
+  370,
+  355,
+  327,
+  313,
+  285,
+  270,
+  242,
+  228,
+  213,
+  185,
+  171,
+  143,
+  128,
+  100,
+  86,
+  58,
+  43,
+  29,
+  1 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Key movements proccesed !
+No movement
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674561 .
+[DEBUG] Path calculated {source : 541=541 , target : 16=16} , let's process it !
+[ 541,
+  513,
+  498,
+  470,
+  456,
+  428,
+  413,
+  385,
+  357,
+  329,
+  301,
+  273,
+  245,
+  217,
+  189,
+  175,
+  160,
+  146,
+  131,
+  117,
+  102,
+  88,
+  73,
+  59,
+  44,
+  16 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 3990(26 cells)
+Confirmations du mouvement dans 3990ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674560 .
+[DEBUG] Path calculated {source : 548=548 , target : 125=125} , let's process it !
+[ 548,
+  535,
+  521,
+  508,
+  480,
+  452,
+  424,
+  410,
+  397,
+  383,
+  370,
+  356,
+  328,
+  315,
+  301,
+  288,
+  274,
+  261,
+  247,
+  234,
+  220,
+  207,
+  193,
+  180,
+  166,
+  153,
+  125 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 6205(27 cells)
+Confirmations du mouvement dans 6205ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-2,"look":{"_type":"EntityLook","bonesId":62,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":283,"direction":1},"npcId":451,"sex":true,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[11]},"_npcData":{"_type":"Npc","id":451,"nameId":"Kry Babby","dialogMessages":[[1910,86740],[2212,10206],[2213,86739],[2239,15944],[2431,17776]],"dialogReplies":[[1856,86741],[1875,26814],[1876,29165],[1877,25614]],"actions":[3],"gender":1,"look":"{62}","animFunList":[{"_type":"AnimFunNpcData","animName":"AnimAttaque0","animWeight":1},{"_type":"AnimFunNpcData","animName":"AnimAttaque1","animWeight":2},{"_type":"AnimFunNpcData","animName":"AnimAttaque2","animWeight":3}],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675072 .
+[DEBUG] Path calculated {source : 112=112 , target : 12=12} , let's process it !
+[ 112,
+  126,
+  141,
+  169,
+  183,
+  198,
+  212,
+  227,
+  241,
+  256,
+  257,
+  243,
+  244,
+  231,
+  217,
+  204,
+  190,
+  177,
+  163,
+  150,
+  136,
+  108,
+  95,
+  67,
+  53,
+  40,
+  12 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 5280(27 cells)
+Confirmations du mouvement dans 5280ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":1,"skins":[101,2164,1662],"indexedColors":[31363677,46714859,61346330,76484630,98750865],"scales":[145],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":318,"direction":3},"npcId":524,"sex":true,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[43]},"_npcData":{"_type":"Npc","id":524,"nameId":"Louse Degraine","dialogMessages":[[2245,15904],[2295,15418],[2343,12991],[9794,13106]],"dialogReplies":[[1878,25656],[1949,27124],[10473,21230]],"actions":[3],"gender":1,"look":"{1|101,2164,1662|5=#e2d191,2=#c8cfeb,4=#8f1016,1=#de925d,3=#a8121a|145}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675329 .
+[DEBUG] Path calculated {source : 544=544 , target : 19=19} , let's process it !
+[ 544,
+  516,
+  501,
+  473,
+  459,
+  444,
+  430,
+  402,
+  387,
+  373,
+  358,
+  344,
+  316,
+  288,
+  260,
+  232,
+  204,
+  189,
+  161,
+  147,
+  119,
+  104,
+  76,
+  62,
+  47,
+  19 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 3990(26 cells)
+Confirmations du mouvement dans 3990ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675330 .
+[DEBUG] Path calculated {source : 551=551 , target : 3=3} , let's process it !
+[ 551,
+  523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  370,
+  342,
+  314,
+  286,
+  258,
+  230,
+  216,
+  203,
+  175,
+  160,
+  146,
+  131,
+  117,
+  102,
+  88,
+  60,
+  45,
+  31,
+  3 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 4345(26 cells)
+Confirmations du mouvement dans 4345ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+Gathering element :{id : 478313 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=388
+Exectution du trajet vers l'interactive .
+[ 535, 521, 508, 494, 481, 467, 454, 455, 456, 442, 429, 415, 402, 388 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+Gathering element :{id : 478313 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=388
+Exectution du trajet vers l'interactive .
+[ 535, 521, 508, 494, 481, 467, 454, 455, 456, 442, 429, 415, 402, 388 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+Gathering element :{id : 478313 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=417
+Exectution du trajet vers l'interactive .
+[ 535, 521, 508, 494, 495, 496, 497, 484, 470, 457, 458, 444, 431, 417 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+MapMovement received !
+Confirmation du movement dans : 2975(14 cells)
+Confirmations du mouvement dans 2975ms
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+Gathering element :{id : 478313 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=417
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478313,skill : 151510)
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+Gathering element :{id : 478313 , cellid : 389 }
+Mouvement vers l'interactive sur la cellule : 389=417
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478313,skill : 151510)
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478313,skill : 151510)
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[InventoryManager]Can't find object for add : {"_messageType":"ObjectAddedMessage","object":{"_type":"ObjectItem","position":63,"objectGID":289,"effects":[],"objectUID":137374645,"quantity":6},"_isInitialized":true}
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 6130(31 cells)
+Confirmations du mouvement dans 6130ms
+MapMovement received !
+Confirmation du movement dans : 6130(31 cells)
+Confirmations du mouvement dans 6130ms
+MapMovement received !
+Confirmation du movement dans : 6130(31 cells)
+Confirmations du mouvement dans 6130ms
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478314,skill : 151509)
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478314,skill : 151509)
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478314,skill : 151509)
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+------------------------------------------------------
+GATHER
+Bot not ready for gathering : GATHER
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !
+Mouvement vers l'interactive échoué .
+------------------------------------------------------
+READY
+no best match on i =38 : 43
+Gathering element :{id : 478314 , cellid : 165 }
+Mouvement vers l'interactive sur la cellule : 165=164
+Exectution du trajet vers l'interactive .
+[ 417,
+  431,
+  444,
+  458,
+  457,
+  456,
+  455,
+  440,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  178,
+  164 ]
+Sending map request !

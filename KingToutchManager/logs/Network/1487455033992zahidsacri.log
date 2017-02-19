@@ -1,0 +1,6052 @@
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: 'login' }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1534,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloConnectMessage',
+  salt: 'izbsbocs]]zvFaCg61f^Kf,KpyM\\&+2~',
+  key: 
+   [ 116,
+     -17,
+     3,
+     70,
+     -63,
+     83,
+     -69,
+     -94,
+     2,
+     63,
+     -58,
+     87,
+     101,
+     -128,
+     -82,
+     21,
+     21,
+     -34,
+     121,
+     123,
+     65,
+     124,
+     -117,
+     -38,
+     -112,
+     10,
+     -101,
+     -34,
+     71,
+     -47,
+     66,
+     35,
+     -112,
+     93,
+     -88,
+     33,
+     -10,
+     94,
+     83,
+     -71,
+     41,
+     -4,
+     107,
+     95,
+     27,
+     -83,
+     49,
+     112,
+     94,
+     122,
+     -67,
+     0,
+     34,
+     -89,
+     70,
+     69,
+     -85,
+     80,
+     -60,
+     -114,
+     6,
+     88,
+     -105,
+     -77,
+     11,
+     22,
+     -24,
+     -66,
+     -53,
+     66,
+     -55,
+     -46,
+     41,
+     -51,
+     117,
+     -20,
+     -4,
+     -33,
+     -24,
+     79,
+     65,
+     -5,
+     119,
+     122,
+     41,
+     102,
+     -74,
+     -102,
+     -122,
+     2,
+     -77,
+     -95,
+     -123,
+     -21,
+     -37,
+     63,
+     53,
+     103,
+     -20,
+     3,
+     ... 205 more items ],
+  _isInitialized: true }
+'Message sent :'
+'checkAssetsVersion'
+{ assetsVersion: '2.15.15', staticDataVersion: '25' }
+'Packet Received : '
+{ assetsVersion: null,
+  staticDataVersion: null,
+  _messageType: 'assetsVersionChecked' }
+'Message sent :'
+'login'
+{ username: 'zahidsacri',
+  token: '297b8890fa8283b52b31db1762f6d24a',
+  salt: 'izbsbocs]]zvFaCg61f^Kf,KpyM\\&+2~',
+  key: 
+   [ 116,
+     -17,
+     3,
+     70,
+     -63,
+     83,
+     -69,
+     -94,
+     2,
+     63,
+     -58,
+     87,
+     101,
+     -128,
+     -82,
+     21,
+     21,
+     -34,
+     121,
+     123,
+     65,
+     124,
+     -117,
+     -38,
+     -112,
+     10,
+     -101,
+     -34,
+     71,
+     -47,
+     66,
+     35,
+     -112,
+     93,
+     -88,
+     33,
+     -10,
+     94,
+     83,
+     -71,
+     41,
+     -4,
+     107,
+     95,
+     27,
+     -83,
+     49,
+     112,
+     94,
+     122,
+     -67,
+     0,
+     34,
+     -89,
+     70,
+     69,
+     -85,
+     80,
+     -60,
+     -114,
+     6,
+     88,
+     -105,
+     -77,
+     11,
+     22,
+     -24,
+     -66,
+     -53,
+     66,
+     -55,
+     -46,
+     41,
+     -51,
+     117,
+     -20,
+     -4,
+     -33,
+     -24,
+     79,
+     65,
+     -5,
+     119,
+     122,
+     41,
+     102,
+     -74,
+     -102,
+     -122,
+     2,
+     -77,
+     -95,
+     -123,
+     -21,
+     -37,
+     63,
+     53,
+     103,
+     -20,
+     3,
+     ... 205 more items ] }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 2,
+  total: 2,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CredentialsAcknowledgementMessage' }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LoginQueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'IdentificationSuccessMessage',
+  login: '1465968706063261347',
+  nickname: 'XxXVikingsXxX',
+  accountId: 112984462,
+  communityId: 0,
+  hasRights: false,
+  secretQuestion: '',
+  subscriptionEndDate: 0,
+  wasAlreadyConnected: true,
+  accountCreation: 1482954291000,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServersListMessage',
+  servers: 
+   [ { _type: 'GameServerInformations',
+       id: 405,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Herdegrize',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 407,
+       status: 3,
+       completion: 0,
+       isSelectable: false,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Brutas',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 404,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Terra Cogita',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 401,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Grandapan',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 406,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Dodge',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 403,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 1,
+       date: 1487454933733,
+       _name: 'Oshimo',
+       _gameTypeId: 0 } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'ServerSelectionMessage', data: { serverId: 403 } }
+'Packet Received : '
+{ _messageType: 'SelectedServerDataMessage',
+  serverId: 403,
+  address: '172.31.17.136',
+  port: 5555,
+  canCreateNewCharacter: true,
+  ticket: 'f909b940da43208513867ae9dd2ba61e',
+  _isInitialized: true,
+  _access: 'https://oshimogameproxy.touch.dofus.com' }
+'Message sent :'
+'disconnecting'
+'SWITCHING_TO_GAME'
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: { address: '172.31.17.136', port: 5555, id: 403 } }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1547,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloGameMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'AuthenticationTicketMessage',
+  data: { ticket: 'f909b940da43208513867ae9dd2ba61e', lang: 'en' } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 0,
+  lastPacketId: 110,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AuthenticationTicketAcceptedMessage' }
+'Packet Received : '
+{ _messageType: 'BasicTimeMessage',
+  timestamp: 1487455039,
+  timezoneOffset: 60,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSettingsMessage',
+  lang: 'fr',
+  community: 0,
+  gameType: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerOptionalFeaturesMessage',
+  features: [ 1, 2, 3, 5 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSessionConstantsMessage',
+  variables: 
+   [ { _type: 'ServerSessionConstantInteger', id: 1, value: 1500000 },
+     { _type: 'ServerSessionConstantLong', id: 2, value: 7200000 },
+     { _type: 'ServerSessionConstantInteger', id: 3, value: 30 },
+     { _type: 'ServerSessionConstantLong', id: 4, value: 86400000 },
+     { _type: 'ServerSessionConstantLong', id: 5, value: 60000 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AccountCapabilitiesMessage',
+  accountId: 112984462,
+  tutorialAvailable: true,
+  breedsVisible: 32767,
+  breedsAvailable: 32767,
+  status: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'TrustStatusMessage',
+  trusted: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'CharactersListRequestMessage', data: undefined }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 1,
+  lastPacketId: 150,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 1,
+  total: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharactersListMessage',
+  hasStartupActions: false,
+  characters: 
+   [ { _type: 'CharacterBaseInformations',
+       id: 610200,
+       level: 15,
+       name: 'Miss-Lagertha',
+       entityLook: [Object],
+       breed: 11,
+       sex: true } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'CharacterSelectionMessage', data: { id: 610200 } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 2,
+  lastPacketId: 152,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'NotificationListMessage',
+  flags: [ 11517938 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterSelectedSuccessMessage',
+  infos: 
+   { _type: 'CharacterBaseInformations',
+     id: 610200,
+     level: 15,
+     name: 'Miss-Lagertha',
+     entityLook: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     breed: 11,
+     sex: true },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InventoryContentMessage',
+  objects: 
+   [ { _type: 'ObjectItem',
+       position: 5,
+       objectGID: 2476,
+       effects: [Object],
+       objectUID: 111184240,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 2,
+       objectGID: 10785,
+       effects: [Object],
+       objectUID: 111184241,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 7,
+       objectGID: 2473,
+       effects: [Object],
+       objectUID: 111184242,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 4,
+       objectGID: 2475,
+       effects: [Object],
+       objectUID: 111184243,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 15,
+       objectGID: 10798,
+       effects: [Object],
+       objectUID: 111184244,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 6,
+       objectGID: 2474,
+       effects: [Object],
+       objectUID: 111184245,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 3,
+       objectGID: 2477,
+       effects: [Object],
+       objectUID: 111184246,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 0,
+       objectGID: 2478,
+       effects: [Object],
+       objectUID: 111184247,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10792,
+       effects: [Object],
+       objectUID: 111184248,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10793,
+       effects: [Object],
+       objectUID: 111184249,
+       quantity: 2 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10795,
+       effects: [Object],
+       objectUID: 111184250,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10796,
+       effects: [Object],
+       objectUID: 111184251,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10801,
+       effects: [Object],
+       objectUID: 111184252,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10794,
+       effects: [Object],
+       objectUID: 111184253,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10800,
+       effects: [Object],
+       objectUID: 111184254,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10799,
+       effects: [Object],
+       objectUID: 111184255,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10784,
+       effects: [Object],
+       objectUID: 111184256,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 1008,
+       effects: [],
+       objectUID: 111184257,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 1009,
+       effects: [],
+       objectUID: 111184258,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10797,
+       effects: [Object],
+       objectUID: 111184259,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 289,
+       effects: [],
+       objectUID: 111184260,
+       quantity: 474 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 519,
+       effects: [],
+       objectUID: 111184261,
+       quantity: 3 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 371,
+       effects: [],
+       objectUID: 111184262,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 307,
+       effects: [],
+       objectUID: 111184263,
+       quantity: 1 } ],
+  kamas: 30165,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetUpdateMessage',
+  setId: 5,
+  setObjects: [ 2476, 2473, 2475, 2474, 2477, 2478 ],
+  setEffects: 
+   [ { _type: 'ObjectEffectInteger', actionId: 126, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 124, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 123, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 119, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 125, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 118, value: 40 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetUpdateMessage',
+  setId: 150,
+  setObjects: [ 10785, 10798 ],
+  setEffects: 
+   [ { _type: 'ObjectEffectInteger', actionId: 125, value: 2 },
+     { _type: 'ObjectEffectInteger', actionId: 174, value: 2 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 0,
+  shortcuts: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 1,
+  shortcuts: 
+   [ { _type: 'ShortcutSpell', slot: 5, spellId: 449 },
+     { _type: 'ShortcutSpell', slot: 2, spellId: 432 },
+     { _type: 'ShortcutSpell', slot: 7, spellId: 437 },
+     { _type: 'ShortcutSpell', slot: 4, spellId: 444 },
+     { _type: 'ShortcutSpell', slot: 1, spellId: 431 },
+     { _type: 'ShortcutSpell', slot: 6, spellId: 436 },
+     { _type: 'ShortcutSpell', slot: 3, spellId: 434 },
+     { _type: 'ShortcutSpell', slot: 0, spellId: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'EmoteListMessage',
+  emoteIds: [ 1 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobDescriptionMessage',
+  jobsDescription: [ { _type: 'JobDescription', jobId: 28, skills: [Object] } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobExperienceMultiUpdateMessage',
+  experiencesUpdate: 
+   [ { _type: 'JobExperience',
+       jobId: 28,
+       jobLevel: 17,
+       jobXP: 6148,
+       jobXpLevelFloor: 5762,
+       jobXpNextLevelFloor: 6493 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobCrafterDirectorySettingsMessage',
+  craftersSettings: 
+   [ { _type: 'JobCrafterDirectorySettings',
+       jobId: 28,
+       minSlot: 0,
+       userDefinedParams: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AlignmentRankUpdateMessage',
+  alignmentRank: 0,
+  verbose: false,
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'QuestListRequestMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'FriendsGetListMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'IgnoredGetListMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'SpouseGetInformationsMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'bakSoftToHardCurrentRateRequest'
+undefined
+'Message sent :'
+'bakHardToSoftCurrentRateRequest'
+undefined
+'Message sent :'
+'kpiStartSession'
+{ accountSessionId: '1465968706063261347', isSubscriber: false }
+'Message sent :'
+'sendMessage'
+{ type: 'ClientKeyMessage',
+  data: { key: 'ELNII7qHZFUvmw92bz5J6' } }
+'Message sent :'
+'sendMessage'
+{ type: 'GameContextCreateRequestMessage', data: undefined }
+'Packet Received : '
+{ _messageType: 'PrismsListMessage',
+  prisms: 
+   [ { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 521,
+       allianceId: 0,
+       worldX: -16,
+       worldY: -38,
+       mapId: 139558,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 499, allianceId: 0 },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 123, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 43,
+       allianceId: 0,
+       worldX: -37,
+       worldY: -50,
+       mapId: 150322,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 477, allianceId: 0 },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 607, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 455,
+       allianceId: 0,
+       worldX: -51,
+       worldY: 19,
+       mapId: 63965953,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 103,
+       allianceId: 0,
+       worldX: 14,
+       worldY: 15,
+       mapId: 88087304,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 520,
+       allianceId: 0,
+       worldX: -8,
+       worldY: -42,
+       mapId: 135466,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 64, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 109,
+       allianceId: 0,
+       worldX: 32,
+       worldY: -38,
+       mapId: 16678,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 533,
+       allianceId: 0,
+       worldX: -36,
+       worldY: -57,
+       mapId: 149817,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 476,
+       allianceId: 0,
+       worldX: 31,
+       worldY: -48,
+       mapId: 16176,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 606,
+       allianceId: 0,
+       worldX: -80,
+       worldY: -75,
+       mapId: 54174027,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 454,
+       allianceId: 0,
+       worldX: -56,
+       worldY: 3,
+       mapId: 159747,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 651,
+       allianceId: 0,
+       worldX: -55,
+       worldY: -41,
+       mapId: 54161193,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 519,
+       allianceId: 0,
+       worldX: -8,
+       worldY: -52,
+       mapId: 135476,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 80, allianceId: 0 },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 63, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 280,
+       allianceId: 0,
+       worldX: -27,
+       worldY: 29,
+       mapId: 144925,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo',
+       subAreaId: 798,
+       allianceId: 0,
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 171,
+       allianceId: 0,
+       worldX: 30,
+       worldY: -42,
+       mapId: 15658,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 540, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 605,
+       allianceId: 0,
+       worldX: -73,
+       worldY: -69,
+       mapId: 60036612,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 453,
+       allianceId: 0,
+       worldX: -56,
+       worldY: 0,
+       mapId: 159744,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 518,
+       allianceId: 0,
+       worldX: -16,
+       worldY: -60,
+       mapId: 139580,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 62,
+       allianceId: 0,
+       worldX: -29,
+       worldY: -9,
+       mapId: 100141056,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 279,
+       allianceId: 0,
+       worldX: -25,
+       worldY: -64,
+       mapId: 144192,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 170,
+       allianceId: 0,
+       worldX: 1,
+       worldY: 26,
+       mapId: 88080387,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 539, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 235,
+       allianceId: 0,
+       worldX: -21,
+       worldY: 1,
+       mapId: 73533952,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 604,
+       allianceId: 0,
+       worldX: -57,
+       worldY: -64,
+       mapId: 54162240,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 517,
+       allianceId: 0,
+       worldX: -18,
+       worldY: 28,
+       mapId: 140316,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 61,
+       allianceId: 0,
+       worldX: -17,
+       worldY: 34,
+       mapId: 139810,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 278,
+       allianceId: 0,
+       worldX: 3,
+       worldY: -9,
+       mapId: 84674061,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 799, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 495,
+       allianceId: 0,
+       worldX: -18,
+       worldY: 28,
+       mapId: 17826562,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 777,
+       allianceId: 0,
+       worldX: 32,
+       worldY: -31,
+       mapId: 79167488,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 169,
+       allianceId: 0,
+       worldX: -12,
+       worldY: -6,
+       mapId: 137478,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 234,
+       allianceId: 0,
+       worldX: -11,
+       worldY: 4,
+       mapId: 73402883,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 603,
+       allianceId: 0,
+       worldX: -78,
+       worldY: -74,
+       mapId: 54173002,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 532,
+       allianceId: 0,
+       worldX: -36,
+       worldY: -52,
+       mapId: 149812,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 81, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 277,
+       allianceId: 0,
+       worldX: -5,
+       worldY: 10,
+       mapId: 104071684,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 38,
+       allianceId: 0,
+       worldX: -1,
+       worldY: -48,
+       mapId: 131888,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 27,
+       allianceId: 0,
+       worldX: 13,
+       worldY: 4,
+       mapId: 88086803,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 472,
+       allianceId: 0,
+       worldX: -52,
+       worldY: 15,
+       mapId: 25690115,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 168,
+       allianceId: 0,
+       worldX: -10,
+       worldY: -11,
+       mapId: 136459,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 233,
+       allianceId: 0,
+       worldX: -10,
+       worldY: 2,
+       mapId: 136194,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 602,
+       allianceId: 0,
+       worldX: -68,
+       worldY: -34,
+       mapId: 54167842,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 59,
+       allianceId: 0,
+       worldX: -12,
+       worldY: -56,
+       mapId: 137528,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 276,
+       allianceId: 0,
+       worldX: -4,
+       worldY: 5,
+       mapId: 104072449,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 102,
+       allianceId: 0,
+       worldX: -4,
+       worldY: -9,
+       mapId: 84805645,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 471,
+       allianceId: 0,
+       worldX: -60,
+       worldY: -8,
+       mapId: 162056,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 167,
+       allianceId: 0,
+       worldX: 30,
+       worldY: 11,
+       mapId: 47186944,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 79, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 232,
+       allianceId: 0,
+       worldX: -10,
+       worldY: -2,
+       mapId: 136450,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 753,
+       allianceId: 0,
+       worldX: -63,
+       worldY: -75,
+       mapId: 62129672,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 601,
+       allianceId: 0,
+       worldX: -76,
+       worldY: -46,
+       mapId: 54171950,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 115,
+       allianceId: 0,
+       worldX: 19,
+       worldY: -32,
+       mapId: 10016,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 275,
+       allianceId: 0,
+       worldX: -20,
+       worldY: 10,
+       mapId: 63310595,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 492,
+       allianceId: 0,
+       worldX: -21,
+       worldY: 13,
+       mapId: 18350082,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 253,
+       allianceId: 0,
+       worldX: -14,
+       worldY: 12,
+       mapId: 138252,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 622,
+       allianceId: 0,
+       worldX: -76,
+       worldY: -75,
+       mapId: 59510784,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 166,
+       allianceId: 0,
+       worldX: 31,
+       worldY: 11,
+       mapId: 61212167,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 535,
+       allianceId: 0,
+       worldX: -32,
+       worldY: 36,
+       mapId: 147492,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 231,
+       allianceId: 0,
+       worldX: -17,
+       worldY: -3,
+       mapId: 75499008,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 600,
+       allianceId: 0,
+       worldX: -85,
+       worldY: -42,
+       mapId: 54176554,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 513,
+       allianceId: 0,
+       worldX: -32,
+       worldY: -57,
+       mapId: 4981249,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 57,
+       allianceId: 0,
+       worldX: -20,
+       worldY: 28,
+       mapId: 141340,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 116,
+       allianceId: 0,
+       worldX: 27,
+       worldY: -48,
+       mapId: 14128,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 469,
+       allianceId: 0,
+       worldX: -55,
+       worldY: 15,
+       mapId: 28049408,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 165,
+       allianceId: 0,
+       worldX: 34,
+       worldY: 4,
+       mapId: 61079552,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 534,
+       allianceId: 0,
+       worldX: -18,
+       worldY: 42,
+       mapId: 140330,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 230,
+       allianceId: 0,
+       worldX: -11,
+       worldY: 13,
+       mapId: 64488710,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 143,
+       allianceId: 0,
+       worldX: 16,
+       worldY: -24,
+       mapId: 8472,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 56,
+       allianceId: 0,
+       worldX: -4,
+       worldY: -45,
+       mapId: 133421,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 117,
+       allianceId: 0,
+       worldX: 21,
+       worldY: -26,
+       mapId: 11034,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 490,
+       allianceId: 0,
+       worldX: 13,
+       worldY: 22,
+       mapId: 88086785,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 468,
+       allianceId: 0,
+       worldX: -53,
+       worldY: 15,
+       mapId: 28050432,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 316,
+       allianceId: 0,
+       worldX: -2,
+       worldY: 26,
+       mapId: 38933250,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 164,
+       allianceId: 0,
+       worldX: 24,
+       worldY: -14,
+       mapId: 99614980,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 12,
+       allianceId: 0,
+       worldX: 11,
+       worldY: 30,
+       mapId: 88085511,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 511,
+       allianceId: 0,
+       worldX: -27,
+       worldY: 38,
+       mapId: 11796993,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 55,
+       allianceId: 0,
+       worldX: -20,
+       worldY: -62,
+       mapId: 141630,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 118,
+       allianceId: 0,
+       worldX: 31,
+       worldY: -35,
+       mapId: 16163,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 33,
+       allianceId: 0,
+       worldX: -5,
+       worldY: -13,
+       mapId: 133901,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 315,
+       allianceId: 0,
+       worldX: -4,
+       worldY: 24,
+       mapId: 86248450,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 163,
+       allianceId: 0,
+       worldX: 21,
+       worldY: -12,
+       mapId: 99747586,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 11,
+       allianceId: 0,
+       worldX: -1,
+       worldY: 33,
+       mapId: 72618499,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 76,
+       allianceId: 0,
+       worldX: -21,
+       worldY: -25,
+       mapId: 14551301,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 54,
+       allianceId: 0,
+       worldX: -11,
+       worldY: -36,
+       mapId: 136996,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 119,
+       allianceId: 0,
+       worldX: 22,
+       worldY: -37,
+       mapId: 11557,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 488,
+       allianceId: 0,
+       worldX: 4,
+       worldY: 1,
+       mapId: 99094017,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 32,
+       allianceId: 0,
+       worldX: 14,
+       worldY: 28,
+       mapId: 90703875,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 466,
+       allianceId: 0,
+       worldX: -44,
+       worldY: 21,
+       mapId: 153621,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 314,
+       allianceId: 0,
+       worldX: -4,
+       worldY: 25,
+       mapId: 33686529,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 162,
+       allianceId: 0,
+       worldX: 28,
+       worldY: -13,
+       mapId: 115737097,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 10,
+       allianceId: 0,
+       worldX: -1,
+       worldY: 0,
+       mapId: 88212759,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 531,
+       allianceId: 0,
+       worldX: -23,
+       worldY: 40,
+       mapId: 142888,
+       prism: [Object],
+       enrichData: [Object] },
+     ... 86 more items ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'EnabledChannelsMessage',
+  channels: [ 0, 1, 2, 3, 4, 5, 6, 7, 12, 13, 9, 10 ],
+  disallowed: [ 8, 7 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SpellListMessage',
+  spellPrevisualization: true,
+  spells: 
+   [ { _type: 'SpellItem', position: 63, spellId: 434, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 431, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 437, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 436, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 444, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 432, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 449, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 0, spellLevel: 1 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 1,
+  shortcuts: 
+   [ { _type: 'ShortcutSpell', slot: 5, spellId: 449 },
+     { _type: 'ShortcutSpell', slot: 2, spellId: 432 },
+     { _type: 'ShortcutSpell', slot: 7, spellId: 437 },
+     { _type: 'ShortcutSpell', slot: 4, spellId: 444 },
+     { _type: 'ShortcutSpell', slot: 1, spellId: 431 },
+     { _type: 'ShortcutSpell', slot: 6, spellId: 436 },
+     { _type: 'ShortcutSpell', slot: 3, spellId: 434 },
+     { _type: 'ShortcutSpell', slot: 0, spellId: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetCharacterRestrictionsMessage',
+  restrictions: 
+   { _type: 'ActorRestrictionsInformations',
+     cantBeAggressed: false,
+     cantBeChallenged: false,
+     cantTrade: false,
+     cantBeAttackedByMutant: false,
+     cantRun: false,
+     forceSlowWalk: false,
+     cantMinimize: false,
+     cantMove: false,
+     cantAggress: false,
+     cantChallenge: false,
+     cantExchange: false,
+     cantAttack: true,
+     cantChat: false,
+     cantBeMerchant: false,
+     cantUseObject: false,
+     cantUseTaxCollector: false,
+     cantUseInteractive: false,
+     cantSpeakToNPC: false,
+     cantChangeZone: false,
+     cantAttackMonster: false,
+     cantWalk8Directions: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InventoryWeightMessage',
+  weight: 1013,
+  weightMax: 1335,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendWarnOnConnectionStateMessage',
+  enable: false,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendWarnOnLevelGainStateMessage',
+  enable: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendGuildWarnOnAchievementCompleteStateMessage',
+  enable: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GuildMemberWarnOnConnectionStateMessage',
+  enable: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SequenceNumberRequestMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'SequenceNumberMessage', data: { number: 1 } }
+'Packet Received : '
+{ _messageType: 'TextInformationMessage',
+  msgType: 1,
+  msgId: 89,
+  parameters: [],
+  _isInitialized: true,
+  text: 'Welcome to DOFUS, and welcome to the World of Twelve! \nRemember that it is <b>strictly forbidden</b> to disclose your account name or password.' }
+'Packet Received : '
+{ _messageType: 'SpouseStatusMessage',
+  hasSpouse: false,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AchievementListMessage',
+  finishedAchievementsIds: 
+   [ 341,
+     3,
+     419,
+     422,
+     284,
+     600,
+     312,
+     340,
+     390,
+     415,
+     418,
+     424,
+     14,
+     283,
+     391,
+     414,
+     342,
+     417,
+     420,
+     118,
+     423,
+     282,
+     385,
+     388 ],
+  rewardableAchievements: [],
+  _isInitialized: true,
+  enrichData: { points: 33, achievementsTotal: 952 } }
+'Packet Received : '
+{ _messageType: 'GameRolePlayArenaUpdatePlayerInfosMessage',
+  rank: 33,
+  bestDailyRank: 0,
+  bestRank: 0,
+  victoryCount: 0,
+  arenaFightcount: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterCapabilitiesMessage',
+  guildEmblemSymbolCategories: 4095,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AlmanachCalendarDateMessage',
+  date: 180,
+  _isInitialized: true,
+  _merydeName: 'Amirniana' }
+'Packet Received : '
+{ _messageType: 'MailStatusMessage',
+  unread: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StartupActionsListMessage',
+  actions: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 3,
+  lastPacketId: 5623,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QuestListMessage',
+  finishedQuestsIds: [ 232, 231, 193, 492, 489 ],
+  finishedQuestsCounts: [ 1, 1, 1, 1, 1 ],
+  activeQuests: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 4,
+  lastPacketId: 4001,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendsListMessage',
+  friendsList: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 5,
+  lastPacketId: 5676,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'IgnoredListMessage',
+  ignoredList: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 6,
+  lastPacketId: 6355,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 7,
+  lastPacketId: 5607,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 8,
+  lastPacketId: 250,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextDestroyMessage' }
+'Packet Received : '
+{ _messageType: 'GameContextCreateMessage',
+  context: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LifePointsRegenBeginMessage',
+  regenRate: 10,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CurrentMapMessage',
+  mapId: 84674565,
+  mapKey: '6c7aa37848f3d8ec5cf11e7a16a43ee4',
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'MapInformationsRequestMessage',
+  data: { mapId: 84674565 } }
+'Packet Received : '
+{ _messageType: 'BasicTimeMessage',
+  timestamp: 1487455040,
+  timezoneOffset: 60,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterStatsListMessage',
+  stats: 
+   { _type: 'CharacterCharacteristicsInformations',
+     experience: 66111,
+     experienceLevelFloor: 61000,
+     experienceNextLevelFloor: 75000,
+     kamas: 30165,
+     statsPoints: 10,
+     spellsPoints: 14,
+     alignmentInfos: 
+      { _type: 'ActorExtendedAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 610215,
+        honor: 0,
+        honorGradeFloor: 0,
+        honorNextGradeFloor: 500,
+        aggressable: 0 },
+     lifePoints: 168,
+     maxLifePoints: 168,
+     energyPoints: 9850,
+     maxEnergyPoints: 10000,
+     actionPointsCurrent: 6,
+     movementPointsCurrent: 3,
+     initiative: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 199,
+        objectsAndMountBonus: 3,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     prospecting: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 105,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     actionPoints: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 6,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     movementPoints: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 3,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     strength: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 50,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     vitality: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 43,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     wisdom: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 20,
+        objectsAndMountBonus: 46,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     chance: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 50,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     agility: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 50,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     intelligence: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 49,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     range: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     summonableCreaturesBoost: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 1,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     reflect: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalHit: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalHitWeapon: 36,
+     criticalMiss: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     healBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     allDamagesBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     weaponDamagesBonusPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     damagesBonusPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     trapBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     trapBonusPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     permanentDamagePercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 10,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     tackleBlock: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 5,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     tackleEvade: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 5,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     PAAttack: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     PMAttack: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pushDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     neutralDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     earthDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     waterDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     airDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     fireDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     dodgePALostProbability: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     dodgePMLostProbability: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     neutralElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     earthElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     waterElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     airElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     fireElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     neutralElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     earthElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     waterElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     airElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     fireElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pushDamageReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalDamageReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpNeutralElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 1,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpEarthElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpWaterElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpAirElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpFireElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpNeutralElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpEarthElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpWaterElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpAirElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpFireElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     spellModifications: [],
+     probationTime: 0 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 610200 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'bakHardToSoftCurrentRateSuccess',
+  rate: 59.19719 }
+'Packet Received : '
+{ _messageType: 'bakSoftToHardCurrentRateSuccess',
+  rate: 62.1570495 }
+'Packet Received : '
+{ _messageType: 'kpiStartSessionMessage', sessionId: 648668591 }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 9,
+  lastPacketId: 6317,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 10,
+  lastPacketId: 225,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapComplementaryInformationsDataMessage',
+  subAreaId: 95,
+  mapId: 84674565,
+  houses: 
+   [ { _type: 'HouseInformations',
+       houseId: 9713,
+       doorsOnMap: [Object],
+       ownerName: 'Wiz-Toxic-Izzziii',
+       isOnSale: false,
+       isSaleLocked: false,
+       modelId: 276,
+       _name: 'Small Astrubian townhouse' } ],
+  actors: 
+   [ { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 610200,
+       look: [Object],
+       disposition: [Object],
+       name: 'Miss-Lagertha',
+       humanoidInfo: [Object],
+       accountId: 112984462,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 714164,
+       look: [Object],
+       disposition: [Object],
+       name: 'Som-Som',
+       humanoidInfo: [Object],
+       accountId: 114158083,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 615603,
+       look: [Object],
+       disposition: [Object],
+       name: 'Chussy',
+       humanoidInfo: [Object],
+       accountId: 14580444,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 521640,
+       look: [Object],
+       disposition: [Object],
+       name: 'Spooky-beurette',
+       humanoidInfo: [Object],
+       accountId: 79074742,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 414184,
+       look: [Object],
+       disposition: [Object],
+       name: 'Eula-Medriam',
+       humanoidInfo: [Object],
+       accountId: 101373921,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 719587,
+       look: [Object],
+       disposition: [Object],
+       name: 'Vendeur',
+       humanoidInfo: [Object],
+       accountId: 114339569,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 704681,
+       look: [Object],
+       disposition: [Object],
+       name: 'Vexi',
+       humanoidInfo: [Object],
+       accountId: 113728057,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 627553,
+       look: [Object],
+       disposition: [Object],
+       name: 'Royat',
+       humanoidInfo: [Object],
+       accountId: 84411662,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 716567,
+       look: [Object],
+       disposition: [Object],
+       name: 'Razorkh',
+       humanoidInfo: [Object],
+       accountId: 86025288,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayNpcInformations',
+       contextualId: -2,
+       look: [Object],
+       disposition: [Object],
+       npcId: 546,
+       sex: false,
+       specialArtworkId: 0,
+       _npcData: [Object] },
+     { _type: 'GameRolePlayGroupMonsterInformations',
+       contextualId: -5,
+       look: [Object],
+       disposition: [Object],
+       staticInfos: [Object],
+       ageBonus: 0,
+       lootShare: -1,
+       alignmentSide: -1,
+       keyRingBonus: false,
+       hasHardcoreDrop: false } ],
+  interactiveElements: 
+   [ { _type: 'InteractiveElementWithAgeBonus',
+       elementId: 464766,
+       elementTypeId: 45,
+       enabledSkills: [],
+       disabledSkills: [Object],
+       ageBonus: 3,
+       _name: 'Oats' },
+     { _type: 'InteractiveElementWithAgeBonus',
+       elementId: 464763,
+       elementTypeId: 45,
+       enabledSkills: [],
+       disabledSkills: [Object],
+       ageBonus: 3,
+       _name: 'Oats' },
+     { _type: 'InteractiveElement',
+       elementId: 464765,
+       elementTypeId: 38,
+       enabledSkills: [],
+       disabledSkills: [Object],
+       _name: 'Wheat' },
+     { _type: 'InteractiveElement',
+       elementId: 465552,
+       elementTypeId: -1,
+       enabledSkills: [Object],
+       disabledSkills: [],
+       _houseData: [Object] },
+     { _type: 'InteractiveElementWithAgeBonus',
+       elementId: 464764,
+       elementTypeId: 45,
+       enabledSkills: [],
+       disabledSkills: [Object],
+       ageBonus: 3,
+       _name: 'Oats' } ],
+  statedElements: 
+   [ { _type: 'StatedElement',
+       elementId: 464766,
+       elementCellId: 451,
+       elementState: 0 },
+     { _type: 'StatedElement',
+       elementId: 464763,
+       elementCellId: 253,
+       elementState: 0 },
+     { _type: 'StatedElement',
+       elementId: 464765,
+       elementCellId: 423,
+       elementState: 1 },
+     { _type: 'StatedElement',
+       elementId: 464764,
+       elementCellId: 278,
+       elementState: 0 } ],
+  obstacles: [],
+  fights: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 2,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HousePropertiesMessage',
+  properties: 
+   { _type: 'HouseInformations',
+     houseId: 9713,
+     doorsOnMap: [ 465552 ],
+     ownerName: 'Wiz-Toxic-Izzziii',
+     isOnSale: false,
+     isSaleLocked: false,
+     modelId: 276,
+     _name: 'Small Astrubian townhouse' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 704681,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 132728,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 336,
+        direction: 2 },
+     name: 'Karill',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 21430936,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 132771 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 132728 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 378,
+     393,
+     407,
+     422,
+     423,
+     424,
+     425,
+     439,
+     454,
+     468,
+     483,
+     497,
+     512,
+     513,
+     527,
+     542,
+     556,
+     557,
+     558 ],
+  actorId: 714164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 539,
+     524,
+     510,
+     495,
+     481,
+     466,
+     452,
+     437,
+     423,
+     408,
+     394,
+     379,
+     365,
+     350,
+     322,
+     308 ],
+  actorId: 716567,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 716567,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 714164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 336, 350, 365, 379, 394, 408, 423, 424, 425, 439, 454, 455, 469, 484, 485 ],
+  actorId: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 725471,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 539,
+        direction: 6 },
+     name: 'Spandow',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 112979895,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 725505 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 725471 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 425 ],
+  actorId: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 425, 439, 454, 468, 483, 497, 512, 526 ],
+  actorId: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 468 ],
+  actorId: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 468, 483, 497, 512, 526, 541, 555 ],
+  actorId: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 177761,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 22,
+        direction: 4 },
+     name: 'Mahanaya',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 1471238,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 177961 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 177761 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 539, 524, 510, 495, 481, 466, 452, 437, 423, 408, 394, 379, 365, 364 ],
+  actorId: 725471,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 22, 37, 51, 66, 94, 122, 150, 164, 179, 193, 208, 222, 237, 251, 279 ],
+  actorId: 177761,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 725471,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 177761,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 9,
+  content: 'debug',
+  timestamp: 1487455056,
+  fingerprint: '0h8nqp4t',
+  senderId: 547408,
+  senderName: 'Aim-Fire',
+  senderAccountId: 112214161,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 722097,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 539,
+        direction: 6 },
+     name: 'Neiki',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 101357549,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 722150 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 722097 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464765,
+     elementCellId: 423,
+     elementState: 0 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464765,
+     elementTypeId: 38,
+     enabledSkills: [ [Object] ],
+     disabledSkills: [],
+     _name: 'Wheat' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 360, 346 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 714164,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 542,
+        direction: 4 },
+     name: 'Som-Som',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114158083,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 714208 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 714164 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 725700,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 541,
+        direction: 6 },
+     name: 'Recrutexp',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 102526988,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 725713 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 725700 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 721162,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 500,
+        direction: 1 },
+     name: 'Michelle-lafolle',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114372783,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 721185 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 716364,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 25,
+        direction: 0 },
+     name: 'Guichenee',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 87183116,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 716387 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 716364 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 25, 53, 68, 82, 97, 125, 153, 181, 209, 223, 251 ],
+  actorId: 716364,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayGroupMonsterInformations',
+     contextualId: -3,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 430,
+        skins: [],
+        indexedColors: [],
+        scales: [],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 422,
+        direction: 7 },
+     staticInfos: 
+      { _type: 'GroupMonsterStaticInformations',
+        mainCreatureLightInfos: [Object],
+        underlings: [Object] },
+     ageBonus: 0,
+     lootShare: -1,
+     alignmentSide: -1,
+     keyRingBonus: false,
+     hasHardcoreDrop: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 500,
+     486,
+     471,
+     457,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     318,
+     303,
+     289,
+     274,
+     260,
+     245,
+     231,
+     203,
+     188,
+     160,
+     146,
+     118,
+     103,
+     75,
+     61,
+     46,
+     18 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 716364,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 541,
+     513,
+     485,
+     457,
+     429,
+     415,
+     402,
+     388,
+     375,
+     347,
+     332,
+     304,
+     276,
+     248,
+     220,
+     192,
+     164,
+     136,
+     108,
+     94,
+     66,
+     51,
+     37,
+     9 ],
+  actorId: 725700,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 542, 528, 529, 544, 545 ],
+  actorId: 714164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 132728,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 541,
+        direction: 6 },
+     name: 'Karill',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 21430936,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 132771 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 132728 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 714164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 725700,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 704045,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 20,
+        direction: 2 },
+     name: 'Zanarckand',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 114113921,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 704140 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 704045 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 346, 404 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 20,
+     48,
+     76,
+     104,
+     132,
+     160,
+     188,
+     216,
+     244,
+     272,
+     300,
+     328,
+     342,
+     355,
+     369,
+     382,
+     410,
+     425,
+     439,
+     454,
+     468,
+     496,
+     511,
+     525,
+     553 ],
+  actorId: 704045,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 441, 469, 483, 511, 524, 552 ],
+  actorId: 719587,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 719587,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 704045,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 714164,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 555,
+        direction: 4 },
+     name: 'Som-Som',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114158083,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 714208 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 714164 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 718036,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 321,
+        direction: 4 },
+     name: 'Vinke',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114320650,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 718053 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 718036 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 422, 408 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 539,
+     511,
+     496,
+     468,
+     454,
+     439,
+     425,
+     410,
+     382,
+     354,
+     326,
+     298,
+     270,
+     242,
+     229,
+     215,
+     187,
+     174,
+     146,
+     132,
+     104,
+     91,
+     63,
+     49,
+     36,
+     8 ],
+  actorId: 722097,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 321,
+     306,
+     292,
+     277,
+     249,
+     221,
+     193,
+     179,
+     164,
+     150,
+     135,
+     121,
+     106,
+     92,
+     64,
+     49,
+     35,
+     7 ],
+  actorId: 718036,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 718036,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 722097,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 555,
+     527,
+     513,
+     485,
+     457,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     304,
+     276,
+     248,
+     234,
+     219,
+     191,
+     177,
+     149,
+     134,
+     106,
+     92,
+     64,
+     49,
+     35,
+     7 ],
+  actorId: 714164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 714164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ObjectGroundAddedMessage',
+  cellId: 527,
+  objectGID: 13096,
+  _isInitialized: true,
+  _iconId: 47696 }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 408, 354 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 541, 555, 556 ],
+  actorId: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 132728,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 723777,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 350,
+        direction: 0 },
+     name: 'King-timeur',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 101345637,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 723819 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 723777 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 649028,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 540,
+        direction: 6 },
+     name: 'Xiblaz',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [Object] },
+     accountId: 112413485,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 649164 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 649028 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 723169,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 539,
+        direction: 6 },
+     name: 'Prely',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114407254,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 723199 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 723169 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 539,
+     511,
+     496,
+     468,
+     454,
+     439,
+     425,
+     410,
+     382,
+     369,
+     355,
+     342,
+     314,
+     286,
+     258,
+     230,
+     202,
+     174,
+     146,
+     118,
+     90,
+     62,
+     48,
+     35,
+     7 ],
+  actorId: 723169,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 350,
+     337,
+     338,
+     324,
+     325,
+     326,
+     327,
+     314,
+     300,
+     287,
+     273,
+     274,
+     261,
+     262,
+     248,
+     249,
+     236,
+     222,
+     223 ],
+  actorId: 723777,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 723169,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 723777,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 404, 390 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 721162,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 7,
+        direction: 1 },
+     name: 'Michelle-lafolle',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114372783,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 721185 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 721162 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 725166,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 265,
+        direction: 6 },
+     name: 'Rebeulotte',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 44518709,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 725194 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 725166 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 354, 369 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 707963,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 551,
+        direction: 6 },
+     name: 'Swow-Snipe',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 113778085,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 708033 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 707963 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 551,
+     523,
+     509,
+     481,
+     453,
+     425,
+     410,
+     382,
+     354,
+     326,
+     298,
+     270,
+     242,
+     214,
+     186,
+     172,
+     144 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 540, 554 ],
+  actorId: 649028,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 649028,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 453 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 453, 425, 410, 382, 354, 326, 298, 270, 242, 214, 186, 172, 144 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 354 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 354, 326, 298, 270, 242, 214, 186, 172, 144 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 7,
+     35,
+     63,
+     91,
+     119,
+     147,
+     175,
+     203,
+     231,
+     259,
+     287,
+     300,
+     314,
+     327,
+     341,
+     354,
+     382,
+     410,
+     425,
+     439,
+     454,
+     468,
+     496,
+     511,
+     525,
+     553 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 265, 250, 236, 221, 193, 165, 137, 123, 108, 94, 66, 51, 37, 9 ],
+  actorId: 725166,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 186 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 186, 158, 145, 117, 89, 61, 33 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 5,
+  content: 'vend dd pourpre lvl 100',
+  timestamp: 1487455144,
+  fingerprint: 'xhm71m2k',
+  senderId: 721331,
+  senderName: 'Myrac',
+  senderAccountId: 101439457,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 165 ],
+  actorId: 725166,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 165, 164, 178, 177, 190, 189, 203, 202, 215, 214, 228, 227, 240, 254, 253 ],
+  actorId: 725166,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 178 ],
+  actorId: 725166,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 178, 191, 190, 204, 217, 216, 215, 229, 242, 241, 255, 254, 267, 281, 280 ],
+  actorId: 725166,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 61 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 61, 47, 19, 5 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 5 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 5, 19, 20, 7 ],
+  actorId: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 707963,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 725166,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 390, 363 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 650148,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 537,
+        direction: 6 },
+     name: 'Tirre',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 102305396,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 650195 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 650148 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 369, 354 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 537, 509, 494, 466, 438, 410, 396, 368 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 396 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 396, 410, 411, 412, 427, 441, 442, 429, 415, 402, 388, 375, 361, 348, 349 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 427 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 427, 441, 442, 429, 415, 416, 417, 432 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 668077,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 20,
+        direction: 2 },
+     name: 'Oo-gildarts',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 51162144,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 668215 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 668077 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 442 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 521640,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 442, 429, 415, 402, 388, 375, 361, 362 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 20,
+     48,
+     76,
+     104,
+     132,
+     160,
+     188,
+     216,
+     244,
+     259,
+     273,
+     288,
+     302,
+     317,
+     331,
+     346,
+     360,
+     388,
+     402,
+     415,
+     429,
+     457,
+     470,
+     498,
+     512,
+     525,
+     553 ],
+  actorId: 668077,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowChallengeMessage',
+  commonsInfos: 
+   { _type: 'FightCommonInformations',
+     fightId: 826,
+     fightType: 4,
+     fightTeams: [ [Object], [Object] ],
+     fightTeamsPositions: [ 362, 363 ],
+     fightTeamsOptions: [ [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 2,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 826,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 0,
+     leaderId: 650148,
+     teamSide: -1,
+     teamTypeId: 0,
+     teamMembers: [ [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 826,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 826,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 826,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 826,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 721162,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 549,
+        direction: 6 },
+     name: 'Michelle-lafolle',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114372783,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 721185 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 721162 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 668077,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayRemoveChallengeMessage',
+  fightId: 826,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 556 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 556,
+     542,
+     527,
+     513,
+     498,
+     484,
+     469,
+     455,
+     440,
+     426,
+     411,
+     410,
+     382,
+     369,
+     341,
+     313,
+     285,
+     257,
+     229,
+     201,
+     186,
+     158,
+     144,
+     116,
+     101,
+     73,
+     59,
+     44,
+     16 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'cherche groupe kanigrou',
+  timestamp: 1487455177,
+  fingerprint: 'qdry0d1a',
+  senderId: 725279,
+  senderName: 'Tekiintepine',
+  senderAccountId: 101401786,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 354, 327 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 417012,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 6,
+        direction: 2 },
+     name: 'Ragnar-Lyon',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 103122663,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 1,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 417160 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 417012 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 6,
+     34,
+     62,
+     90,
+     118,
+     146,
+     174,
+     202,
+     230,
+     258,
+     286,
+     314,
+     342,
+     355,
+     369,
+     382,
+     410,
+     438,
+     466,
+     494,
+     509,
+     523,
+     551 ],
+  actorId: 417012,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 417012,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 718711,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 540,
+        direction: 6 },
+     name: 'Jevolas',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 114172692,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 718763 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 718711 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 650148,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 362,
+        direction: 1 },
+     name: 'Tirre',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 102305396,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 650195 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 327, 287 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 362, 376, 404, 432, 460, 488, 501, 515, 528, 542, 555 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 710247,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 321,
+        direction: 2 },
+     name: 'Aerathena',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [Object] },
+     accountId: 47753226,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 710327 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 710247 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 321, 334, 348, 361, 375, 388, 402, 415, 429, 457, 485, 513, 541 ],
+  actorId: 710247,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 710247,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 540,
+     512,
+     498,
+     470,
+     442,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     304,
+     276,
+     248,
+     220,
+     192,
+     164,
+     136,
+     108,
+     94,
+     66,
+     51,
+     37,
+     9 ],
+  actorId: 718711,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 718711,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 650088,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 540,
+        direction: 6 },
+     name: 'Ninitofu',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 111837015,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 650124 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 650088 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 287, 246 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 540,
+     512,
+     498,
+     470,
+     442,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     304,
+     276,
+     248,
+     220,
+     192,
+     164,
+     150,
+     122,
+     107,
+     79,
+     65,
+     50,
+     22 ],
+  actorId: 650088,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 650088,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 721162,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 7,
+        direction: 0 },
+     name: 'Michelle-lafolle',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114372783,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 721185 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 721162 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 7,
+     35,
+     63,
+     91,
+     119,
+     147,
+     175,
+     203,
+     231,
+     244,
+     272,
+     300,
+     328,
+     342,
+     355,
+     369,
+     382,
+     410,
+     425,
+     453,
+     467,
+     495,
+     510,
+     524,
+     552 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayGroupMonsterInformations',
+     contextualId: -4,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 635,
+        skins: [],
+        indexedColors: [],
+        scales: [],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 514,
+        direction: 7 },
+     staticInfos: 
+      { _type: 'GroupMonsterStaticInformations',
+        mainCreatureLightInfos: [Object],
+        underlings: [Object] },
+     ageBonus: 0,
+     lootShare: -1,
+     alignmentSide: -1,
+     keyRingBonus: false,
+     hasHardcoreDrop: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 246, 188 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 704681,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 539,
+        direction: 6 },
+     name: 'Vexi',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 113728057,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 704719 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 704681 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 725708,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 21,
+        direction: 1 },
+     name: 'Roubmouth',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 100197993,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 725721 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 725708 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 725688,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 8,
+        direction: 4 },
+     name: 'Backdown',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 112743157,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 725703 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 725688 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 539,
+     511,
+     496,
+     468,
+     454,
+     439,
+     425,
+     410,
+     382,
+     354,
+     326,
+     298,
+     270,
+     242,
+     214,
+     186,
+     158,
+     130,
+     102,
+     74,
+     46,
+     18,
+     5 ],
+  actorId: 704681,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 21,
+     49,
+     77,
+     105,
+     133,
+     161,
+     189,
+     217,
+     245,
+     273,
+     288,
+     302,
+     317,
+     331,
+     346,
+     360,
+     388,
+     402,
+     415,
+     429,
+     457,
+     470,
+     498,
+     512,
+     525,
+     553 ],
+  actorId: 725708,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 704681,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 723189,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 514,
+        direction: 1 },
+     name: 'Takotak',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 111788462,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 723239 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 723457,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 270,
+        direction: 1 },
+     name: 'Kherba',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 62628142,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 723493 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 725708,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 514, 499 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 668077,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 541,
+        direction: 6 },
+     name: 'Oo-gildarts',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 51162144,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 668215 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 668077 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 514, 513, 526, 554 ],
+  actorId: 723189,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 723189,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 650148,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 538,
+        direction: 6 },
+     name: 'Tirre',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 102305396,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 650195 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 650148 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 541,
+     513,
+     498,
+     470,
+     442,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     304,
+     276,
+     248,
+     234,
+     219,
+     205,
+     177,
+     149,
+     134,
+     106,
+     92,
+     64,
+     49,
+     35,
+     7 ],
+  actorId: 668077,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 538,
+     510,
+     495,
+     467,
+     439,
+     425,
+     410,
+     382,
+     354,
+     326,
+     298,
+     285,
+     257,
+     229,
+     215,
+     187,
+     174,
+     146,
+     132,
+     104,
+     91,
+     63,
+     49,
+     36,
+     8 ],
+  actorId: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 681246,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 20,
+        direction: 2 },
+     name: 'Srramsatrame',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 52097209,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 681290 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 681246 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 270,
+     298,
+     326,
+     354,
+     382,
+     410,
+     425,
+     439,
+     454,
+     468,
+     483,
+     497,
+     512,
+     526,
+     541,
+     542 ],
+  actorId: 723457,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SequenceNumberRequestMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'SequenceNumberMessage', data: { number: 2 } }
+'Packet Received : '
+{ _messageType: 'BasicLatencyStatsRequestMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'BasicLatencyStatsMessage',
+  data: { latency: 262, sampleCount: 12, max: 50 } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 11,
+  lastPacketId: 6317,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 12,
+  lastPacketId: 5663,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 425 ],
+  actorId: 723457,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 668077,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 721162,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 553,
+        direction: 7 },
+     name: 'Michelle-lafolle',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114372783,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 721185 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 721162 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 8,
+     36,
+     64,
+     92,
+     120,
+     148,
+     176,
+     204,
+     232,
+     260,
+     288,
+     302,
+     317,
+     331,
+     346,
+     360,
+     388,
+     402,
+     415,
+     429,
+     457,
+     485,
+     498,
+     526,
+     541 ],
+  actorId: 725688,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 553, 539, 524, 510, 482, 467, 453, 438, 410, 382 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 425, 426, 440, 441, 442, 429, 415, 416, 417, 418, 419 ],
+  actorId: 723457,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 725688,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 724604,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 349,
+        direction: 4 },
+     name: 'Aeroforce',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114430999,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 724623 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 724604 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 382, 410, 425, 426, 427, 441, 442 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 537773,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 209,
+        direction: 3 },
+     name: 'Salfils',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 65291759,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 537918 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 537773 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 723457,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 427 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 427, 441, 442, 429, 415, 416, 417, 404, 405 ],
+  actorId: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 349,
+     348,
+     333,
+     332,
+     331,
+     317,
+     316,
+     315,
+     314,
+     313,
+     312,
+     311,
+     310,
+     323,
+     337,
+     336 ],
+  actorId: 724604,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 721162,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 724604,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 20,
+     48,
+     76,
+     104,
+     132,
+     160,
+     174,
+     187,
+     215,
+     243,
+     271,
+     299,
+     327,
+     355,
+     369,
+     382,
+     410,
+     425,
+     453,
+     467,
+     495,
+     510,
+     524,
+     552 ],
+  actorId: 681246,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 699544,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 24,
+        direction: 2 },
+     name: 'Asphabal',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 99273107,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 699610 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 699544 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 209, 237, 250, 278, 292, 320, 333, 361, 375, 388, 402, 415, 429, 457, 471 ],
+  actorId: 537773,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 681246,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 537773,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightOptionStateUpdateMessage',
+  fightId: 827,
+  teamId: 0,
+  option: 1,
+  state: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowChallengeMessage',
+  commonsInfos: 
+   { _type: 'FightCommonInformations',
+     fightId: 827,
+     fightType: 4,
+     fightTeams: [ [Object], [Object] ],
+     fightTeamsPositions: [ 471, 514 ],
+     fightTeamsOptions: [ [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 827,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 0,
+     leaderId: 537773,
+     teamSide: -1,
+     teamTypeId: 0,
+     teamMembers: [ [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 827,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -4,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 827,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -4,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 827,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -4,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'des gens pour koli 190+',
+  timestamp: 1487455296,
+  fingerprint: 'd6icsf9r',
+  senderId: 710573,
+  senderName: 'Glokk',
+  senderAccountId: 52055796,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 24,
+     52,
+     80,
+     108,
+     136,
+     164,
+     192,
+     220,
+     248,
+     276,
+     304,
+     332,
+     360,
+     388,
+     416,
+     431,
+     445,
+     460,
+     488,
+     501,
+     515,
+     528,
+     556 ],
+  actorId: 699544,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayRemoveChallengeMessage',
+  fightId: 827,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 699544,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 723142,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 5,
+        direction: 2 },
+     name: 'Funkypuussy',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 84350141,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 1,
+        alignmentValue: 0,
+        alignmentGrade: 3,
+        characterPower: 723226 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 723142 ],
+  enable: [ 11 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 640164,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 322,
+        direction: 0 },
+     name: 'Pouettee',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 113298116,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 640240 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 640164 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 707977,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 20,
+        direction: 2 },
+     name: 'Konati',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 113726127,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 708016 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 707977 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 663845,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 7,
+        direction: 1 },
+     name: 'Jej-elhm',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 101402903,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 663913 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 663845 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 20,
+     48,
+     62,
+     90,
+     118,
+     146,
+     159,
+     187,
+     215,
+     243,
+     271,
+     299,
+     327,
+     355,
+     369,
+     382,
+     410,
+     425,
+     453,
+     467,
+     495,
+     510,
+     524,
+     552 ],
+  actorId: 707977,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 6,
+     34,
+     62,
+     90,
+     118,
+     146,
+     174,
+     202,
+     230,
+     258,
+     286,
+     314,
+     342,
+     355,
+     369,
+     382,
+     410,
+     438,
+     453,
+     481,
+     495,
+     510,
+     538 ],
+  actorId: 627553,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 7,
+     35,
+     63,
+     91,
+     119,
+     147,
+     175,
+     203,
+     231,
+     259,
+     287,
+     315,
+     328,
+     342,
+     355,
+     369,
+     382,
+     410,
+     425,
+     439,
+     454,
+     468,
+     483,
+     497 ],
+  actorId: 663845,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 627553,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 203 ],
+  actorId: 663845,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 203,
+     231,
+     245,
+     273,
+     288,
+     302,
+     317,
+     331,
+     346,
+     360,
+     388,
+     402,
+     415,
+     429,
+     457,
+     485,
+     498,
+     512,
+     540 ],
+  actorId: 663845,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 707977,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 663845,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 720066,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 8,
+        direction: 4 },
+     name: 'Creewa',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114326779,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 720101 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 720066 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 322, 294, 281 ],
+  actorId: 640164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 416450,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 555,
+        direction: 6 },
+     name: 'Kiralkonyali',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 101458700,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 416491 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 416450 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464763,
+     elementCellId: 253,
+     elementState: 2 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464763,
+     elementTypeId: 45,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Oats' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveUsedMessage',
+  entityId: 640164,
+  elemId: 464763,
+  skillId: 57,
+  duration: 99,
+  _isInitialized: true,
+  _useAnimation: 'AnimFaucher' }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 5,
+     18,
+     46,
+     74,
+     102,
+     130,
+     158,
+     186,
+     214,
+     242,
+     270,
+     298,
+     326,
+     354,
+     382,
+     410,
+     438,
+     466,
+     494,
+     509,
+     523,
+     551 ],
+  actorId: 723142,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 711812,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 8,
+        direction: 0 },
+     name: 'Poulppee',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 80063135,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 711824 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 711812 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 555,
+     527,
+     513,
+     485,
+     457,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     304,
+     276,
+     248,
+     220,
+     192,
+     164,
+     136,
+     108,
+     94,
+     79,
+     51 ],
+  actorId: 416450,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 723142,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 513 ],
+  actorId: 416450,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 513,
+     485,
+     457,
+     429,
+     415,
+     402,
+     388,
+     360,
+     332,
+     304,
+     276,
+     248,
+     220,
+     192,
+     164,
+     136,
+     108,
+     80,
+     52,
+     24 ],
+  actorId: 416450,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 8,
+     36,
+     64,
+     92,
+     120,
+     148,
+     176,
+     204,
+     232,
+     260,
+     288,
+     302,
+     317,
+     331,
+     346,
+     360,
+     388,
+     402,
+     415,
+     429,
+     457,
+     485,
+     498,
+     512,
+     540 ],
+  actorId: 711812,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 8,
+     36,
+     64,
+     92,
+     120,
+     148,
+     176,
+     190,
+     218,
+     246,
+     274,
+     302,
+     317,
+     331,
+     346,
+     360,
+     388,
+     416,
+     431,
+     445,
+     460,
+     488,
+     516,
+     544 ],
+  actorId: 720066,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 616656,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 350,
+        direction: 7 },
+     name: 'Oukfan',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 101616730,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 616757 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 616656 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 416450,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 537773,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 471,
+        direction: 1 },
+     name: 'Salfils',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 65291759,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 537918 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 720066,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 711812,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 314086,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 21,
+        direction: 1 },
+     name: 'Madarah',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 101566891,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 1,
+        alignmentValue: 14,
+        alignmentGrade: 0,
+        characterPower: 314285 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464763,
+     elementCellId: 253,
+     elementState: 1 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464763,
+     elementTypeId: 45,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Oats' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 281, 309, 323, 351, 366, 394, 408, 423 ],
+  actorId: 640164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 350,
+     351,
+     352,
+     353,
+     354,
+     355,
+     342,
+     343,
+     329,
+     316,
+     317,
+     318,
+     319,
+     320,
+     334,
+     335 ],
+  actorId: 616656,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464766,
+     elementCellId: 451,
+     elementState: 2 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464766,
+     elementTypeId: 45,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Oats' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveUsedMessage',
+  entityId: 640164,
+  elemId: 464766,
+  skillId: 57,
+  duration: 99,
+  _isInitialized: true,
+  _useAnimation: 'AnimFaucher' }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 616656,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 471, 470, 456, 455, 454, 453, 438, 424, 409, 408, 407, 393, 392 ],
+  actorId: 537773,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 537773,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 650148,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464766,
+     elementCellId: 451,
+     elementState: 1 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464766,
+     elementTypeId: 45,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Oats' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464765,
+     elementCellId: 423,
+     elementState: 2 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464765,
+     elementTypeId: 38,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Wheat' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveUsedMessage',
+  entityId: 640164,
+  elemId: 464765,
+  skillId: 45,
+  duration: 99,
+  _isInitialized: true,
+  _useAnimation: 'AnimFaucher' }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 188, 229 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464765,
+     elementCellId: 423,
+     elementState: 1 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464765,
+     elementTypeId: 38,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Wheat' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 423, 409, 396, 382, 369, 355, 342, 328, 329, 316, 317, 303, 304, 291, 277 ],
+  actorId: 640164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464764,
+     elementCellId: 278,
+     elementState: 2 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464764,
+     elementTypeId: 45,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Oats' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveUsedMessage',
+  entityId: 640164,
+  elemId: 464764,
+  skillId: 57,
+  duration: 99,
+  _isInitialized: true,
+  _useAnimation: 'AnimFaucher' }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 132728,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 7,
+        direction: 4 },
+     name: 'Karill',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 21430936,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 132771 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 132728 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StatedElementUpdatedMessage',
+  statedElement: 
+   { _type: 'StatedElement',
+     elementId: 464764,
+     elementCellId: 278,
+     elementState: 1 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveElementUpdatedMessage',
+  interactiveElement: 
+   { _type: 'InteractiveElement',
+     elementId: 464764,
+     elementTypeId: 45,
+     enabledSkills: [],
+     disabledSkills: [ [Object] ],
+     _name: 'Oats' },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 21, 20, 6 ],
+  actorId: 314086,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 314086,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 229, 283 ],
+  actorId: -3,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 277, 249, 236, 222, 223 ],
+  actorId: 640164,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 640164,
+  _isInitialized: true }

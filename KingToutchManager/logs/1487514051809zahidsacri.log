@@ -1,0 +1,2465 @@
+Server request connecting ...
+Inventory : 0
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"4CqV/VYbUoZpHvik"}
+Config loaded !
+{"key":"582c48ad-2dd3-4610-b68a-b43f279560bf","account_id":112984462,"ip":"105.157.44.165","added_date":"2017-02-19T15:20:54+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-19T18:20:54+01:00"}
+Api key : 582c48ad-2dd3-4610-b68a-b43f279560bf
+Game token : 00a371389b2fb1654ae9597d25e023b1
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=4CqV%2FVYbUoZpHvik) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]1/2 in login queue...
+[Aucun groupe:0:info]1/3 in login queue...
+[Aucun groupe:0:info]0/2 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706065802001) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 403) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Miss-Lagertha) ...
+[Aucun groupe:0:info][Inventory]Object : 134566419 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 134566420 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 134566421 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 134566422 selected for regen !
+Checking pods ...
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+[InventoryManager]Items infos loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Trajet]No trajet loaded !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Miss-Lagertha saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Miss-Lagertha saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Miss-Lagertha saved !
+[mainProcessFrame]Fight mode updated to default
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674820 .
+Gathering element :{id : 478443 , cellid : 357 }
+Mouvement vers l'interactive sur la cellule : 357=357
+Exectution du trajet vers l'interactive .
+[ 343, 357 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478443,skill : 151329)
+Gathering element :{id : 478437 , cellid : 372 }
+Mouvement vers l'interactive sur la cellule : 372=372
+Exectution du trajet vers l'interactive .
+[ 357, 372 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478437,skill : 151331)
+Unknow game context remove element {"_messageType":"GameContextRemoveElementMessage","id":-3,"_isInitialized":true}
+Gathering element :{id : 478444 , cellid : 329 }
+Mouvement vers l'interactive sur la cellule : 329=329
+Exectution du trajet vers l'interactive .
+[ 372, 357, 329 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 905(3 cells)
+Confirmations du mouvement dans 905ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478444,skill : 151322)
+Gathering element :{id : 478452 , cellid : 328 }
+Mouvement vers l'interactive sur la cellule : 328=328
+Exectution du trajet vers l'interactive .
+[ 329, 328 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478452,skill : 151321)
+Gathering element :{id : 478431 , cellid : 386 }
+Mouvement vers l'interactive sur la cellule : 386=386
+Exectution du trajet vers l'interactive .
+[ 328, 343, 357, 372, 386 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 600(5 cells)
+Confirmations du mouvement dans 600ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478431,skill : 151332)
+Gathering element :{id : 478411 , cellid : 346 }
+Mouvement vers l'interactive sur la cellule : 346=346
+Exectution du trajet vers l'interactive .
+[ 386, 373, 359, 346 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 765(4 cells)
+Confirmations du mouvement dans 765ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478411,skill : 151326)
+Gathering element :{id : 478412 , cellid : 318 }
+Mouvement vers l'interactive sur la cellule : 318=318
+Exectution du trajet vers l'interactive .
+[ 346, 318 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478412,skill : 151320)
+Gathering element :{id : 478424 , cellid : 317 }
+Mouvement vers l'interactive sur la cellule : 317=317
+Exectution du trajet vers l'interactive .
+[ 318, 317 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478424,skill : 151319)
+Gathering element :{id : 478425 , cellid : 289 }
+Mouvement vers l'interactive sur la cellule : 289=289
+Exectution du trajet vers l'interactive .
+[ 317, 289 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478425,skill : 151317)
+Gathering element :{id : 478432 , cellid : 274 }
+Mouvement vers l'interactive sur la cellule : 274=274
+Exectution du trajet vers l'interactive .
+[ 289, 274 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478432,skill : 151316)
+Gathering element :{id : 478446 , cellid : 273 }
+Mouvement vers l'interactive sur la cellule : 273=273
+Exectution du trajet vers l'interactive .
+[ 274, 273 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478446,skill : 151315)
+Gathering element :{id : 478418 , cellid : 359 }
+Mouvement vers l'interactive sur la cellule : 359=359
+Exectution du trajet vers l'interactive .
+[ 273, 288, 302, 317, 331, 359 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 770(6 cells)
+Confirmations du mouvement dans 770ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478418,skill : 151330)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 359=359 , target : 3=3} , let's process it !
+[ 359,
+  345,
+  330,
+  316,
+  288,
+  260,
+  232,
+  217,
+  203,
+  188,
+  174,
+  159,
+  145,
+  130,
+  102,
+  88,
+  60,
+  45,
+  31,
+  3 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2970(20 cells)
+Confirmations du mouvement dans 2970ms
+Sequence ready !
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674821 .
+Gathering element :{id : 478761 , cellid : 108 }
+Mouvement vers l'interactive sur la cellule : 108=108
+Exectution du trajet vers l'interactive .
+[ 535,
+  521,
+  508,
+  494,
+  466,
+  438,
+  410,
+  397,
+  383,
+  370,
+  356,
+  343,
+  329,
+  316,
+  288,
+  274,
+  246,
+  233,
+  205,
+  191,
+  163,
+  150,
+  136,
+  108 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 5185(24 cells)
+Confirmations du mouvement dans 5185ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478761,skill : 151155)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 108=108 , target : 21=21} , let's process it !
+[ 108, 94, 93, 78, 64, 49, 21 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 940(7 cells)
+Confirmations du mouvement dans 940ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674822 .
+Gathering element :{id : 478818 , cellid : 343 }
+Mouvement vers l'interactive sur la cellule : 343=343
+Exectution du trajet vers l'interactive .
+[ 553, 525, 497, 469, 441, 413, 385, 371, 343 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1340(9 cells)
+Confirmations du mouvement dans 1340ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478818,skill : 151033)
+Gathering element :{id : 478823 , cellid : 266 }
+Mouvement vers l'interactive sur la cellule : 266=266
+Exectution du trajet vers l'interactive .
+[ 343, 328, 327, 313, 312, 297, 296, 282, 281, 266 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1430(10 cells)
+Confirmations du mouvement dans 1430ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478823,skill : 151023)
+Gathering element :{id : 478799 , cellid : 319 }
+Mouvement vers l'interactive sur la cellule : 319=319
+Exectution du trajet vers l'interactive .
+[ 266, 281, 282, 283, 284, 285, 286, 287, 288, 289, 303, 318, 319 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1980(13 cells)
+Confirmations du mouvement dans 1980ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478799,skill : 151029)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 319=319 , target : 223=223} , let's process it !
+[ 319, 305, 292, 278, 265, 251, 223 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1445(7 cells)
+Confirmations du mouvement dans 1445ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675334 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 210=210 , target : 195=195} , let's process it !
+[ 210,
+  211,
+  198,
+  184,
+  171,
+  157,
+  158,
+  159,
+  160,
+  161,
+  162,
+  163,
+  164,
+  165,
+  180,
+  194,
+  195 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 3020(17 cells)
+Confirmations du mouvement dans 3020ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675846 .
+Gathering element :{id : 478214 , cellid : 113 }
+Mouvement vers l'interactive sur la cellule : 113=113
+Exectution du trajet vers l'interactive .
+[ 182, 154, 141, 113 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 595(4 cells)
+Confirmations du mouvement dans 595ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478214,skill : 151077)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 113=113 , target : 544=544} , let's process it !
+[ 113,
+  127,
+  142,
+  156,
+  171,
+  185,
+  213,
+  241,
+  256,
+  284,
+  312,
+  326,
+  341,
+  355,
+  370,
+  384,
+  399,
+  413,
+  428,
+  442,
+  457,
+  471,
+  486,
+  500,
+  515,
+  529,
+  544 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 3980(27 cells)
+Confirmations du mouvement dans 3980ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675845 .
+Gathering element :{id : 478168 , cellid : 67 }
+Mouvement vers l'interactive sur la cellule : 67=67
+Exectution du trajet vers l'interactive .
+[ 12, 25, 39, 67 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 680(4 cells)
+Confirmations du mouvement dans 680ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478168,skill : 151205)
+Gathering element :{id : 478166 , cellid : 81 }
+Mouvement vers l'interactive sur la cellule : 81=81
+Exectution du trajet vers l'interactive .
+[ 67, 81 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478166,skill : 151207)
+Gathering element :{id : 478167 , cellid : 95 }
+Mouvement vers l'interactive sur la cellule : 95=95
+Exectution du trajet vers l'interactive .
+[ 81, 95 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478167,skill : 151210)
+Gathering element :{id : 478169 , cellid : 80 }
+Mouvement vers l'interactive sur la cellule : 80=80
+Exectution du trajet vers l'interactive .
+[ 95, 80 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478169,skill : 151206)
+Gathering element :{id : 478172 , cellid : 94 }
+Mouvement vers l'interactive sur la cellule : 94=94
+Exectution du trajet vers l'interactive .
+[ 80, 94 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478172,skill : 151209)
+Gathering element :{id : 478175 , cellid : 107 }
+Mouvement vers l'interactive sur la cellule : 107=107
+Exectution du trajet vers l'interactive .
+[ 94, 107 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478175,skill : 151211)
+Gathering element :{id : 478173 , cellid : 66 }
+Mouvement vers l'interactive sur la cellule : 66=66
+Exectution du trajet vers l'interactive .
+[ 107, 94, 66 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 990(3 cells)
+Confirmations du mouvement dans 990ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478173,skill : 151204)
+Gathering element :{id : 478163 , cellid : 517 }
+Mouvement vers l'interactive sur la cellule : 517=517
+Exectution du trajet vers l'interactive .
+[ 66,
+  94,
+  122,
+  150,
+  178,
+  206,
+  234,
+  262,
+  290,
+  304,
+  332,
+  347,
+  375,
+  389,
+  404,
+  432,
+  460,
+  488,
+  502,
+  517 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 3110(20 cells)
+Confirmations du mouvement dans 3110ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478163,skill : 151240)
+no best match on i =38 : 43
+Gathering element :{id : 478178 , cellid : 162 }
+Mouvement vers l'interactive sur la cellule : 162=162
+Exectution du trajet vers l'interactive .
+[ 517,
+  489,
+  461,
+  446,
+  432,
+  404,
+  389,
+  375,
+  347,
+  332,
+  304,
+  290,
+  262,
+  247,
+  219,
+  205,
+  190,
+  162 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2710(18 cells)
+Confirmations du mouvement dans 2710ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478178,skill : 151220)
+no best match on i =38 : 43
+Gathering element :{id : 478174 , cellid : 135 }
+Mouvement vers l'interactive sur la cellule : 135=135
+Exectution du trajet vers l'interactive .
+[ 162, 149, 135 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1020(3 cells)
+Confirmations du mouvement dans 1020ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478174,skill : 151217)
+no best match on i =38 : 43
+Gathering element :{id : 478170 , cellid : 150 }
+Mouvement vers l'interactive sur la cellule : 150=150
+Exectution du trajet vers l'interactive .
+[ 135, 150 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478170,skill : 151219)
+no best match on i =38 : 43
+Gathering element :{id : 478171 , cellid : 122 }
+Mouvement vers l'interactive sur la cellule : 122=122
+Exectution du trajet vers l'interactive .
+[ 150, 122 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478171,skill : 151214)
+no best match on i =38 : 43
+Gathering element :{id : 478176 , cellid : 121 }
+Mouvement vers l'interactive sur la cellule : 121=121
+Exectution du trajet vers l'interactive .
+[ 122, 121 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478176,skill : 151213)
+no best match on i =38 : 43
+Gathering element :{id : 478179 , cellid : 134 }
+Mouvement vers l'interactive sur la cellule : 134=134
+Exectution du trajet vers l'interactive .
+[ 121, 134 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478179,skill : 151216)
+no best match on i =38 : 43
+Gathering element :{id : 478181 , cellid : 120 }
+Mouvement vers l'interactive sur la cellule : 120=120
+Exectution du trajet vers l'interactive .
+[ 134, 120 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478181,skill : 151212)
+Sequence ready !
+no best match on i =38 : 43
+Gathering element :{id : 478182 , cellid : 133 }
+Mouvement vers l'interactive sur la cellule : 133=133
+Exectution du trajet vers l'interactive .
+[ 120, 133 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478182,skill : 151215)
+no best match on i =38 : 43
+Gathering element :{id : 478177 , cellid : 93 }
+Mouvement vers l'interactive sur la cellule : 93=93
+Exectution du trajet vers l'interactive .
+[ 133, 120, 106, 93 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 765(4 cells)
+Confirmations du mouvement dans 765ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478177,skill : 151208)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 93=93 , target : 534=534} , let's process it !
+[ 93,
+  106,
+  134,
+  162,
+  190,
+  218,
+  246,
+  274,
+  288,
+  316,
+  329,
+  343,
+  356,
+  370,
+  383,
+  397,
+  410,
+  424,
+  437,
+  451,
+  479,
+  507,
+  520,
+  534 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 5100(24 cells)
+Confirmations du mouvement dans 5100ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675844 .
+Gathering element :{id : 478124 , cellid : 371 }
+Mouvement vers l'interactive sur la cellule : 371=371
+Exectution du trajet vers l'interactive .
+[ 2,
+  16,
+  31,
+  45,
+  60,
+  74,
+  102,
+  130,
+  158,
+  186,
+  201,
+  229,
+  243,
+  258,
+  286,
+  314,
+  328,
+  343,
+  371 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 2860(19 cells)
+Confirmations du mouvement dans 2860ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478124,skill : 151397)
+Gathering element :{id : 478118 , cellid : 515 }
+Mouvement vers l'interactive sur la cellule : 515=515
+Exectution du trajet vers l'interactive .
+[ 371, 385, 400, 414, 429, 457, 471, 486, 500, 515 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1370(10 cells)
+Confirmations du mouvement dans 1370ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478118,skill : 151408)
+Gathering element :{id : 478120 , cellid : 528 }
+Mouvement vers l'interactive sur la cellule : 528=528
+Exectution du trajet vers l'interactive .
+[ 515, 528 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478120,skill : 151409)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 528=528 , target : 535=535} , let's process it !
+[ 528, 527, 526, 525, 524, 523, 522, 536, 535 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1445(9 cells)
+Confirmations du mouvement dans 1445ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675843 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 3=3 , target : 224=224} , let's process it !
+[ 3, 16, 44, 58, 86, 99, 127, 141, 169, 182, 196, 224 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 2380(12 cells)
+Confirmations du mouvement dans 2380ms
+Unknow game context remove element {"_messageType":"GameContextRemoveElementMessage","id":-3,"_isInitialized":true}
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+[ 237, 222, 208, 180, 166, 153 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 980(6 cells)
+Confirmations du mouvement dans 980ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478295,skill : 151508)
+no best match on i =38 : 43
+Gathering element :{id : 478309 , cellid : 96 }
+Mouvement vers l'interactive sur la cellule : 96=96
+Exectution du trajet vers l'interactive .
+[ 153, 138, 124, 96 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 470(4 cells)
+Confirmations du mouvement dans 470ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478309,skill : 151500)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 96=96 , target : 17=17} , let's process it !
+[ 96, 109, 108, 94, 79, 78, 77, 63, 48, 47, 33, 18, 17 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2005(13 cells)
+Confirmations du mouvement dans 2005ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675332 .
+Gathering element :{id : 478350 , cellid : 357 }
+Mouvement vers l'interactive sur la cellule : 357=357
+Exectution du trajet vers l'interactive .
+[ 549, 536, 522, 509, 495, 482, 454, 440, 412, 399, 385, 357 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 2550(12 cells)
+Confirmations du mouvement dans 2550ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478350,skill : 151351)
+Gathering element :{id : 478340 , cellid : 345 }
+Mouvement vers l'interactive sur la cellule : 345=345
+Exectution du trajet vers l'interactive .
+[ 357, 344, 345 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 990(3 cells)
+Confirmations du mouvement dans 990ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478340,skill : 151350)
+Gathering element :{id : 478333 , cellid : 275 }
+Mouvement vers l'interactive sur la cellule : 275=275
+Exectution du trajet vers l'interactive .
+[ 345, 317, 303, 275 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 595(4 cells)
+Confirmations du mouvement dans 595ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478333,skill : 151340)
+Gathering element :{id : 478331 , cellid : 262 }
+Mouvement vers l'interactive sur la cellule : 262=262
+Exectution du trajet vers l'interactive .
+[ 275, 262 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 510(2 cells)
+Confirmations du mouvement dans 510ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478331,skill : 151339)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 262=262 , target : 476=476} , let's process it !
+[ 262,
+  275,
+  289,
+  302,
+  316,
+  329,
+  343,
+  342,
+  355,
+  369,
+  382,
+  396,
+  409,
+  423,
+  436,
+  450,
+  463,
+  477,
+  476 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 4420(19 cells)
+Confirmations du mouvement dans 4420ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674820 .
+Gathering element :{id : 478417 , cellid : 387 }
+Mouvement vers l'interactive sur la cellule : 387=387
+Exectution du trajet vers l'interactive .
+[ 489, 474, 460, 445, 431, 416, 402, 387 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1050(8 cells)
+Confirmations du mouvement dans 1050ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478417,skill : 151333)
+Gathering element :{id : 478430 , cellid : 414 }
+Mouvement vers l'interactive sur la cellule : 414=414
+Exectution du trajet vers l'interactive .
+[ 387, 401, 414 ]
+Sending map request !
+Checking pods ...
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Trajet arrêté .
+Mouvement vers l'interactive échoué .
+Trajet arrêté , récolte annulée .
+[Sync]Reconnection en combat presumer le 226 est vide !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Impossible d'executer les taches, on est pas en roleplay !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674820 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84674820) !
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Sequence ready !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]IA on se raproche
+Process key movements...
+Fight move canceled !
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+Turn ready ...
+Turn ready ...
+Combat terminer !
+[Aucun groupe:0:info][Infos]You have lost <b>150</b> energy points.
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Regen par objet...
+[Aucun groupe:0:info][inventory]Bad quantity for object regen !
+[Sync]Impossible de faire la regen par objet, regen normale ...
+[Aucun groupe:0:info][Player]Debut de la regeneration pour 169pdv
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84674563 .
+[DEBUG] Path calculated {source : 314=314 , target : 7=7} , let's process it !
+[ 314, 286, 258, 230, 202, 174, 146, 118, 90, 62, 48, 35, 7 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 2210(13 cells)
+Confirmations du mouvement dans 2210ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Sync]Regen par objet...
+[Aucun groupe:0:info][inventory]Bad quantity for object regen !
+[Sync]Impossible de faire la regen par objet, regen normale ...
+[Aucun groupe:0:info][Player]Debut de la regeneration pour 44pdv
+[Sync]Regen terminer !
+[Aucun groupe:0:info][Trajet]Execution map 84674562 .
+[DEBUG] Path calculated {source : 539=539 , target : 18=18} , let's process it !
+[ 539,
+  511,
+  483,
+  455,
+  427,
+  399,
+  384,
+  370,
+  342,
+  314,
+  286,
+  258,
+  230,
+  202,
+  174,
+  146,
+  118,
+  103,
+  75,
+  61,
+  46,
+  18 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 3470(22 cells)
+Confirmations du mouvement dans 3470ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674561 .
+[DEBUG] Path calculated {source : 550=550 , target : 12=12} , let's process it !
+[ 550,
+  537,
+  509,
+  495,
+  467,
+  454,
+  426,
+  412,
+  399,
+  371,
+  357,
+  329,
+  301,
+  288,
+  274,
+  246,
+  233,
+  219,
+  191,
+  178,
+  150,
+  136,
+  108,
+  95,
+  67,
+  53,
+  40,
+  12 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 5865(28 cells)
+Confirmations du mouvement dans 5865ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84674560 .
+[DEBUG] Path calculated {source : 544=544 , target : 237=237} , let's process it !
+[ 544,
+  516,
+  501,
+  473,
+  459,
+  431,
+  416,
+  402,
+  387,
+  373,
+  358,
+  344,
+  316,
+  302,
+  289,
+  275,
+  262,
+  263,
+  249,
+  236,
+  237 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 3750(21 cells)
+Confirmations du mouvement dans 3750ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-2,"look":{"_type":"EntityLook","bonesId":62,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":283,"direction":1},"npcId":451,"sex":true,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[11]},"_npcData":{"_type":"Npc","id":451,"nameId":"Kry Babby","dialogMessages":[[1910,86740],[2212,10206],[2213,86739],[2239,15944],[2431,17776]],"dialogReplies":[[1856,86741],[1875,26814],[1876,29165],[1877,25614]],"actions":[3],"gender":1,"look":"{62}","animFunList":[{"_type":"AnimFunNpcData","animName":"AnimAttaque0","animWeight":1},{"_type":"AnimFunNpcData","animName":"AnimAttaque1","animWeight":2},{"_type":"AnimFunNpcData","animName":"AnimAttaque2","animWeight":3}],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675072 .
+[DEBUG] Path calculated {source : 224=224 , target : 12=12} , let's process it !
+[ 224,
+  225,
+  239,
+  240,
+  241,
+  256,
+  257,
+  243,
+  244,
+  231,
+  217,
+  204,
+  190,
+  177,
+  163,
+  150,
+  136,
+  108,
+  95,
+  67,
+  53,
+  40,
+  12 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 4720(23 cells)
+Confirmations du mouvement dans 4720ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":1,"skins":[101,2164,1662],"indexedColors":[31363677,46714859,61346330,76484630,98750865],"scales":[145],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":318,"direction":3},"npcId":524,"sex":true,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[43]},"_npcData":{"_type":"Npc","id":524,"nameId":"Louse Degraine","dialogMessages":[[2245,15904],[2295,15418],[2343,12991],[9794,13106]],"dialogReplies":[[1878,25656],[1949,27124],[10473,21230]],"actions":[3],"gender":1,"look":"{1|101,2164,1662|5=#e2d191,2=#c8cfeb,4=#8f1016,1=#de925d,3=#a8121a|145}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675329 .
+[DEBUG] Path calculated {source : 544=544 , target : 6=6} , let's process it !
+[ 544,
+  529,
+  515,
+  500,
+  486,
+  471,
+  457,
+  442,
+  428,
+  413,
+  399,
+  384,
+  370,
+  342,
+  314,
+  286,
+  258,
+  230,
+  202,
+  174,
+  146,
+  118,
+  90,
+  62,
+  34,
+  6 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 4010(26 cells)
+Confirmations du mouvement dans 4010ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675330 .
+[DEBUG] Path calculated {source : 538=538 , target : 22=22} , let's process it !
+[ 538,
+  510,
+  496,
+  468,
+  440,
+  427,
+  399,
+  371,
+  343,
+  329,
+  301,
+  273,
+  245,
+  217,
+  189,
+  161,
+  133,
+  105,
+  77,
+  64,
+  50,
+  22 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution du mouvement ...
+MapMovement received !
+Confirmation du movement dans : 3995(22 cells)
+Confirmations du mouvement dans 3995ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[DEBUG] Bot state set to : READY .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[Sync]Regen terminer !
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+Sequence ready !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Trajet arrêté , récolte annulée .
+[Aucun groupe:0:info][Trajet]Rien a faire sur cette map (84675331) !
+Sequence ready !
+[INACTIVITY] Hard debug on zahidsacri .
+Reconnection request ...
+Session for zahidsacri exported !

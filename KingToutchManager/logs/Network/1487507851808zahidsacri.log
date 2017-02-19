@@ -1,0 +1,3379 @@
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: 'login' }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1534,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloConnectMessage',
+  salt: 'izcnrt4n//-KLgh~{[gSVe!t7j~tE~[P',
+  key: 
+   [ 112,
+     -20,
+     -15,
+     -2,
+     8,
+     -7,
+     -27,
+     -101,
+     116,
+     61,
+     -67,
+     116,
+     -90,
+     -73,
+     -58,
+     39,
+     -70,
+     -104,
+     9,
+     -19,
+     110,
+     -19,
+     45,
+     -20,
+     -32,
+     26,
+     61,
+     66,
+     -3,
+     64,
+     -125,
+     76,
+     0,
+     -49,
+     -72,
+     -24,
+     -99,
+     49,
+     -105,
+     97,
+     103,
+     -62,
+     8,
+     53,
+     5,
+     120,
+     40,
+     -73,
+     64,
+     -104,
+     31,
+     -58,
+     -81,
+     21,
+     75,
+     85,
+     18,
+     51,
+     13,
+     -94,
+     11,
+     -71,
+     60,
+     -52,
+     71,
+     -3,
+     -1,
+     -127,
+     -54,
+     -61,
+     -121,
+     125,
+     -18,
+     -43,
+     86,
+     -30,
+     123,
+     -43,
+     60,
+     -35,
+     -103,
+     10,
+     -24,
+     -47,
+     89,
+     112,
+     19,
+     22,
+     79,
+     58,
+     119,
+     -36,
+     81,
+     -20,
+     -96,
+     -82,
+     -85,
+     101,
+     -28,
+     105,
+     ... 205 more items ],
+  _isInitialized: true }
+'Message sent :'
+'checkAssetsVersion'
+{ assetsVersion: '2.15.15', staticDataVersion: '25' }
+'Packet Received : '
+{ assetsVersion: null,
+  staticDataVersion: null,
+  _messageType: 'assetsVersionChecked' }
+'Message sent :'
+'login'
+{ username: 'zahidsacri',
+  token: 'c6bec6ef111168f021c02794afec338e',
+  salt: 'izcnrt4n//-KLgh~{[gSVe!t7j~tE~[P',
+  key: 
+   [ 112,
+     -20,
+     -15,
+     -2,
+     8,
+     -7,
+     -27,
+     -101,
+     116,
+     61,
+     -67,
+     116,
+     -90,
+     -73,
+     -58,
+     39,
+     -70,
+     -104,
+     9,
+     -19,
+     110,
+     -19,
+     45,
+     -20,
+     -32,
+     26,
+     61,
+     66,
+     -3,
+     64,
+     -125,
+     76,
+     0,
+     -49,
+     -72,
+     -24,
+     -99,
+     49,
+     -105,
+     97,
+     103,
+     -62,
+     8,
+     53,
+     5,
+     120,
+     40,
+     -73,
+     64,
+     -104,
+     31,
+     -58,
+     -81,
+     21,
+     75,
+     85,
+     18,
+     51,
+     13,
+     -94,
+     11,
+     -71,
+     60,
+     -52,
+     71,
+     -3,
+     -1,
+     -127,
+     -54,
+     -61,
+     -121,
+     125,
+     -18,
+     -43,
+     86,
+     -30,
+     123,
+     -43,
+     60,
+     -35,
+     -103,
+     10,
+     -24,
+     -47,
+     89,
+     112,
+     19,
+     22,
+     79,
+     58,
+     119,
+     -36,
+     81,
+     -20,
+     -96,
+     -82,
+     -85,
+     101,
+     -28,
+     105,
+     ... 205 more items ] }
+'Packet Received : '
+{ _messageType: 'CredentialsAcknowledgementMessage' }
+'Packet Received : '
+{ _messageType: 'IdentificationSuccessMessage',
+  login: '1465968706065406579',
+  nickname: 'XxXVikingsXxX',
+  accountId: 112984462,
+  communityId: 0,
+  hasRights: false,
+  secretQuestion: '',
+  subscriptionEndDate: 0,
+  wasAlreadyConnected: true,
+  accountCreation: 1482954291000,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServersListMessage',
+  servers: 
+   [ { _type: 'GameServerInformations',
+       id: 405,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Herdegrize',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 407,
+       status: 3,
+       completion: 0,
+       isSelectable: false,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Brutas',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 404,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Terra Cogita',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 401,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Grandapan',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 406,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 0,
+       date: 0,
+       _name: 'Dodge',
+       _gameTypeId: 0 },
+     { _type: 'GameServerInformations',
+       id: 403,
+       status: 3,
+       completion: 0,
+       isSelectable: true,
+       charactersCount: 1,
+       date: 1487507254679,
+       _name: 'Oshimo',
+       _gameTypeId: 0 } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'ServerSelectionMessage', data: { serverId: 403 } }
+'Packet Received : '
+{ _messageType: 'SelectedServerDataMessage',
+  serverId: 403,
+  address: '172.31.17.136',
+  port: 5555,
+  canCreateNewCharacter: true,
+  ticket: '7dd4caf4f903636a2e1935709b202d59',
+  _isInitialized: true,
+  _access: 'https://oshimogameproxy.touch.dofus.com' }
+'Message sent :'
+'disconnecting'
+'SWITCHING_TO_GAME'
+'Message sent :'
+'connecting'
+{ appVersion: '1.9.27',
+  buildVersion: '0.60.0',
+  client: 'android',
+  language: 'en',
+  server: { address: '172.31.17.136', port: 5555, id: 403 } }
+'Packet Received : '
+{ _messageType: 'ProtocolRequired',
+  requiredVersion: 1547,
+  currentVersion: 1547,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'HelloGameMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'AuthenticationTicketMessage',
+  data: { ticket: '7dd4caf4f903636a2e1935709b202d59', lang: 'en' } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 0,
+  lastPacketId: 110,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AuthenticationTicketAcceptedMessage' }
+'Packet Received : '
+{ _messageType: 'BasicTimeMessage',
+  timestamp: 1487507860,
+  timezoneOffset: 60,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSettingsMessage',
+  lang: 'fr',
+  community: 0,
+  gameType: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerOptionalFeaturesMessage',
+  features: [ 1, 2, 3, 5 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ServerSessionConstantsMessage',
+  variables: 
+   [ { _type: 'ServerSessionConstantInteger', id: 1, value: 1500000 },
+     { _type: 'ServerSessionConstantLong', id: 2, value: 7200000 },
+     { _type: 'ServerSessionConstantInteger', id: 3, value: 30 },
+     { _type: 'ServerSessionConstantLong', id: 4, value: 86400000 },
+     { _type: 'ServerSessionConstantLong', id: 5, value: 60000 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AccountCapabilitiesMessage',
+  accountId: 112984462,
+  tutorialAvailable: true,
+  breedsVisible: 32767,
+  breedsAvailable: 32767,
+  status: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'TrustStatusMessage',
+  trusted: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'CharactersListRequestMessage', data: undefined }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 1,
+  lastPacketId: 150,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 1,
+  total: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharactersListMessage',
+  hasStartupActions: false,
+  characters: 
+   [ { _type: 'CharacterBaseInformations',
+       id: 610200,
+       level: 15,
+       name: 'Miss-Lagertha',
+       entityLook: [Object],
+       breed: 11,
+       sex: true } ],
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'CharacterSelectionMessage', data: { id: 610200 } }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 2,
+  lastPacketId: 152,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'QueueStatusMessage',
+  position: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'NotificationListMessage',
+  flags: [ 11517938 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterSelectedSuccessMessage',
+  infos: 
+   { _type: 'CharacterBaseInformations',
+     id: 610200,
+     level: 15,
+     name: 'Miss-Lagertha',
+     entityLook: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     breed: 11,
+     sex: true },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InventoryContentMessage',
+  objects: 
+   [ { _type: 'ObjectItem',
+       position: 5,
+       objectGID: 2476,
+       effects: [Object],
+       objectUID: 130332583,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 2,
+       objectGID: 10785,
+       effects: [Object],
+       objectUID: 130332584,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 7,
+       objectGID: 2473,
+       effects: [Object],
+       objectUID: 130332585,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 4,
+       objectGID: 2475,
+       effects: [Object],
+       objectUID: 130332586,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 15,
+       objectGID: 10798,
+       effects: [Object],
+       objectUID: 130332587,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 6,
+       objectGID: 2474,
+       effects: [Object],
+       objectUID: 130332588,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 3,
+       objectGID: 2477,
+       effects: [Object],
+       objectUID: 130332589,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 0,
+       objectGID: 2478,
+       effects: [Object],
+       objectUID: 130332590,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10792,
+       effects: [Object],
+       objectUID: 130332591,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10793,
+       effects: [Object],
+       objectUID: 130332592,
+       quantity: 2 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10795,
+       effects: [Object],
+       objectUID: 130332593,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10796,
+       effects: [Object],
+       objectUID: 130332594,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10801,
+       effects: [Object],
+       objectUID: 130332595,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10794,
+       effects: [Object],
+       objectUID: 130332596,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10800,
+       effects: [Object],
+       objectUID: 130332597,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10799,
+       effects: [Object],
+       objectUID: 130332598,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10784,
+       effects: [Object],
+       objectUID: 130332599,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 1008,
+       effects: [],
+       objectUID: 130332600,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 1009,
+       effects: [],
+       objectUID: 130332601,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 10797,
+       effects: [Object],
+       objectUID: 130332602,
+       quantity: 1 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 289,
+       effects: [],
+       objectUID: 130332603,
+       quantity: 440 },
+     { _type: 'ObjectItem',
+       position: 63,
+       objectGID: 400,
+       effects: [],
+       objectUID: 130332604,
+       quantity: 34 } ],
+  kamas: 30147,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetUpdateMessage',
+  setId: 5,
+  setObjects: [ 2476, 2473, 2475, 2474, 2477, 2478 ],
+  setEffects: 
+   [ { _type: 'ObjectEffectInteger', actionId: 126, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 124, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 123, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 119, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 125, value: 40 },
+     { _type: 'ObjectEffectInteger', actionId: 118, value: 40 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetUpdateMessage',
+  setId: 150,
+  setObjects: [ 10785, 10798 ],
+  setEffects: 
+   [ { _type: 'ObjectEffectInteger', actionId: 125, value: 2 },
+     { _type: 'ObjectEffectInteger', actionId: 174, value: 2 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 0,
+  shortcuts: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 1,
+  shortcuts: 
+   [ { _type: 'ShortcutSpell', slot: 5, spellId: 449 },
+     { _type: 'ShortcutSpell', slot: 2, spellId: 432 },
+     { _type: 'ShortcutSpell', slot: 7, spellId: 437 },
+     { _type: 'ShortcutSpell', slot: 4, spellId: 444 },
+     { _type: 'ShortcutSpell', slot: 1, spellId: 431 },
+     { _type: 'ShortcutSpell', slot: 6, spellId: 436 },
+     { _type: 'ShortcutSpell', slot: 3, spellId: 434 },
+     { _type: 'ShortcutSpell', slot: 0, spellId: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'EmoteListMessage',
+  emoteIds: [ 1 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobDescriptionMessage',
+  jobsDescription: [ { _type: 'JobDescription', jobId: 28, skills: [Object] } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobExperienceMultiUpdateMessage',
+  experiencesUpdate: 
+   [ { _type: 'JobExperience',
+       jobId: 28,
+       jobLevel: 20,
+       jobXP: 8151,
+       jobXpLevelFloor: 8097,
+       jobXpNextLevelFloor: 8973 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'JobCrafterDirectorySettingsMessage',
+  craftersSettings: 
+   [ { _type: 'JobCrafterDirectorySettings',
+       jobId: 28,
+       minSlot: 0,
+       userDefinedParams: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AlignmentRankUpdateMessage',
+  alignmentRank: 0,
+  verbose: false,
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'QuestListRequestMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'FriendsGetListMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'IgnoredGetListMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'SpouseGetInformationsMessage', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'sendMessage'
+{ type: 'moneyGoultinesAmountRequest', data: undefined }
+'Message sent :'
+'bakSoftToHardCurrentRateRequest'
+undefined
+'Message sent :'
+'bakHardToSoftCurrentRateRequest'
+undefined
+'Message sent :'
+'kpiStartSession'
+{ accountSessionId: '1465968706065406579', isSubscriber: false }
+'Message sent :'
+'sendMessage'
+{ type: 'ClientKeyMessage',
+  data: { key: '8b36Max7vaM0fH6nj4dED' } }
+'Message sent :'
+'sendMessage'
+{ type: 'GameContextCreateRequestMessage', data: undefined }
+'Packet Received : '
+{ _messageType: 'PrismsListMessage',
+  prisms: 
+   [ { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 521,
+       allianceId: 0,
+       worldX: -16,
+       worldY: -38,
+       mapId: 139558,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 499, allianceId: 0 },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 123, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 43,
+       allianceId: 0,
+       worldX: -37,
+       worldY: -50,
+       mapId: 150322,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 477, allianceId: 0 },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 607, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 455,
+       allianceId: 0,
+       worldX: -51,
+       worldY: 19,
+       mapId: 63965953,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 103,
+       allianceId: 0,
+       worldX: 14,
+       worldY: 15,
+       mapId: 88087304,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 520,
+       allianceId: 0,
+       worldX: -8,
+       worldY: -42,
+       mapId: 135466,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 64, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 109,
+       allianceId: 0,
+       worldX: 32,
+       worldY: -38,
+       mapId: 16678,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 533,
+       allianceId: 0,
+       worldX: -36,
+       worldY: -57,
+       mapId: 149817,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 476,
+       allianceId: 0,
+       worldX: 31,
+       worldY: -48,
+       mapId: 16176,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 606,
+       allianceId: 0,
+       worldX: -80,
+       worldY: -75,
+       mapId: 54174027,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 454,
+       allianceId: 0,
+       worldX: -56,
+       worldY: 3,
+       mapId: 159747,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 651,
+       allianceId: 0,
+       worldX: -55,
+       worldY: -41,
+       mapId: 54161193,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 519,
+       allianceId: 0,
+       worldX: -8,
+       worldY: -52,
+       mapId: 135476,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 80, allianceId: 0 },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 63, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 280,
+       allianceId: 0,
+       worldX: -27,
+       worldY: 29,
+       mapId: 144925,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo',
+       subAreaId: 798,
+       allianceId: 0,
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 171,
+       allianceId: 0,
+       worldX: 30,
+       worldY: -42,
+       mapId: 15658,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 540, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 605,
+       allianceId: 0,
+       worldX: -73,
+       worldY: -69,
+       mapId: 60036612,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 453,
+       allianceId: 0,
+       worldX: -56,
+       worldY: 0,
+       mapId: 159744,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 518,
+       allianceId: 0,
+       worldX: -16,
+       worldY: -60,
+       mapId: 139580,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 62,
+       allianceId: 0,
+       worldX: -29,
+       worldY: -9,
+       mapId: 100141056,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 279,
+       allianceId: 0,
+       worldX: -25,
+       worldY: -64,
+       mapId: 144192,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 170,
+       allianceId: 0,
+       worldX: 1,
+       worldY: 26,
+       mapId: 88080387,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 539, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 235,
+       allianceId: 0,
+       worldX: -21,
+       worldY: 1,
+       mapId: 73533952,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 604,
+       allianceId: 0,
+       worldX: -57,
+       worldY: -64,
+       mapId: 54162240,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 517,
+       allianceId: 0,
+       worldX: -18,
+       worldY: 28,
+       mapId: 140316,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 61,
+       allianceId: 0,
+       worldX: -17,
+       worldY: 34,
+       mapId: 139810,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 278,
+       allianceId: 0,
+       worldX: 3,
+       worldY: -9,
+       mapId: 84674061,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 799, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 495,
+       allianceId: 0,
+       worldX: -18,
+       worldY: 28,
+       mapId: 17826562,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 777,
+       allianceId: 0,
+       worldX: 32,
+       worldY: -31,
+       mapId: 79167488,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 169,
+       allianceId: 0,
+       worldX: -12,
+       worldY: -6,
+       mapId: 137478,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 234,
+       allianceId: 0,
+       worldX: -11,
+       worldY: 4,
+       mapId: 73402883,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 603,
+       allianceId: 0,
+       worldX: -78,
+       worldY: -74,
+       mapId: 54173002,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 532,
+       allianceId: 0,
+       worldX: -36,
+       worldY: -52,
+       mapId: 149812,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 81, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 277,
+       allianceId: 0,
+       worldX: -5,
+       worldY: 10,
+       mapId: 104071684,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 38,
+       allianceId: 0,
+       worldX: -1,
+       worldY: -48,
+       mapId: 131888,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 27,
+       allianceId: 0,
+       worldX: 13,
+       worldY: 4,
+       mapId: 88086803,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 472,
+       allianceId: 0,
+       worldX: -52,
+       worldY: 15,
+       mapId: 25690115,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 168,
+       allianceId: 0,
+       worldX: -10,
+       worldY: -11,
+       mapId: 136459,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 233,
+       allianceId: 0,
+       worldX: -10,
+       worldY: 2,
+       mapId: 136194,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 602,
+       allianceId: 0,
+       worldX: -68,
+       worldY: -34,
+       mapId: 54167842,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 59,
+       allianceId: 0,
+       worldX: -12,
+       worldY: -56,
+       mapId: 137528,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 276,
+       allianceId: 0,
+       worldX: -4,
+       worldY: 5,
+       mapId: 104072449,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 102,
+       allianceId: 0,
+       worldX: -4,
+       worldY: -9,
+       mapId: 84805645,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 471,
+       allianceId: 0,
+       worldX: -60,
+       worldY: -8,
+       mapId: 162056,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 167,
+       allianceId: 0,
+       worldX: 30,
+       worldY: 11,
+       mapId: 47186944,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismSubareaEmptyInfo', subAreaId: 79, allianceId: 0 },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 232,
+       allianceId: 0,
+       worldX: -10,
+       worldY: -2,
+       mapId: 136450,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 753,
+       allianceId: 0,
+       worldX: -63,
+       worldY: -75,
+       mapId: 62129672,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 601,
+       allianceId: 0,
+       worldX: -76,
+       worldY: -46,
+       mapId: 54171950,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 115,
+       allianceId: 0,
+       worldX: 19,
+       worldY: -32,
+       mapId: 10016,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 275,
+       allianceId: 0,
+       worldX: -20,
+       worldY: 10,
+       mapId: 63310595,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 492,
+       allianceId: 0,
+       worldX: -21,
+       worldY: 13,
+       mapId: 18350082,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 253,
+       allianceId: 0,
+       worldX: -14,
+       worldY: 12,
+       mapId: 138252,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 622,
+       allianceId: 0,
+       worldX: -76,
+       worldY: -75,
+       mapId: 59510784,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 166,
+       allianceId: 0,
+       worldX: 31,
+       worldY: 11,
+       mapId: 61212167,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 535,
+       allianceId: 0,
+       worldX: -32,
+       worldY: 36,
+       mapId: 147492,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 231,
+       allianceId: 0,
+       worldX: -17,
+       worldY: -3,
+       mapId: 75499008,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 600,
+       allianceId: 0,
+       worldX: -85,
+       worldY: -42,
+       mapId: 54176554,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 513,
+       allianceId: 0,
+       worldX: -32,
+       worldY: -57,
+       mapId: 4981249,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 57,
+       allianceId: 0,
+       worldX: -20,
+       worldY: 28,
+       mapId: 141340,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 116,
+       allianceId: 0,
+       worldX: 27,
+       worldY: -48,
+       mapId: 14128,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 469,
+       allianceId: 0,
+       worldX: -55,
+       worldY: 15,
+       mapId: 28049408,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 165,
+       allianceId: 0,
+       worldX: 34,
+       worldY: 4,
+       mapId: 61079552,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 534,
+       allianceId: 0,
+       worldX: -18,
+       worldY: 42,
+       mapId: 140330,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 230,
+       allianceId: 0,
+       worldX: -11,
+       worldY: 13,
+       mapId: 64488710,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 143,
+       allianceId: 0,
+       worldX: 16,
+       worldY: -24,
+       mapId: 8472,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 56,
+       allianceId: 0,
+       worldX: -4,
+       worldY: -45,
+       mapId: 133421,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 117,
+       allianceId: 0,
+       worldX: 21,
+       worldY: -26,
+       mapId: 11034,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 490,
+       allianceId: 0,
+       worldX: 13,
+       worldY: 22,
+       mapId: 88086785,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 468,
+       allianceId: 0,
+       worldX: -53,
+       worldY: 15,
+       mapId: 28050432,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 316,
+       allianceId: 0,
+       worldX: -2,
+       worldY: 26,
+       mapId: 38933250,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 164,
+       allianceId: 0,
+       worldX: 24,
+       worldY: -14,
+       mapId: 99614980,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 12,
+       allianceId: 0,
+       worldX: 11,
+       worldY: 30,
+       mapId: 88085511,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 511,
+       allianceId: 0,
+       worldX: -27,
+       worldY: 38,
+       mapId: 11796993,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 55,
+       allianceId: 0,
+       worldX: -20,
+       worldY: -62,
+       mapId: 141630,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 118,
+       allianceId: 0,
+       worldX: 31,
+       worldY: -35,
+       mapId: 16163,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 33,
+       allianceId: 0,
+       worldX: -5,
+       worldY: -13,
+       mapId: 133901,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 315,
+       allianceId: 0,
+       worldX: -4,
+       worldY: 24,
+       mapId: 86248450,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 163,
+       allianceId: 0,
+       worldX: 21,
+       worldY: -12,
+       mapId: 99747586,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 11,
+       allianceId: 0,
+       worldX: -1,
+       worldY: 33,
+       mapId: 72618499,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 76,
+       allianceId: 0,
+       worldX: -21,
+       worldY: -25,
+       mapId: 14551301,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 54,
+       allianceId: 0,
+       worldX: -11,
+       worldY: -36,
+       mapId: 136996,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 119,
+       allianceId: 0,
+       worldX: 22,
+       worldY: -37,
+       mapId: 11557,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 488,
+       allianceId: 0,
+       worldX: 4,
+       worldY: 1,
+       mapId: 99094017,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 32,
+       allianceId: 0,
+       worldX: 14,
+       worldY: 28,
+       mapId: 90703875,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 466,
+       allianceId: 0,
+       worldX: -44,
+       worldY: 21,
+       mapId: 153621,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 314,
+       allianceId: 0,
+       worldX: -4,
+       worldY: 25,
+       mapId: 33686529,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 162,
+       allianceId: 0,
+       worldX: 28,
+       worldY: -13,
+       mapId: 115737097,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 10,
+       allianceId: 0,
+       worldX: -1,
+       worldY: 0,
+       mapId: 88212759,
+       prism: [Object],
+       enrichData: [Object] },
+     { _type: 'PrismGeolocalizedInformation',
+       subAreaId: 531,
+       allianceId: 0,
+       worldX: -23,
+       worldY: 40,
+       mapId: 142888,
+       prism: [Object],
+       enrichData: [Object] },
+     ... 86 more items ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'EnabledChannelsMessage',
+  channels: [ 0, 1, 2, 3, 4, 5, 6, 7, 12, 13, 9, 10 ],
+  disallowed: [ 8, 7 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SpellListMessage',
+  spellPrevisualization: true,
+  spells: 
+   [ { _type: 'SpellItem', position: 63, spellId: 434, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 431, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 437, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 436, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 444, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 432, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 449, spellLevel: 1 },
+     { _type: 'SpellItem', position: 63, spellId: 0, spellLevel: 1 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ShortcutBarContentMessage',
+  barType: 1,
+  shortcuts: 
+   [ { _type: 'ShortcutSpell', slot: 5, spellId: 449 },
+     { _type: 'ShortcutSpell', slot: 2, spellId: 432 },
+     { _type: 'ShortcutSpell', slot: 7, spellId: 437 },
+     { _type: 'ShortcutSpell', slot: 4, spellId: 444 },
+     { _type: 'ShortcutSpell', slot: 1, spellId: 431 },
+     { _type: 'ShortcutSpell', slot: 6, spellId: 436 },
+     { _type: 'ShortcutSpell', slot: 3, spellId: 434 },
+     { _type: 'ShortcutSpell', slot: 0, spellId: 0 } ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SetCharacterRestrictionsMessage',
+  restrictions: 
+   { _type: 'ActorRestrictionsInformations',
+     cantBeAggressed: false,
+     cantBeChallenged: false,
+     cantTrade: false,
+     cantBeAttackedByMutant: false,
+     cantRun: false,
+     forceSlowWalk: false,
+     cantMinimize: false,
+     cantMove: false,
+     cantAggress: false,
+     cantChallenge: false,
+     cantExchange: false,
+     cantAttack: true,
+     cantChat: false,
+     cantBeMerchant: false,
+     cantUseObject: false,
+     cantUseTaxCollector: false,
+     cantUseInteractive: false,
+     cantSpeakToNPC: false,
+     cantChangeZone: false,
+     cantAttackMonster: false,
+     cantWalk8Directions: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InventoryWeightMessage',
+  weight: 1008,
+  weightMax: 1350,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendWarnOnConnectionStateMessage',
+  enable: false,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendWarnOnLevelGainStateMessage',
+  enable: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendGuildWarnOnAchievementCompleteStateMessage',
+  enable: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GuildMemberWarnOnConnectionStateMessage',
+  enable: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'SequenceNumberRequestMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'SequenceNumberMessage', data: { number: 1 } }
+'Packet Received : '
+{ _messageType: 'TextInformationMessage',
+  msgType: 1,
+  msgId: 89,
+  parameters: [],
+  _isInitialized: true,
+  text: 'Welcome to DOFUS, and welcome to the World of Twelve! \nRemember that it is <b>strictly forbidden</b> to disclose your account name or password.' }
+'Packet Received : '
+{ _messageType: 'SpouseStatusMessage',
+  hasSpouse: false,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AchievementListMessage',
+  finishedAchievementsIds: 
+   [ 341,
+     3,
+     419,
+     422,
+     284,
+     600,
+     312,
+     340,
+     390,
+     415,
+     418,
+     424,
+     14,
+     283,
+     391,
+     414,
+     342,
+     417,
+     420,
+     118,
+     423,
+     282,
+     385,
+     388 ],
+  rewardableAchievements: [],
+  _isInitialized: true,
+  enrichData: { points: 33, achievementsTotal: 952 } }
+'Packet Received : '
+{ _messageType: 'GameRolePlayArenaUpdatePlayerInfosMessage',
+  rank: 33,
+  bestDailyRank: 0,
+  bestRank: 0,
+  victoryCount: 0,
+  arenaFightcount: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterCapabilitiesMessage',
+  guildEmblemSymbolCategories: 4095,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'AlmanachCalendarDateMessage',
+  date: 181,
+  _isInitialized: true,
+  _merydeName: 'Karat' }
+'Packet Received : '
+{ _messageType: 'MailStatusMessage',
+  unread: 0,
+  total: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'StartupActionsListMessage',
+  actions: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 3,
+  lastPacketId: 5623,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'QuestListMessage',
+  finishedQuestsIds: [ 232, 231, 193, 492, 489 ],
+  finishedQuestsCounts: [ 1, 1, 1, 1, 1 ],
+  activeQuests: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 4,
+  lastPacketId: 4001,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'FriendsListMessage',
+  friendsList: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 5,
+  lastPacketId: 5676,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'IgnoredListMessage',
+  ignoredList: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 6,
+  lastPacketId: 6355,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 7,
+  lastPacketId: 5607,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 8,
+  lastPacketId: 250,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextDestroyMessage' }
+'Packet Received : '
+{ _messageType: 'GameContextCreateMessage',
+  context: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'LifePointsRegenBeginMessage',
+  regenRate: 10,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CurrentMapMessage',
+  mapId: 84804104,
+  mapKey: '13913cb7ead655f52a3de6798ae295af',
+  _isInitialized: true }
+'Message sent :'
+'sendMessage'
+{ type: 'MapInformationsRequestMessage',
+  data: { mapId: 84804104 } }
+'Packet Received : '
+{ _messageType: 'BasicTimeMessage',
+  timestamp: 1487507861,
+  timezoneOffset: 60,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'CharacterStatsListMessage',
+  stats: 
+   { _type: 'CharacterCharacteristicsInformations',
+     experience: 66111,
+     experienceLevelFloor: 61000,
+     experienceNextLevelFloor: 75000,
+     kamas: 30147,
+     statsPoints: 10,
+     spellsPoints: 14,
+     alignmentInfos: 
+      { _type: 'ActorExtendedAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 610215,
+        honor: 0,
+        honorGradeFloor: 0,
+        honorNextGradeFloor: 500,
+        aggressable: 0 },
+     lifePoints: 168,
+     maxLifePoints: 168,
+     energyPoints: 9850,
+     maxEnergyPoints: 10000,
+     actionPointsCurrent: 6,
+     movementPointsCurrent: 3,
+     initiative: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 199,
+        objectsAndMountBonus: 3,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     prospecting: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 105,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     actionPoints: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 6,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     movementPoints: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 3,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     strength: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 50,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     vitality: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 43,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     wisdom: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 20,
+        objectsAndMountBonus: 46,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     chance: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 50,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     agility: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 50,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     intelligence: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 49,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     range: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     summonableCreaturesBoost: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 1,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     reflect: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalHit: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalHitWeapon: 36,
+     criticalMiss: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     healBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     allDamagesBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     weaponDamagesBonusPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     damagesBonusPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     trapBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     trapBonusPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     permanentDamagePercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 10,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     tackleBlock: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 5,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     tackleEvade: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 5,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     PAAttack: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     PMAttack: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pushDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     neutralDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     earthDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     waterDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     airDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     fireDamageBonus: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     dodgePALostProbability: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     dodgePMLostProbability: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 2,
+        objectsAndMountBonus: 4,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     neutralElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     earthElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     waterElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     airElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     fireElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     neutralElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     earthElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     waterElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     airElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     fireElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pushDamageReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     criticalDamageReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpNeutralElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 1,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpEarthElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpWaterElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpAirElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpFireElementResistPercent: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpNeutralElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpEarthElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpWaterElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpAirElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     pvpFireElementReduction: 
+      { _type: 'CharacterBaseCharacteristic',
+        base: 0,
+        objectsAndMountBonus: 0,
+        alignGiftBonus: 0,
+        contextModif: 0 },
+     spellModifications: [],
+     probationTime: 0 },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 610200 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'bakHardToSoftCurrentRateSuccess',
+  rate: 59.46829 }
+'Packet Received : '
+{ _messageType: 'bakSoftToHardCurrentRateSuccess',
+  rate: 62.44170450000001 }
+'Packet Received : '
+{ _messageType: 'kpiStartSessionMessage', sessionId: 649299210 }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 9,
+  lastPacketId: 6317,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 10,
+  lastPacketId: 225,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapComplementaryInformationsDataMessage',
+  subAreaId: 95,
+  mapId: 84804104,
+  houses: [],
+  actors: 
+   [ { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 545482,
+       look: [Object],
+       disposition: [Object],
+       name: 'Auratanki',
+       humanoidInfo: [Object],
+       accountId: 102010821,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayCharacterInformations',
+       contextualId: 610200,
+       look: [Object],
+       disposition: [Object],
+       name: 'Miss-Lagertha',
+       humanoidInfo: [Object],
+       accountId: 112984462,
+       alignmentInfos: [Object] },
+     { _type: 'GameRolePlayNpcWithQuestInformations',
+       contextualId: -1,
+       look: [Object],
+       disposition: [Object],
+       npcId: 609,
+       sex: false,
+       specialArtworkId: 0,
+       questFlag: [Object],
+       _npcData: [Object] },
+     { _type: 'GameRolePlayNpcInformations',
+       contextualId: -2,
+       look: [Object],
+       disposition: [Object],
+       npcId: 525,
+       sex: false,
+       specialArtworkId: 0,
+       _npcData: [Object] },
+     { _type: 'GameRolePlayNpcInformations',
+       contextualId: -3,
+       look: [Object],
+       disposition: [Object],
+       npcId: 603,
+       sex: false,
+       specialArtworkId: 0,
+       _npcData: [Object] } ],
+  interactiveElements: 
+   [ { _type: 'InteractiveElement',
+       elementId: 465402,
+       elementTypeId: 128,
+       enabledSkills: [Object],
+       disabledSkills: [],
+       _name: 'Class statue' },
+     { _type: 'InteractiveElementWithAgeBonus',
+       elementId: 465005,
+       elementTypeId: 45,
+       enabledSkills: [Object],
+       disabledSkills: [],
+       ageBonus: 35,
+       _name: 'Oats' },
+     { _type: 'InteractiveElement',
+       elementId: 476242,
+       elementTypeId: -1,
+       enabledSkills: [],
+       disabledSkills: [] },
+     { _type: 'InteractiveElementWithAgeBonus',
+       elementId: 465006,
+       elementTypeId: 38,
+       enabledSkills: [Object],
+       disabledSkills: [],
+       ageBonus: 9,
+       _name: 'Wheat' } ],
+  statedElements: 
+   [ { _type: 'StatedElement',
+       elementId: 465005,
+       elementCellId: 213,
+       elementState: 0 },
+     { _type: 'StatedElement',
+       elementId: 465006,
+       elementCellId: 214,
+       elementState: 0 } ],
+  obstacles: [],
+  fights: [],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 716186,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 490,
+        direction: 0 },
+     name: 'Tarscime',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [Object] },
+     accountId: 64921681,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 716234 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 716186 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayGroupMonsterInformations',
+     contextualId: -6,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 637,
+        skins: [],
+        indexedColors: [],
+        scales: [],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 151,
+        direction: 5 },
+     staticInfos: 
+      { _type: 'GroupMonsterStaticInformations',
+        mainCreatureLightInfos: [Object],
+        underlings: [Object] },
+     ageBonus: 0,
+     lootShare: -1,
+     alignmentSide: -1,
+     keyRingBonus: false,
+     hasHardcoreDrop: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 490, 491, 506, 507, 521, 536, 537 ],
+  actorId: 716186,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 724959,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 181,
+        direction: 5 },
+     name: 'Reallya',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [Object] },
+     accountId: 114436375,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 724981 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 724959 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 716186,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 181,
+     194,
+     208,
+     221,
+     235,
+     263,
+     276,
+     290,
+     318,
+     331,
+     345,
+     358,
+     372,
+     385,
+     399,
+     412,
+     440,
+     454,
+     467,
+     481,
+     509,
+     522,
+     536,
+     549 ],
+  actorId: 724959,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 724959,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 5,
+  content: 'Kamas-Touch.com - 2.50 € = 1 Mllion - Paiement par téléphone - Livraison 10 minutes - Kamas-Touch.com - 953376',
+  timestamp: 1487507881,
+  fingerprint: 'tupmuk7p',
+  senderId: 726434,
+  senderName: 'Bad-loop',
+  senderAccountId: 114459222,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 719777,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 261,
+        direction: 1 },
+     name: 'Amiana',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 100841270,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 719821 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 151, 122 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 261, 260, 232, 204, 176, 148, 120, 92, 64, 36, 8 ],
+  actorId: 719777,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 719777,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayGroupMonsterInformations',
+     contextualId: -4,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 634,
+        skins: [],
+        indexedColors: [],
+        scales: [],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 115,
+        direction: 3 },
+     staticInfos: 
+      { _type: 'GroupMonsterStaticInformations',
+        mainCreatureLightInfos: [Object],
+        underlings: [Object] },
+     ageBonus: 0,
+     lootShare: -1,
+     alignmentSide: -1,
+     keyRingBonus: false,
+     hasHardcoreDrop: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 122, 81 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 5,
+  content: 'est ce que ça se vend bien le blé magiuqe?',
+  timestamp: 1487507912,
+  fingerprint: 'h4jg688k',
+  senderId: 722560,
+  senderName: 'Airistoff',
+  senderAccountId: 114397466,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 115, 61 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayGroupMonsterInformations',
+     contextualId: -5,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 637,
+        skins: [],
+        indexedColors: [],
+        scales: [],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 205,
+        direction: 1 },
+     staticInfos: 
+      { _type: 'GroupMonsterStaticInformations',
+        mainCreatureLightInfos: [Object],
+        underlings: [Object] },
+     ageBonus: 0,
+     lootShare: -1,
+     alignmentSide: -1,
+     keyRingBonus: false,
+     hasHardcoreDrop: false },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 81, 96 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 61, 101 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726130,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 261,
+        direction: 1 },
+     name: 'Ma-xx',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 113943182,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726157 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 96, 125 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 205, 178 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicLatencyStatsRequestMessage' }
+'Message sent :'
+'sendMessage'
+{ type: 'BasicLatencyStatsMessage',
+  data: { latency: 262, sampleCount: 12, max: 50 } }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 261, 274, 288, 301, 300 ],
+  actorId: 726130,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicAckMessage',
+  seq: 11,
+  lastPacketId: 5663,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'BasicNoOperationMessage' }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 300, 287, 273, 260, 232 ],
+  actorId: 726130,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'InteractiveUsedMessage',
+  entityId: 726130,
+  elemId: 465402,
+  skillId: 183,
+  duration: 0,
+  _isInitialized: true,
+  _useAnimation: 'AnimCueillir0' }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 726130,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 723797,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 24,
+        direction: 2 },
+     name: 'Yopslayer',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114415705,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 723837 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 723797 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'Kamas-Touch.com - 2.50 € = 1 Mllion - Paiement par téléphone - Livraison 10 minutes - Kamas-Touch.com - 397476',
+  timestamp: 1487507968,
+  fingerprint: 'jwpmed0q',
+  senderId: 726434,
+  senderName: 'Bad-loop',
+  senderAccountId: 114459222,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 101, 115 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 24, 39, 53, 81, 96, 124, 152, 166, 181, 195, 223 ],
+  actorId: 723797,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'Qui dj des champs full succes ?? zobal 53',
+  timestamp: 1487507972,
+  fingerprint: 'zcux2p6h',
+  senderId: 699586,
+  senderName: 'Habion',
+  senderAccountId: 99265582,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 723797,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 178, 137 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 125, 110 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 115, 173 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'cherche sculpteur baton 7case mp moi',
+  timestamp: 1487507998,
+  fingerprint: 'tww2ff1a',
+  senderId: 668856,
+  senderName: 'Agc-Xl',
+  senderAccountId: 113598647,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 110, 81 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 5,
+  content: 'sa envoi ou la potion de grobid ?',
+  timestamp: 1487508003,
+  fingerprint: 'btygek2e',
+  senderId: 702858,
+  senderName: 'Blaisyn',
+  senderAccountId: 102463147,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 5,
+  content: 'cherche sculpteur baton 7case mp moi',
+  timestamp: 1487508005,
+  fingerprint: 'ki92yr2o',
+  senderId: 668856,
+  senderName: 'Agc-Xl',
+  senderAccountId: 113598647,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 137, 178 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 173, 158 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 81, 67 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 545482,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 5,
+  content: 'offre en or a p',
+  timestamp: 1487508023,
+  fingerprint: 'ja0oe94h',
+  senderId: 641336,
+  senderName: 'Ombert',
+  senderAccountId: 99514996,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 178, 191 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 403957,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 261,
+        direction: 0 },
+     name: 'Sang-Kush',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 53198247,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 404023 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 403957 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 158, 144 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 261, 260, 245, 244 ],
+  actorId: 403957,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 244, 258, 271, 299 ],
+  actorId: 403957,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 67, 94 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 709022,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 639,
+        skins: [],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [Object] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 11,
+        direction: 2 },
+     name: 'Bec-infecte',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 86760651,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 709113 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 709022 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 11, 39, 53, 81, 96, 124, 138, 166, 181, 195, 223 ],
+  actorId: 709022,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 195 ],
+  actorId: 709022,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 195, 209, 222 ],
+  actorId: 709022,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 191, 133 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'offre en or baton des roi 72 intell en hdv 49 000moiis chers',
+  timestamp: 1487508051,
+  fingerprint: 'koqbal1f',
+  senderId: 641336,
+  senderName: 'Ombert',
+  senderAccountId: 99514996,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 144, 90 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 299, 314, 328, 343, 344, 345, 346, 360, 375, 389, 390, 391 ],
+  actorId: 403957,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'Kamas-Touch.com - 2.50 € = 1 Mllion - Paiement par téléphone - Livraison 10 minutes - Kamas-Touch.com - 397476',
+  timestamp: 1487508063,
+  fingerprint: 'u97nap7k',
+  senderId: 726434,
+  senderName: 'Bad-loop',
+  senderAccountId: 114459222,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726766,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 261,
+        direction: 7 },
+     name: 'Maalux',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 100146170,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726773 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 726766 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 722211,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 177,
+        direction: 1 },
+     name: 'Smookboo',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114132177,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 722245 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726345,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 23,
+        direction: 1 },
+     name: 'Mars-Soubled',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114132348,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726353 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726344,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 22,
+        direction: 1 },
+     name: 'Valairo',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114132321,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726353 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726322,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 10,
+        direction: 1 },
+     name: 'Chat-pro',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114132266,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726331 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 724500,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 9,
+        direction: 1 },
+     name: 'Jfarmane',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114132254,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 724524 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726327,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 21,
+        direction: 1 },
+     name: 'Angelevy',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114132290,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726336 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 726361,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 22,
+        direction: 1 },
+     name: 'Sarau-Ayes',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114132380,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 726369 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 724505,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 22,
+        direction: 1 },
+     name: 'Walking-Maik',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: true,
+        options: [] },
+     accountId: 114132223,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 724529 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 261, 262, 263, 235, 207, 179, 151, 123, 95, 67, 53, 40, 12 ],
+  actorId: 726766,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 726766,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 90, 76 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: 
+   [ 222,
+     236,
+     249,
+     263,
+     276,
+     290,
+     303,
+     331,
+     359,
+     373,
+     386,
+     400,
+     413,
+     427,
+     440,
+     454,
+     482,
+     495,
+     509,
+     522,
+     550 ],
+  actorId: 709022,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 386 ],
+  actorId: 709022,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 386, 373, 359, 346, 332, 304, 291, 263, 249, 236, 208 ],
+  actorId: 709022,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 133, 160 ],
+  actorId: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'cherche sculpteur baton 7case mp moi',
+  timestamp: 1487508098,
+  fingerprint: 'qpwjfw5y',
+  senderId: 668856,
+  senderName: 'Agc-Xl',
+  senderAccountId: 113598647,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 94, 107 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 76, 47 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 177, 176, 175 ],
+  actorId: 722211,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 722211,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: -5,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightOptionStateUpdateMessage',
+  fightId: 636,
+  teamId: 0,
+  option: 1,
+  state: true,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowChallengeMessage',
+  commonsInfos: 
+   { _type: 'FightCommonInformations',
+     fightId: 636,
+     fightType: 4,
+     fightTeams: [ [Object], [Object] ],
+     fightTeamsPositions: [ 175, 160 ],
+     fightTeamsOptions: [ [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 1,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 0,
+     leaderId: 722211,
+     teamSide: -1,
+     teamTypeId: 0,
+     teamMembers: [ [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object], [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameFightUpdateTeamMessage',
+  fightId: 636,
+  team: 
+   { _type: 'FightTeamInformations',
+     teamId: 1,
+     leaderId: -5,
+     teamSide: -1,
+     teamTypeId: 1,
+     teamMembers: [ [Object], [Object], [Object], [Object], [Object] ] },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayRemoveChallengeMessage',
+  fightId: 636,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 107, 148 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 47, 61 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameContextRemoveElementMessage',
+  id: 403957,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 148, 121 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'recrute pour ma nouvvelle guilde*So Crack* 70 mini',
+  timestamp: 1487508147,
+  fingerprint: 'hj36du6b',
+  senderId: 522602,
+  senderName: 'Vel-Koz',
+  senderAccountId: 15277861,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 61, 74 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'ChatServerMessage',
+  channel: 6,
+  content: 'cherche sculpteur baton 7case mp moiiiii',
+  timestamp: 1487508159,
+  fingerprint: '74pum92p',
+  senderId: 668856,
+  senderName: 'Agc-Xl',
+  senderAccountId: 113598647,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 121, 92 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 74, 31 ],
+  actorId: -4,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 695478,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 261,
+        direction: 6 },
+     name: 'Thor-Tank',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 113989024,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 695482 } },
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'UpdateMapPlayersAgressableStatusMessage',
+  playerIds: [ 695478 ],
+  enable: [ 0 ],
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameMapMovementMessage',
+  keyMovements: [ 92, 51 ],
+  actorId: -6,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'MapFightCountMessage',
+  fightCount: 0,
+  _isInitialized: true }
+'Packet Received : '
+{ _messageType: 'GameRolePlayShowActorMessage',
+  informations: 
+   { _type: 'GameRolePlayCharacterInformations',
+     contextualId: 722211,
+     look: 
+      { _type: 'EntityLook',
+        bonesId: 1,
+        skins: [Object],
+        indexedColors: [Object],
+        scales: [Object],
+        subentities: [] },
+     disposition: 
+      { _type: 'EntityDispositionInformations',
+        cellId: 175,
+        direction: 1 },
+     name: 'Smookboo',
+     humanoidInfo: 
+      { _type: 'HumanInformations',
+        restrictions: [Object],
+        sex: false,
+        options: [] },
+     accountId: 114132177,
+     alignmentInfos: 
+      { _type: 'ActorAlignmentInformations',
+        alignmentSide: 0,
+        alignmentValue: 0,
+        alignmentGrade: 0,
+        characterPower: 722245 } },
+  _isInitialized: true }

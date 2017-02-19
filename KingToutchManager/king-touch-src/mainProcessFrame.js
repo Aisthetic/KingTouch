@@ -9,7 +9,7 @@ exports = module.exports = new EventEmitter();
 exports.open = function(botManager,id_,username){
     
     
-    //le truque qui doit tout niquer, desactiver pour le debug (merci la gestion d'erreur de node)
+    //le truque qui doit tout niquer, desactiver pour le debug (merci la gestion d'erreur de node) MDRR
     /*process.on('uncaughtException',(err) => {
         console.log("********** Uncaught exception in "+username+" process *********");
         try{
@@ -172,10 +172,33 @@ exports.exportSpellsInfos = function(spells){
     }
     bot.currentBot.data.saveUserConfig();
 }
-
+/*
+    *acces any job with jobs[id] : id is the id of the job.
+    *for each job of jobs , you have a lot of skills , job.skills .
+    *for each skill of skills , you have the needed informations , 
+    skill.interactive(l'interactive utilisée pour la recolte) , and 
+    skill.skillInfos for the skillId and the name
+*/
+exports.getJobsInfos = function(){
+    /*var jobs = {};
+    for(var i in bot.currentBot.data.jobsManager.list){
+        var skills = {};
+        var jobDescription = bot.currentBot.data.jobsManager.list[i].jobDescription.
+        for(var j in bot.currentBot.data.jobsManager.list[i].jobDescription.skills){
+            var skill = bot.currentBot.data.jobsManager.list[i].jobDescription.skills[j];
+            require('./engine/managers/staticContentManager.js').getInteractivesInfos([skill.info.interactiveId] , (data)=>{
+                var _interactive = {id : skill.info.interactiveId , name : data.nameId};
+                var relatedSkill = {id : skill.info.id , name : skill.info.nameId};
+                skills[j] = {skillInfos : relatedSkill , interactive : _interactive}; 
+            })
+        }
+        jobs[i].skills = skills;
+    }
+    return jobs;*/
+}
 exports.getSpellsInfos = function(){
     var ret = [];
-    
+    //console.dir(this.getJobsInfos());
     for (var iData in bot.currentBot.data.fightManager.spells){
         var data = bot.currentBot.data.fightManager.spells[iData];
         var push = {

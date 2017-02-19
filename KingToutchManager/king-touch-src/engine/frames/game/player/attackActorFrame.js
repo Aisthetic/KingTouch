@@ -5,13 +5,7 @@ var compressPath = require("./../../../core/utils/pathfinding.js").compressPath;
 exports.processAttackActor = function(bot,keyMovements,callBack){
 	var wrap = EventWrapper(bot.connection.dispatcher,function(result){
 	});
-
-	wrap("GameMapNoMovementMessage",function(m){
-		bot.logger.log("Attack actor fail (noMovementMessage)!");
-		wrap.done(false);
-		callBack(-1);
-
-	});
+	
 	wrap("GameContextCreateMessage",function(m){
 		bot.logger.log("Attack actor succes !");
 		wrap.done();

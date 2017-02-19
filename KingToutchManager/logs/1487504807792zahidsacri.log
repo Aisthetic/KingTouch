@@ -1,0 +1,3300 @@
+Server request connecting ...
+Inventory : 0
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"KAz+QhpFIj6+2f1o"}
+Config loaded !
+{"key":"0ab04ffd-ef52-44cc-8421-20c64a792c9a","account_id":112984462,"ip":"105.157.44.165","added_date":"2017-02-19T12:46:50+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-19T15:46:50+01:00"}
+Api key : 0ab04ffd-ef52-44cc-8421-20c64a792c9a
+Game token : 08204ab7e7835e857b04dfb2530793f5
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=KAz%2BQhpFIj6%2B2f1o) ...
+{"call":"global-state-request"}
+Server request for state ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]1/2 in login queue...
+[Aucun groupe:0:info]1/3 in login queue...
+[Aucun groupe:0:info]0/2 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706065212677) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 403) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Miss-Lagertha) ...
+[Aucun groupe:0:info][Inventory]Object : 128192710 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 128192711 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 128192712 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 128192713 selected for regen !
+[InventoryManager]Items infos loaded !
+Checking pods ...
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Trajet]No trajet loaded !
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675846 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 128=128 , target : 544=544} , let's process it !
+[ 128,
+  143,
+  157,
+  185,
+  213,
+  241,
+  269,
+  297,
+  312,
+  326,
+  341,
+  355,
+  370,
+  384,
+  399,
+  413,
+  428,
+  442,
+  457,
+  471,
+  486,
+  500,
+  515,
+  529,
+  544 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 3700(25 cells)
+Confirmations du mouvement dans 3700ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675845 .
+Gathering element :{id : 478173 , cellid : 66 }
+Mouvement vers l'interactive sur la cellule : 66=66
+Exectution du trajet vers l'interactive .
+[ 12, 25, 39, 52, 66 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1020(5 cells)
+Confirmations du mouvement dans 1020ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478173,skill : 151204)
+Gathering element :{id : 478166 , cellid : 81 }
+Mouvement vers l'interactive sur la cellule : 81=81
+Exectution du trajet vers l'interactive .
+[ 66, 80, 81 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 905(3 cells)
+Confirmations du mouvement dans 905ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478166,skill : 151207)
+Gathering element :{id : 478163 , cellid : 517 }
+Mouvement vers l'interactive sur la cellule : 517=517
+Exectution du trajet vers l'interactive .
+[ 81,
+  109,
+  137,
+  165,
+  193,
+  221,
+  249,
+  277,
+  305,
+  333,
+  361,
+  389,
+  404,
+  432,
+  460,
+  488,
+  502,
+  517 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2830(18 cells)
+Confirmations du mouvement dans 2830ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478163,skill : 151240)
+no best match on i =38 : 43
+Gathering element :{id : 478178 , cellid : 162 }
+Mouvement vers l'interactive sur la cellule : 162=162
+Exectution du trajet vers l'interactive .
+[ 517,
+  489,
+  461,
+  446,
+  432,
+  404,
+  389,
+  375,
+  347,
+  332,
+  304,
+  290,
+  262,
+  247,
+  219,
+  205,
+  190,
+  162 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2710(18 cells)
+Confirmations du mouvement dans 2710ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478178,skill : 151220)
+Gathering element :{id : 478167 , cellid : 95 }
+Mouvement vers l'interactive sur la cellule : 95=95
+Exectution du trajet vers l'interactive .
+[ 162, 149, 135, 122, 108, 95 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1275(6 cells)
+Confirmations du mouvement dans 1275ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478167,skill : 151210)
+Gathering element :{id : 478169 , cellid : 80 }
+Mouvement vers l'interactive sur la cellule : 80=80
+Exectution du trajet vers l'interactive .
+[ 95, 80 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 425(2 cells)
+Confirmations du mouvement dans 425ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478169,skill : 151206)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 80=80 , target : 543=543} , let's process it !
+[ 80,
+  95,
+  109,
+  137,
+  165,
+  193,
+  221,
+  249,
+  277,
+  305,
+  333,
+  361,
+  389,
+  404,
+  432,
+  460,
+  488,
+  501,
+  515,
+  543 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 3340(20 cells)
+Confirmations du mouvement dans 3340ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675844 .
+Gathering element :{id : 478120 , cellid : 528 }
+Mouvement vers l'interactive sur la cellule : 528=528
+Exectution du trajet vers l'interactive .
+[ 11,
+  39,
+  67,
+  95,
+  123,
+  151,
+  179,
+  207,
+  235,
+  263,
+  291,
+  305,
+  320,
+  334,
+  362,
+  376,
+  404,
+  432,
+  445,
+  473,
+  487,
+  500,
+  528 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 4020(23 cells)
+Confirmations du mouvement dans 4020ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478120,skill : 151409)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 528=528 , target : 547=547} , let's process it !
+[ 528, 527, 526, 525, 524, 523, 522, 521, 535, 548, 547 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 1870(11 cells)
+Confirmations du mouvement dans 1870ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675843 .
+Gathering element :{id : 478064 , cellid : 118 }
+Mouvement vers l'interactive sur la cellule : 118=118
+Exectution du trajet vers l'interactive .
+[ 15, 30, 44, 59, 73, 74, 75, 90, 118 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1260(9 cells)
+Confirmations du mouvement dans 1260ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478064,skill : 151521)
+Gathering element :{id : 478063 , cellid : 230 }
+Mouvement vers l'interactive sur la cellule : 230=230
+Exectution du trajet vers l'interactive .
+[ 118, 146, 174, 202, 230 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 680(5 cells)
+Confirmations du mouvement dans 680ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478063,skill : 151541)
+Gathering element :{id : 478062 , cellid : 258 }
+Mouvement vers l'interactive sur la cellule : 258=258
+Exectution du trajet vers l'interactive .
+[ 230, 258 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 480(2 cells)
+Confirmations du mouvement dans 480ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478062,skill : 151545)
+Gathering element :{id : 478079 , cellid : 451 }
+Mouvement vers l'interactive sur la cellule : 451=451
+Exectution du trajet vers l'interactive .
+[ 258, 271, 285, 313, 326, 354, 382, 396, 409, 423, 451 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 2210(11 cells)
+Confirmations du mouvement dans 2210ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478079,skill : 151548)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 451=451 , target : 14=14} , let's process it !
+[ 451,
+  423,
+  395,
+  367,
+  339,
+  311,
+  283,
+  269,
+  241,
+  227,
+  199,
+  184,
+  170,
+  142,
+  114,
+  86,
+  58,
+  43,
+  29,
+  14 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 3195(20 cells)
+Confirmations du mouvement dans 3195ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Gathering element :{id : 478307 , cellid : 152 }
+Mouvement vers l'interactive sur la cellule : 152=152
+Exectution du trajet vers l'interactive .
+[ 27, 41, 54, 68, 67, 80, 108, 123, 137, 152 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+MapMovement received !
+Confirmation du movement dans : 1810(10 cells)
+Confirmations du mouvement dans 1810ms
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478307,skill : 151507)
+Gathering element :{id : 478329 , cellid : 430 }
+Mouvement vers l'interactive sur la cellule : 430=430
+Exectution du trajet vers l'interactive .
+[ 152,
+  151,
+  150,
+  163,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  352,
+  353,
+  368,
+  369,
+  383,
+  398,
+  412,
+  427,
+  441,
+  442,
+  457,
+  458,
+  430 ]
+Sending map request !
+Checking pods ...
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 5960(31 cells)
+Confirmations du mouvement dans 5960ms
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Gathering element :{id : 478329 , cellid : 430 }
+Mouvement vers l'interactive sur la cellule : 430=430
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478329,skill : 151511)
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement confirmée !
+Utlisiation de l'interactive (id : 478329,skill : 151511)
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+[ 430,
+  458,
+  457,
+  442,
+  441,
+  427,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  163,
+  150,
+  151,
+  152,
+  153 ]
+Sending map request !
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+[ 430,
+  458,
+  457,
+  442,
+  441,
+  427,
+  426,
+  411,
+  397,
+  382,
+  368,
+  353,
+  339,
+  338,
+  310,
+  296,
+  283,
+  269,
+  256,
+  242,
+  229,
+  215,
+  216,
+  203,
+  189,
+  176,
+  177,
+  163,
+  150,
+  151,
+  152,
+  153 ]
+Sending map request !
+Checking pods ...
+MapMovement received !
+Confirmation du movement dans : 6130(32 cells)
+Confirmations du mouvement dans 6130ms
+MapMovement received !
+Confirmation du movement dans : 6130(32 cells)
+Confirmations du mouvement dans 6130ms
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478295,skill : 151508)
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478295,skill : 151508)
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478295,skill : 151508)
+no best match on i =38 : 43
+Gathering element :{id : 478295 , cellid : 153 }
+Mouvement vers l'interactive sur la cellule : 153=153
+Exectution du trajet vers l'interactive .
+pas de mouvement à faire wesh x)
+Utlisiation de l'interactive (id : 478295,skill : 151508)
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 153=153 , target : 23=23} , let's process it !
+[ 153, 138, 124, 109, 108, 80, 52, 38, 23 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 153=153 , target : 3=3} , let's process it !
+[ 153, 138, 124, 109, 108, 107, 106, 92, 77, 63, 48, 34, 33, 18, 4, 3 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+Mouvement échoué .
+Key movements proccesed !
+No movement
+Mouvement échoué .
+Key movements proccesed !
+No movement
+Sequence ready !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Miss-Lagertha saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Miss-Lagertha saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Miss-Lagertha saved !
+[mainProcessFrame]Fight mode updated to default
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 153=153 , target : 12=12} , let's process it !
+[ 153, 138, 124, 109, 108, 80, 52, 39, 25, 12 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement échoué .
+Key movements proccesed !
+No movement
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 153=153 , target : 19=19} , let's process it !
+[ 153, 138, 124, 109, 108, 107, 106, 92, 77, 63, 48, 34, 19 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement échoué .
+Key movements proccesed !
+No movement
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 153=153 , target : 9=9} , let's process it !
+[ 153, 138, 124, 109, 108, 80, 52, 38, 23, 9 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement échoué .
+Key movements proccesed !
+No movement
+{"call":"trajet-load","data":{"trajet":{"trajet":{"fights":[],"recolte":[{"map":84675330,"dir":"top"},{"map":84675331,"dir":"top"},{"map":84675332,"dir":"left"},{"map":84674820,"dir":"top"},{"map":84674821,"dir":"top"},{"map":84674822,"dir":"right"},{"map":84675334,"dir":"right"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"bottom"},{"map":84675843,"dir":"left"}],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"top"},{"map":84674564,"dir":"top"},{"map":84674563,"dir":"top"},{"map":84674562,"dir":"top"},{"map":84674561,"dir":"top"},{"map":84674560,"dir":"right"},{"map":84675072,"dir":"top"},{"map":84675329,"dir":"top"},{"map":84675330,"dir":"top"}],"bank":[{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259},{"map":84675330,"dir":"bottom"},{"map":84675331,"dir":"bottom"},{"map":84675332,"dir":"bottom"},{"map":84675333,"dir":"bottom"},{"map":84674820,"dir":"right"},{"map":84674821,"dir":"bottom"},{"map":84674822,"dir":"bottom"},{"map":84675334,"dir":"bottom"},{"map":84675846,"dir":"bottom"},{"map":84675845,"dir":"bottom"},{"map":84675844,"dir":"left"},{"map":84674566,"dir":"top"},{"map":84674565,"dir":"bottom"},{"map":84674564,"dir":"bottom"},{"map":84674563,"dir":"bottom"},{"map":84674562,"dir":"bottom"},{"map":84674561,"dir":"bottom"},{"map":84674560,"dir":"bottom"},{"map":84675072,"dir":"left"},{"map":84675329,"dir":"bottom"},{"map":84675330,"dir":"bottom"}]}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+Checking pods ...
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+no best match on i =38 : 43
+no best match on i =43 : 43
+Plus de ressources à récolter disponibles , on passe à la map suivante .
+[DEBUG] Path calculated {source : 153=153 , target : 16=16} , let's process it !
+[ 153, 138, 124, 123, 108, 107, 106, 92, 77, 63, 62, 47, 46, 32, 17, 16 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Changement de carte sur une cellule aléatoire .
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement échoué .
+Key movements proccesed !
+No movement
+Unknow game context remove element {"_messageType":"GameContextRemoveElementMessage","id":-2,"_isInitialized":true}
+[INACTIVITY] Soft debug on zahidsacri .
+[Aucun groupe:0:info][Trajet]Execution map 84675331 .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+[Aucun groupe:0:info][Trajet]Execution de la récolte...
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
+Mouvement échoué .
+Mouvement vers l'interactive échoué .
+Gathering element :{id : 478366 , cellid : 505 }
+Mouvement vers l'interactive sur la cellule : 505=505
+Exectution du trajet vers l'interactive .
+[ 153,
+  152,
+  165,
+  164,
+  178,
+  177,
+  176,
+  189,
+  203,
+  216,
+  230,
+  243,
+  257,
+  270,
+  284,
+  283,
+  296,
+  310,
+  338,
+  366,
+  394,
+  422,
+  450,
+  478,
+  506,
+  505 ]
+Sending map request !
