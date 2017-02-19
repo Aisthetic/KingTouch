@@ -7,6 +7,21 @@ var eventWrapper = require("event-wrapper");
 var webSocket = require("ws");
 
 
+
+
+process.argv.forEach(function (val, index, array) {
+    if(val === "clear-log"){
+    }
+    else if(val === "clear-maps"){
+        
+    }
+    else if(val === "clear-all"){
+        
+    }
+});
+
+
+
 var botClientServer = new webSocket.Server({
   port: 8082
 });
@@ -51,7 +66,20 @@ function acceptConnection(){
         }
 	});
 	connection.on("unload",(m)=>{
-		
+		console.log("UI request for unloading "+m.accompt+" ...");
+        for(var i in onlineProcess){
+            if(i === m.accompt){
+                console.log("Client found !");
+                onlineProcess[i].close(()=>{
+                    onlineProcess[i].kill();
+                    delete onlineProcess[i];
+                    connection.send("unload-client",{accompt: i});
+                    console.log("Unloading success !");
+                    return;
+                });
+            }
+        }
+        console.log("Client not found !");
 	});
     connection.on("accompts-request",()=>{
         console.log("Send accompt list to client ...");

@@ -41,6 +41,10 @@ exports.ActorsManager = function(bot){
 		if(bot.data.context == "FIGHT") return;
 		self.updateActorLocation(m.actorId,m.keyMovements[m.keyMovements.length-1]);
 	});
+	bot.connection.dispatcher.on("GameMapNoMovementMessage",(m)=>{
+			this.actors[bot.data.characterInfos.id].disposition.cellId = this.actors[bot.data.characterInfos.id].disposition.lastCellId;
+			console.log("Movement canceled !");
+	});
 	bot.connection.dispatcher.on("CharacterStatsListMessage",(m)=>{
 		this.userActorStats = m.stats;
 		this.dispatcher.emit("characterUpdated");
@@ -83,6 +87,7 @@ exports.ActorsManager = function(bot){
 exports.ActorsManager.prototype.updateActorLocation = function(id,loc){
 	if(this.bot.data.context == "fight"){console.trace("ActorsManager cant update actors during fight !"); return;}
 	if(typeof this.actors[id] != "undefined"){
+		this.actors[id].disposition.lastCellId = this.actors[id].disposition.cellId;
 		this.actors[id].disposition.cellId = loc;
 	}
 	else if(typeof this.fights[id] != "undefined"){

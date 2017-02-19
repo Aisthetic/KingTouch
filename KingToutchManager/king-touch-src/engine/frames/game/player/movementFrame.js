@@ -17,19 +17,19 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 	}
 	if(keyMovements.length <= 1){
  		console.log("pas de mouvement à faire wesh x)")
- 		return callBack(true);
+ 		return callBack(false);
  	}
 
 	var wrap = EventWrapper(bot.connection.dispatcher,function(result){
 		callBack(result);
 	});
     
-	//La question qui se pose , possible de recevoir un GameMapMovementMessage suivi d'un GameMapNoMovementMessage ?
+
     wrap("GameMapNoMovementMessage",function(m){
+ 		console.log("Mouvement échoué .");
         clearTimeout(confirmTimeOut);
  		wrap.done(false)
   	});
-
 	wrap("GameMapMovementMessage",function(m){
 		if(m.actorId == bot.data.characterInfos.id){
             console.log("MapMovement received !");
