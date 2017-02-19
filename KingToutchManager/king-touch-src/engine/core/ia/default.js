@@ -10,29 +10,29 @@ exports.Ia.prototype.processPlacement = function(){
 	setTimeout(()=>{this.bot.fight.fightReady()},1000);//pas encors fais les placements
 }
 exports.Ia.prototype.processTurn = function(){
-	if(this.turn == 0){
-		this.bot.fight.processPile(5,true,(success)=>{//d´abbord on se boost et on invocke 
-			this.bot.fight.processPile(2,true,(success)=>{
-				this.bot.logger.log("IA on se raproche");
-				result = this.bot.fight.move({wantCac:true},(r)=>{
-					this.bot.fight.endTurn();
-				});
-			});
-		});
-	}
-	else{
-		this.bot.fight.processPile(0,true,(success)=>{//puis on  voie si on peut attaquer
-			if(success == true){//si on a reussit a cast on fini son tour
-				this.bot.logger.log("IA on a fini");
-				this.bot.fight.endTurn();
-			}
-			else{//si non on se raproche
-				this.bot.logger.log("IA on se raproche");
-				result = this.bot.fight.move({wantCac:true},(r)=>{
-					this.bot.fight.endTurn();
-				});
-			}
-		});
-	}
-	this.turn++;
+    var success = false;
+    
+    this.bot.fight.processPile(5,true,(success)=>{//d´abbord on se boost et on invocke 
+        this.bot.fight.processPile(2,true,(success)=>{
+            this.bot.fight.processPile(0,true,(r)=>{// on voie si on peut faire un attaque de masse
+                if(r) {success = true;}
+                this.bot.fight.processPile(0,true,(r)=>{//une attaque normale
+                    if(r) {success = true;}
+
+                    var wantCac;
+                    if(success === true && this.bot.data.userConfig.fight.mode == 0){
+                        this.bot.logger.log("IA on se raproche ...")
+                        wantCac = true;
+                    }
+                    else{
+                        this.bot.logger.log("IA on fuis ...");
+                        wantCac = false;
+                    }
+                    this.bot.fight.move({wantCac:wantCac},(r)=>{
+                        this.bot.fight.endTurn();
+                    });
+                });
+            });
+        });
+    });
 }

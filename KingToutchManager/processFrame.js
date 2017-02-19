@@ -51,6 +51,10 @@ exports.ProcessFrame.prototype.send = function(call,data){
     }
 }
 
+exports.ProcessFrame.prototype.close = function(callBack){
+    this.connection.send("accompt-"+this.accompt.username,{call:"unload"});
+    callBack();
+}
 
 exports.ProcessFrame.prototype.kill = function(){
     this.process.kill();

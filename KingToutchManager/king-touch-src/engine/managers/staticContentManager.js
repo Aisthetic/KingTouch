@@ -22,12 +22,6 @@ exports.getSpellLevelsInfos = function(ids,id,callback){
 exports.getItemsInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Items", ids}, (result) => { callBack(result); });
 }
-exports.getInteractivesInfos = function(ids,callBack){
-    exports.sendWebRequestToDataUrl({class: "Interactives", ids}, (result) => { callBack(result); });
-}
-exports.getMapPosition = function(ids,callBack){
-    exports.sendWebRequestToDataUrl({class: "MapPositions", ids}, (result) => { callBack(result); });
-}
 exports.getBreedsInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Breeds", ids}, (result) => { callBack(result); });
 }

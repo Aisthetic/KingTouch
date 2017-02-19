@@ -2,7 +2,6 @@ var pathfinding = require("./utils/pathfinding.js");
 var processKeyMovement = require("./../frames/game/player/movementFrame.js").processKeyMovement;
 var processUseInteractive = require("./../frames/game/player/useInteractiveFrame.js").processUseInteractive;
 var processUpgradeCharacteristic = require("./../frames/game/player/upgradeCharacteristicFrame.js").processUprgradeCharacteristic;
-var npcFrame = require("./../frames/game/npc/npcFrame.js");
 var delayManager = require("./../managers/delayManager.js");
 
 
@@ -27,8 +26,9 @@ exports.Player.prototype.gotoNeighbourMap = function(cellId,dir){
 exports.Player.prototype.move = function(cb,cellId, allowDiagonals, stopNextToTarget){//seulement cellid est obligatoire
 	pathfinding.fillPathGrid(this.bot.data.mapManager.map,this.bot.data.mapManager.mapId);
 	var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
+	console.log("Calculating path...");
 	var keyMouvements = pathfinding.getPath(currentCellId,cellId,{},true);//this.bot.data.actorsManager.getOccupiedCells(),true);
-    console.log("[DEBUG] Path calculated {source : " + currentCellId + '=' + keyMouvements[0] + ' , target : ' + cellId + '=' + keyMouvements[keyMouvements.length-1] + "} , let's process it !");
+	console.log("Processing key movements !");
 	processKeyMovement(this.bot,keyMouvements,function(result){
 		console.log("Key movements proccesed !");
 		if(result){
@@ -41,32 +41,24 @@ exports.Player.prototype.move = function(cb,cellId, allowDiagonals, stopNextToTa
 	});
 }
 exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUse){
-    if(!cb) cb =()=>{};
-   
 	var self=this;
 	pathfinding.fillPathGrid(self.bot.data.mapManager.map,self.bot.data.mapManager.mapId);
 	var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
-	if(typeof this.bot.data.mapManager.interactives[id] == "undefined" && typeof cellId == "undefined"){
-        console.log("Can't find the desired interactive on the map :( .");
+	var element = this.bot.data.mapManager.statedes[id];
+	if(typeof element == "undefined" && typeof cellId == "undefined"){
 		cb(false);
 		return false;
 	}
 	var keyMouvements;
 	if(typeof cellId == "undefined" || cellId < 0){
-        if(!this.bot.data.mapManager.identifiedElements[id]){
-            console.log("Can't find interactive " + id + " 's trivial informations , blackListing it ...");
-            return cb("blacklist");
-        }
-        console.log("No cellid defined for the interactive with cellId : " + this.bot.data.mapManager.identifiedElements[id].position);
-  		keyMouvements = pathfinding.getPath(currentCellId,this.bot.data.mapManager.identifiedElements[id].position,this.bot.data.actorsManager.getOccupiedCells(),true,true);
+  		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
+ 		if(keyMouvements[keyMouvements.length -1] == element.elementCellId){ 
+ 			keyMouvements.pop();
+ 		}//dans le cas ou le bot est deja sur une cellule adjaçante .
 	}
 	else{//au cas ou la map est full
 		keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.actorsManager.getOccupiedCells(),true);
 	}
-    if(keyMouvements[keyMouvements.length -1] == this.bot.data.mapManager.identifiedElements[id].position){ 
-        keyMouvements.pop();
-    }//On se met jamais sur une interactive pour l'utiliser . 
-    console.log("Mouvement vers l'interactive sur la cellule : " + cellId + '=' + keyMouvements[keyMouvements.length-1])
 	processUseInteractive(self.bot,id,skill,keyMouvements,cb,waitForeUse);
 }
 //si lataque echoue la fonction essaye tout les monstre dispo (chaque fois qu´une attaque echou le monstre est blacklist)
@@ -74,9 +66,9 @@ exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUs
 var failAtemp = 0;
 //actor.contextualId
 //actor.disposition.cellId
-exports.Player.prototype.attackBestAvaibleFighter = function(noFightCallBack){
+exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
     if(failAtemp > 15){
-        console.log("********fatal le combat fais des follie on reconnecte*********");
+        console.log("********fatal le combat fais des follie on reconnecte *********");
         this.bot.reconnect(this.bot);
     }
 	var self=this;
@@ -113,7 +105,7 @@ exports.Player.prototype.attackBestAvaibleFighter = function(noFightCallBack){
 		attack(function(result){
 			if(result == 0){
                 failAtemp++;
-				self.bot.logger.log("[Player]Le combat n´a pas commencé...");
+				self.bot.logger.log("[Player]Le combat n´a pas commencer...");
 				self.blackList.push(selectedFights[selectedFightIndex])
 				self.attackBestAvaibleFighter(noFightCallBack);
 			}
@@ -127,7 +119,7 @@ exports.Player.prototype.attackBestAvaibleFighter = function(noFightCallBack){
     
 	function attack(cb){
         fightStartingTimeout = setTimeout(()=>{
-            console.log("[Trajet]Le combat n'a pas commencer, on le blackliste ce petit con !");
+            console.log("[Trjet]Le combat n'a pas commencer, on le blackliste ce petit con !");
             cb(0);
         },10000);
 		var currentCellId = self.bot.data.actorsManager.actors[self.bot.data.characterInfos.id].disposition.cellId;
@@ -140,7 +132,6 @@ exports.Player.prototype.attackBestAvaibleFighter = function(noFightCallBack){
 		else{
 			var keyMouvements = pathfinding.getPath(currentCellId,fighterUpdatedCellId,self.bot.data.actorsManager.getOccupiedCells(),true);
 	    }
-        console.log("[DEBUG] Path calculated {source : " + currentCellId + '=' + keyMouvements[0] + ' , target : ' + fighterUpdatedCellId + '=' + keyMouvements[keyMouvements.length-1] + "} , let's process it !");
 		require("./../frames/game/player/attackActorFrame.js").processAttackActor(self.bot,keyMouvements, (r)=>{
             clearTimeout(fightStartingTimeout);
             cb(r);
@@ -167,7 +158,7 @@ exports.Player.prototype.processRegen = function(life,callBack){
         return;
     }
 	this.bot.logger.log("[Player]Debut de la regeneration pour " + life + "pdv");
-    this.bot.data.state = "regen";
+    this.bot.data.state = "REGEN";
     setTimeout(()=>{	
          this.bot.connection.sendMessage("EmotePlayRequestMessage",{emoteId: 1});  
     },3000);
@@ -272,22 +263,4 @@ exports.Player.prototype.canUpgradeCharacteristic = function(characteristic){
 function getRegenRate(){
 	return 1000;//todo verifier que c´est correcte
 }
-//NpcActionId : 5:sell, 6:buy, 2:echange with npc, 4:drop off/collect a pet, 3:talk to npc
-exports.Player.prototype.npcActionRequest = function (npcId , replies , npcActionId, cb){//Todo gérer les réponses multiples
-    if(!cb) cb = ()=>{};//Savage x)
-    try {
-        console.log()
-        if (npcId == 0 || !npcId) {
-            npcId = Object.keys(this.bot.data.actorsManager.npcs)[0];
-            console.log("NpcId non défini , on parle au premier npc disponible sur la map . (id = " + npcId + ')');
-        }
-        if(npcActionId == 0 || !npcActionId) npcActionId = 3 //on parle à l'npc par defaut.
-        if(!Array.isArray(replies)) replies = [];
-        npcFrame.processTalkToNpc(this.bot,npcId, npcActionId , (msg)=>{ 
-            if(replies.length == 0 && msg.visibleReplies.length > 0) replies = msg.visibleReplies; 
-            npcFrame.processAnswers(this.bot , replies , cb);
-        });
-    }
-    catch(e){console.log(e);}
-};
     

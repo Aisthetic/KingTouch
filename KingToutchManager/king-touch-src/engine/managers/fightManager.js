@@ -25,7 +25,6 @@ exports.FightManager.prototype.addHandlers = function(){
 		this.spellsWaitingInterval = {};
 		this.invockeCount = 0;
 		this.bot.logger.log("[FightManager]Debut du combat !");
-		this.bot.data.state = "FIGHTING"
 		this.dispatcher.emit("start");
 	});
 	self.bot.connection.dispatcher.on("GameFightSynchronizeMessage",function(m){
