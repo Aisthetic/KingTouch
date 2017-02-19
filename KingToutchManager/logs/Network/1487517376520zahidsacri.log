@@ -1,7 +1,0 @@
-'Message sent :'
-'connecting'
-{ appVersion: '1.9.27',
-  buildVersion: '0.60.0',
-  client: 'android',
-  language: 'en',
-  server: 'login' }
