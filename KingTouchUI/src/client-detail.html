@@ -220,9 +220,9 @@
           <div class="card-content">
 		  
 			<label id="label1">Tactique de combat : </label>
-			<paper-radio-group selected="{{selectedFightSpec}}" aria-labelledby="label1">
-			  <paper-radio-button name="0">Agressife</paper-radio-button>
-			  <paper-radio-button name="1">Fuyard</paper-radio-button>
+			<paper-radio-group selected="0" aria-labelledby="label1">
+			  <paper-radio-button name="0">Fuyard</paper-radio-button>
+			  <paper-radio-button name="1">Agressife</paper-radio-button>
 			  <paper-radio-button name="2" disabled>Neutre</paper-radio-button>
 			</paper-radio-group>
 			</br>
@@ -251,7 +251,7 @@
       </div>
       <!-- stats card -->
        <div class="card-container">
-		 <paper-card heading="Artisanat et récolte">
+		 <paper-card heading="Statistiques">
           <div class="card-content">
 		  
           </div>
@@ -300,10 +300,6 @@ var consoleRunning = false;
             value: "0",
             observer: "selectedCharacteristicChanged"
         },
-        selectedFightSpec:{
-            value:"0",
-            observer: "selectedFightSpecChange"
-        },
         
         
         spells:{
@@ -332,7 +328,6 @@ var consoleRunning = false;
             this.set("client",client.detail);
             this.set("maxFighters",client.detail.config.fight.maxFighter);
             this.set("minFighters",client.detail.config.fight.minFighter);
-            this.set("selectedFightSpec",client.detail.config.fight.mode);
             //this.set("selectedCharacteristic",client.detail.config.tasks.selectedCharacteristic);
             if(client.detail.config.fight.type === "default"){
                 this.set("fightMode",0);
@@ -341,10 +336,6 @@ var consoleRunning = false;
                 this.set("fightMode",1);
             }
         });
-    },
-        
-    selectedFightSpecChange: function(){
-        sendToBot("update-fight-mode",parseInt(this.selectedFightSpec));
     },
       
     minFightersChanged: function(){

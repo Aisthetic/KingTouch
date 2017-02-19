@@ -39,7 +39,7 @@ function getDefault(){
 			checkLevel:false,
 			spells:[],
 			type:"default",
-			mode:0,
+			mode:"agressif",
 		},
 		regen: {
 			regenBegin:80,

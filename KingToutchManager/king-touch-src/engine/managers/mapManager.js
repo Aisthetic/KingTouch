@@ -5,7 +5,6 @@ const CHANGE_MAP_MASK_TOP    = 32 | 64 | 128;
 var getMapPointFromCellId = require("./../core/utils/pathfinding.js").getMapPoint;
 var EventEmitter = require("events").EventEmitter;
 var request = require("request");
-var jsonFile = require("jsonFile");
 
 exports.MapManager = function(bot){
 	var self=this;
@@ -16,39 +15,31 @@ exports.MapManager = function(bot){
 	this.hasMap = false;
 	this.interactives = {};
 	this.statedes = {};
-
+	this.identifiedElements = {};
 	this.bot.connection.dispatcher.on("CurrentMapMessage",function(m){
-        self.mapId=m.mapId;
-
-        jsonFile.readFile("./king-touch-src/data/maps/"+m.mapId+".json",(err,result)=>{
-			console.log(err);
-			console.log(result);
-           if(typeof result != "undefined"){
-               console.log("Map finded in local storage !");
-               self.update(result, m.mapId);
-           } 
-            else{
-                console.log("-----------------No map found ! -----------------");
-                console.log(result);
-                var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
-                doRequest(mapUrl,m,(m,id)=>{self.update(m,id)});
-
-                function doRequest(uri,m,u){
-                    request({uri: uri,method: "GET"}, function(error, response, body) {
-                        if(typeof body != "undefined"){
-                            var updatedMap = JSON.parse(body);
-                            u(updatedMap,m.mapId);
-                        }
-                        else{
-                            doRequest(uri,m,u);
-                        }
-                    });	
-                }
-            }
-        });
-        
-
+		self.mapId=m.mapId;
+		var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
+		doRequest(mapUrl,m,(m,id)=>{self.update(m,id)});
+		
+		function doRequest(uri,m,u){
+			request({uri: uri,method: "GET"}, function(error, response, body) {
+				if(typeof body != "undefined"){
+					var updatedMap = JSON.parse(body);
+					u(updatedMap,m.mapId);
+				}
+				else{
+					doRequest(uri,m,u);
+				}
+			});	
+		}
 	});
+
+	this.bot.connection.dispatcher.on("GameMapNoMovementMessage",(m)=>{
+ 		console.log("Detection d'un NoMovement . AVADANTIBUGADABRA !");
+        this.bot.trajet.stop();
+        this.refresh();
+  	});
+
 	this.bot.connection.dispatcher.on("InteractiveMapUpdateMessage",(m)=>{
 		this.updateInteractiveElements(m.interactiveElements);
 	});
@@ -76,17 +67,37 @@ exports.MapManager = function(bot){
 	});
 
 };
+/*
+	*en gros là j'ai trouvé que certains édifices (interactives) n'était pas associés à des stated elements du coup pas 
+	de cellId pour useInteractive , la solution c'est l'indentifiedElements . ggwp
+*/
 exports.MapManager.prototype.update = function(map,mapId){
 	this.map=map;
 	this.mapId=mapId;
 	this.hasMap = true;
-	this.path
+	this.path;
+	var mapElements = map.midgroundLayer;
+	var cellIds  = Object.keys(mapElements);
+	for (var c = 0; c < cellIds.length; c++) {
+		var cellId = cellIds[c];
+		var cellElements = mapElements[cellId];
+		for (var e = 0; e < cellElements.length; e++) {
+			var element = cellElements[e];
+			element.position = parseInt(cellId, 10);
+			if (element.id) {
+				this.identifiedElements[element.id] = element;
+			}
+		}
+	}
 	this.dispatcher.emit("loaded",map);
 };
 exports.MapManager.prototype.isWalkable = function (cellId, isFightMode) {
 	var mask = isFightMode ? 5 : 1;
 	return (this.map.cells[cellId].l & mask) === 1;
 };
+exports.MapManager.prototype.refresh = function(){
+	this.bot.connection.sendMessage('MapInformationsRequestMessage', { mapId: this.mapId });
+}
 exports.MapManager.prototype.getChangeMapFlag = function (cellId) {
 	var mapChangeData = this.map.cells[cellId].c || 0;
 	if (mapChangeData === 0) { return {}; }
@@ -130,20 +141,46 @@ exports.MapManager.prototype.checkChangeMapCell = function(cellId,direction){//t
 		return false;
 	}
 }
-exports.MapManager.prototype.getRandomCellId = function(direction,source)
-{
+exports.MapManager.prototype.getRandomCellId = function(direction,source,wantRandom){
 	source =this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
-	var possibleCells =[];//todo à voir
-        for (var j = 0; j < 559; j++) {
-            if (this.checkChangeMapCell(j, direction) && j != source) {
-            	possibleCells.push(j);
+	occupiedCells = this.bot.data.actorsManager.getOccupiedCells();
+	if(wantRandom)
+	{
+		var selected;
+		var minDist=0;
+		for(var i = 0; i<559;i++){
+			if(this.checkChangeMapCell(i,direction) && i != source && !occupiedCells[i])
+			{
+				if(minDist==0 && this.getDistance(i,source) > 1){
+					minDist=this.getDistance(source,i);
+					selected=i;
+				}
+				else{
+					var newDist=this.getDistance(source,i);
+					if(newDist<minDist && this.getDistance(i,source) > 1){
+						minDist=newDist;
+						selected=i;
+					}
+				}
 			}
 		}
-	function randomIntFromInterval(min,max)
-    {
-        return Math.floor(Math.random()*(max-min+1)+min);
-    }
-    return possibleCells[randomIntFromInterval(0,possibleCells.length - 1)];
+	
+		return selected;
+	}
+	else
+	{
+		var possibleCells =[];//todo à voir
+	        for (var j = 0; j < 559; j++) {
+	            if (this.checkChangeMapCell(j, direction) && j != source && !occupiedCells[j]) {
+	            	possibleCells.push(j);
+				}
+			}
+		function randomIntFromInterval(min,max)
+	    {
+	        return Math.floor(Math.random()*(max-min+1)+min);
+	    }
+	    return possibleCells[randomIntFromInterval(0,possibleCells.length - 1)];
+	}
 }
 /**
   * @descritption gives the interactives with the desired id(static id not dynamic one)
@@ -176,6 +213,7 @@ exports.MapManager.prototype.updateInteractiveElements = function (list) {
 			}
 			this.interactives[updatedElement.elementId].disabledSkills = updatedElement.disabledSkills;
 			this.interactives[updatedElement.elementId].enabledSkills  = updatedElement.enabledSkills;
+			if(updatedElement.enabledSkills.length > 0) this.bot.gather.blacklist = false;
 		}
 	};
 /** Update stated element states
@@ -194,6 +232,7 @@ exports.MapManager.prototype.updateStatedElements = function (statedElementsData
 		}
 		this.statedes[elemData.elementId].elementCellId = elemData.elementCellId;
 		this.statedes[elemData.elementId].elementState = elemData.elementState;
+		if(elemData.elementState == 1) this.bot.gather.blacklist[elemData.elementId] = false;
 
 	}
 };

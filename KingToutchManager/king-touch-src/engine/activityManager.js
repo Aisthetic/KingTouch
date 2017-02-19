@@ -3,16 +3,14 @@ var EventWrapper = require("event-wrapper");
 var dispatcher = new EventEmitter;
 var clientsWatching = {};
 var watching = false;
-var watchingInterval = 150000;
-var softWatchingInterval = 20000;
-var softWatching = false;
+var softDebugInterval = 30000;
+var hardDebugInterval = 300000;
 exports = module.exports = dispatcher;
-exports.startWatching = function(interval){
+exports.startWatching = function(softInterval , hardInterval){
     if(typeof interval != "undefined"){
         watchingInterval = interval;
     }
-    watching  = setInterval(watch,watchingInterval);
-    
+    watching  = setInterval(watch,softDebugInterval);
 }
 exports.stopWatching = function(){
     clearInterval(watching);
@@ -48,9 +46,15 @@ function watch(){
     var current = new Date().getTime();
     for(var i in clientsWatching){
         var w = clientsWatching[i];
-        if(w.last + watchingInterval < current  && w.bot.data.state!="REGEN" && w.last != -1){
-            console.log(w.bot.data.accompt.username+" has prolonged inactivity !");
-            w.wrap.done(false);
+        if(w.last + softDebugInterval < current  && w.bot.data.state!="REGEN" && w.last != -1){
+            /*if(w.last + hardDebugInterval < current){
+                console.log("[INACTIVITY] Hard debug on "+w.bot.data.accompt.username+" .");
+                w.wrap.done(false);
+            }
+            else{*/
+                console.log("[INACTIVITY] Soft debug on "+w.bot.data.accompt.username+" .");
+                w.bot.trajet.trajetExecute();
+            //}
         }
 		else if(w.last!=-1){
 			w.last=new Date().getTime();
