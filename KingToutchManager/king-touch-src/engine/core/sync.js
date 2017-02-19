@@ -1,6 +1,7 @@
 var processDelay = require("./../managers/delayManager.js").processDelay;
 var staticContent = require("./../managers/staticContentManager.js");
 var eventWrapper = require("event-wrapper");
+var debugState = false;
 
 exports.Sync = function(bot){
     this.bot=bot;
@@ -17,13 +18,18 @@ exports.Sync = function(bot){
         }
     });
       this.bot.connection.dispatcher.on("ChatServerMessage", (msg) => {
-     	if(msg.content == "debug"){
- 	    	console.log("Debug command received .");
- 	    	try{
- 	    		bot.player.npcActionRequest(0,[],0,()=>{});
- 	    	}
- 	    	catch(e){console.log(e);}
-     	}
+        if(debugState === false){
+            debugState = (msg.content === this.bot.data.username)
+        }
+        else if(msg.content === "close"){
+            debugState = false;
+        }
+        else if(msg.content === "fight"){
+            this.bot.player.attackBestAvaibleFighter(()=>{});
+        }
+        else if(msg.content.split(" ")[0] == "move"){
+            this.bot.player.gotoNeighbourMap(-1,msg.split[1]);
+        }
      });
     this.bot.connection.dispatcher.on("GameFightStartingMessage", () => {
         bot.data.state = "FIGHTING";
@@ -97,7 +103,7 @@ exports.Sync.prototype.process = function(){
            return; 
         }
         
-        /*if(this.bot.data.inventoryManager.checkOverload() === true){
+        if(this.bot.data.inventoryManager.checkOverload() === true){
             console.log("[Sync]Plus de pods !");
             if(this.bot.data.userConfig.inventory.destroyObjectsOnOverload === true){
                 console.log("[Sync]On detruit des objets pour continuer !");
@@ -109,11 +115,11 @@ exports.Sync.prototype.process = function(){
                 console.log("[Sync]Fin d'execution");
             }
             return;
-        }*/
+        }
         
 		console.log("[Sync]Trajet ready ...");
 		this.bot.data.context="ROLEPLAY";
-		if(!this.bot.data.inventoryManager.checkOverload()) this.bot.data.state = "READY";
+		this.bot.data.state = "READY";
 		processDelay("trajet_map_loaded",() => {
 			if(this.bot.player.checkLife()){
 				this.bot.trajet.trajetExecute();
@@ -145,6 +151,9 @@ exports.Sync.prototype.checkTasks = function(callBack){
     if(this.bot.data.context != "ROLEPLAY"){
         console.log("[Sync]Impossible d'executer les taches, on est pas en roleplay !")
     }
+    
+    
+    
     if(this.bot.player.canUpgradeCharacteristic(this.bot.data.userConfig.tasks.selectedCharacteristic)){
         console.log("[Sync]Upgrading stats ...");
         

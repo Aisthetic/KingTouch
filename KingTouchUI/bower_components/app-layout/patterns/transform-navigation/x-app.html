@@ -36,9 +36,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
 
       paper-tabs {
-        --paper-tabs-selection-bar-color: black;
-        height: 100%;
         max-width: 640px;
+        --paper-tabs-selection-bar-color: black;
       }
 
       paper-tab {
@@ -76,7 +75,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <app-toolbar class="tabs-bar" hidden$="{{!wideLayout}}">
             <!-- Nav on desktop: tabs -->
-            <paper-tabs selected="{{selected}}" attr-for-selected="name">
+            <paper-tabs selected="{{selected}}" attr-for-selected="name" bottom-item>
               <template is="dom-repeat" items="{{items}}">
                 <paper-tab name="{{item}}">{{item}}</paper-tab>
               </template>

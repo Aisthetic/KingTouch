@@ -17,7 +17,7 @@ exports.processKeyMovement = function(bot,keyMovements,callBack,dontConfirm){
 	}
 	if(keyMovements.length <= 1){
  		console.log("pas de mouvement à faire wesh x)")
- 		return callBack(true);
+ 		return callBack(false);
  	}
 
 	var wrap = EventWrapper(bot.connection.dispatcher,function(result){

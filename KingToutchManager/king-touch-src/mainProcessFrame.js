@@ -79,7 +79,11 @@ exports.register = function(){
     exports.on("set-ia-type",(type)=>{
         bot.currentBot.data.userConfig.fight.type = type;
         bot.currentBot.data.saveUserConfig();
-        console.log("[mainProcessFrame]Fight mode updated to "+type);
+        console.log("[mainProcessFrame]IA updated to "+type);
+    });
+    exports.on("set-ia-mode",(mode)=>{
+        bot.currentBot.data.userConfig.fight.mode = mode;
+        console.log("[mainProcessFrame]Fight mode updated to "+mode);
     });
     exports.on("spells-request",()=>{
         if(typeof bot.currentBot.data.fightManager.spellsData != "undefined"){

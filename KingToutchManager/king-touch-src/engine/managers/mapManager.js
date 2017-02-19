@@ -5,6 +5,7 @@ const CHANGE_MAP_MASK_TOP    = 32 | 64 | 128;
 var getMapPointFromCellId = require("./../core/utils/pathfinding.js").getMapPoint;
 var EventEmitter = require("events").EventEmitter;
 var request = require("request");
+var jsonFile = require("jsonFile");
 
 exports.MapManager = function(bot){
 	var self=this;
@@ -17,21 +18,36 @@ exports.MapManager = function(bot){
 	this.statedes = {};
 
 	this.bot.connection.dispatcher.on("CurrentMapMessage",function(m){
-		self.mapId=m.mapId;
-		var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
-		doRequest(mapUrl,m,(m,id)=>{self.update(m,id)});
-		
-		function doRequest(uri,m,u){
-			request({uri: uri,method: "GET"}, function(error, response, body) {
-				if(typeof body != "undefined"){
-					var updatedMap = JSON.parse(body);
-					u(updatedMap,m.mapId);
-				}
-				else{
-					doRequest(uri,m,u);
-				}
-			});	
-		}
+        self.mapId=m.mapId;
+
+        jsonFile.readFile("./king-touch-src/data/maps/"+m.mapId+".json",(err,result)=>{
+			console.log(err);
+			console.log(result);
+           if(typeof result != "undefined"){
+               console.log("Map finded in local storage !");
+               self.update(result, m.mapId);
+           } 
+            else{
+                console.log("-----------------No map found ! -----------------");
+                console.log(result);
+                var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
+                doRequest(mapUrl,m,(m,id)=>{self.update(m,id)});
+
+                function doRequest(uri,m,u){
+                    request({uri: uri,method: "GET"}, function(error, response, body) {
+                        if(typeof body != "undefined"){
+                            var updatedMap = JSON.parse(body);
+                            u(updatedMap,m.mapId);
+                        }
+                        else{
+                            doRequest(uri,m,u);
+                        }
+                    });	
+                }
+            }
+        });
+        
+
 	});
 	this.bot.connection.dispatcher.on("InteractiveMapUpdateMessage",(m)=>{
 		this.updateInteractiveElements(m.interactiveElements);
@@ -114,46 +130,20 @@ exports.MapManager.prototype.checkChangeMapCell = function(cellId,direction){//t
 		return false;
 	}
 }
-exports.MapManager.prototype.getRandomCellId = function(direction,source,wantRandom){
+exports.MapManager.prototype.getRandomCellId = function(direction,source)
+{
 	source =this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
-	occupiedCells = this.bot.data.actorsManager.getOccupiedCells();
-	if(wantRandom)
-	{
-		var selected;
-		var minDist=0;
-		for(var i = 0; i<559;i++){
-			if(this.checkChangeMapCell(i,direction) && i != source && !occupiedCells[i])
-			{
-				if(minDist==0 && this.getDistance(i,source) > 1){
-					minDist=this.getDistance(source,i);
-					selected=i;
-				}
-				else{
-					var newDist=this.getDistance(source,i);
-					if(newDist<minDist && this.getDistance(i,source) > 1){
-						minDist=newDist;
-						selected=i;
-					}
-				}
+	var possibleCells =[];//todo à voir
+        for (var j = 0; j < 559; j++) {
+            if (this.checkChangeMapCell(j, direction) && j != source) {
+            	possibleCells.push(j);
 			}
 		}
-	
-		return selected;
-	}
-	else
-	{
-		var possibleCells =[];//todo à voir
-	        for (var j = 0; j < 559; j++) {
-	            if (this.checkChangeMapCell(j, direction) && j != source && !occupiedCells[j]) {
-	            	possibleCells.push(j);
-				}
-			}
-		function randomIntFromInterval(min,max)
-	    {
-	        return Math.floor(Math.random()*(max-min+1)+min);
-	    }
-	    return possibleCells[randomIntFromInterval(0,possibleCells.length - 1)];
-	}
+	function randomIntFromInterval(min,max)
+    {
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }
+    return possibleCells[randomIntFromInterval(0,possibleCells.length - 1)];
 }
 /**
   * @descritption gives the interactives with the desired id(static id not dynamic one)

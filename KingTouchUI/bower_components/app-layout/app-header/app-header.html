@@ -235,7 +235,7 @@ Mixin | Description | Default
         transition-property: transform;
       }
 
-      :host::before {
+      :host::after {
         position: absolute;
         right: 0px;
         bottom: -5px;
@@ -251,7 +251,7 @@ Mixin | Description | Default
         @apply(--app-header-shadow);
       }
 
-      :host([shadow])::before {
+      :host([shadow])::after {
         opacity: 1;
       }
 
@@ -540,7 +540,7 @@ Mixin | Description | Default
         var dScrollTop = scrollTop - this._lastScrollTop;
         var absDScrollTop = Math.abs(dScrollTop);
         var isScrollingDown = scrollTop > this._lastScrollTop;
-        var now = performance.now();
+        var now = Date.now();
 
         if (this._mayMove()) {
           top = this._clamp(this.reveals ? lastTop + dScrollTop : scrollTop, 0, maxHeaderTop);

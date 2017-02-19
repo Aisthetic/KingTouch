@@ -164,10 +164,11 @@
 
       <div class="content">
         <template is="dom-repeat" items="{{clients}}"><!-- No empty text node
-        --><a on-tap="selectClient" client="{{item.accompt}}" href="#/detail/{{item.id}}" class="card-container">
+        --><div  class="card-container">
             <paper-card >
-              <div class="card-content">
-				<paper-fab on-click="disconnect" style="position:absolute; top:-15px;width: 45px;height: 45px;right:10px;" icon="icons:remove" title="Deconnecter le client"></paper-fab>
+              <div   class="card-content">
+                              <paper-fab  on-tap="unloadClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:60px;" icon="icons:close" title="Deconnecter le client"></paper-fab>
+            <a href="#/detail/{{item.id}}"><paper-fab  on-tap="selectClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:10px;" icon="icons:arrow-forward" title="Infos sur le client"></paper-fab></a>
                 <h2>{{item.characterInfos.name}}<span style="font-size:12px; color:gray;"> <span></span>Niveau {{item.characterInfos.level}}</span></h2>
 				<p><span>Points de vie</span></p>
 				<paper-progress value="{{item.stats.lifePoints}}" min="0" max="{{stats.maxLifePoints}}" class="red"></paper-progress>
@@ -180,7 +181,7 @@
                 </p>
               </div>
             </paper-card>
-          </a><!-- No empty text node
+          </div><!-- No empty text node
         --></template>
       </div>
 
@@ -241,6 +242,9 @@ var readyToLoad = true;
 			this.push("clients",m.detail);
 			this.listenClient(m.detail.accompt)
 		});
+        window.addEventListener("unload-client",(m)=>{
+            sendUI("global-update-request");
+        });
         window.addEventListener("accompts-list",(m)=>{
             let accompts = m.detail;
             this.set("accompts",accompts);
@@ -248,42 +252,44 @@ var readyToLoad = true;
             console.log(accompts);
         });
 	},
+      
+    //---- client thumb ----
 
     selectClient: function(e){
         sendUI("client-update-request",{ accompt : e.model.get("item").accompt });
     },
       
     listenClient: function(accompt) {
-        var id = getPacketIdentifier(accompt);
-        window.addEventListener(id,(e)=>{
+        let id = getPacketIdentifier(accompt);
+        window.addEventListener(id,rcv);
+        
+        function rcv(e){
             m=e.detail;
             switch(m.call){
                 case "state-update":
-                    var id = -1;
-                    for (var i = 0;i<this.clients.length;i++){ if(accompt == this.clients[i].accompt) { id = i }}
-                    if(id != -1){
-                        this.removeClient(this.clients[i]);
-                        m.id=id;
-                        this.push("clients",m);
-                    }
-                    else{
-                        console.log("Undefined bot to update !");
-                    }
                     sendUI("global-update-request")//todo alleger la charge
                 break;
+                case "unload":
+                    window.removeEventListener(id,rcv);
+                    console.log("Client listener removed ("+id+") !");
+                break;
             }
-        });
+        }
         readyToLoad= true;
     },
       
-    unListenClient : function(accompt){
-      
+    unloadClient: function(e){
+        let ac = e.model.get("item").accompt;
+        console.log("Request server for unloading "+ac+" ...");
+        sendUI("unload",{accompt: ac });
     },
-      
+            
     removeClient: function(client) {
         var index = this.clients.indexOf(client);
         this.splice('clients', index, 1);
     },
+      
+    //-- accompts manager --**
       
 	showLoginBox: function(){
          sendUI("accompts-request");
@@ -325,11 +331,7 @@ var readyToLoad = true;
 		sendUI("add-accompt",{"username":this.username, "password":this.password});
         this.set("username","");
         this.set("password","");
-	},
-      
-    disconnect: function(e){
-    }
-
+	}
   });
       
   function getPacketIdentifier(accompt){
