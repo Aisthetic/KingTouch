@@ -17,6 +17,7 @@ exports.processIdentification = function(logg,connection,token,username,cb,ident
 	var failCount = 0;
 	var wrap = EventWrapper(connection.dispatcher, function (error) {
 		if(typeof error != "undefined"){
+			console.log("Erreur sur l'authentification .");
 			logger.log("[processIdentification]"+JSON.stringify(error),"error");
 		}
 	});

@@ -15,13 +15,12 @@ exports.Trajet = function(bot){
 exports.Trajet.prototype.load = function(trajet){
 	this.currentTrajet = trajet
 	this.hasTrajet=true;
-	this.trajetRunning=true;
 }
 exports.Trajet.prototype.stop = function(){
-	trajetRunning=false;
+	this.trajetRunning=false;
 }
 exports.Trajet.prototype.start = function(){
-	trajetRunning=true;
+	this.trajetRunning=true;
 	this.trajetExecute();
 }
 exports.Trajet.prototype.startPhoenix = function(){
@@ -89,6 +88,7 @@ exports.Trajet.prototype.parsePhoenix = function(action){
 	}
 	return false;
 }
+
 exports.Trajet.prototype.parseFight = function(fight){
 	var self = this;
 	if(fight=="undefined"){return false;}
@@ -98,18 +98,26 @@ exports.Trajet.prototype.parseFight = function(fight){
 	});
 	return true;
 }
+
 exports.Trajet.prototype.parseGather = function(gather){
- 	if(gather=="undefined"){return false;}
- 	this.bot.gather.gatherFirstAvailableRessource((result)=>{
- 		if(result) {
- 			this.parseGather(gather);
- 		}
- 		else{
-            console.log("Plus de ressources à récolter disponibles , on passe à la map suivante");
- 			this.execMove(gather);
- 		}
- 	});
- 	return true;
+	//if(!this.trajetRunning) return console.log("Trajet arrêté , récolte annulée .");
+	console.log("------------------------------------------------------");
+	console.log('Bot state : ' + this.bot.data.state + ' .');
+	if(!this.trajetRunning) return console.log("Trajet not running , gathering action stopped .");
+	if(this.bot.data.state != "READY"){
+		console.log("Bot not ready for gathering : " + this.bot.data.state);
+		return true;
+	}
+	this.bot.gather.gatherFirstAvailableRessource((result)=>{
+		if(result) {
+			this.parseGather(gather);
+		}
+		else{
+			console.log("Plus de ressources à récolter disponibles , on passe à la map suivante .");
+			this.execMove(gather);
+		}
+	});
+	return true;
 }
 exports.Trajet.prototype.parseMove = function(move){
 	if(move=="undefined"){return false}

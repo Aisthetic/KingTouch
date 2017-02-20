@@ -1,7 +1,7 @@
  // Require
 const WebRequest = require('request');
 const PHOENIX_MAPS = {//todo il faut trouver le interactive corespondant et le element dans les gfx pour reprer le phoenix sans devoir le noter ici 
-	84673546:{id:479466,skill:152192,cell:258},//astrub [2-12]
+    84673546:{id:479466,skill:152192,cell:258},//astrub [2-12]
     80219143:{id:463535,skill:193341,cell:185}//incarnoob
 }
 const BANK_MAPS = {
@@ -9,18 +9,24 @@ const BANK_MAPS = {
 }
 // Class
 exports.sendWebRequestToDataUrl = function SendWebRequestToDataUrl(data, callback){
-	WebRequest({ uri: "https://proxyconnection.touch.dofus.com/data/map?lang=fr&v=0.60.0", method: "POST", form: data }, (error, response, body) => { callback(JSON.parse(body)); })
+    WebRequest({ uri: "https://proxyconnection.touch.dofus.com/data/map?lang=fr&v=0.60.0", method: "POST", form: data }, (error, response, body) => { callback(JSON.parse(body)); })
 }
 
 exports.getSpellsInfos = function(ids, callback){
-	exports.sendWebRequestToDataUrl({class: "Spells", ids}, (result) => { callback(result); });
+    exports.sendWebRequestToDataUrl({class: "Spells", ids}, (result) => { callback(result); });
 }
 exports.getSpellLevelsInfos = function(ids,id,callback){
-	exports.sendWebRequestToDataUrl({class: "SpellLevels", ids}, (result) => { callback(id,result); });
+    exports.sendWebRequestToDataUrl({class: "SpellLevels", ids}, (result) => { callback(id,result); });
 }
 
 exports.getItemsInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Items", ids}, (result) => { callBack(result); });
+}
+exports.getInteractivesInfos = function(ids,callBack){
+    exports.sendWebRequestToDataUrl({class: "Interactives", ids}, (result) => { callBack(result); });
+}
+exports.getMapPosition = function(ids,callBack){
+    exports.sendWebRequestToDataUrl({class: "MapPositions", ids}, (result) => { callBack(result); });
 }
 exports.getBreedsInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Breeds", ids}, (result) => { callBack(result); });
@@ -30,7 +36,7 @@ exports.getSubAreasInfos = function(callBack){
 }
 //return null if no phoenix on the map
 exports.getPhoenixInfos = function(mapId){
-	return PHOENIX_MAPS[mapId];
+    return PHOENIX_MAPS[mapId];
 }
 exports.getBankInfos = function(mapId){
     return BANK_MAPS[mapId];

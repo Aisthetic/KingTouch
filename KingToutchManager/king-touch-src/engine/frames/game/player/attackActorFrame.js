@@ -7,10 +7,7 @@ exports.processAttackActor = function(bot,keyMovements,callBack){
 	});
 
 	wrap("GameMapNoMovementMessage",function(m){
-		bot.logger.log("Attack actor fail (noMovementMessage)!");
 		wrap.done(false);
-		callBack(-1);
-
 	});
 	wrap("GameContextCreateMessage",function(m){
 		bot.logger.log("Attack actor succes !");

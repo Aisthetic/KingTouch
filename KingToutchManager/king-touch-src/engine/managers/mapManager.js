@@ -16,39 +16,32 @@ exports.MapManager = function(bot){
 	this.hasMap = false;
 	this.interactives = {};
 	this.statedes = {};
+	this.identifiedElements = {};
 
 	this.bot.connection.dispatcher.on("CurrentMapMessage",function(m){
         self.mapId=m.mapId;
-
-        jsonFile.readFile("./king-touch-src/data/maps/"+m.mapId+".json",(err,result)=>{
-			console.log(err);
-			console.log(result);
-           if(typeof result != "undefined"){
-               console.log("Map finded in local storage !");
-               self.update(result, m.mapId);
-           } 
-            else{
-                console.log("-----------------No map found ! -----------------");
-                console.log(result);
-                var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
-                doRequest(mapUrl,m,(m,id)=>{self.update(m,id)});
-
-                function doRequest(uri,m,u){
-                    request({uri: uri,method: "GET"}, function(error, response, body) {
-                        if(typeof body != "undefined"){
-                            var updatedMap = JSON.parse(body);
-                            u(updatedMap,m.mapId);
-                        }
-                        else{
-                            doRequest(uri,m,u);
-                        }
-                    });	
-                }
-            }
-        });
-        
-
+		var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
+		doRequest(mapUrl,m,(m,id)=>{self.update(m,id)});
+		
+		function doRequest(uri,m,u){
+			request({uri: uri,method: "GET"}, function(error, response, body) {
+				if(typeof body != "undefined"){
+					var updatedMap = JSON.parse(body);
+					u(updatedMap,m.mapId);
+				}
+				else{
+					doRequest(uri,m,u);
+				}
+			});	
+		}
 	});
+	this.bot.connection.dispatcher.on("GameMapNoMovementMessage",(m)=>{
+		if(this.bot.data.state == 'FIGHTING') return console.log('No movement détecté en combat , pas grave .')
+		console.log("Detection d'un NoMovement . *sort sa baguette magique* AVADANTIBUGADABRA !");
+		this.bot.sync.assuringServer = true;
+	    this.bot.trajet.stop();
+	    this.refresh();
+  	});
 	this.bot.connection.dispatcher.on("InteractiveMapUpdateMessage",(m)=>{
 		this.updateInteractiveElements(m.interactiveElements);
 	});
@@ -76,13 +69,34 @@ exports.MapManager = function(bot){
 	});
 
 };
+/*
+	*en gros là j'ai trouvé que certains édifices (interactives) n'était pas associés à des stated elements du coup pas 
+	de cellId pour useInteractive , la solution c'est l'identifiedElements . ggwp
+*/
 exports.MapManager.prototype.update = function(map,mapId){
 	this.map=map;
 	this.mapId=mapId;
 	this.hasMap = true;
-	this.path
+	this.path;
+	var mapElements = map.midgroundLayer;
+	var cellIds  = Object.keys(mapElements);
+	for (var c = 0; c < cellIds.length; c++) {
+		var cellId = cellIds[c];
+		var cellElements = mapElements[cellId];
+		for (var e = 0; e < cellElements.length; e++) {
+			var element = cellElements[e];
+			element.position = parseInt(cellId, 10);
+			if (element.id) {
+				this.identifiedElements[element.id] = element;
+			}
+		}
+	}
+	console.log("-----------Map updated---------------"),
 	this.dispatcher.emit("loaded",map);
 };
+exports.MapManager.prototype.refresh = function(){
+	this.bot.connection.sendMessage('MapInformationsRequestMessage', { mapId: this.mapId });
+}
 exports.MapManager.prototype.isWalkable = function (cellId, isFightMode) {
 	var mask = isFightMode ? 5 : 1;
 	return (this.map.cells[cellId].l & mask) === 1;

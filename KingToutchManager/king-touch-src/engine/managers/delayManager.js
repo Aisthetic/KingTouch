@@ -27,7 +27,7 @@ exports.processDelay = function(indicatif,cb){
     var handle = setTimeout(callBack,exports.getDelay(indicatif));
     if(typeof inProcess[indicatif] != "undefined"){
          console.trace(indicatif+" already in use, canceling previous timeout");
-         clearTimeout[inProcess[indicatif]];
+         clearTimeout(inProcess[indicatif]);
     }
     inProcess[indicatif] = handle;
     return function(){

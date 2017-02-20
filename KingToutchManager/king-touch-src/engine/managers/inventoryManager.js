@@ -1,6 +1,8 @@
 var processObjectUse = require("./../frames/game/inventory/objectUseFrame.js").processObjectUse;
 var processDeleteObject = require("./../frames/game/inventory/deleteObjectFrame.js").processDeleteObject;
 var staticContentManager = require("./staticContentManager");
+var transfertAll = require("./../frames/game/inventory/exchangeFrame.js").processTransferAll;
+var npcFrame = require("./../frames/game/npc/npcFrame.js");
 var EventEmitter = require("events").EventEmitter;
 
 exports.InventoryManager = function(bot){
@@ -26,7 +28,7 @@ exports.InventoryManager = function(bot){
             this.objects[o.objectUID] = o;
             for(var x = 0;x<o.effects.length;x++){
                 var f = o.effects[x];
-                if(f._type == "ObjectEffectInteger" && f.actionId == "110")//objet qui donne de la vie
+                if(f._type == "ObjectEffectInteger" && f.actionId == "110")//objet de regeneration .
                 {
                     this.regenObjects[o.objectUID] = f.value;
                     this.bot.logger.log("[Inventory]Object : "+o.objectUID+" selected for regen !");
@@ -35,6 +37,16 @@ exports.InventoryManager = function(bot){
         }
 
         this.loadObjectsInfos();
+    });
+    bot.connection.dispatcher.on("ExchangeStartedWithStorageMessage",(msg)=>{
+       if(msg.exchangeType = ExchangeTypeEnum.STORAGE || this.bot.data.state == "OVERLOAD"){
+            console.log("Coffre détecté , on se vide .");
+            transfertAll(bot);
+            this.bot.data.state = 'READY';
+            this.bot.trajet.bankMode = false;
+            npcFrame.processLeaveDialog(bot);
+            this.bot.trajet.trajetExecute();
+       }
     });
     bot.connection.dispatcher.on("ObjectAddedMessage",(m)=>{
 		try{
@@ -69,7 +81,8 @@ exports.InventoryManager.prototype.processRegen = function(cb){//todo debug, la 
     return false;
 }
 exports.InventoryManager.prototype.checkOverload = function(){//todo destruction ou retour en bank
-    if (this.pods >= (this.maxPods-10)){
+    console.log("Checking pods ...")
+    if (this.pods >= (this.maxPods*0.9)){//On check que ça depasse les 90% pas this.maxPods -10 :p 
         this.bot.data.state="OVERLOAD";
         this.bot.logger.log("[Inventory]Full pods !");
         return true;
@@ -78,7 +91,7 @@ exports.InventoryManager.prototype.checkOverload = function(){//todo destruction
 }
 exports.InventoryManager.prototype.destroyForOverload = function(callBack,podsToClear){//detruit l'objet le plus abondant en quantiter sufisante pour pouvoire bouger
     if(typeof podsToClear == "undefined"){ podsToClear = 30; }
-    var diff = this.pods - (this.maxPods-20);
+    var diff = this.pods - (this.maxPods*0.9);//90% plus viable
     console.log("Destruction d'objets pour bouger (overload : "+diff+") ...");
     if(diff >= 0){
         diff += 10;
@@ -100,7 +113,7 @@ exports.InventoryManager.prototype.destroyForOverload = function(callBack,podsTo
 
         if(selected == 0){
             console.log("Ouloulou c'est quoi ce bordel ^^'");
-            return
+            return callBack();
         }
 
         if(typeof this.objects[selected].static == "undefined"){
@@ -123,7 +136,8 @@ exports.InventoryManager.prototype.destroyForOverload = function(callBack,podsTo
         });
     }
     else{
-        console.log("Destruction annuler on a asser de pods !")
+        console.log("Destruction annuler on a assez de pods !");
+        callBack();
     }
 
     function destroyable(obj){
@@ -168,3 +182,47 @@ exports.InventoryManager.prototype.loadObjectsInfos = function(){
         this.dispatcher.emit("itemsInfosLoaded");
     });
 }
+
+//J'ai pas trouvé où mettre ça , TODO , à revoir .
+const ExchangeTypeEnum =
+    { /** Achat/vente dans un magasin d'un npc. */
+    NPC_SHOP: 0,
+    /** Échange entre deux joueurs. */
+    PLAYER_TRADE: 1,
+    /** Échange d'objets avec d'un npc. */
+    NPC_TRADE: 2,
+    /** Interaction avec un atelier. */
+    CRAFT: 3,
+    /** Échange avec les joueurs deconnectés en mode marchand. */
+    DISCONNECTED_VENDOR: 4,
+    /** Echange avec un coffre, ou la banque. */
+    STORAGE: 5,
+    /** Modifier son inventaire de magasin */
+    SHOP_STOCK: 6,
+    /** Échange avec un percepteur. */
+    TAXCOLLECTOR: 8,
+    /** Échange d'objets : génère un nouvel objet en fonction des effets de celui proposé. */
+    NPC_MODIFY_TRADE: 9,
+    /** Mise en vente d'objet dans les hôtels de vente. */
+    BIDHOUSE_SELL: 10,
+    /** Achat d'objet dans les hôtels de vente. */
+    BIDHOUSE_BUY: 11,
+    /** Multicraft : Confectionneur / artisan / fabriquant */
+    MULTICRAFT_CRAFTER: 12,
+    /** Multicraft : client */
+    MULTICRAFT_CUSTOMER: 13,
+    /** Bible des artisans */
+    JOB_INDEX: 14,
+    /** Échange avec l'inventaire de montures */
+    MOUNT: 15,
+    /** Échange avec l'enclos des montures */
+    MOUNT_STABLE: 16,
+    /** Échange avec un NPC pour réssuciter un famillié mourru */
+    NPC_RESURECT_PET: 17,
+    /** Échange de monture avec NPC */
+    NPC_TRADE_MOUNT: 18,
+    /** Consultation des maisons en vente avec NPC */
+    REALESTATE_HOUSE: 19,
+    /** Consultation des enclos en vente avec NPC */
+    REALESTATE_FARM: 20
+};

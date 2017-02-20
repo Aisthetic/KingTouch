@@ -10,29 +10,25 @@ exports.Player = function(bot){
 	this.blackList = [];
 }
 //gotoNeigborMap(cellid) or gotoNeigborMap(cellId,dir) if cellid is -1 get a random cellid
+//gotoNeigborMap(cellid) or gotoNeigborMap(cellId,dir) if cellid is -1 get a random cellid
 exports.Player.prototype.gotoNeighbourMap = function(cellId,dir){
+	var self = this;
 	if(cellId == -1){
-		cellId = this.bot.data.mapManager.getRandomCellId(dir);
+		cellId = self.bot.data.mapManager.getRandomCellId(dir);
 	}
 	else if (typeof dir == "undefined"){
-		dir = this.bot.data.mapManager.getChangeMapFlag(cellId);
+		dir = self.bot.data.mapManager.getChangeMapFlag(cellId);
 	}
-	this.move((result)=>{
-		if(result === false){
-			console.log("Cant change map, getting randomCellid")
-			if(cellId != -1){
-				setTimeout(()=>{this.gotoNeigborMap(this.bot.data.mapManager.getChangeMapFlag(cellId))},1000);
-			}
-			else{
-				setTimeout(()=>{this.gotoNeigborMap(-1,dir)},1000);
-			}
-		}
-	else{
-		this.bot.connection.sendMessage("ChangeMapMessage",{mapId : this.bot.data.mapManager.getNeighbourId(dir)});
-	}
-},cellId,true);
+	self.move((result)=>{
+		if(result)self.bot.connection.sendMessage("ChangeMapMessage",{mapId : self.bot.data.mapManager.getNeighbourId(dir)});
+	},cellId,true);
+
 }
 exports.Player.prototype.move = function(cb,cellId, allowDiagonals, stopNextToTarget){//seulement cellid est obligatoire
+	if(!this.bot.data.mapManager.map){
+		this.bot.data.mapManager.refresh();
+		return "refresh";
+	}
 	pathfinding.fillPathGrid(this.bot.data.mapManager.map,this.bot.data.mapManager.mapId);
 	var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
 	console.log("Calculating path...");
@@ -40,34 +36,35 @@ exports.Player.prototype.move = function(cb,cellId, allowDiagonals, stopNextToTa
 	console.log("Processing key movements !");
 	processKeyMovement(this.bot,keyMouvements,function(result){
 		console.log("Key movements proccesed !");
-		if(result){
-			console.log("Movement ok ");
-		}
-		else{
-			console.log("No movement")
-		}
 		cb(result);
 	});
 }
 exports.Player.prototype.useInteractive = function(id,skill,cellId,cb,waitForeUse){
+    if(!cb) cb =()=>{};
 	var self=this;
 	pathfinding.fillPathGrid(self.bot.data.mapManager.map,self.bot.data.mapManager.mapId);
 	var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
-	var element = this.bot.data.mapManager.statedes[id];
-	if(typeof element == "undefined" && typeof cellId == "undefined"){
+	if(typeof this.bot.data.mapManager.interactives[id] == "undefined" && typeof cellId == "undefined"){
+        console.log("Can't find the desired interactive on the map :( .");
 		cb(false);
 		return false;
 	}
 	var keyMouvements;
 	if(typeof cellId == "undefined" || cellId < 0){
-		keyMouvements = pathfinding.getPath(currentCellId,element.elementCellId,this.bot.data.actorsManager.getOccupiedCells(),true,true);
-		if(keyMouvements[keyMouvements.length -1] == element.elementCellId){
-			keyMouvements.pop();
-		}//dans le cas ou le bot est deja sur une cellule adjaçante .
+        if(!this.bot.data.mapManager.identifiedElements[id]){
+            console.log("Can't find interactive " + id + " 's trivial informations , blackListing it ...");
+            return cb("blacklist");
+        }
+        console.log("No cellid defined for the interactive with cellId : " + this.bot.data.mapManager.identifiedElements[id].position);
+  		keyMouvements = pathfinding.getPath(currentCellId,this.bot.data.mapManager.identifiedElements[id].position,this.bot.data.actorsManager.getOccupiedCells(),true,true);
 	}
 	else{//au cas ou la map est full
 		keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.actorsManager.getOccupiedCells(),true);
 	}
+    if(keyMouvements[keyMouvements.length -1] == this.bot.data.mapManager.identifiedElements[id].position){ 
+        keyMouvements.pop();
+    }//On se met jamais sur une interactive pour l'utiliser . 
+    console.log("Mouvement vers l'interactive sur la cellule : " + cellId + '=' + keyMouvements[keyMouvements.length-1])
 	processUseInteractive(self.bot,id,skill,keyMouvements,cb,waitForeUse);
 }
 //si lataque echoue la fonction essaye tout les monstre dispo (chaque fois qu´une attaque echou le monstre est blacklist)
@@ -77,7 +74,7 @@ var failAtemp = 0;
 //actor.disposition.cellId
 exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
 	if(failAtemp > 15){
-		console.log("********fatal le combat fais des follie on reconnecte *********");
+		console.log("********fatal le combat fais des follies on reconnecte *********");
 		this.bot.reconnect(this.bot);
 	}
 	var self=this;
@@ -112,11 +109,11 @@ exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
 	else{
 		selectedFightIndex = Math.floor((Math.random() * selectedFights.length));
 		attack(function(result){
-			if(result == 0){
+			if(!result){
 				failAtemp++;
-				self.bot.logger.log("[Player]Le combat n´a pas commencer...");
+				self.bot.logger.log("[Player]Le combat n´a pas commencé , on attend un rechargement de la map .");
 				self.blackList.push(selectedFights[selectedFightIndex])
-				self.attackBestAvaibleFighter(noFightCallBack);
+				//self.attackBestAvaibleFighter(noFightCallBack);
 			}
 			else{
 				failAtemp = 0;
@@ -128,8 +125,8 @@ exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
 
 	function attack(cb){
 		fightStartingTimeout = setTimeout(()=>{
-			console.log("[Trjet]Le combat n'a pas commencer, on le blackliste ce petit con !");
-			cb(0);
+			console.log("[Trajet]Le combat n'a pas commencé, on le blackliste ce petit con !");
+			cb(false);
 		},10000);
 		var currentCellId = self.bot.data.actorsManager.actors[self.bot.data.characterInfos.id].disposition.cellId;
 		var fighterUpdatedCellId = selectedFights[selectedFightIndex].disposition.cellId;
@@ -141,9 +138,9 @@ exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
 		else{
 			var keyMouvements = pathfinding.getPath(currentCellId,fighterUpdatedCellId,self.bot.data.actorsManager.getOccupiedCells(),true);
 		}
-		require("./../frames/game/player/attackActorFrame.js").processAttackActor(self.bot,keyMouvements, (r)=>{
+		require("./../frames/game/player/attackActorFrame.js").processAttackActor(self.bot,keyMouvements, (result)=>{
 			clearTimeout(fightStartingTimeout);
-			cb(r);
+			cb(result);
 		});
 	}
 }
@@ -271,4 +268,28 @@ exports.Player.prototype.canUpgradeCharacteristic = function(characteristic){
 
 function getRegenRate(){
 	return 1000;//todo verifier que c´est correcte
+}
+
+//NpcActionId : 5:sell, 6:buy, 2:echange with npc, 4:drop off/collect a pet, 3:talk to npc
+exports.Player.prototype.npcActionRequest = function (npcId , replies , npcActionId, cb){//Todo gérer les réponses multiples
+    if(!cb) cb = ()=>{};//Savage x)
+    try {
+        console.log()
+        if (npcId == 0 || !npcId) {
+            npcId = Object.keys(this.bot.data.actorsManager.npcs)[0];
+            console.log("NpcId non défini , on parle au premier npc disponible sur la map . (id = " + npcId + ')');
+        }
+        if(npcActionId == 0 || !npcActionId) npcActionId = 3 //on parle à l'npc par defaut.
+        if(!Array.isArray(replies)) replies = [];
+        npcFrame.processTalkToNpc(this.bot,npcId, npcActionId , (msg)=>{ 
+            if(replies.length == 0 && msg.visibleReplies.length > 0) replies = msg.visibleReplies; 
+            npcFrame.processAnswers(this.bot , replies , cb);
+        });
+    }
+    catch(e){console.log(e);}
+};
+exports.Player.prototype.cancelMove = function(){
+	var lastPosition = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
+	console.log("Canceling movement .");
+	this.bot.connection.sendMessage("GameMapMovementCancelMessage",{cellId: lastPosition});
 }

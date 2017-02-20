@@ -5,6 +5,7 @@ var debugState = false;
 
 exports.Sync = function(bot){
     this.bot=bot;
+    this.assuringServer = false; //On rassure le serveur qu'on est pas des bots .
     this.bot.connection.dispatcher.on("GameContextCreateMessage",function(m){
 		if(bot.data.context === "GHOST"){
 			console.log("[Sync]Cant load ROLEPLAY context when player is ghost");//todo il y a une incoerence dans tout sa il faudrais que lorsque le joueur est un fantome on set state="GHOST" et context="ROLEPLAY"
@@ -32,16 +33,23 @@ exports.Sync = function(bot){
         }
      });
     this.bot.connection.dispatcher.on("GameFightStartingMessage", () => {
-        bot.data.state = "FIGHTING";
-        bot.data.context="FIGHT";
+        this.bot.data.state = "FIGHTING";
+        this.bot.data.context="FIGHT";
     });
     this.bot.connection.dispatcher.on("MapComplementaryInformationsDataMessage",(m) => {
 		if( typeof m.actors[0] == "undefined"){
 			bot.data.context="FIGHT";
 			bot.data.state="FIGHTING";
 			console.log("[Sync]Reconnection en combat presumer le 226 est vide !");
+			return;
 		}
-        setTimeout(()=>{ this.process(); },1000);
+		var timeout = 1000;
+		if(this.assuringServer) {
+			console.log("Le serveur n'a pas l'air de nous aimer ,on annule le mouvement et on attends 10 secondes avant de continuer .");
+			this.bot.player.cancelMove();
+			timeout = 10000;//le serveurs refuse toutes les requetes de mouvement , on attends 10 secs avant de continuer 
+		}
+        setTimeout(()=>{ this.process(); },timeout);
     });
     this.bot.connection.dispatcher.on("GameRolePlayPlayerLifeStatusMessage",(m)=>{
 		if(m.state == 1){
@@ -62,6 +70,7 @@ exports.Sync = function(bot){
 exports.Sync.prototype.process = function(){
 	console.log("[Sync]Processing ...");
 	//check map loading
+	this.assuringServer = false;
 	if(typeof this.bot.data.mapManager.map === null){
 		console.log("[Sync]En attente de la map ...");
 		var wrap = eventWrapper(this.bot.data.mapManager.dispatcher,(r)=>{ 			
@@ -103,7 +112,7 @@ exports.Sync.prototype.process = function(){
            return; 
         }
         
-        if(this.bot.data.inventoryManager.checkOverload() === true){
+        /*if(this.bot.data.inventoryManager.checkOverload()){
             console.log("[Sync]Plus de pods !");
             if(this.bot.data.userConfig.inventory.destroyObjectsOnOverload === true){
                 console.log("[Sync]On detruit des objets pour continuer !");
@@ -115,7 +124,7 @@ exports.Sync.prototype.process = function(){
                 console.log("[Sync]Fin d'execution");
             }
             return;
-        }
+        }*/
         
 		console.log("[Sync]Trajet ready ...");
 		this.bot.data.context="ROLEPLAY";

@@ -46,8 +46,8 @@ exports.ClientConnection.prototype.send = function (callName, data) {
 		call: callName,
 		data: data
 	};
-
-    this.logger.log("packet-send",{call:callName,data:data});
+	this.logger.log("Message sent :");
+    this.logger.log({call:callName,data:data});
 
 	this.currentConnection.write(msg);
 };
@@ -61,6 +61,7 @@ exports.ClientConnection.prototype.setCurrentConnection = function(){
 		self.dispatcher.emit("open");
 	});
 	self.currentConnection.on("data",function(data){
+		self.logger.log("Message reveived :");
 		self.logger.log(data);
 		self.dispatcher.emit(data._messageType, data);
 	});//todo gérer la reconnection avec primus il semble y avoir deux trois trucs a faire 

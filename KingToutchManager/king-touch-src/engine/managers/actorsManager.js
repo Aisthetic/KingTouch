@@ -41,10 +41,9 @@ exports.ActorsManager = function(bot){
 		if(bot.data.context == "FIGHT") return;
 		self.updateActorLocation(m.actorId,m.keyMovements[m.keyMovements.length-1]);
 	});
-	bot.connection.dispatcher.on("GameMapNoMovementMessage",(m)=>{
+	/*bot.connection.dispatcher.on("GameMapNoMovementMessage",(m)=>{
 			this.actors[bot.data.characterInfos.id].disposition.cellId = this.actors[bot.data.characterInfos.id].disposition.lastCellId;
-			console.log("Movement canceled !");
-	});
+	});*/
 	bot.connection.dispatcher.on("CharacterStatsListMessage",(m)=>{
 		this.userActorStats = m.stats;
 		this.dispatcher.emit("characterUpdated");
