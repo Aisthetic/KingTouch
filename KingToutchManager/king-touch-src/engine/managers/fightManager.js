@@ -24,6 +24,10 @@ exports.FightManager.prototype.addHandlers = function(){
 	this.bot.connection.dispatcher.on("GameFightStartingMessage",(m)=>{
 		this.spellsWaitingInterval = {};
 		this.invockeCount = 0;
+		console.log("[FightManager]Debut du combat !");
+		for (var i in self.spells) {//todo gérer les sorts à delai initial (genre punition)
+			self.spells[i].nextSpellDelay = 0
+		}
 		this.bot.logger.log("[FightManager]Debut du combat !");
 		this.dispatcher.emit("start");
 	});
@@ -92,12 +96,16 @@ exports.FightManager.prototype.addHandlers = function(){
 			if(m.id == self.bot.data.characterInfos.contextualId){
 				self.bot.logger.log("[Fight]Debut du tours de jeux");
 				myTurnSync = true;
-				for(var s in this.spellsWaitingInterval){
+				for(var s in self.spellsWaitingInterval){
 					self.spells[s].nextSpellDelay -= 1;
 					if(self.spells[s].nextSpellDelay <=0){
-						delete this.spellsWaitingInterval[s];
+						delete self.spellsWaitingInterval[s];
 					}
 				}
+			}
+			else
+			{
+				console.log("Début du tour de jeu de : " + m.id);
 			}
 		}
 	});
@@ -290,3 +298,12 @@ exports.FightManager.prototype.verifyLos = function(cell,spellId){
 exports.FightManager.prototype.getUserFighter = function(){
 	return this.fighters[this.bot.data.characterInfos.contextualId];
 }
+exports.FightManager.prototype.isOnCaC = function(){
+	for (var i in this.fighters){
+		if(i == this.bot.data.characterInfos.contextualId) continue;
+		var distance = this.bot.data.mapManager.getDistance(this.getUserFighter().disposition.cellId,this.fighters[i].disposition.cellId);
+		if (distance == 1)
+			return true;
+	}
+	return false
+};

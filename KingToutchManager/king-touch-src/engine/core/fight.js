@@ -15,12 +15,13 @@ exports.Fight = function(bot){
 	this.bot = bot;
 	this.bot.data.fightManager.dispatcher.on("start", ()=>{
 		this.fightContextInitialized=true;
-        if(this.selectedIa !=  this.bot.data.userConfig.fight.type){
+        /*if(this.selectedIa !=  this.bot.data.userConfig.fight.type){
             this.selectedIa = this.bot.data.userConfig.fight.type;
             console.log("[fight]Ia updated to "+this.selectedIa);
         }
 		this.ia=new Ia[this.selectedIa](this.bot);
-		this.ia.processPlacement();
+		this.ia.processPlacement();*/
+		this.fightReady();
 	});
 	this.bot.data.mapManager.dispatcher.on("loaded", (map)=>{
 		pathfinding.fillPathGrid(map);
@@ -29,10 +30,14 @@ exports.Fight = function(bot){
 		this.fightContextInitialized=false;
 	});
 	this.bot.data.fightManager.dispatcher.on("turnStart", ()=>{
-        if(typeof this.ia == "undefined"){
+        /*if(typeof this.ia == "undefined"){
             this.ia = new Ia[this.bot.data.userConfig.fight.type](this.bot);
         }
-		this.ia.processTurn();
+		this.ia.processTurn();*/
+		console.log("Debut du tour !");
+		console.log("steps : " + Object.keys(this.bot.data.userConfig.fight.spells));
+		try{this.processPile(Object.keys(this.bot.data.userConfig.fight.spells)[0] , ()=>{this.endTurn()});//plus simple ;)
+		}catch(e){console.log(e)}
 	});
 	processFightContextFrame(this.bot);
 }
@@ -70,7 +75,9 @@ exports.Fight.prototype.move = function(data,callBack){
 		callBack(false)
 	}
 }
-//spellType 0 = une attaque, 1 = un boost sur moi, 2 = un bost sur les alliée
+
+
+/*//spellType 0 = une attaque, 1 = un boost sur moi, 2 = un bost sur les alliée
 //spellType peut etre un array... IMPORTANT la fonction bug avec les array
 exports.Fight.prototype.processPile = function(spellType,repeat,callBack){
 	var self = this;
@@ -121,6 +128,94 @@ exports.Fight.prototype.processPile = function(spellType,repeat,callBack){
 	}
 	callBack(false);
 }
+*/
+
+
+/*Explication de fonctionnement : La fonction va cast les sorts de la pile un par un , à chaque fois que l'on appelle la fonction et 
+si on peut relancer le même sort , on appelle encore la fonction et elle va commencer à traiter la pile de le index donné , notamment 
+celui du sort qu'on vient cast , si on peut pas le cast , on appelle cette fois la fonction avec le next index . 
+de plus avec cette fonction on aura plus de classes IA , on process direct la pile au debug du tour */
+exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter repeat pour voir les spells qu'il faut repeter ou pas .
+	if(typeof step == "undefined" || step < 0) step = 0;// un truc du genre self.bot.data.userConfig.fight.spells[i].repeatable = false ou true
+	var self = this;
+	if(self.bot.data.userConfig.fight.spells.length <=0){
+		self.bot.logger.log("Aucun sort dans la pile !");
+	}
+	if(step >= self.bot.data.userConfig.fight.spells.length)//C'est bon , on a parcouru tout les sorts .
+	{
+		console.log("Fin du traitement de la pile .");
+		callBack();
+		return;
+	}
+	var spell = self.bot.data.userConfig.fight.spells[Object.keys(self.bot.data.userConfig.fight.spells)[step]];//du mindFuck xD
+	console.log("processing spell type : " + Number(spell.type));
+	switch(Number(spell.type)){
+		case 2 ://sur moi
+			console.log("Possible de lancer le sort sur soi ?")
+			if(self.bot.data.fightManager.canCastThisSpell(spell.id)){
+				console.log("Oui .")
+				self.castSpell(spell.id,self.bot.data.fightManager.fighters[self.bot.data.characterInfos.id].disposition.cellId,function(success){
+					if(!success)	whatNext(false, step);
+					else whatNext(self.bot.data.fightManager.canCastThisSpell(spell.id) , step);
+				});
+				return true;
+			}
+			else{
+				console.log("Non .")
+				return whatNext(false,step);
+			}
+			break;
+		case 6://sur moi au CaC
+			if(!self.bot.data.fightManager.isOnCaC()){
+				console.log("On fonce au CaC !")
+				self.move(null,function(){
+					if(self.bot.data.fightManager.canCastThisSpell(spell.id) && self.bot.data.fightManager.isOnCaC()){
+						self.castSpell(spell.id,self.bot.data.fightManager.fighters[self.bot.data.characterInfos.id].disposition.cellId,function(success){
+							if(!success)	whatNext(false, step);
+							else whatNext(self.bot.data.fightManager.canCastThisSpell(spell.id) , step);
+						});
+					}
+					else{whatNext(false,step);}
+				});
+				return;
+			}
+			else{
+				if(self.bot.data.fightManager.canCastThisSpell(spell.id)){
+						self.castSpell(spell.id,self.bot.data.fightManager.fighters[self.bot.data.characterInfos.id].disposition.cellId,function(success){
+							if(!success)	whatNext(false, step);
+							else whatNext(self.bot.data.fightManager.canCastThisSpell(spell.id) , step);
+						});
+						return;
+				}
+				else{return whatNext(false,step);}
+			}
+			break;
+		default ://0 sur les ennemies,5 invocations 
+			console.log("Maybe default ? ")
+			var spellCell = self.bot.data.fightManager.canCast(spell.id,spell.type);
+			if(spellCell != -1){
+				console.log("Attaque sur les ennemis .");
+				self.castSpell(spell.id,spellCell,function(success){
+					if(!success)	whatNext(false, step);
+					else whatNext(self.bot.data.fightManager.canCastThisSpell(spell.id) , step);
+				});
+				return;
+			}
+			else return whatNext(false , step)
+			break;
+	}
+	function whatNext(RepeatLastStep,step){
+		if(RepeatLastStep){
+			console.log("On relance le même sort .")
+			self.processPile(step,callBack);
+		}
+		else{
+			console.log("On passe au sort suivant .")
+			self.processPile(step + 1,callBack);
+		}
+	}
+	console.log("WTF , la fonction est censée ne jamais arriver à cette ligne ...");
+};
 
 exports.Fight.prototype.castSpell = function(spellId,cellId,callBack){
 	this.bot.logger.log("Casting spell : "+this.bot.data.fightManager.spells[spellId].nameId+ " on cell : "+cellId);
@@ -133,6 +228,6 @@ exports.Fight.prototype.castSpell = function(spellId,cellId,callBack){
 		}
 	});
 }
-exports.Fight.prototype.endTurn = function(){
+exports.Fight.prototype.endTurn = function(){//TODO Ajouter une action finale avant de finir le cbt (genre fuir ou je sais pas)
 	this.bot.connection.sendMessage("GameFightTurnFinishMessage");
 }

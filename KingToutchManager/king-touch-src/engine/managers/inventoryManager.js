@@ -82,7 +82,7 @@ exports.InventoryManager.prototype.processRegen = function(cb){//todo debug, la 
 }
 exports.InventoryManager.prototype.checkOverload = function(){//todo destruction ou retour en bank
     console.log("Checking pods ...")
-    if (this.pods >= (this.maxPods*0.9)){//On check que ça depasse les 90% pas this.maxPods -10 :p 
+    if (this.pods >= (this.maxPods-5)){//On check que ça depasse les 90% pas this.maxPods -10 :p 
         this.bot.data.state="OVERLOAD";
         this.bot.logger.log("[Inventory]Full pods !");
         return true;
@@ -91,7 +91,7 @@ exports.InventoryManager.prototype.checkOverload = function(){//todo destruction
 }
 exports.InventoryManager.prototype.destroyForOverload = function(callBack,podsToClear){//detruit l'objet le plus abondant en quantiter sufisante pour pouvoire bouger
     if(typeof podsToClear == "undefined"){ podsToClear = 30; }
-    var diff = this.pods - (this.maxPods*0.9);//90% plus viable
+    var diff = this.pods - (this.maxPods-10);//90% plus viable
     console.log("Destruction d'objets pour bouger (overload : "+diff+") ...");
     if(diff >= 0){
         diff += 10;
