@@ -1,0 +1,15 @@
+{
+  "name": "king-touch-server",
+  "version": "0.0.1",
+  "description": "Global server for kingTouch",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main"
+  },
+  "author": "asyade",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "ws": "^2.1.0"
+  }
+}
