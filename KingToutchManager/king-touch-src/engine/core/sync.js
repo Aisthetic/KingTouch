@@ -112,7 +112,7 @@ exports.Sync.prototype.process = function(){
            return; 
         }
         
-        if(this.bot.data.inventoryManager.checkOverload()){
+        /*if(this.bot.data.inventoryManager.checkOverload()){
             console.log("[Sync]Plus de pods !");
             if(this.bot.data.userConfig.inventory.destroyObjectsOnOverload === true){
                 console.log("[Sync]On detruit des objets pour continuer !");
@@ -124,7 +124,7 @@ exports.Sync.prototype.process = function(){
                 console.log("[Sync]Fin d'execution");
             }
             return;
-        }
+        }*/
         
 		console.log("[Sync]Trajet ready ...");
 		this.bot.data.context="ROLEPLAY";

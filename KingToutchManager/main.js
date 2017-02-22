@@ -7,8 +7,6 @@ var eventWrapper = require("event-wrapper");
 var webSocket = require("ws");
 
 
-
-
 process.argv.forEach(function (val, index, array) {
     if(val === "clear-log"){
     }

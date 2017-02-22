@@ -46,7 +46,7 @@ function watch(){
     var current = new Date().getTime();
     for(var i in clientsWatching){
         var w = clientsWatching[i];
-        if(w.last + softDebugInterval < current  && w.bot.data.state!="REGEN" && w.bot.data.state!="FIGHTING" && w.last != -1){//On évite la reco pour debug .
+        if(w.last + softDebugInterval < current  && w.bot.data.state!="REGEN" && w.last != -1){//On évite la reco pour debug .
             /*if(w.last + hardDebugInterval < current){
                 console.log("[INACTIVITY] Hard debug on "+w.bot.data.accompt.username+" .");
                 w.wrap.done(false);

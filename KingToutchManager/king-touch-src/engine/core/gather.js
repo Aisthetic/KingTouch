@@ -79,12 +79,11 @@ exports.Gather.prototype.gatherElement = function(element, skillId ,cb){
 };
 //returns the best matching element for the bot (closest distance , todo : highest priority)
 exports.Gather.prototype.getBestMatch = function(elements){
- 	var closest;
- 	var minDist;
+ 	var closest = null;
+ 	var minDist = 999;//pas joli
  	var currentCellId = this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id].disposition.cellId;
  	for(var i in elements){
  		var newDist = this.bot.data.mapManager.getDistance(currentCellId,elements[i].stated.elementCellId);
- 		if(!minDist) minDist = newDist;
  		if(minDist>newDist && this.gatherable(elements[i])){
  			minDist = newDist;
  			closest = elements[i]
