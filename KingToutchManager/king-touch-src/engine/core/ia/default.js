@@ -28,7 +28,7 @@ exports.Ia.prototype.processTurn = function(){
                         this.bot.logger.log("IA on fuis ...");
                         wantCac = false;
                     }
-                    this.bot.fight.move({wantCac:wantCac},(r)=>{
+                    this.bot.fight.move((r)=>{
                         this.bot.fight.endTurn();
                     });
                 });

@@ -25,9 +25,13 @@ exports.FightManager.prototype.addHandlers = function(){
 		this.spellsWaitingInterval = {};
 		this.invockeCount = 0;
 		console.log("[FightManager]Debut du combat !");
-		for (var i in self.spells) {//todo gérer les sorts à delai initial (genre punition)
-			self.spells[i].nextSpellDelay = 0
+		try
+		{
+			for (var i in self.spells) {//todo gérer les sorts à delai initial (genre punition)
+						self.spells[i].nextSpellDelay = 0
+			}
 		}
+		catch(e) {console.log(e)}
 		this.bot.logger.log("[FightManager]Debut du combat !");
 		this.dispatcher.emit("start");
 	});
@@ -189,12 +193,12 @@ exports.FightManager.prototype.cellIsFree = function(cellId){
 		return false;
 	}
 }
-exports.FightManager.prototype.canCast = function(id,type){
+exports.FightManager.prototype.canCast = function(id,type,current){
     if(typeof this.spells[id] == "undefined"){
         console.log("[fightManager]Can't find spell "+id);
-        return -1;
+        return false;
     }
-	var current = this.getUserFighter().disposition.cellId;
+	if(!current) current = this.getUserFighter().disposition.cellId;
 	var spell = this.spellsData[id][this.spells[id].spellLevel];
 	var spellRange = getSpellRange(current,spell);
 	var cells = {};
@@ -205,7 +209,7 @@ exports.FightManager.prototype.canCast = function(id,type){
 
 	if(type == 0){//sur les ennemies
 		var cibles = this.getFightersByDistance(0);
-		for(var i =0;i<cibles.length;i++){//on verifie pour chaque ennemies (du plus proche au plus eloignier) si une cellle dans le spll range existe
+		for(var i =0;i<cibles.length;i++){//on verifie pour chaque ennemies (du plus proche au plus eloignier) si une cellule dans le spell range existe
 			var c = cibles[i].disposition.cellId//si elle est dans le rang alors on verifie la ligne de vue et si on peut cast le spell 
 			if(typeof cells[c] != "undefined" && this.canCastThisSpell(id) && this.verifyLos(c,id)){
 				return c;//un fighter est sur la cellue, on a le champs libre
@@ -233,14 +237,13 @@ exports.FightManager.prototype.canCast = function(id,type){
 			}
             console.log("dur");
 		}
-		console.log("[fightManager]On peut pas !");
+		console.log("[FIGHTMANAGER] On peut pas .");
 	}
-	return -1;//on peut rien cast
+	return false;//on peut rien cast
 }
 //si cellid n'est pas definis on prend la cellule du joueur
 exports.FightManager.prototype.fightersInRange = function(cellId,rang){
-        	console.log("[fightManager]Looking for fighters in rang !");
-
+    console.log("[fightManager]Looking for fighters in rang !");
     p = getMapPoint(cellId);
 	rang = getShapeRing(p.x,p.y,0,rang);
     for(var i = 0;i<rang.length;i++){
@@ -263,6 +266,7 @@ exports.FightManager.prototype.canInvocke = function(spell){//todo reconnection 
 	}
 	return false;
 }
+//Checks if there is enough PA and if there isn't any delay on the spell //TODO Check bot states .(ivre , pesanteur ...etc)
 exports.FightManager.prototype.canCastThisSpell = function(spellId){
 	if(typeof spellId == "undefined" || typeof this.spells[spellId] == "undefined"){
 		console.log("[fightManager]Undefined spell id !");
@@ -297,7 +301,7 @@ exports.FightManager.prototype.verifyLos = function(cell,spellId){
 }
 exports.FightManager.prototype.getUserFighter = function(){
 	return this.fighters[this.bot.data.characterInfos.contextualId];
-}
+};
 exports.FightManager.prototype.isOnCaC = function(){
 	for (var i in this.fighters){
 		if(i == this.bot.data.characterInfos.contextualId) continue;
@@ -307,3 +311,30 @@ exports.FightManager.prototype.isOnCaC = function(){
 	}
 	return false
 };
+//Gets in th range of a spell , returns true if done , false if not .
+exports.FightManager.prototype.getCellForIntelligentMove = function(spell){
+	var currentCellId = this.getUserFighter().disposition.cellId;
+	var possiblePoints = getShapeRing(getMapPoint(currentCellId).x,getMapPoint(currentCellId).y,this.getUserFighter().stats.movementPoints);
+	var cells = {};
+	for(var i =0;i<possiblePoints.length;i++){//Remplissage d'un tableau contenant les cellules possible à atteindre avec les pm actuels du bot
+		cells[getCellId(possiblePoints[i][0],possiblePoints[i][1])]= true;
+	}
+	for(var i in cells){//On supprime les cellules qu'on peut pas cast depuis .
+		if(!this.canCast(spell.id,spell.type,i) || !this.cellIsFree(i)) delete cells[i];
+	}
+	if(cells.length == 0) return false; //Impossible de se trouver dans la po du sort .
+	cells = Object.keys(cells);
+	var getDistance = this.bot.data.mapManager.getDistance;
+	var closest = null;
+ 	var minDist = null;
+ 	for(var i in cells[i]){
+ 		var newDist = getDistance(currentCellId,cells[i]);
+ 		if(!minDist) minDist = newDist;
+ 		if(minDist>newDist){
+ 			minDist = newDist;
+ 			closest = cells[i]
+ 		}
+ 	}
+ 	if(!closest) return false; //normalement ceci ne doit jamais arriver mais on sait jamais ^^'
+ 	return closest;
+}

@@ -81,7 +81,7 @@ exports.register = function(){
         bot.currentBot.data.saveUserConfig();
         console.log("[mainProcessFrame]IA updated to "+type);
     });
-    exports.on("set-ia-mode",(mode)=>{
+    exports.on("update-fight-mode",(mode)=>{
         bot.currentBot.data.userConfig.fight.mode = mode;
         console.log("[mainProcessFrame]Fight mode updated to "+mode);
     });
