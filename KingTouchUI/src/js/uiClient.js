@@ -23,7 +23,6 @@ function connectUI()
 
 	wsClient.onmessage = function (data) 
 	{ 
-        console.log(data);
 		var m = JSON.parse(data.data);
 		if(typeof m.call == "undefined"){
 			console.log("Undefined ui message received !");
@@ -79,5 +78,5 @@ function emitUI(callName,data){
 }
 
 function reconnect(){
-	
+	connectUI();
 }
