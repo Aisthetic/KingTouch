@@ -1,0 +1,1477 @@
+Server request connecting ...
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"UxbhuZfQFTBTHPWK"}
+Config loaded !
+{"key":"ae85d74b-b704-4e04-978b-74d400aa2d5e","account_id":108104299,"ip":"92.170.38.64","added_date":"2017-02-20T01:17:26+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-20T04:17:26+01:00"}
+Api key : ae85d74b-b704-4e04-978b-74d400aa2d5e
+Game token : 9a4d64dd18491f638ff18bb461682515
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=UxbhuZfQFTBTHPWK) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]1/2 in login queue...
+[Aucun groupe:0:info]1/3 in login queue...
+[Aucun groupe:0:info]0/2 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706068212856) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 407) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Nelphield) ...
+[Aucun groupe:0:info][Inventory]Object : 93307891 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 93307892 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 93307893 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 93307894 selected for regen !
+[InventoryManager]Items infos loaded !
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80216581.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80216581.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Nelphield saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Nelphield saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Nelphield saved !
+[mainProcessFrame]IA updated to default
+[Aucun groupe:0:info][Trajt]Execution ...
+"undefined"
+{"call":"trajet-load","data":{"trajet":{"80216580":{"cell":540,"action":"fight"},"80216581":{"cell":555,"action":"fight"},"80216582":{"cell":363,"action":"fight"},"80217092":{"cell":392,"action":"fight"},"80217094":{"cell":541,"action":"fight"},"80217095":{"cell":556,"action":"fight"},"80217096":{"cell":279,"action":"fight"},"80217604":{"cell":280,"action":"fight"},"80217605":{"cell":3,"action":"fight"},"80217608":{"cell":279,"action":"fight"},"80218117":{"cell":112,"action":"fight"},"80218119":{"cell":447,"action":"fight"},"80218120":{"cell":10,"action":"fight"},"80218629":{"cell":112,"action":"fight"},"80218630":{"cell":10,"action":"fight"},"80218631":{"cell":251,"action":"fight"},"80219142":{"cell":308,"action":"fight"},"80219143":{"cell":4,"action":"fight"}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":555,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 212,
+  227,
+  241,
+  256,
+  284,
+  312,
+  340,
+  354,
+  369,
+  383,
+  398,
+  412,
+  427,
+  441,
+  456,
+  470,
+  498,
+  513,
+  527,
+  555 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2950(20 cells)
+Confirmations du mouvement dans 2950ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80216582.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80216582.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":363,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 23,
+  51,
+  65,
+  93,
+  121,
+  134,
+  148,
+  161,
+  175,
+  203,
+  231,
+  245,
+  273,
+  288,
+  302,
+  317,
+  318,
+  332,
+  333,
+  348,
+  362,
+  363 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 3855(22 cells)
+Confirmations du mouvement dans 3855ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80217094.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80217094.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":541,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 350,
+  365,
+  379,
+  394,
+  408,
+  423,
+  437,
+  438,
+  439,
+  454,
+  468,
+  483,
+  497,
+  512,
+  526,
+  541 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2290(16 cells)
+Confirmations du mouvement dans 2290ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80217095.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80217095.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":556,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 9,
+  37,
+  65,
+  93,
+  121,
+  149,
+  177,
+  191,
+  206,
+  220,
+  248,
+  276,
+  304,
+  332,
+  360,
+  388,
+  416,
+  444,
+  472,
+  500,
+  528,
+  556 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 3510(22 cells)
+Confirmations du mouvement dans 3510ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80217096.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80217096.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":279,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 24,
+  52,
+  66,
+  79,
+  93,
+  106,
+  134,
+  162,
+  177,
+  191,
+  206,
+  220,
+  235,
+  249,
+  264,
+  278,
+  279 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2900(17 cells)
+Confirmations du mouvement dans 2900ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80217608.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80217608.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":279,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 291, 292, 293, 279 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2445(15 cells)
+Confirmations du mouvement dans 2445ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218120.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218120.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 266,
+  253,
+  239,
+  226,
+  212,
+  213,
+  200,
+  186,
+  173,
+  159,
+  146,
+  132,
+  119,
+  105,
+  92,
+  78,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 4675(20 cells)
+Confirmations du mouvement dans 4675ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218119.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218119.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":447,"action":"fight"}
+[Aucun groupe:0:info][Player]Attack monsters (cell : 530)
+[ 542, 543, 544, 530 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 595(4 cells)
+Confirmations du mouvement dans 595ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 444
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+[Aucun groupe:0:info][Infos]<b>Nelphield</b> has failed the $challenge41 challenge.
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 431
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 416
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 388
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 388
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on fuis ...
+Combat terminer !
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218119.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218119.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":447,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 544, 530, 502, 489, 475, 447 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1105(6 cells)
+Confirmations du mouvement dans 1105ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218631.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218631.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Player]Attack monsters (cell : 155)
+[ 434, 406, 393, 365, 337, 309, 281, 253, 225, 197, 183, 155 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2040(12 cells)
+Confirmations du mouvement dans 2040ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 147
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 162
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 162
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 134
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 162
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on fuis ...
+Combat terminer !
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218631.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218631.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Sync]Regen par objet...
+[Aucun groupe:0:info][inventory]Bad quantity for object regen !
+[Sync]Impossible de faire la regen par objet, regen normale ...
+[Aucun groupe:0:info][Player]Debut de la regeneration pour 43pdv
+[Sync]Regen terminer !
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Player]Attack monsters (cell : 160)
+[ 183, 184, 171, 172, 173, 159, 160 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1190(7 cells)
+Confirmations du mouvement dans 1190ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 147
+[Aucun groupe:0:info][Infos]<b>Nelphield</b> has failed the $challenge25 challenge.
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 132
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 147
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on fuis ...
+Combat terminer !
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218631.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218631.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 159, 174, 175, 189, 190, 205, 206, 220, 221, 236, 250, 251 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1750(12 cells)
+Confirmations du mouvement dans 1750ms
+Mouvement confirmée !
+Movement ok 
+null
+{ id: 80219143,
+  topNeighbourId: 80219142,
+  bottomNeighbourId: 80219144,
+  leftNeighbourId: 80218631,
+  rightNeighbourId: 80219655,
+  cells: 
+   [ { l: 67, c: 216 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 80 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 3, c: 195 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     ... 460 more items ],
+  midgroundLayer: 
+   { '0': [ [Object] ],
+     '112': [],
+     '139': [ [Object] ],
+     '153': [ [Object], [Object], [Object] ],
+     '167': [ [Object], [Object] ],
+     '176': [ [Object] ],
+     '190': [ [Object] ],
+     '191': [ [Object] ],
+     '204': [ [Object] ],
+     '210': [ [Object], [Object] ],
+     '224': [ [Object] ],
+     '259': [ [Object] ],
+     '265': [ [Object] ],
+     '272': [ [Object] ],
+     '286': [ [Object] ],
+     '295': [ [Object] ],
+     '296': [ [Object] ],
+     '299': [ [Object] ],
+     '304': [ [Object] ],
+     '309': [ [Object] ],
+     '310': [ [Object] ],
+     '313': [ [Object] ],
+     '318': [ [Object] ],
+     '323': [ [Object] ],
+     '326': [ [Object] ],
+     '340': [ [Object] ],
+     '347': [ [Object] ],
+     '388': [ [Object] ],
+     '390': [ [Object] ],
+     '404': [ [Object] ],
+     '406': [ [Object], [Object] ],
+     '415': [ [Object] ],
+     '420': [ [Object], [Object] ],
+     '429': [ [Object] ],
+     '438': [ [Object] ],
+     '443': [ [Object] ],
+     '452': [ [Object] ],
+     '466': [ [Object] ],
+     '559': [ [Object], [Object], [Object], [Object], [Object], [Object] ] },
+  atlasLayout: 
+   { width: 586,
+     height: 610,
+     graphicsPositions: 
+      { '1330': [Object],
+        '7176': [Object],
+        '7397': [Object],
+        '7398': [Object],
+        '7521': [Object],
+        '9487': [Object],
+        '10558': [Object],
+        '15953': [Object],
+        '29018': [Object],
+        '32091': [Object],
+        '32092': [Object],
+        '32093': [Object],
+        '32094': [Object],
+        '32095': [Object],
+        '32123': [Object],
+        '32321': [Object],
+        '32322': [Object],
+        '32324': [Object],
+        '32325': [Object],
+        '32326': [Object],
+        '32327': [Object],
+        '32334': [Object],
+        '32340': [Object],
+        '32389': [Object],
+        '32391': [Object],
+        '32392': [Object],
+        '32403': [Object],
+        '32459': [Object],
+        '700399': [Object],
+        '700400': [Object],
+        '700401': [Object],
+        '700773': [Object],
+        '700877': [Object] } } }
+Map finded in local storage !
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":4,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 238, 225, 211, 183, 155, 142, 114, 100, 87, 59, 45, 32, 4 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2635(13 cells)
+Confirmations du mouvement dans 2635ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80219142.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80219142.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":308,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 536, 521, 507, 492, 464, 436, 408, 394, 379, 365, 350, 336, 308 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1880(13 cells)
+Confirmations du mouvement dans 1880ms
+Mouvement confirmée !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218630.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218630.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Player]Attack monsters (cell : 429)
+[ 321, 334, 348, 361, 375, 388, 402, 415, 429 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2040(9 cells)
+Confirmations du mouvement dans 2040ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 275
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 301
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Combat terminer !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218630.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218630.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2870(17 cells)
+Confirmations du mouvement dans 2870ms
+MapMovement received !
+Confirmation du movement dans : 2870(17 cells)
+Confirmations du mouvement dans 2870ms
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 415,
+  387,
+  359,
+  331,
+  303,
+  275,
+  247,
+  219,
+  205,
+  177,
+  149,
+  121,
+  93,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Request server for mapInformations
+Mouvement échoué .
+No movement, waiting for server ...
+[mapManager]Updating global map informations ...
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...

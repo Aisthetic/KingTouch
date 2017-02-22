@@ -15,6 +15,7 @@ exports.Trajet = function(bot){
 exports.Trajet.prototype.load = function(trajet){
 	this.currentTrajet = trajet
 	this.hasTrajet=true;
+	this.trajetRunning=true;
 }
 exports.Trajet.prototype.stop = function(){
 	this.trajetRunning=false;

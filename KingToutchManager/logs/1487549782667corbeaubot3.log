@@ -1,0 +1,74 @@
+Server request connecting ...
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"vBWdc8mDG88GZ8Of"}
+Config loaded !
+{"key":"f87fd32f-6ac7-4120-a755-960bd7da17e9","account_id":108104299,"ip":"92.170.38.64","added_date":"2017-02-20T01:16:21+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-20T04:16:21+01:00"}
+Api key : f87fd32f-6ac7-4120-a755-960bd7da17e9
+Game token : f9be9eb246b7b4388e4bdaec8cc27547
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=vBWdc8mDG88GZ8Of) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]1/2 in login queue...
+[Aucun groupe:0:info]1/3 in login queue...
+[Aucun groupe:0:info]0/2 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706068210345) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 407) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Nelphield) ...
+[Aucun groupe:0:info][Inventory]Object : 93285378 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 93285379 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 93285380 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 93285381 selected for regen !
+[InventoryManager]Items infos loaded !
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80216581.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80216581.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[mapManager]Updating global map informations ...
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Nelphield saved !
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Nelphield saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Nelphield saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Nelphield saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Nelphield saved !
+[mainProcessFrame]IA updated to default
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Nelphield saved !
+[mainProcessFrame]IA updated to default
+[Sync]Processing ...
+actors not ready !
+{"call":"trajet-load","data":{"trajet":{"80216580":{"cell":540,"action":"fight"},"80216581":{"cell":555,"action":"fight"},"80216582":{"cell":363,"action":"fight"},"80217092":{"cell":392,"action":"fight"},"80217094":{"cell":541,"action":"fight"},"80217095":{"cell":556,"action":"fight"},"80217096":{"cell":279,"action":"fight"},"80217604":{"cell":280,"action":"fight"},"80217605":{"cell":3,"action":"fight"},"80217608":{"cell":279,"action":"fight"},"80218117":{"cell":112,"action":"fight"},"80218119":{"cell":447,"action":"fight"},"80218120":{"cell":10,"action":"fight"},"80218629":{"cell":112,"action":"fight"},"80218630":{"cell":10,"action":"fight"},"80218631":{"cell":251,"action":"fight"},"80219142":{"cell":308,"action":"fight"},"80219143":{"cell":4,"action":"fight"}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+actors not ready !
+{"call":"trajet-load","data":{"trajet":{"80216580":{"cell":540,"action":"fight"},"80216581":{"cell":555,"action":"fight"},"80216582":{"cell":363,"action":"fight"},"80217092":{"cell":392,"action":"fight"},"80217094":{"cell":541,"action":"fight"},"80217095":{"cell":556,"action":"fight"},"80217096":{"cell":279,"action":"fight"},"80217604":{"cell":280,"action":"fight"},"80217605":{"cell":3,"action":"fight"},"80217608":{"cell":279,"action":"fight"},"80218117":{"cell":112,"action":"fight"},"80218119":{"cell":447,"action":"fight"},"80218120":{"cell":10,"action":"fight"},"80218629":{"cell":112,"action":"fight"},"80218630":{"cell":10,"action":"fight"},"80218631":{"cell":251,"action":"fight"},"80219142":{"cell":308,"action":"fight"},"80219143":{"cell":4,"action":"fight"}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+actors not ready !

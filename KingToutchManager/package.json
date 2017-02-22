@@ -1,21 +1,18 @@
 {
-  "name": "bdtouch-master",
-  "version": "0.0.1",
-  "description": "Bot dofus toutch",
+  "name": "king-touch-manager",
+  "version": "0.1.2",
+  "description": "KingTouch proccess manager",
   "main": "main.js",
   "scripts": {
-    "debug": "node main"
+    "test": "node main"
   },
   "author": "asyade",
   "license": "ISC",
   "dependencies": {
-    "connect": "^3.5.0",
-    "engine.io-client": "^2.0.0",
     "event-wrapper": "^1.0.3",
     "jsonfile": "^2.4.0",
-    "navigator": "^1.0.1",
+    "mkdirp": "^0.5.1",
     "request": "^2.79.0",
-    "serve-static": "^1.11.2",
-    "ws": "^1.1.1"
+    "ws": "^2.0.3"
   }
 }

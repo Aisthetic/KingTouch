@@ -1,0 +1,1043 @@
+Server request connecting ...
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"Qn4vu1zW+jfFOSpT"}
+Config loaded !
+{"key":"efa9bbaf-1d72-4a6c-a6c7-c2782f4b83ab","account_id":108104299,"ip":"92.170.38.64","added_date":"2017-02-20T00:59:53+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-20T03:59:53+01:00"}
+Api key : efa9bbaf-1d72-4a6c-a6c7-c2782f4b83ab
+Game token : e1e3b9f73550faabd49bc8a545cc8f66
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=Qn4vu1zW%2BjfFOSpT) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706068169861) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 407) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Nelphield) ...
+[Aucun groupe:0:info][Inventory]Object : 92907215 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 92907216 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 92907217 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 92907218 selected for regen !
+[InventoryManager]Items infos loaded !
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218119.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218119.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+"undefined"
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":8}
+[botData]Config for Nelphield saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Nelphield saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Nelphield saved !
+[mainProcessFrame]IA updated to default
+{"call":"trajet-load","data":{"trajet":{"80216580":{"cell":540,"action":"fight"},"80216581":{"cell":555,"action":"fight"},"80216582":{"cell":363,"action":"fight"},"80217092":{"cell":392,"action":"fight"},"80217094":{"cell":541,"action":"fight"},"80217095":{"cell":556,"action":"fight"},"80217096":{"cell":279,"action":"fight"},"80217604":{"cell":280,"action":"fight"},"80217605":{"cell":3,"action":"fight"},"80217608":{"cell":279,"action":"fight"},"80218117":{"cell":112,"action":"fight"},"80218119":{"cell":447,"action":"fight"},"80218120":{"cell":10,"action":"fight"},"80218629":{"cell":112,"action":"fight"},"80218630":{"cell":10,"action":"fight"},"80218631":{"cell":251,"action":"fight"},"80219142":{"cell":308,"action":"fight"},"80219143":{"cell":4,"action":"fight"}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":447,"action":"fight"}
+[Aucun groupe:0:info][Player]Attack monsters (cell : 40)
+[Player]Le fight est trop proche, on passe !
+[Aucun groupe:0:info][Player]Le combat n´a pas commencer...
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 40,
+  68,
+  81,
+  109,
+  123,
+  151,
+  179,
+  193,
+  208,
+  222,
+  250,
+  278,
+  306,
+  334,
+  362,
+  390,
+  405,
+  419,
+  447 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 3130(19 cells)
+Confirmations du mouvement dans 3130ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218631.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218631.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 434,
+  421,
+  407,
+  394,
+  380,
+  367,
+  353,
+  354,
+  355,
+  342,
+  328,
+  315,
+  301,
+  302,
+  289,
+  290,
+  276,
+  277,
+  264,
+  250,
+  251 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 4590(21 cells)
+Confirmations du mouvement dans 4590ms
+Unknow game context remove element {"_messageType":"GameContextRemoveElementMessage","id":-6,"_isInitialized":true}
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+null
+{ id: 80219143,
+  topNeighbourId: 80219142,
+  bottomNeighbourId: 80219144,
+  leftNeighbourId: 80218631,
+  rightNeighbourId: 80219655,
+  cells: 
+   [ { l: 67, c: 216 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 80 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 3, c: 195 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     ... 460 more items ],
+  midgroundLayer: 
+   { '0': [ [Object] ],
+     '112': [],
+     '139': [ [Object] ],
+     '153': [ [Object], [Object], [Object] ],
+     '167': [ [Object], [Object] ],
+     '176': [ [Object] ],
+     '190': [ [Object] ],
+     '191': [ [Object] ],
+     '204': [ [Object] ],
+     '210': [ [Object], [Object] ],
+     '224': [ [Object] ],
+     '259': [ [Object] ],
+     '265': [ [Object] ],
+     '272': [ [Object] ],
+     '286': [ [Object] ],
+     '295': [ [Object] ],
+     '296': [ [Object] ],
+     '299': [ [Object] ],
+     '304': [ [Object] ],
+     '309': [ [Object] ],
+     '310': [ [Object] ],
+     '313': [ [Object] ],
+     '318': [ [Object] ],
+     '323': [ [Object] ],
+     '326': [ [Object] ],
+     '340': [ [Object] ],
+     '347': [ [Object] ],
+     '388': [ [Object] ],
+     '390': [ [Object] ],
+     '404': [ [Object] ],
+     '406': [ [Object], [Object] ],
+     '415': [ [Object] ],
+     '420': [ [Object], [Object] ],
+     '429': [ [Object] ],
+     '438': [ [Object] ],
+     '443': [ [Object] ],
+     '452': [ [Object] ],
+     '466': [ [Object] ],
+     '559': [ [Object], [Object], [Object], [Object], [Object], [Object] ] },
+  atlasLayout: 
+   { width: 586,
+     height: 610,
+     graphicsPositions: 
+      { '1330': [Object],
+        '7176': [Object],
+        '7397': [Object],
+        '7398': [Object],
+        '7521': [Object],
+        '9487': [Object],
+        '10558': [Object],
+        '15953': [Object],
+        '29018': [Object],
+        '32091': [Object],
+        '32092': [Object],
+        '32093': [Object],
+        '32094': [Object],
+        '32095': [Object],
+        '32123': [Object],
+        '32321': [Object],
+        '32322': [Object],
+        '32324': [Object],
+        '32325': [Object],
+        '32326': [Object],
+        '32327': [Object],
+        '32334': [Object],
+        '32340': [Object],
+        '32389': [Object],
+        '32391': [Object],
+        '32392': [Object],
+        '32403': [Object],
+        '32459': [Object],
+        '700399': [Object],
+        '700400': [Object],
+        '700401': [Object],
+        '700773': [Object],
+        '700877': [Object] } } }
+Map finded in local storage !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":4,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 238, 225, 211, 183, 155, 142, 114, 100, 87, 59, 45, 32, 4 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2635(13 cells)
+Confirmations du mouvement dans 2635ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80219142.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80219142.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":308,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 536, 521, 507, 492, 464, 436, 408, 394, 379, 365, 350, 336, 308 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1880(13 cells)
+Confirmations du mouvement dans 1880ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218630.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218630.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+Undefined actor {"_type":"GameRolePlayNpcWithQuestInformations","contextualId":-1,"look":{"_type":"EntityLook","bonesId":893,"skins":[],"indexedColors":[],"scales":[],"subentities":[]},"disposition":{"_type":"EntityDispositionInformations","cellId":426,"direction":1},"npcId":1513,"sex":false,"specialArtworkId":0,"questFlag":{"_type":"GameRolePlayNpcQuestFlag","questsToValidId":[],"questsToStartId":[826]},"_npcData":{"_type":"Npc","id":1513,"nameId":"Reginator","dialogMessages":[[10358,16260],[10359,16261],[10360,16844],[10361,14542],[10362,16330],[10363,90305]],"dialogReplies":[[11317,27264],[11318,103423],[11319,28514],[11320,27263],[11321,28358],[11322,20151]],"actions":[3],"gender":0,"look":"{893}","animFunList":[],"actionsName":["Talk"]}}
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 321, 293, 278, 250, 222, 194, 180, 152, 137, 109, 95, 67, 52, 38, 10 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2260(15 cells)
+Confirmations du mouvement dans 2260ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+null
+{ id: 80218629,
+  topNeighbourId: 80218628,
+  bottomNeighbourId: 80218630,
+  leftNeighbourId: 80218117,
+  rightNeighbourId: 80219141,
+  cells: 
+   [ { l: 67, c: 216 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 3, c: 224 },
+     { l: 3, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 80 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 3, c: 64 },
+     { l: 3, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 195 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 2 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     ... 460 more items ],
+  midgroundLayer: 
+   { '0': [ [Object] ],
+     '51': [ [Object] ],
+     '52': [ [Object] ],
+     '58': [ [Object] ],
+     '72': [ [Object] ],
+     '96': [ [Object] ],
+     '99': [ [Object] ],
+     '114': [ [Object] ],
+     '120': [ [Object] ],
+     '132': [ [Object], [Object] ],
+     '143': [ [Object] ],
+     '146': [ [Object] ],
+     '159': [ [Object] ],
+     '176': [ [Object] ],
+     '177': [ [Object] ],
+     '188': [ [Object] ],
+     '189': [ [Object], [Object] ],
+     '220': [ [Object] ],
+     '235': [ [Object], [Object] ],
+     '239': [ [Object] ],
+     '247': [ [Object] ],
+     '251': [ [Object], [Object] ],
+     '253': [ [Object] ],
+     '261': [ [Object] ],
+     '262': [ [Object] ],
+     '263': [ [Object] ],
+     '264': [ [Object] ],
+     '266': [ [Object] ],
+     '267': [ [Object] ],
+     '273': [ [Object] ],
+     '277': [ [Object] ],
+     '287': [ [Object] ],
+     '297': [ [Object] ],
+     '300': [ [Object] ],
+     '311': [ [Object] ],
+     '312': [ [Object] ],
+     '314': [ [Object] ],
+     '327': [ [Object] ],
+     '329': [ [Object] ],
+     '344': [ [Object] ],
+     '362': [ [Object] ],
+     '410': [ [Object] ],
+     '438': [ [Object] ],
+     '452': [ [Object] ],
+     '465': [ [Object] ],
+     '469': [ [Object] ],
+     '484': [ [Object] ],
+     '506': [ [Object] ],
+     '527': [ [Object] ],
+     '541': [ [Object] ],
+     '542': [ [Object] ],
+     '548': [ [Object] ],
+     '554': [ [Object] ],
+     '555': [ [Object] ],
+     '556': [ [Object] ],
+     '559': 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] },
+  atlasLayout: 
+   { width: 1408,
+     height: 529,
+     graphicsPositions: 
+      { '38': [Object],
+        '1330': [Object],
+        '7176': [Object],
+        '7401': [Object],
+        '7403': [Object],
+        '7556': [Object],
+        '9487': [Object],
+        '14354': [Object],
+        '14369': [Object],
+        '14437': [Object],
+        '16064': [Object],
+        '17215': [Object],
+        '27280': [Object],
+        '32091': [Object],
+        '32092': [Object],
+        '32093': [Object],
+        '32094': [Object],
+        '32095': [Object],
+        '32312': [Object],
+        '32316': [Object],
+        '32320': [Object],
+        '32321': [Object],
+        '32322': [Object],
+        '32323': [Object],
+        '32324': [Object],
+        '32326': [Object],
+        '32389': [Object],
+        '32394': [Object],
+        '32629': [Object],
+        '700187': [Object],
+        '700397': [Object],
+        '700399': [Object],
+        '700400': [Object],
+        '700401': [Object],
+        '700435': [Object],
+        '700436': [Object],
+        '700437': [Object],
+        '700770': [Object],
+        '700773': [Object],
+        '700822': [Object],
+        '700876': [Object],
+        '700877': [Object] } } }
+Map finded in local storage !
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Player]Attack monsters (cell : 137)
+[ 556,
+  528,
+  500,
+  472,
+  444,
+  416,
+  388,
+  360,
+  332,
+  304,
+  291,
+  277,
+  264,
+  236,
+  208,
+  180,
+  165,
+  137 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 3125(18 cells)
+Confirmations du mouvement dans 3125ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 275
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 275
+[Aucun groupe:0:info][Infos]You cannot cast that spell as an obstacle is blocking your line of sight.
+[Aucun groupe:0:info]IA on se raproche ...
+Process key movements...
+[Aucun groupe:0:info][Infos]You cannot cast that spell as an obstacle is blocking your line of sight.
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 246
+[Aucun groupe:0:info][Infos]<b>Nelphield</b> has failed the $challenge23 challenge.
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Turn ready ...
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 290
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 318
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Combat terminer !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+null
+{ id: 80218629,
+  topNeighbourId: 80218628,
+  bottomNeighbourId: 80218630,
+  leftNeighbourId: 80218117,
+  rightNeighbourId: 80219141,
+  cells: 
+   [ { l: 67, c: 216 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 3, c: 224 },
+     { l: 3, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 224 },
+     { l: 67, c: 80 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 3, c: 64 },
+     { l: 3, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 64 },
+     { l: 67, c: 195 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 2 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     { l: 66 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 131 },
+     { l: 67, c: 56 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 3 },
+     { l: 3 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67 },
+     { l: 67, c: 1 },
+     { l: 67, c: 16 },
+     { l: 67 },
+     ... 460 more items ],
+  midgroundLayer: 
+   { '0': [ [Object] ],
+     '51': [ [Object] ],
+     '52': [ [Object] ],
+     '58': [ [Object] ],
+     '72': [ [Object] ],
+     '96': [ [Object] ],
+     '99': [ [Object] ],
+     '114': [ [Object] ],
+     '120': [ [Object] ],
+     '132': [ [Object], [Object] ],
+     '143': [ [Object] ],
+     '146': [ [Object] ],
+     '159': [ [Object] ],
+     '176': [ [Object] ],
+     '177': [ [Object] ],
+     '188': [ [Object] ],
+     '189': [ [Object], [Object] ],
+     '220': [ [Object] ],
+     '235': [ [Object], [Object] ],
+     '239': [ [Object] ],
+     '247': [ [Object] ],
+     '251': [ [Object], [Object] ],
+     '253': [ [Object] ],
+     '261': [ [Object] ],
+     '262': [ [Object] ],
+     '263': [ [Object] ],
+     '264': [ [Object] ],
+     '266': [ [Object] ],
+     '267': [ [Object] ],
+     '273': [ [Object] ],
+     '277': [ [Object] ],
+     '287': [ [Object] ],
+     '297': [ [Object] ],
+     '300': [ [Object] ],
+     '311': [ [Object] ],
+     '312': [ [Object] ],
+     '314': [ [Object] ],
+     '327': [ [Object] ],
+     '329': [ [Object] ],
+     '344': [ [Object] ],
+     '362': [ [Object] ],
+     '410': [ [Object] ],
+     '438': [ [Object] ],
+     '452': [ [Object] ],
+     '465': [ [Object] ],
+     '469': [ [Object] ],
+     '484': [ [Object] ],
+     '506': [ [Object] ],
+     '527': [ [Object] ],
+     '541': [ [Object] ],
+     '542': [ [Object] ],
+     '548': [ [Object] ],
+     '554': [ [Object] ],
+     '555': [ [Object] ],
+     '556': [ [Object] ],
+     '559': 
+      [ [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object],
+        [Object] ] },
+  atlasLayout: 
+   { width: 1408,
+     height: 529,
+     graphicsPositions: 
+      { '38': [Object],
+        '1330': [Object],
+        '7176': [Object],
+        '7401': [Object],
+        '7403': [Object],
+        '7556': [Object],
+        '9487': [Object],
+        '14354': [Object],
+        '14369': [Object],
+        '14437': [Object],
+        '16064': [Object],
+        '17215': [Object],
+        '27280': [Object],
+        '32091': [Object],
+        '32092': [Object],
+        '32093': [Object],
+        '32094': [Object],
+        '32095': [Object],
+        '32312': [Object],
+        '32316': [Object],
+        '32320': [Object],
+        '32321': [Object],
+        '32322': [Object],
+        '32323': [Object],
+        '32324': [Object],
+        '32326': [Object],
+        '32389': [Object],
+        '32394': [Object],
+        '32629': [Object],
+        '700187': [Object],
+        '700397': [Object],
+        '700399': [Object],
+        '700400': [Object],
+        '700401': [Object],
+        '700435': [Object],
+        '700436': [Object],
+        '700437': [Object],
+        '700770': [Object],
+        '700773': [Object],
+        '700822': [Object],
+        '700876': [Object],
+        '700877': [Object] } } }
+Map finded in local storage !
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2620(16 cells)
+Confirmations du mouvement dans 2620ms
+MapMovement received !
+Confirmation du movement dans : 2620(16 cells)
+Confirmations du mouvement dans 2620ms
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":112,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 165, 164, 150, 135, 121, 106, 92, 91, 90, 89, 88, 87, 86, 99, 113, 112 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+Mouvement échoué .
+Key movements proccesed !
+No movement, waiting for server ...

@@ -118,6 +118,38 @@
 	}
 	
 	</style>
+      
+    <paper-dialog modal heading="Identification" name="log" id="log">
+        <h2>KingTouch - S'identifier</h2>
+        <div>
+            <paper-input value="{{globalUsername}}" always-float-label label="Nom de compte"></paper-input>
+            <paper-input type="password" value="{{globalPassword}}" always-float-label label="Mot de passe"></paper-input>
+            <span style="color: #6f0707;">{{loginFailedStr}}</span>
+        </div>
+        <div class="buttons" style="text-align:center;    padding: 25px;">
+            <paper-button raised on-tap="showRegister">Entrer une clé d'activation</paper-button>
+            <paper-button raised on-tap="loginRequest">Connexion</paper-button>
+        </div>
+    </paper-dialog>
+    <paper-dialog modal name="register" id="register">
+        <h2>Entrer une clé d'activation</h2>
+        <div>
+            <paper-input value="{{activationKey}}" always-float-label label="Clef d'activation"></paper-input>
+        </div>
+        <span></br></span>
+        <span style="color: #6f0707;">Attentions, les informations relative a votre compte ne peuvent pas etre modifier</span>
+        <div>
+            <paper-input value="{{globalUsername}}" always-float-label label="Nom de compte"></paper-input>
+            <paper-input type="password" value="{{globalPassword}}" always-float-label label="Mot de passe"></paper-input>
+            <paper-input type="password" value="{{globalPasswordConfirm}}" always-float-label label="Confirmation du mot de passe"></paper-input>
+            <span style="color:  #6f0707;">{{registerFailedStr}}</span>
+        </div>
+        <div class="buttons">
+            <paper-button dialog-dismiss>Annuler</paper-button>
+            <paper-button raised on-tap="registerRequest">Valider mon inscription</paper-button>
+        </div>
+    </paper-dialog>
+      
 	<!-- login box -->
 	<paper-dialog heading="Gestionnaire de comptes" modal name="connectd" id="connectd">
         <h2 style="border-bottom:1px solid #737373; padding-bottom:24px;">Gestionnaire de Comptes</h2>
@@ -203,18 +235,27 @@ var readyToLoad = true;
 			value: function() { return []; },
 			reflectToAttribute: true
 		},
-        accompts: {
-          type: Array,
-          observe: true,
+        user: {
+            type: Object,
             notify: true,
-            reflectToAttribute: true,
-            value: function(){ return [] }
+            value: function() { return {username: "", password: "" } },
+            reflectToAttribute: true
         },
+        activationKey: String,
+        globalPasswordConfirm: String,
+        globalUsername: String,
+        globalPassword: String,
 		username: String,
-		password: String
+		password: String,
+        registerFailedStr: String,
+        loginFailedStr: String,
     },
-	
+		
+    loginRequest: function() {
+    },
+    
 	ready: function(){
+        
 		window.addEventListener("global-update",(m)=>{
 			var clients = []
             var count = 0;
@@ -245,13 +286,74 @@ var readyToLoad = true;
         window.addEventListener("unload-client",(m)=>{
             sendUI("global-update-request");
         });
+        window.addEventListener("bot-stunt",(m)=>{
+            alert(m.detail);
+        });
         window.addEventListener("accompts-list",(m)=>{
             let accompts = m.detail;
             this.set("accompts",accompts);
             console.log("Accompts list received !");
             console.log(accompts);
         });
+        
+        window.addEventListener("protocol-required",()=>{
+           log.open(); 
+        });
+        
+        window.addEventListener("register-success",(m)=>{
+            register.close();
+        });
+        
+        window.addEventListener("register-failed",(m)=>{
+            this.set("registerFailedStr",m.detail.reason);
+        });
+        
+        window.addEventListener("identification-success",(m)=>{
+            console.log("Identification ok !");
+            log.close();
+        });
+        
+        window.addEventListener("identification-failed",(m)=>{
+            console.log("Identification failed !");
+            this.set("loginFailedStr",m.detail.reason);
+        });
+        
+        window.on
+        connectUI();
 	},
+      
+    //---- identification ---
+      
+    registerRequest: function(){
+        if(this.globalPassword.length < 8){
+            return this.set("registerFailedStr","Le mot de passe doit contenir au minimum 8 caractères");
+        }
+        if(this.globalPassword != this.globalPasswordConfirm){
+            return this.set("registerFailedStr","les deux mots de passe ne correspondent pas");
+        }
+        if(this.activationKey.length < 20){
+            return this.set("registerFailedStr","La clé d'activation n'est pas valide")
+        }
+        if(this.globalUsername.length < 4){
+            return this.set("registerFailedStr","Le nom de compte doit contenir au minimum 4 caractères")
+        }
+        this.set("registerFailedStr","");
+        sendUI("register-request",{
+            username: this.globalUsername,
+            password: this.globalPassword,
+            key: this.activationKey
+        });
+    },
+    
+    showRegister: function(){
+        register.open();    
+    },
+      
+    loginRequest: function(e){
+        if(this.globalUsername != "" && this.globalPassword != ""){
+            sendUI("identification-request",{username: this.globalUsername, password: this.globalPassword});
+        }  
+    },
       
     //---- client thumb ----
 

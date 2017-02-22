@@ -40,35 +40,35 @@ exports.open = function(botManager,id_,username){
     
     
     id=id_;
-	bot = botManager;
-	exports.register();
+    bot = botManager;
+    exports.register();
     processSocket = new webSocket("ws://localhost:8082/");
     processSocket.on("open",()=>{
        exports.send("connect-process") 
     });
-	processSocket.on('message', (data)=>{
+    processSocket.on('message', (data)=>{
         console.log(data);
             let m = JSON.parse(data);
             exports.emit(m.call,m.data);
-	});
+    });
 }
 exports.send = function(call,data){
-	processSocket.send(JSON.stringify({call : call, data : data }));
+    processSocket.send(JSON.stringify({call : call, data : data }));
 }
 exports.sendUI = function(call,data){
     processSocket.send(JSON.stringify({call : "ui-message",data : {call : call, data : data}}));
 }
 exports.register = function(){
-	exports.on("load-accompt",(accompt)=>{
+    exports.on("load-accompt",(accompt)=>{
                 Logger.redirectConsole(accompt.username);
-		console.log("Server request connecting ...");
-		bot.connect(accompt);
+        console.log("Server request connecting ...");
+        bot.connect(accompt);
         exports.send("accompt-loaded",exports.getBotInfo());
-	});
-	exports.on("global-state-request",()=>{
-		console.log("Server request for state ...");
-		exports.send("state-update",exports.getBotInfo());
-	});
+    });
+    exports.on("global-state-request",()=>{
+        console.log("Server request for state ...");
+        exports.send("state-update",exports.getBotInfo());
+    });
     exports.on("trajet-load",(m)=>{
         console.log("[mainProcessFrame]Ui request for trajet loading ...");
         bot.currentBot.trajet.load(m.trajet);

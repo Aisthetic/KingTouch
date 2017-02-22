@@ -1,0 +1,789 @@
+Server request connecting ...
+{"assetsUrl":"https://ankama.akamaized.net/games/dofus-tablette/assets/2.15.15","analytics":{"wizAnalytics":{"localytics":{"token":"9f0bf865fd57d22f0bbea56-cd08f12a-8138-11e5-7c24-00736b041834","options":{"sessionTimeoutSeconds":60,"namespace":"dofus-production"}}},"ankAnalytics":{"debug":false,"analog":false,"useUrlMap":true}},"adjust":{"appToken":"7j60imkfu60w","environment":"EnvironmentProduction"},"logging":{"groups":false,"logLevels":{"time":0,"verbose":0,"debug":1,"info":2,"notice":3,"warning":4,"error":5,"critical":6,"alert":7,"emergency":8},"config":{"console":["none"],"server":["error","critical","alert","emergency"]},"disableOverride":false},"dataUrl":"https://proxyconnection.touch.dofus.com","haapi":{"id":18,"url":"https://haapi.ankama.com/json/Ankama/v2"},"serverLanguages":["en","de","es","fr","it","pt"],"failoverLanguage":"en","uiUrl":"https://proxyconnection.touch.dofus.com/assets","language":"en","sessionId":"hgyCoiQ8KGjb1KHY"}
+Config loaded !
+{"key":"c17cf5b3-7a52-4583-8d1c-8b58ba9179fa","account_id":108104299,"ip":"92.170.38.64","added_date":"2017-02-20T00:09:16+01:00","meta":[],"data":{},"access":[],"refresh_token":null,"expiration_date":"2017-02-20T03:09:16+01:00"}
+Api key : c17cf5b3-7a52-4583-8d1c-8b58ba9179fa
+Game token : 456c5e4fe020ec9d71636e629c53f8fa
+[Aucun groupe:0:info][processIdentification]...
+Connecting to login server (https://proxyconnection.touch.dofus.com?STICKER=hgyCoiQ8KGjb1KHY) ...
+Connection opened !
+[Aucun groupe:0:info]Identification connection opened !
+[Aucun groupe:0:info]2/2 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]0/0 in login queue...
+[Aucun groupe:0:info]Identification success (1465968706068030005) !
+[Aucun groupe:0:info]Servers list received !
+[Aucun groupe:0:info][processServerSelection]...
+[Aucun groupe:0:info]Request for server infos (id : 407) ...
+Prmus close connection !
+migrating...
+Connection opened !
+[Aucun groupe:0:info]Game connection opened !
+[Aucun groupe:0:success][processServerSelection]OK
+[Aucun groupe:0:info][processsCharacterSelection]...
+[Aucun groupe:0:info]Request for characters ...
+[Aucun groupe:0:info]Selecting frist character (Nelphield) ...
+[Aucun groupe:0:info][Inventory]Object : 91665444 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 91665445 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 91665446 selected for regen !
+[Aucun groupe:0:info][Inventory]Object : 91665447 selected for regen !
+[InventoryManager]Items infos loaded !
+Sequence ready !
+[Aucun groupe:0:info][Infos]Welcome to DOFUS, and welcome to the World of Twelve! 
+Remember that it is <b>strictly forbidden</b> to disclose your account name or password.
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80217096.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80217096.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+"undefined"
+{"call":"global-state-request"}
+Server request for state ...
+{"call":"update-fight-max-fighters","data":6}
+[botData]Config for Nelphield saved !
+{"call":"update-fight-min-fighters","data":1}
+[botData]Config for Nelphield saved !
+{"call":"set-ia-type","data":"default"}
+[botData]Config for Nelphield saved !
+[mainProcessFrame]IA updated to default
+{"call":"trajet-load","data":{"trajet":{"80216580":{"cell":540,"action":"fight"},"80216581":{"cell":555,"action":"fight"},"80216582":{"cell":363,"action":"fight"},"80217092":{"cell":392,"action":"fight"},"80217094":{"cell":541,"action":"fight"},"80217095":{"cell":556,"action":"fight"},"80217096":{"cell":279,"action":"fight"},"80217604":{"cell":280,"action":"fight"},"80217605":{"cell":3,"action":"fight"},"80217608":{"cell":279,"action":"fight"},"80218117":{"cell":112,"action":"fight"},"80218119":{"cell":447,"action":"fight"},"80218120":{"cell":10,"action":"fight"},"80218629":{"cell":112,"action":"fight"},"80218630":{"cell":10,"action":"fight"},"80218631":{"cell":251,"action":"fight"},"80219142":{"cell":308,"action":"fight"},"80219143":{"cell":4,"action":"fight"}}}}
+[mainProcessFrame]Ui request for trajet loading ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":279,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 24,
+  52,
+  66,
+  79,
+  93,
+  106,
+  134,
+  162,
+  177,
+  191,
+  206,
+  220,
+  235,
+  249,
+  264,
+  278,
+  279 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2900(17 cells)
+Confirmations du mouvement dans 2900ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80217608.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80217608.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":279,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 291, 292, 293, 279 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 2445(15 cells)
+Confirmations du mouvement dans 2445ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218120.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218120.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":10,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 266,
+  253,
+  239,
+  226,
+  212,
+  213,
+  200,
+  186,
+  173,
+  159,
+  146,
+  132,
+  119,
+  105,
+  92,
+  78,
+  65,
+  51,
+  38,
+  10 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 4675(20 cells)
+Confirmations du mouvement dans 4675ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218119.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218119.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":447,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Aucun combat on change de carte...
+Calculating path...
+Processing key movements !
+[ 542, 528, 515, 501, 488, 474, 461, 447 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1785(8 cells)
+Confirmations du mouvement dans 1785ms
+Mouvement confirmée !
+Key movements proccesed !
+Movement ok 
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218631.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218631.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 538)
+[ 434, 449, 463, 478, 492, 507, 508, 522, 523, 538 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 1390(10 cells)
+Confirmations du mouvement dans 1390ms
+Mouvement confirmée !
+Movement proccesed
+[Aucun groupe:0:info]Attack actor succes !
+[Aucun groupe:0:info][FightManager]Debut du combat !
+[Ia]Default loaded !
+{"call":"global-state-request"}
+Server request for state ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 132
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+[Aucun groupe:0:info][Infos]<b>Nelphield</b> has failed the $challenge2 challenge.
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 118
+Ack ready !
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Ack ready !
+novement ok
+Proceed!
+Turn ready ...
+Turn ready ...
+[Aucun groupe:0:info][Fight]Debut du tours de jeux
+Ack ready !
+[Aucun groupe:0:info]Casting spell : Flèche Magique on cell : 77
+Ack ready !
+Turn ready ...
+[Aucun groupe:0:info]IA on fuis ...
+Process key movements...
+Combat terminer !
+{ Error: ENOENT: no such file or directory, open 'C:\Users\home\Documents\KingTouch\KingToutchManager\king-touch-src\data\maps\80218631.json'
+    at Error (native)
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\home\\Documents\\KingTouch\\KingToutchManager\\king-touch-src\\data\\maps\\80218631.json' }
+undefined
+-----------------No map found ! -----------------
+undefined
+{"call":"global-state-request"}
+Server request for state ...
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+{"call":"global-state-request"}
+Server request for state ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 94)
+[ 523,
+  495,
+  482,
+  454,
+  426,
+  398,
+  370,
+  356,
+  328,
+  315,
+  301,
+  273,
+  260,
+  232,
+  218,
+  190,
+  177,
+  149,
+  135,
+  122,
+  94 ]
+Sending map request !
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 94)
+[ 523,
+  495,
+  482,
+  454,
+  426,
+  398,
+  370,
+  356,
+  328,
+  315,
+  301,
+  273,
+  260,
+  232,
+  218,
+  190,
+  177,
+  149,
+  135,
+  122,
+  94 ]
+Sending map request !
+MapMovement received !
+Confirmation du movement dans : 4165(21 cells)
+Confirmations du mouvement dans 4165ms
+MapMovement received !
+Confirmation du movement dans : 4165(21 cells)
+Confirmations du mouvement dans 4165ms
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed
+[Sync]Processing ...
+[Sync]Ready to process !
+[Sync]Trajet ready ...
+[Aucun groupe:0:info][Trajt]Execution ...
+{"cell":251,"action":"fight"}
+[Aucun groupe:0:info][Trajet]Attack monsters (cell : 65)
+[ 523,
+  495,
+  467,
+  439,
+  411,
+  383,
+  355,
+  327,
+  299,
+  286,
+  272,
+  244,
+  231,
+  203,
+  189,
+  161,
+  148,
+  120,
+  106,
+  93,
+  65 ]
+Sending map request !
+Detection d'un NoMovement . AVADANTIBUGADABRA !
+Movement canceled !
+[Aucun groupe:0:info]Attack actor fail (noMovementMessage)!
+Mouvement échoué .
+Movement proccesed

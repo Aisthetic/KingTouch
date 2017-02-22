@@ -11,10 +11,12 @@
 <link rel="import" href="../bower_components/app-layout/app-drawer/app-drawer.html">
 <link rel="import" href="../bower_components/app-layout/app-header-layout/app-header-layout.html">
 <link rel="import" href="../bower_components/app-layout/app-header/app-header.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-behavior.html">
 <link rel="import" href="../bower_components/app-layout/app-toolbar/app-toolbar.html">
 <link rel="import" href="../bower_components/app-layout/app-scrollpos-control/app-scrollpos-control.html">
-<link rel="import" href="../bower_components/paper-card/paper-card.html">
-
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="client-detail.html">
 <link rel="import" href="clients-list.html">
 <link rel="import" href="app-icons.html">
@@ -66,6 +68,8 @@
       --paper-icon-button-ink-color: white;
     }
     </style>
+      
+
 
     <app-location route="{{_route}}" use-hash-as-path></app-location>
     <app-route
@@ -78,8 +82,12 @@
         pattern="/:id"
         data="{{_idData}}"></app-route>
 
+
+
     <app-drawer-layout responsive-width="1280px">
 
+
+        
       <!-- nav panel -->
       <app-drawer id="drawer" >
         <app-header-layout has-scrolling-region>
@@ -159,10 +167,6 @@
 	  _pageData: Object,
 	  _idData: Object
 
-	},
-	
-	ready: function() {
-		connectUI();
 	},
 
 	attached: function() {
