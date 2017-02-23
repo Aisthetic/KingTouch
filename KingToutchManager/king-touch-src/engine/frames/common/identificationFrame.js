@@ -7,7 +7,7 @@ var auth = {
 	key: null
 };
 exports.processIdentification = function(logg,connection,token,username,cb,identificationTimeoutCallBack){
-	global.serversInfos = {appVersion:"1.9.27", buildVersion:"0.60.0", client:"android", language:global.config.language};//todo mettre les value qq part jais pas encore fais le systeme de config static ....
+	global.serversInfos = {appVersion:"1.9.27", buildVersion:"0.60.1", client:"android", language:global.config.language};//todo mettre les value qq part jais pas encore fais le systeme de config static ....
 	logger=logg;
 	logger.log("[processIdentification]...")
 	auth.token=token;

@@ -5,7 +5,7 @@ exports.Gather = function(bot){
 
 //returns an array of items {ressourceId , skillId}
 exports.Gather.prototype.getMustGatheredRessources = function(){//todo gérer l'acquisition de la config métier
-	return [{id : 38 , skillId : 45},{id : 43 , skillId : 53 }]//test avec le blé et l'orge .
+	return this.bot.data.userConfig.inventory.gatherList//test avec le blé et l'orge .
 };
 
 //Gathers the first available element , à voir si la fonction est optimisable

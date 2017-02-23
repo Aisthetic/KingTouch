@@ -54,7 +54,8 @@ function getDefault(){
         inventory: {
             destroyObjectsOnOverload: true,
             objectsBlackList: [],
-            sellList: []
+            sellList: [],
+            gatherList : [{id : 38 , skillId : 45},{id : 43 , skillId : 53 }]//blé + orge
         }
 	};
 }

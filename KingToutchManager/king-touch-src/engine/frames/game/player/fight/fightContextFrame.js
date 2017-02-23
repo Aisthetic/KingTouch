@@ -15,6 +15,7 @@ exports.processFightContextFrame = function(bot){
 		}
 	});
 	wrap("GameFightTurnReadyRequestMessage",function(m){
+		if(m.id == bot.data.characterInfos.contextualId) bot.data.fightManager.dispatcher.emit("turnEnd");
 		bot.connection.sendMessage("GameActionAcknowledgementMessage",{valid: true, actionId: 3});
 		bot.connection.sendMessage("GameFightTurnReadyMessage",{isReady: true});
 		console.log("Turn ready ...");

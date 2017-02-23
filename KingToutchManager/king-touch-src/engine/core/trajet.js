@@ -9,6 +9,7 @@ exports.Trajet = function(bot){
 	this.trajetRunning = false;
 	this.lastChangMapCell = 0;
 	this.hasTrajet=false;
+	this.trajetOnExecution = false;
 	this.bot=bot;
 	var self=this;
 }
@@ -18,6 +19,7 @@ exports.Trajet.prototype.load = function(trajet){
 	this.trajetRunning=true;
 }
 exports.Trajet.prototype.stop = function(){
+	console.log("Trajet arrêté .");
 	this.trajetRunning=false;
 }
 exports.Trajet.prototype.start = function(){
@@ -28,45 +30,69 @@ exports.Trajet.prototype.startPhoenix = function(){
 	this.trajetRunning=false;
 }
 exports.Trajet.prototype.trajetExecute = function(){
-
+	var self = this;
+	if(this.trajetOnExecution) return  console.log("Trajet already on execution ...");
+	this.trajetOnExecution = true;
     if(this.bot.data.context != "ROLEPLAY" || typeof this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id] == "undefined"){
         console.log("**Trajet execution canceled !**");
+        this.trajetOnExecution = false;
         return;
     }
 	if(this.hasTrajet === false){
 		console.log("[Trajet]No trajet loaded !");
+		this.trajetOnExecution = false;
 		return;
 	}
-	this.bot.logger.log("[Trajt]Execution ...");  
-    var action = this.hasActionOnMap(this.currentTrajet);
-    console.log(JSON.stringify(action));
-    if(typeof action != "undefined"){
-        if(typeof action.action != "undefined"){
-            if(action.action==="fight"){
-                this.parseFight(action);
-            }
-            else if(action==="gather"){
-                this.parseGather(action);
-            }
-            else{
-                this.execMove(action);
-            }
-        }
+	if(!this.trajetRunning){
+		this.trajetOnExecution = false;
+		return console.log("Can't execute the trajet , it's has already been stopped .");
+	}
+	this.bot.logger.log("[Trajet]Execution map " + this.bot.data.mapManager.mapId +' .');
+	if(self.bot.data.state == "OVERLOAD" && !this.bankMode){
+			self.bankMode = true;
+			console.log("[TRAJET]Execution du trajet banque .");
+	}
+	if(self.bankMode){
+		if(!this.parseMove(this.hasActionOnMap(this.currentTrajet.trajet["bank"]))) {
+			console.log("Le bot est full pods mais pas de trajet de banque sur la map " + this.bot.data.mapManager.mapId +" , arrêt du trajet .");
+			this.stop();
+		}
+		this.trajetOnExecution = false;
+		return;
     }
-    else{
-        console.log("[Trajet]Rien a faire sur cette map ! "+this.bot.data.mapManager.mapId);
-    }
+	if(this.bot.data.context =="GHOST"){
+		if(this.parsePhoenix(this.hasActionOnMap(this.currentTrajet["phoenix"]))){
+			console.log("[Trajet]Execution du trajet vers le phoenix ...");
+		}
+		else{
+			console.log("[Trajet]Aucun trajet vers le phoenix !");//todo worldpath <3
+		}
+	}
+	else if(this.parseMove(this.hasActionOnMap(this.currentTrajet.trajet["moves"]))){
+		this.bot.logger.log("[Trajet]Execution du mouvement ...");
+	}
+	else if(this.parseFight(this.hasActionOnMap(this.currentTrajet.trajet["fights"]))){
+		this.bot.logger.log("[Trajet]Execution du fight ...")
+	}
+	else if(this.parseGather(this.hasActionOnMap(this.currentTrajet.trajet["recolte"]))){
+		this.bot.logger.log("[Trajet]Execution de la récolte...");
+	}
+	else{
+		this.bot.logger.log("[Trajet]Rien a faire sur cette map ("+this.bot.data.mapManager.mapId+") !");
+	}
+	this.trajetOnExecution = false;
 }
 exports.Trajet.prototype.hasActionOnMap = function(actions){
-	for(var i  in actions){
-        if(isNaN(i) === false){
-            if(parseInt(i) === this.bot.data.mapManager.mapId){
-                return actions[i];
-            }
-        }
-        else{
-            //todo coord
-        }
+	try{
+		if(actions.length<=0){return "undefined";}
+	}
+	catch(e){
+		return "undefined";
+	}
+	for(var i = 0;i<actions.length;i++){
+		if(actions[i].map == this.bot.data.mapManager.mapId){
+			return actions[i];
+		}
 	}
 	return "undefined";
 }
@@ -89,7 +115,6 @@ exports.Trajet.prototype.parsePhoenix = function(action){
 	}
 	return false;
 }
-
 exports.Trajet.prototype.parseFight = function(fight){
 	var self = this;
 	if(fight=="undefined"){return false;}
@@ -99,11 +124,10 @@ exports.Trajet.prototype.parseFight = function(fight){
 	});
 	return true;
 }
-
 exports.Trajet.prototype.parseGather = function(gather){
 	//if(!this.trajetRunning) return console.log("Trajet arrêté , récolte annulée .");
 	console.log("------------------------------------------------------");
-	console.log('Bot state : ' + this.bot.data.state + ' .');
+	console.log(this.bot.data.state);
 	if(!this.trajetRunning) return console.log("Trajet not running , gathering action stopped .");
 	if(this.bot.data.state != "READY"){
 		console.log("Bot not ready for gathering : " + this.bot.data.state);
@@ -120,6 +144,7 @@ exports.Trajet.prototype.parseGather = function(gather){
 	});
 	return true;
 }
+
 exports.Trajet.prototype.parseMove = function(move){
 	if(move=="undefined"){return false}
 	this.execMove(move);
@@ -127,13 +152,17 @@ exports.Trajet.prototype.parseMove = function(move){
 }
 
 exports.Trajet.prototype.execMove = function(action){
+	var self = this;
 	if(typeof(action.sun) != "undefined"){
-		this.bot.player.move(action.sun);
+		this.bot.player.move(()=>{} , action.sun , true , false);
 		this.bot.logger.log("On va sur le soleil...");
 		return;
 	}
 	else if(typeof action.interactive != "undefined" && typeof action.skill !="undefined"){
 		self.bot.player.useInteractive(action.interactive,action.skill);
+	}
+	else if(typeof action.npc != "undefined"){
+		self.bot.player.npcActionRequest(action.npc , action.replies , action.actionId);//gestion interne des inconnus .
 	}
 	else if (typeof action.cell !="undefined" && action.dir == "undefined"){
 		this.bot.player.gotoNeighbourMap(action.cell);
@@ -144,7 +173,7 @@ exports.Trajet.prototype.execMove = function(action){
 	}
 	else if(typeof action.dir != "undefined"){
 		this.bot.player.gotoNeighbourMap(-1,action.dir);
-		this.bot.logger.log("[Trajet]Changement de carte, premiere cellid disponble");
+		this.bot.logger.log("[Trajet]Changement de carte sur une cellule aléatoire .");
 	}
 	else{
 		this.bot.logger.log("[Trajet]Action invalide ("+JSON.stringify(action)+") !");

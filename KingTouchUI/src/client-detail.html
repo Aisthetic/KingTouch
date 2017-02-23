@@ -344,7 +344,7 @@ var consoleRunning = false;
     },
         
     selectedFightSpecChange: function(){
-        sendToBot("update-fight-mode",parseInt(this.selectedFightSpec));
+        sendToBot("set-ia-mode",parseInt(this.selectedFightSpec));
     },
       
     minFightersChanged: function(){

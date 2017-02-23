@@ -160,12 +160,8 @@ exports.Sync.prototype.checkTasks = function(callBack){
     if(this.bot.data.context != "ROLEPLAY"){
         console.log("[Sync]Impossible d'executer les taches, on est pas en roleplay !")
     }
-    
-    
-    
     if(this.bot.player.canUpgradeCharacteristic(this.bot.data.userConfig.tasks.selectedCharacteristic)){
         console.log("[Sync]Upgrading stats ...");
-        
         this.bot.player.upgradeCharacteristic(this.bot.data.userConfig.tasks.selectedCharacteristic,()=>{
             console.log("[Sync]Task done !");
             callBack();

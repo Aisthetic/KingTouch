@@ -15,16 +15,11 @@ exports.Fight = function(bot){
     this.selectedIa = "default";
     this.hasAttackedActor = false;//pour ne pas s'enfuir dans tout les cas 
 	this.fightContextInitialized = false;
+	this.forceEndTurn = false;
 	this.bot = bot;
 	this.bot.data.fightManager.dispatcher.on("start", ()=>{
 		this.fightContextInitialized=true;
-        /*if(this.selectedIa !=  this.bot.data.userConfig.fight.type){
-            this.selectedIa = this.bot.data.userConfig.fight.type;
-            console.log("[fight]Ia updated to "+this.selectedIa);
-        }
-		this.ia=new Ia[this.selectedIa](this.bot);
-		this.ia.processPlacement();*/
-		this.fightReady();
+		this.fightReady();//todo gérer les placements
 	});
 	this.bot.data.mapManager.dispatcher.on("loaded", (map)=>{
 		pathfinding.fillPathGrid(map);
@@ -32,16 +27,17 @@ exports.Fight = function(bot){
 	this.bot.data.fightManager.dispatcher.on("end", ()=>{
 		this.fightContextInitialized=false;
 	});
+	this.bot.data.fightManager.dispatcher.on("turnEnd", (id)=>{
+		console.log('---------------Fin du tour---------------');
+		this.forceEndTurn = true;
+	});
 	this.bot.data.fightManager.dispatcher.on("turnStart", ()=>{
-        /*if(typeof this.ia == "undefined"){
-            this.ia = new Ia[this.bot.data.userConfig.fight.type](this.bot);
-        }
-		this.ia.processTurn();*/
 		console.log("Debut du tour !");
 		console.log("spells : ");
 		console.dir(Object.keys(this.bot.data.userConfig.fight.spells));
 		console.dir(this.bot.data.userConfig.fight.spells);
 		this.hasAttackedActor = false;
+		this.forceEndTurn = false;
 		try{this.processPile(Object.keys(this.bot.data.userConfig.fight.spells)[0] ,()=>{this.finishTurn()});//plus simple ;)
 		}catch(e){console.log(e)}
 	});
@@ -56,6 +52,7 @@ exports.Fight.prototype.fightReady = function(){
 //La fonction ne fait que rush pourquoi l'appeler move ? plutôt sink .
 exports.Fight.prototype.sink = function(callBack){//Faire ka fonction flee() pour se replier .
 	console.log("[FIGHT] On fonce au CaC !")
+	if(this.bot.data.fightManager.isOnCaC()) console.log('Le bot est déjà au CàC'); return callBack(true);
 	this.move(this.bot.data.fightManager.getNearsetFighter(0).disposition.cellId , callBack);	
 }
 
@@ -75,7 +72,9 @@ exports.Fight.prototype.flee = function(callBack){//Faire ka fonction flee() pou
 	console.log("Possible cells to flee to : ");
 	console.log(cells);
 	var getDistance = this.bot.data.mapManager.getDistance;
-	var reference = this.bot.data.fightManager.getNearsetFighter(0).disposition.cellId;
+	var enemieTeamId = 0;
+	if(this.bot.data.fightManager.getUserFighter().teamId == enemieTeamId) enemieTeamId = 1;
+	var reference = this.bot.data.fightManager.getFightersByDistance(enemieTeamId)[0].disposition.cellId;
 	if(!reference) reference = currentCellId;
 	console.log("Reference for fleeing set to : " + reference);
 	var farthest = currentCellId;
@@ -95,6 +94,7 @@ exports.Fight.prototype.flee = function(callBack){//Faire ka fonction flee() pou
 }
 //Si la cellule est trop loin , le bot se rapproche de celle-ci sur le max du pm
 exports.Fight.prototype.move = function(cellId , callBack){
+	if(cellId == this.bot.data.fightManager.getUserFighter().disposition.cellId) return callBack(true);
 	var maxMp = this.bot.data.fightManager.getUserFighter().stats.movementPoints;
 	var currentCellId = this.bot.data.fightManager.getUserFighter().disposition.cellId;
 	if(!cellId || this.bot.data.context == "ROLEPLAY"){
@@ -102,8 +102,8 @@ exports.Fight.prototype.move = function(cellId , callBack){
 		return callBack(false);
 	}
 	pathfinding.fillPathGrid(this.bot.data.mapManager.map,this.bot.data.mapManager.mapId);
-	var keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.fightManager.getOccupiedCells(),false);
-	keyMouvements = keyMouvements.splice(0,maxMp+1);//maxMP+1 car la premiére cell du path corespond a ma cellId
+	var keyMouvements = pathfinding.getPath(currentCellId,cellId,this.bot.data.fightManager.getOccupiedCells(),false).splice(0,maxMp+1);
+	console.log(keyMouvements);
 	processKeyMovement(this.bot,keyMouvements,(result)=>{
 		if(result)this.bot.data.fightManager.getUserFighter().stats.movementPoints -= maxMp;
 		callBack(result);
@@ -117,7 +117,8 @@ celui du sort qu'on vient cast , si on peut pas le cast , on appelle cette fois 
 de plus avec cette fonction on aura plus de classes IA , on process direct la pile au debug du tour */
 exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter repeat pour voir les spells qu'il faut repeter ou pas .
 	if(typeof step == "undefined" || step < 0) step = 0;// un truc du genre self.bot.data.userConfig.fight.spells[i].repeatable = false ou true
-	if(!this.fightContextInitialized) return console.log("Fin du combat , arrêt du traitement de la pile .");
+	console.log("Force end turn : "+ this.forceEndTurn);
+	if(this.forceEndTurn) {this.endTurn(); return console.log("Fin du tour , arrêt du traitement de la pile .");}
 	var self = this;
 	if(self.bot.data.userConfig.fight.spells.length <=0){
 		self.bot.logger.log("[FIGHT] Aucun sort dans la pile !");
@@ -192,7 +193,6 @@ exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter r
 					}
 					else whatNext(false , step);//Si pas reussi on passe au sort suivant 
 				})
-				console.log("[FIGHT] Non , on passe au sort suivant .");
 				return;
 			} 
 			break;
@@ -230,21 +230,19 @@ exports.Fight.prototype.castSpell = function(spellId,cellId,callBack){
 
 //Ajoute un peu de sauce avant de présenter le plat ;) 
 exports.Fight.prototype.finishTurn = function(){//TODO voir s'il y a d'autres IA possibles
-try
-	{console.log("Finalisation du tour avec la tactique : " + this.bot.data.userConfig.fight.mode);
-		switch(this.bot.data.userConfig.fight.mode){//tactique
-			case 0 ://agressive
-				this.sink(()=>this.endTurn());//sans parentheses , plus sexy ;) 
-				break;
-			case 1://Fuyarde
-				if(this.hasAttackedActor)  this.flee(()=>this.endTurn());
-				else this.sink(()=>this.endTurn());
-				break;
-			default : 
-				this.endTurn();
-				break;
-		}}
-		catch(e){console.log(e)}
+	console.log("Finalisation du tour avec la tactique : " + this.bot.data.userConfig.fight.mode);
+	switch(this.bot.data.userConfig.fight.mode){//tactique
+		case 0 ://agressive
+			this.sink(()=>this.endTurn());//sans parentheses , plus sexy ;) 
+			break;
+		case 1://Fuyarde
+			if(this.hasAttackedActor)  this.flee(()=>this.endTurn());
+			else this.sink(()=>this.endTurn());
+			break;
+		default : 
+			this.endTurn();
+			break;
+	}
 }
 //Finis le tour .
 exports.Fight.prototype.endTurn = function(){
@@ -252,6 +250,10 @@ exports.Fight.prototype.endTurn = function(){
 }
 exports.Fight.prototype.getInSpellRange = function(spell, cb){
 	var cell = this.bot.data.fightManager.getCellForIntelligentMove(spell);
-	if(!cell) return cb(false);
+	if(!cell) console.log("Aucune :x ."); return cb(false);
 	this.move(cell , cb);
+}
+exports.Fight.prototype.stillInFight = function(){//TODO Il se peut que j'aie oublié quelques verifs ...
+	if(this.bot.data.fightManager.getTeam(0).length > 0 && this.bot.data.fightManager.getTeam(1).length > 0) return true;
+	return false;
 }

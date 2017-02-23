@@ -82,7 +82,7 @@ exports.InventoryManager.prototype.processRegen = function(cb){//todo debug, la 
 }
 exports.InventoryManager.prototype.checkOverload = function(){//todo destruction ou retour en bank
     console.log("Checking pods ...")
-    if (this.pods >= (this.maxPods-10)){//On check que ça depasse les 90% pas this.maxPods -10 :p 
+    if (this.pods >= (this.maxPods-10)){
         this.bot.data.state="OVERLOAD";
         this.bot.logger.log("[Inventory]Full pods !");
         return true;

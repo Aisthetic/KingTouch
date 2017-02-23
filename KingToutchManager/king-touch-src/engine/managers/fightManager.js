@@ -136,6 +136,7 @@ exports.FightManager.prototype.addHandlers = function(){
 		}
 	});
 	this.bot.connection.dispatcher.on("GameFightEndMessage",(m)=>{
+		this.bot.fight.fightContextInitialized = false;//Emergency turn stop .
         for(var i in this.spells){
             this.spells[i].nextSpellDelay = 0;
         }
@@ -155,43 +156,34 @@ exports.FightManager.prototype.getOccupiedCells = function(cible){
 	}
 	return ret;
 }
-//
-//team
-//team 0 ennemies
-//team 1 allies
-//mode
+/*
+	@team :  id of the team .
+*/
 exports.FightManager.prototype.getNearsetFighter = function(team){
 	return this.getFightersByDistance(team)[0];
 }
-exports.FightManager.prototype.getFightersByDistance = function(team){
-	var fightersToSort = [];
+exports.FightManager.prototype.getTeam = function(teamId){
+	team = [];
 	for(var i in this.fighters){
-		if(this.fighters[i].teamId == 1 && this.fighters[i].alive == true && team == 0){
-			this.fighters[i].distance = this.bot.data.mapManager.getDistance(this.getUserFighter().disposition.cellId,this.fighters[i].disposition.cellId);//on asigne distance directement sur les fighters car on pourais en avori besoin plus tard
-			fightersToSort.push(this.fighters[i]);
-		}
+		if(this.fighters[i].teamId == teamId) team.push(this.fighters[i]);
 	}
-	fightersToSort.sort(function(a,b){
-	  if (a.distance > b.distance)
-		return 1;
-	  if (a.distance < b.distance)
-		return -1;
-	  return 0;
+	return team;
+}
+exports.FightManager.prototype.getFightersByDistance = function(teamId){
+	return this.getTeam(teamId).sort(function(a,b){
+	  if (a.distance > b.distance) return 1
+	  else if (a.distance < b.distance) return -1
+	  else return 0
 	});
-	return fightersToSort;
 }
 exports.FightManager.prototype.cellIsFree = function(cellId){
 	if(this.bot.data.mapManager.isWalkable(cellId)){
 		for(var i in this.fighters){
-			if(this.fighters[i].disposition.cellId == cellId){
-				return false;
-			}
+			if(this.fighters[i].disposition.cellId == cellId) return false
 		}
 		return true;
 	}
-	else{
 		return false;
-	}
 }
 exports.FightManager.prototype.canCast = function(id,type,current){
     if(typeof this.spells[id] == "undefined"){
@@ -202,21 +194,22 @@ exports.FightManager.prototype.canCast = function(id,type,current){
 	var spell = this.spellsData[id][this.spells[id].spellLevel];
 	var spellRange = getSpellRange(current,spell);
 	var cells = {};
-
 	for(var i =0;i<spellRange.length;i++){// sa sera beaucoup plus rapide au calcule qu´avec un array :3
 		cells[getCellId(spellRange[i][0],spellRange[i][1])]=1;
-	}
-
-	if(type == 0){//sur les ennemies
-		var cibles = this.getFightersByDistance(0);
+	}	
+	if(type == 0){//sur les ennemis
+		var enemieTeamId = 0;
+		if(this.getUserFighter().teamId == enemieTeamId) enemieTeamId = 1;
+		console.log("[CANCAST] Enemie team id's : " + enemieTeamId);
+		var cibles = this.getFightersByDistance(enemieTeamId);
 		for(var i =0;i<cibles.length;i++){//on verifie pour chaque ennemies (du plus proche au plus eloignier) si une cellule dans le spell range existe
 			var c = cibles[i].disposition.cellId//si elle est dans le rang alors on verifie la ligne de vue et si on peut cast le spell 
-			if(typeof cells[c] != "undefined" && this.canCastThisSpell(id) && this.verifyLos(c,id)){
-				return c;//un fighter est sur la cellue, on a le champs libre
+			if(typeof cells[c] != "undefined" && this.canCastThisSpell(id) && this.verifyLos(c,id) && cibles[i].alive){
+				return c;//un fighter est sur la cellule, on a le champs libre
 			}
 		}
 	}
-	else if (type == 5){
+	else if (type == 5){	
 		console.log("[fightManager]on voie si on peut invocker ...");
 		if(this.canInvocke(spell) && this.canCastThisSpell(id)){
             console.log("[fightManager]On cherche une cellue vide ... ("+spellRange.length+"+ cell possible)");
@@ -225,12 +218,12 @@ exports.FightManager.prototype.canCast = function(id,type,current){
 				if(this.cellIsFree(i)){
 					if(spell.castTestLos == true && this.verifyLos(i,id)){
 						this.invockeCount++;
-						console.log("[FightManager]On invocke !");
+						console.log("[FightManager]On invoque !");
 						return i;
 					}
                     else if(spell.castTesLos == false){
 						this.invockeCount++;
-						console.log("[FightManager]On invocke !");
+						console.log("[FightManager]On invoque !");
 						return i;
                     }
                 }
@@ -239,6 +232,7 @@ exports.FightManager.prototype.canCast = function(id,type,current){
 		}
 		console.log("[FIGHTMANAGER] On peut pas .");
 	}
+	console.log('On ne peut rien cast .')
 	return false;//on peut rien cast
 }
 //si cellid n'est pas definis on prend la cellule du joueur
@@ -279,18 +273,21 @@ exports.FightManager.prototype.canCastThisSpell = function(spellId){
 	return (this.getUserFighter().stats.actionPoints >=  this.spellsData[spellId][this.spells[spellId].spellLevel].apCost && this.spells[spellId].nextSpellDelay <= 0);
 }
 exports.FightManager.prototype.verifyLos = function(cell,spellId){
+	console.log("Checking line of sight for spell : " + spellId + " on cell : " + cell);
 	var occupieds = {};
 	for(var i in this.fighters){
 		occupieds[this.fighters[i].disposition.cellId] = 1;
 	}
 	function check(coord){
 		var cell = getCellId(coord);
-		return (occupieds[cell] == "undefined" && this.bot.data.mapManager.isWalkable(cell,true));
+		return this.cellIsFree(cell);
 	}
 	if(this.spellsData[spellId][this.spells[spellId].spellLevel].castTestLos){
 		var current = getMapPoint(this.getUserFighter().disposition.cellId);
 		var dest = getMapPoint(cell)
 		var line = getLine(current,dest);
+		console.log("Ligne de vue : ");
+		console.dir(line);
 		for(var i = 0;i<line.length;i++){
 			if(!check(line[i])){
 				return false;
@@ -313,7 +310,7 @@ exports.FightManager.prototype.isOnCaC = function(){
 };
 //Gets in th range of a spell , returns true if done , false if not .
 exports.FightManager.prototype.getCellForIntelligentMove = function(spell){
-	console.log("On Cherche la cellule la plus adequate pour le sort : ");
+	console.log("On cherche la cellule la plus adequate pour le sort : ");
 	console.dir(spell);
 	var currentCellId = this.getUserFighter().disposition.cellId;
 	var possiblePoints = getShapeRing(getMapPoint(currentCellId).x,getMapPoint(currentCellId).y,this.getUserFighter().stats.movementPoints);
@@ -340,3 +337,7 @@ exports.FightManager.prototype.getCellForIntelligentMove = function(spell){
  	if(!closest) return false; //normalement ceci ne doit jamais arriver mais on sait jamais ^^'
  	return closest;
 }
+exports.FightManager.prototype.isAlly = function(id) {
+	if(this.fighters[id].teamId == this.getUserFighter().teamId) return true;
+	return false;
+};
