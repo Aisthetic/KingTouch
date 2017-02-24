@@ -15,6 +15,7 @@ exports.Trajet = function(bot){
 }
 exports.Trajet.prototype.load = function(trajet){
 	this.currentTrajet = trajet
+	this.bot.data.userConfig.trajet = trajet;
 	this.hasTrajet=true;
 	this.trajetRunning=true;
 }
@@ -23,6 +24,12 @@ exports.Trajet.prototype.stop = function(){
 	this.trajetRunning=false;
 }
 exports.Trajet.prototype.start = function(){
+	if(!this.currentTrajet){
+		if(!this.bot.data.userConfig.trajet) return console.log("Pas de trajet à demarer ...");
+		this.currentTrajet = this.bot.data.userConfig.trajet;
+		this.bot.data.saveUserConfig();
+	}
+	this.hasTrajet = true;
 	this.trajetRunning=true;
 	this.trajetExecute();
 }
@@ -31,14 +38,14 @@ exports.Trajet.prototype.startPhoenix = function(){
 }
 exports.Trajet.prototype.trajetExecute = function(){
 	var self = this;
-	if(this.trajetOnExecution) return  console.log("Trajet already on execution ...");
+	if(this.trajetOnExecution) return  console.log("Trajet already on execution ...");//Moche mais pas le choix , impossible de le faire d'une autre façon en JS...
 	this.trajetOnExecution = true;
     if(this.bot.data.context != "ROLEPLAY" || typeof this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id] == "undefined"){
         console.log("**Trajet execution canceled !**");
         this.trajetOnExecution = false;
         return;
     }
-	if(this.hasTrajet === false){
+	if(!this.hasTrajet || !this.currentTrajet){
 		console.log("[Trajet]No trajet loaded !");
 		this.trajetOnExecution = false;
 		return;
@@ -48,11 +55,12 @@ exports.Trajet.prototype.trajetExecute = function(){
 		return console.log("Can't execute the trajet , it's has already been stopped .");
 	}
 	this.bot.logger.log("[Trajet]Execution map " + this.bot.data.mapManager.mapId +' .');
-	if(self.bot.data.state == "OVERLOAD" && !this.bankMode){
-			self.bankMode = true;
-			console.log("[TRAJET]Execution du trajet banque .");
+	console.log("Bot state :" + this.bot.data.state +' .');
+	if(this.bot.data.state == "OVERLOAD" && !this.bankMode){
+			this.bankMode = true;
+			console.log("[TRAJET] Bank mode activated .");
 	}
-	if(self.bankMode){
+	if(this.bankMode){
 		if(!this.parseMove(this.hasActionOnMap(this.currentTrajet.trajet["bank"]))) {
 			console.log("Le bot est full pods mais pas de trajet de banque sur la map " + this.bot.data.mapManager.mapId +" , arrêt du trajet .");
 			this.stop();
@@ -125,7 +133,6 @@ exports.Trajet.prototype.parseFight = function(fight){
 	return true;
 }
 exports.Trajet.prototype.parseGather = function(gather){
-	//if(!this.trajetRunning) return console.log("Trajet arrêté , récolte annulée .");
 	console.log("------------------------------------------------------");
 	console.log(this.bot.data.state);
 	if(!this.trajetRunning) return console.log("Trajet not running , gathering action stopped .");

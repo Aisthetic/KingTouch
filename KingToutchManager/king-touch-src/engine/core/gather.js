@@ -5,6 +5,8 @@ exports.Gather = function(bot){
 
 //returns an array of items {ressourceId , skillId}
 exports.Gather.prototype.getMustGatheredRessources = function(){//todo gérer l'acquisition de la config métier
+	console.log("Gather config : ");
+	console.dir(this.bot.data.userConfig.inventory.gatherList);
 	return this.bot.data.userConfig.inventory.gatherList//test avec le blé et l'orge .
 };
 

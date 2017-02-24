@@ -53,7 +53,10 @@ exports.open = function(botManager,id_,username){
     });
 }
 exports.send = function(call,data){
-    processSocket.send(JSON.stringify({call : call, data : data }));
+    try{
+        processSocket.send(JSON.stringify({call : call, data : data }));
+    }
+    catch(e){console.log("---------------------ERREUR SUR SEND MAINPROCESSFRAME !--------------------")}
 }
 exports.sendUI = function(call,data){
     processSocket.send(JSON.stringify({call : "ui-message",data : {call : call, data : data}}));
@@ -165,8 +168,20 @@ exports.getInventoryInfos = function(){
     return inventory;
 }
 
-exports.exportSpellsInfos = function(spells){
+exports.exportSpellsInfos = function(spells){//Les sorts sont maintenant mis dans le tableau selon l'ordre des indexes .
     bot.currentBot.data.userConfig.fight.spells = [];
+    console.log("Spells received :");
+    console.dir(spells);
+    spells.sort(function(a,b){
+        console.log("comparing spells :");
+        console.dir(a);
+        console.dir(b);
+        if ((typeof a.index === 'undefined' && typeof b.index !== 'undefined') || Number(a.index) > Number(b.index)) return 1
+        else if ((typeof b.index === 'undefined' && typeof a.index !== 'undefined') || Number(a.index) < Number(b.index)) return -1
+        else return 0
+    });
+    console.log("Spells ordered :");
+    console.dir(spells);
     for(var i = 0;i<spells.length;i++){
         var s = spells[i];
         if(s.inPile == true){
@@ -203,6 +218,7 @@ exports.getSpellsInfos = function(){
     }
     
     console.log(JSON.stringify(ret));
+    this.getJobsInfo(function(){})
     return ret;
 }
 
@@ -243,4 +259,37 @@ exports.getBotInfo = function(){
     }
     
     return infos;
+}
+/*
+    @returns infos : Object {}
+        infos[i].skill.Name
+        infos[i].skill.Id
+        infos[i].Interactive.Name
+        infos[i].Interactive.Id
+*/
+exports.getJobsInfo = function(callBack){//Peut pas faire sans CallBack puisque la requete est asynchrone et qu'on est en boucles for ...
+    var skills = {};
+    var interactiveIds = [];
+    var skillIds =[];
+    for(var i in bot.currentBot.data.jobsManager.list){
+        for(var j in bot.currentBot.data.jobsManager.list[i].jobDescription.skills){
+            var skill = {id : bot.currentBot.data.jobsManager.list[i].jobDescription.skills[j].skillId , name : null};
+            skillIds.push(skill.id);
+        }
+    }
+    require("./engine/managers/staticContentManager.js").getSkillsInfos(skillIds, (data)=>{
+        for(var i in data){
+            if(data[i].craftableItemIds.length > 0) continue; //métier craft
+            skills[i] = {skill : {id : i , name : data[i].nameId} , interactive : {id : data[i].interactiveId , name : null}};
+            interactiveIds.push(data[i].interactiveId);
+        } 
+    });
+    require("./engine/managers/staticContentManager.js").getInteractivesInfos(interactiveIds, (data)=>{
+       for(var i in data){
+            for(var j in skills){
+                if(skills[j].interactive.id == i) skills[j].interactive.name = data[i].nameId;
+            }
+       }
+       callBack(skills)
+    })
 }

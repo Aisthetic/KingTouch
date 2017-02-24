@@ -1,0 +1,31 @@
+    {
+      "trajet": {
+        "fights": [
+        ],
+        "recolte": [
+          {
+            "map": 80217093,
+            "dir": "left"
+          },
+          {
+            "map": 80216581,
+            "dir": "bottom"
+          },
+          {
+            "map": 80216582,
+            "dir": "right"
+          },
+          {
+            "map": 80217094,
+            "dir": "top"
+          }
+        ],
+        "interactives": [
+        ],
+        "moves": [
+        ],
+        "bank": [
+          
+        ]
+      }
+    }

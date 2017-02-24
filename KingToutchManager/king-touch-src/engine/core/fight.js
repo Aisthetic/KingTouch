@@ -33,9 +33,6 @@ exports.Fight = function(bot){
 	});
 	this.bot.data.fightManager.dispatcher.on("turnStart", ()=>{
 		console.log("Debut du tour !");
-		console.log("spells : ");
-		console.dir(Object.keys(this.bot.data.userConfig.fight.spells));
-		console.dir(this.bot.data.userConfig.fight.spells);
 		this.hasAttackedActor = false;
 		this.forceEndTurn = false;
 		try{this.processPile(Object.keys(this.bot.data.userConfig.fight.spells)[0] ,()=>{this.finishTurn()});//plus simple ;)
@@ -51,16 +48,13 @@ exports.Fight.prototype.fightReady = function(){
 //la fonctions a éte refais a la va vitte je trouvais pas ce putain de bug
 //La fonction ne fait que rush pourquoi l'appeler move ? plutôt sink .
 exports.Fight.prototype.sink = function(callBack){//Faire ka fonction flee() pour se replier .
-	console.log("[FIGHT] On fonce au CaC !")
-	if(this.bot.data.fightManager.isOnCaC()) console.log('Le bot est déjà au CàC'); return callBack(true);
+	if(this.bot.data.fightManager.isOnCaC()) return callBack(true);
 	this.move(this.bot.data.fightManager.getNearsetFighter(0).disposition.cellId , callBack);	
 }
 
 exports.Fight.prototype.flee = function(callBack){//Faire ka fonction flee() pour se replier .
 	var currentCellId = this.bot.data.fightManager.getUserFighter().disposition.cellId;
 	var point = getMapPoint(currentCellId)
-	console.log("Map point : ")
-	console.dir(point);
 	var possiblePoints = getShapeRing(point.x,point.y,0,this.bot.data.fightManager.getUserFighter().stats.movementPoints);
 	var cells = {};
 	for(var i =0;i<possiblePoints.length;i++){//Remplissage d'un tableau contenant les cellules possible à atteindre avec les pm actuels du bot
@@ -69,14 +63,11 @@ exports.Fight.prototype.flee = function(callBack){//Faire ka fonction flee() pou
 		cells[cellId]= true;
 	}
 	cells = Object.keys(cells);
-	console.log("Possible cells to flee to : ");
-	console.log(cells);
 	var getDistance = this.bot.data.mapManager.getDistance;
 	var enemieTeamId = 0;
 	if(this.bot.data.fightManager.getUserFighter().teamId == enemieTeamId) enemieTeamId = 1;
 	var reference = this.bot.data.fightManager.getFightersByDistance(enemieTeamId)[0].disposition.cellId;
 	if(!reference) reference = currentCellId;
-	console.log("Reference for fleeing set to : " + reference);
 	var farthest = currentCellId;
  	var maxDist = getDistance(reference,currentCellId);
  	for(var i in cells){
@@ -117,25 +108,20 @@ celui du sort qu'on vient cast , si on peut pas le cast , on appelle cette fois 
 de plus avec cette fonction on aura plus de classes IA , on process direct la pile au debug du tour */
 exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter repeat pour voir les spells qu'il faut repeter ou pas .
 	if(typeof step == "undefined" || step < 0) step = 0;// un truc du genre self.bot.data.userConfig.fight.spells[i].repeatable = false ou true
-	console.log("Force end turn : "+ this.forceEndTurn);
-	if(this.forceEndTurn) {this.endTurn(); return console.log("Fin du tour , arrêt du traitement de la pile .");}
+	if(this.forceEndTurn) return this.endTurn(); 
 	var self = this;
 	if(self.bot.data.userConfig.fight.spells.length <=0){
 		self.bot.logger.log("[FIGHT] Aucun sort dans la pile !");
 		return callBack();
 	}
 	if(step >= self.bot.data.userConfig.fight.spells.length){//C'est bon , on a parcouru tout les sorts .
-		console.log("[FIGHT] Fin du traitement de la pile .");
 		return callBack();
 	}
-	console.log("[FIGHT] Step : " + step);
 	var spell = self.bot.data.userConfig.fight.spells[step];
 	console.log("[FIGHT] processing spell type : " + Number(spell.type));
 	switch(Number(spell.type)){
-		case 2 ://sur moi
-			console.log("[FIGHT] Possible de lancer le sort sur moi ?")
+		case 1 ://sur moi
 			if(self.bot.data.fightManager.canCastThisSpell(spell.id)){
-				console.log("[FIGHT] Oui .")
 				self.castSpell(spell.id,self.bot.data.fightManager.fighters[self.bot.data.characterInfos.id].disposition.cellId,function(success){
 					if(!success)	whatNext(false, step);
 					else whatNext(self.bot.data.fightManager.canCastThisSpell(spell.id) , step);
@@ -143,11 +129,10 @@ exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter r
 				return true;
 			}
 			else{
-				console.log("[FIGHT] Non .")
 				return whatNext(false,step);
 			}
 			break;
-		case 1://sur moi au CaC , pas beosin de tenir en compte la tactique parce si on rush au CàC => perso agressif .
+		case 3://sur moi au CaC , pas beosin de tenir en compte la tactique parce si on rush au CàC => perso agressif .
 			if(!self.bot.data.fightManager.isOnCaC()){
 				self.sink(()=>{
 					if(self.bot.data.fightManager.canCastThisSpell(spell.id) && self.bot.data.fightManager.isOnCaC()){
@@ -172,18 +157,15 @@ exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter r
 			}
 			break;
 		case 0://sur les ennemis.
-			console.log("[FIGHT] Possible d'attaquer un ennemi ? ")
 			var spellCell = self.bot.data.fightManager.canCast(spell.id,spell.type);
 			if(spellCell){
-				console.log("oui .");
 				self.castSpell(spell.id,spellCell,function(success){
 					if(!success)	whatNext(false, step);
 					else whatNext(self.bot.data.fightManager.canCastThisSpell(spell.id) , step);
 				});
 				return;
 			}
-			else{
-				console.log("[FIGHT] Trying to get in spell range .");//Brace your mind 
+			else if (this.bot.data.fightManager.canCastThisSpell(spell.id)){
 				this.getInSpellRange(spell , (result)=>{//On se rapproche intelligemment
 					if(result) {//Si reussi on cast
 						self.castSpell(spell.id,spellCell,function(success){
@@ -195,8 +177,9 @@ exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter r
 				})
 				return;
 			} 
+			else return whatNext(false , step);
 			break;
-		default :
+		default ://todo gérer les invocations .
 			console.log("[FIGHT] les sorts de type " + spell.type + " ne sont pas encore gérés .");
 			break;
 			
@@ -204,11 +187,9 @@ exports.Fight.prototype.processPile = function(step , callBack){//TODO Ajouter r
 	function whatNext(RepeatLastStep,step){
 		step = Number(step);
 		if(RepeatLastStep){
-			console.log("On relance le même sort .")
 			self.processPile(step,callBack);
 		}
 		else{
-			console.log("On passe au sort suivant .")
 			self.processPile(step + 1,callBack);
 		}
 	}
@@ -229,11 +210,10 @@ exports.Fight.prototype.castSpell = function(spellId,cellId,callBack){
 }
 
 //Ajoute un peu de sauce avant de présenter le plat ;) 
-exports.Fight.prototype.finishTurn = function(){//TODO voir s'il y a d'autres IA possibles
-	console.log("Finalisation du tour avec la tactique : " + this.bot.data.userConfig.fight.mode);
+exports.Fight.prototype.finishTurn = function(){//TODO voir s'il y a d'autres IA de finition possibles
 	switch(this.bot.data.userConfig.fight.mode){//tactique
 		case 0 ://agressive
-			this.sink(()=>this.endTurn());//sans parentheses , plus sexy ;) 
+			this.sink(()=>this.endTurn()); 
 			break;
 		case 1://Fuyarde
 			if(this.hasAttackedActor)  this.flee(()=>this.endTurn());
@@ -250,7 +230,7 @@ exports.Fight.prototype.endTurn = function(){
 }
 exports.Fight.prototype.getInSpellRange = function(spell, cb){
 	var cell = this.bot.data.fightManager.getCellForIntelligentMove(spell);
-	if(!cell) console.log("Aucune :x ."); return cb(false);
+	if(!cell) console.log("Aucune cellule magique :x ."); return cb(false);
 	this.move(cell , cb);
 }
 exports.Fight.prototype.stillInFight = function(){//TODO Il se peut que j'aie oublié quelques verifs ...

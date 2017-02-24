@@ -5,6 +5,7 @@ var clientsWatching = {};
 var watching = false;
 var softDebugInterval = 30000;
 var hardDebugInterval = 300000;
+var prohibidenSoftStates = ["REGEN","FIGHTING","DISCONNECTED"];
 exports = module.exports = dispatcher;
 exports.startWatching = function(softInterval , hardInterval){
     if(typeof interval != "undefined"){
@@ -42,19 +43,13 @@ exports.bind = function(bot){
 function getClientIndicator(id,groupe){
     return groupe+":"+id;
 }
-function watch(){
+function watch(){//Todo gérer correctement le hardDebug apres avoir géré correctement la reconnexion 
     var current = new Date().getTime();
     for(var i in clientsWatching){
         var w = clientsWatching[i];
-        if(w.last + softDebugInterval < current  && w.bot.data.state!="REGEN" && w.bot.data.state!="FIGHTING" && w.last != -1){//On évite la reco pour debug .
-            /*if(w.last + hardDebugInterval < current){
-                console.log("[INACTIVITY] Hard debug on "+w.bot.data.accompt.username+" .");
-                w.wrap.done(false);
-            }
-            else{*/
+        if(w.last + softDebugInterval < current  && !prohibidenSoftStates.includes(w.bot.data.state) && w.last != -1){//On évite la reco pour debug .
                 console.log("[INACTIVITY] Soft debug on "+w.bot.data.accompt.username+" .");
                 w.bot.sync.process();
-            //}
         }
         else if(w.last!=-1){
             w.last=new Date().getTime();

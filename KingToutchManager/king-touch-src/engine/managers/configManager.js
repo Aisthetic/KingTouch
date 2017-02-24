@@ -55,7 +55,7 @@ function getDefault(){
             destroyObjectsOnOverload: true,
             objectsBlackList: [],
             sellList: [],
-            gatherList : [{id : 38 , skillId : 45},{id : 43 , skillId : 53 }]//blé + orge
+            gatherList : [{id : 1 , skillId : 6}]//frêne
         }
 	};
 }

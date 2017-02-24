@@ -6,6 +6,10 @@ var debugState = false;
 exports.Sync = function(bot){
     this.bot=bot;
     this.assuringServer = false; //On rassure le serveur qu'on est pas des bots .
+    this.bot.connection.dispatcher.on('LifePointsRegenBeginMessage',(msg)=>{
+    	this.bot.player.regenRate = msg.regenRate
+    	console.log("Regen rate set to : " + this.bot.player.regenRate);
+    });
     this.bot.connection.dispatcher.on("GameContextCreateMessage",function(m){
 		if(bot.data.context === "GHOST"){
 			console.log("[Sync]Cant load ROLEPLAY context when player is ghost");//todo il y a une incoerence dans tout sa il faudrais que lorsque le joueur est un fantome on set state="GHOST" et context="ROLEPLAY"
@@ -45,6 +49,7 @@ exports.Sync = function(bot){
 		}
 		var timeout = 1000;
 		if(this.assuringServer) {
+			this.assuringServer = false;
 			console.log("Le serveur n'a pas l'air de nous aimer ,on annule le mouvement et on attends 10 secondes avant de continuer .");
 			this.bot.player.cancelMove();
 			timeout = 10000;//le serveurs refuse toutes les requetes de mouvement , on attends 10 secs avant de continuer 
@@ -70,7 +75,6 @@ exports.Sync = function(bot){
 exports.Sync.prototype.process = function(){
 	console.log("[Sync]Processing ...");
 	//check map loading
-	this.assuringServer = false;
 	if(typeof this.bot.data.mapManager.map === null){
 		console.log("[Sync]En attente de la map ...");
 		var wrap = eventWrapper(this.bot.data.mapManager.dispatcher,(r)=>{ 			
@@ -94,12 +98,12 @@ exports.Sync.prototype.process = function(){
 			this.bot.player.useInteractive(phoenix.id,phoenix.skill,phoenix.cell,()=>{
 				console.log("[Sync]On reviens a la vie !");
 				this.bot.data.context="ROLEPLAY";
-					this.bot.trajet.trajetExecute();
+					this.bot.trajet.start();
 			},false);
 		}
 		else{
 			console.log("[Sync]Pas de phoenix on execute le trajet ...");
-			this.bot.trajet.trajetExecute();
+			this.bot.trajet.start();
 		}
 	}
 	//--
@@ -112,44 +116,39 @@ exports.Sync.prototype.process = function(){
            return; 
         }
         
-        if(this.bot.data.inventoryManager.checkOverload()){
-            console.log("[Sync]Plus de pods !");
-            if(this.bot.data.userConfig.inventory.destroyObjectsOnOverload === true){
+        if(this.bot.data.inventoryManager.checkOverload() && this.bot.data.userConfig.inventory.destroyObjectsOnOverload){
                 console.log("[Sync]On detruit des objets pour continuer !");
                 this.bot.data.inventoryManager.destroyForOverload(()=>{
                     this.process();
                 });
-            }
-            else{
-                console.log("[Sync]Fin d'execution");
-            }
-            return;
         }
-        
 		console.log("[Sync]Trajet ready ...");
-		this.bot.data.context="ROLEPLAY";
-		this.bot.data.state = "READY";
+		
+		if(this.bot.data.state == "DISCONNECTED"){//fait chier , ça mettait le bot en ready avant chaque execution de trajet donc pas de full pods ...
+			this.bot.data.state = "READY";
+			this.bot.data.context="ROLEPLAY";
+		}
 		processDelay("trajet_map_loaded",() => {
-			if(this.bot.player.checkLife()){
-				this.bot.trajet.trajetExecute();
+			if(!this.bot.player.needsRegen()){
+				this.bot.trajet.start();
 			}
 			else if(this.bot.data.userConfig.regen.useObject == true){
 				console.log("[Sync]Regen par objet...");
 				if(this.bot.data.inventoryManager.processRegen(()=>{
 					console.log("[Sync]Regen par objet terminer !");
-					this.bot.trajet.trajetExecute();
+					this.bot.trajet.start();
 				}) == false){
 					console.log("[Sync]Impossible de faire la regen par objet, regen normale ...");
 					this.bot.player.processRegen(this.bot.data.actorsManager.userActorStats.maxLifePoints-this.bot.data.actorsManager.userActorStats.lifePoints,()=>{
 						console.log("[Sync]Regen terminer !");
-						this.bot.trajet.trajetExecute();
+						this.bot.trajet.start();
 					});
 				}
 			}
 			else{
 				this.bot.player.processRegen(this.bot.data.actorsManager.userActorStats.maxLifePoints-this.bot.data.actorsManager.userActorStats.lifePoints,()=>{
 					console.log("[Sync]Regen terminer !");
-					this.bot.trajet.trajetExecute();
+					this.bot.trajet.start();
 				});
 			}
 		});

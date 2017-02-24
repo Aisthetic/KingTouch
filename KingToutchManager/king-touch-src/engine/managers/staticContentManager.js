@@ -22,6 +22,9 @@ exports.getSpellLevelsInfos = function(ids,id,callback){
 exports.getItemsInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Items", ids}, (result) => { callBack(result); });
 }
+exports.getSkillsInfos = function(ids,callBack){
+    exports.sendWebRequestToDataUrl({class: "Skills", ids}, (result) => { callBack(result); });
+}
 exports.getInteractivesInfos = function(ids,callBack){
     exports.sendWebRequestToDataUrl({class: "Interactives", ids}, (result) => { callBack(result); });
 }

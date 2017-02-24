@@ -8,6 +8,7 @@ var delayManager = require("./../managers/delayManager.js");
 exports.Player = function(bot){
 	this.bot = bot;
 	this.blackList = [];
+	this.regenRate = 10;//(en 0.1sec) pas fix voir fonctions regen
 }
 //gotoNeigborMap(cellid) or gotoNeigborMap(cellId,dir) if cellid is -1 get a random cellid
 //gotoNeigborMap(cellid) or gotoNeigborMap(cellId,dir) if cellid is -1 get a random cellid
@@ -113,7 +114,7 @@ exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
 				failAtemp++;
 				self.bot.logger.log("[Player]Le combat n´a pas commencé , on attend un rechargement de la map .");
 				self.blackList.push(selectedFights[selectedFightIndex])
-				//self.attackBestAvaibleFighter(noFightCallBack);
+				self.attackBestAvaibleFighter(noFightCallBack);
 			}
 			else{
 				failAtemp = 0;
@@ -145,14 +146,18 @@ exports.Player.prototype.attackBestAvaibleFighter  = function(noFightCallBack){
 	}
 }
 
-//check life with userconfg settings, return -1 if no need regen, return number of life points to regen
-exports.Player.prototype.checkLife = function(){
-	var unite = this.bot.data.actorsManager.userActorStats.maxLifePoints / 100;
-	var current = this.bot.data.actorsManager.userActorStats.lifePoints / unite;
+/*
+	@needsRegen : checks if player needs regen 
+	@return : returns true if needed , false if not 
+*/
+exports.Player.prototype.needsRegen = function(){
+	console.log("current/max pdv : " + this.bot.data.actorsManager.userActorStats.lifePoints + '/' + this.bot.data.actorsManager.userActorStats.maxLifePoints)
+	var current = this.bot.data.actorsManager.userActorStats.lifePoints * 100 / this.bot.data.actorsManager.userActorStats.maxLifePoints;//pourcentage = current*100/max direct ^^
+	console.log("current life percentage : " + current + "%");
 	if(current < this.bot.data.userConfig.regen.regenBegin){
-		return false;
+		return true;
 	}
-	return true;
+	return false;
 }
 exports.Player.prototype.processRegen = function(life,callBack){
 	if(this.bot.data.context != "ROLEPLAY"){
@@ -160,16 +165,32 @@ exports.Player.prototype.processRegen = function(life,callBack){
 		return;
 	}
 	if(typeof this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id] == "undefined"){
-		console.log("[Player]Regen annuler, combat presumer !");
+		console.log("[Player]Regen annuler, combat presumé !");
 		return;
 	}
-	this.bot.logger.log("[Player]Debut de la regeneration pour " + life + "pdv");
 	this.bot.data.state = "REGEN";
-	setTimeout(()=>{
-		this.bot.connection.sendMessage("EmotePlayRequestMessage",{emoteId: 1});
-	},3000);
 	this.bot.data.actorsManager.userActorStats.lifePoints += life;//todo faut faire sa bien
-	setTimeout(callBack,(life*getRegenRate())+2500);
+	var wrap = require('event-wrapper')(this.bot.connection.dispatcher,()=>{callBack()});
+	var timer = setTimeout(()=>{
+		wrap.done();
+	},(life*this.regenRate*100));
+	var time = new Date().getTime();
+	wrap("LifePointsRegenEndMessage",(msg)=>{
+		this.bot.data.actorsManager.userActorStats.maxLifePoints = msg.maxLifePoints
+		this.bot.data.actorsManager.userActorStats.lifePoints = msg.lifePoints
+		if(this.needsRegen()) return;//le serveur veut qu'on s'arrête mais c'est toujours pas fini wesh on s'en blc
+		console.log("Fin de la regen reçue par le serveur");
+		clearTimeout(timer);	
+		wrap.done();	
+	});
+	wrap("LifePointsRegenBeginMessage",(msg)=>{
+		clearTimeout(timer);
+		this.regenRate = msg.regenRate
+		console.log("Regenaration rate actualized : " + this.regenRate + " , new regeneration time is : " + ((life+time-new Date().getTime())*this.regenRate*100 + ' ms'))
+		timer = setTimeout(()=>{wrap.done();},(life+time-new Date().getTime())*this.regenRate*100);//un peu de math ^^
+	});
+	this.bot.logger.log("[Player]Debut de la regeneration pour :" + life + " pdv , pendant : " + life*this.regenRate*100 + " ms .");
+	this.bot.connection.sendMessage("EmotePlayRequestMessage",{emoteId: 1});
 }
 
 exports.Player.prototype.upgradeCharacteristic = function(characteristic, callBack){
@@ -199,8 +220,6 @@ exports.Player.prototype.upgradeCharacteristic = function(characteristic, callBa
 	else if(characteristic === 14){
 		updateBlock(breed.statsPointsForAgility,stats.agility.base);
 	}
-
-
 
 	function updateBlock(paliers,base){
 		for(var i = 0;i<paliers.length;i++){
@@ -266,13 +285,11 @@ exports.Player.prototype.canUpgradeCharacteristic = function(characteristic){
 	return false;
 }
 
-function getRegenRate(){
-	return 1000;//todo verifier que c´est correcte
-}
 
 //NpcActionId : 5:sell, 6:buy, 2:echange with npc, 4:drop off/collect a pet, 3:talk to npc
 exports.Player.prototype.npcActionRequest = function (npcId , replies , npcActionId, cb){//Todo gérer les réponses multiples
     if(!cb) cb = ()=>{};//Savage x)
+    var npcFrame = require("./../frames/game/npc/npcFrame.js")
     try {
         console.log()
         if (npcId == 0 || !npcId) {

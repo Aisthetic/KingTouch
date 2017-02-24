@@ -45,7 +45,7 @@ exports.InventoryManager = function(bot){
             this.bot.data.state = 'READY';
             this.bot.trajet.bankMode = false;
             npcFrame.processLeaveDialog(bot);
-            this.bot.trajet.trajetExecute();
+            this.bot.trajet.start();
        }
     });
     bot.connection.dispatcher.on("ObjectAddedMessage",(m)=>{
@@ -82,9 +82,10 @@ exports.InventoryManager.prototype.processRegen = function(cb){//todo debug, la 
 }
 exports.InventoryManager.prototype.checkOverload = function(){//todo destruction ou retour en bank
     console.log("Checking pods ...")
-    if (this.pods >= (this.maxPods-10)){
-        this.bot.data.state="OVERLOAD";
+    if (this.pods >= (this.maxPods*0.9)){
         this.bot.logger.log("[Inventory]Full pods !");
+        this.bot.data.state="OVERLOAD";
+        console.log("Bot state set to : " + this.bot.data.state);
         return true;
     }
     return false;
