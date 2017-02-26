@@ -88,7 +88,7 @@
 
 
         
-      <!-- nav panel -->
+      <!-- nav panel
       <app-drawer id="drawer" >
         <app-header-layout has-scrolling-region>
 
@@ -102,7 +102,7 @@
             </div>
           </app-header>
 
-          <!-- nav menu -->
+    
           <paper-listbox
               selected="{{_pageData.page}}"
               attr-for-selected="name"
@@ -114,7 +114,7 @@
           </paper-listbox>
 
         </app-header-layout>
-      </app-drawer>
+      </app-drawer>-->
 
 
       <app-scrollpos-control
@@ -126,7 +126,6 @@
       <iron-pages selected="[[_pageData.page]]" attr-for-selected="name">
 
         <clients-list id="client-list-main"  username="" password="" name="home">
-          <paper-icon-button icon="app:menu" drawer-toggle></paper-icon-button>
         </clients-list>
 
         <div name="accompts">
@@ -194,314 +193,39 @@
 	  return null;
 	},
     _getTrajets: function(){
-      //todo trajet host
+	    //todo trajet host
         return [
             {
                 id: 0,
-                name: "Incarnoob frene",
-                describ: "bucheron",
-                trajet:{"trajet":{"fights":[],"recolte":[{"map":80217093,"dir":"left"},{"map":80216581,"dir":"bottom"},{"map":80216582,"dir":"right"},{"map":80217094,"dir":"top"}],"interactives":[],"moves":[],"bank":[]}    }
+                name: "Astrub piou + zaap",
+                describ: "Tape des piou a astrub,phoenix zaap et banque ",
+                trajet: {"trajet":{"fights":[{ "map": 84674566, "cell": 475 },{ "map": 84675078, "cell": 6 },{ "map": 84675077, "cell": 391 },{ "map": 84675589, "cell": 6 },{ "map": 84675588, "cell": 4 },{ "map": 84675587, "cell": 308 },{ "map": 84675075, "cell": 364 },{ "map": 84674563, "cell": 555 },{ "map": 84674564, "cell": 555 },{ "map": 84674565, "cell": 555 },{ "map": 84673546, "cell": 251 },{ "map": 84674058, "cell": 251 },{ "map": 84674570, "cell": 8 },{ "map": 84674569, "cell": 9 },{ "map": 84674568, "cell": 11 },{ "map": 84674567, "cell": 9 }]}}
             },
-            {
-              id: 1,
-              name: "Incarnoob zaap + phoenix",
-              describ: "tape des mob dans incranoob (passe par les deux zaap sud) avec phoenix",
-              trajet: {"trajet":{"fights":[{ "map": 80216580, "cell": 540 },{ "map": 80216581, "cell": 555 },{ "map": 80216582, "cell": 363 },{ "map": 80217094, "cell": 541 },{ "map": 80217095, "cell": 556 },{ "map": 80217096, "cell": 279 },{ "map": 80217608, "cell": 279 },{ "map": 80218120, "cell": 10 },{ "map": 80218119, "cell": 447 },{ "map": 80218631, "cell": 251 },{ "map": 80219143, "cell": 4 },{ "map": 80219142, "cell": 308 },{ "map": 80218630, "cell": 10 },{ "map": 80218629, "cell": 112 },{ "map": 80218117, "cell": 112 },{ "map": 80217605, "cell": 3 },{ "map": 80217604, "cell": 280 },{ "map": 80217092, "cell": 392 }]}}
-            },
-            {
-              id: 3,
-              name: "Astrub pious",
-              describ: "Pious + banque",
-              trajet: {"trajet":{"fights":[{"map":84674051,"dir":"left"},{"map":84673539,"dir":"left"},{"map":84673027,"dir":"left"},{"map":84672515,"dir":"left"},{"map":84804099,"dir":"bottom"},{"map":84804100,"dir":"right"},{"map":84672516,"dir":"right"},{"map":84673028,"dir":"right"},{"map":84673540,"dir":"right"},{"map":84674052,"dir":"top"}],"recolte":[],"interactives":[],"moves":[{"map":83887104,"sun":396},{"map":84674566,"dir":"left"},{"map":84674563,"dir":"left"},{"map":84674054,"dir":"top"},{"map":84674053,"dir":"top"}],"bank":[{"map":84673539,"dir":"right"},{"map":84673027,"dir":"right"},{"map":84672515,"dir":"right"},{"map":84804099,"dir":"right"},{"map":84804100,"dir":"right"},{"map":84672516,"dir":"right"},{"map":84673028,"dir":"right"},{"map":84673540,"dir":"right"},{"map":84674051,"dir":"bottom"},{"map":84674052,"dir":"bottom"},{"map":84674053,"dir":"bottom"},{"map":84674054,"dir":"right"},{"map":84674566,"interactive":465440,"skill":140242},{"map":83887104,"npc":0,"reply":259}]}}
-            },
-            {
-              id:4,
-              name : "Incarnam paysan test",
-              describ: "Recoltes paysans sur quelques maps d'Incarnoob",
-              trajet:   {
-                          "trajet": {
-                            "fights": [
-                            ],
-                            "recolte": [
-                              {
-                                "map": 80219138,
-                                "dir": "right"
-                              },
-                              {
-                                "map": 80219650,
-                                "dir": "left"
-                              }
-                            ],
-                            "interactives": [
-                            ],
-                            "moves": [
-                            ],
-                            "bank": [
-                            ]
-                          }
-                      }
-            },
-            {
-              id:5,
-              name : "Incarnam foret combat",
-              describ: "Tape des mobs foret",
-              trajet: {
-                        "trajet": {
-                          "recolte": [
-                          ],
-                          "fights": [
-                            {
-                              "map": 80216581,
-                              "dir": "right"
-                            },
-                            {
-                              "map": 80217093,
-                              "dir": "bottom"
-                            },
-                            {
-                              "map": 80217094,
-                              "dir": "left"
-                            },
-                            {
-                              "map": 80216582,
-                              "dir": "left"
-                            },
-                            {
-                              "map": 80216070,
-                              "dir": "left"
-                            },
-                            {
-                              "map": 80347654,
-                              "dir": "top"
-                            },
-                            {
-                              "map": 80347653,
-                              "dir": "right"
-                            },
-                            {
-                              "map": 80216069,
-                              "dir": "right"
-                            }
-                          ],
-                          "interactives": [
-                          ],
-                          "moves": [
-                          ],
-                          "bank": [
-                          {
-                            "map": 84674566,
-                            "interactive" : 465440,
-                            "skill" : 140242,
-                          },
-                          {
-                            "map": 83887104,
-                            "npc" : 0
-                          }
-                          ]
-                        }
-                      }
-            },
-            {
-              id:6,
-              name : "Astrub paysan blé + bank",
-              describ: "Test pour la banque + recolte",
-              trajet:     {
-                  "trajet": {
-              "fights": [
-              ],
-              "recolte": [
-              {
-                "map": 84675330,
-                "dir": "top"
-              },
-              {
-                "map": 84675331,
-                "dir": "top"
-              },
-              {
-                "map": 84675332,
-                "dir": "left"
-              },
-              {
-                "map": 84674820,
-                "dir": "top"
-              },
-              {
-                "map": 84674821,
-                "dir": "top"
-              },
-              {
-                "map": 84674822,
-                "dir": "right"
-              },
-              {
-                "map": 84675334,
-                "dir": "right"
-              },
-              {
-                "map": 84675846,
-                "dir": "bottom"
-              },
-              {
-                "map": 84675845,
-                "dir": "bottom"
-              },
-              {
-                "map": 84675844,
-                "dir": "bottom"
-              },
-              {
-                "map": 84675843,
-                "dir": "left"
-              }
-              ],
-              "interactives": [
-              ],
-              "moves": [
-                 {
-                "map": 83887104,
-                "sun" : 396
-                },
-                {
-                "map": 84674566,
-                "dir": "top"
-                },
-                {
-                  "map": 84674565,
-                  "dir": "top"
-                },
-                {
-                  "map": 84674564,
-                  "dir": "top"
-                },
-                {
-                  "map": 84674563,
-                  "dir": "top"
-                },
-                {
-                  "map": 84674562,
-                  "dir": "top"
-                },
-                {
-                  "map": 84674561,
-                  "dir": "top"
-                },
-                {
-                  "map": 84674560,
-                  "dir": "right"
-                },
-                {
-                  "map": 84675072,
-                  "dir": "top"
-                },
-                {
-                  "map": 84675329,
-                  "dir": "top"
-                },
-                {
-                  "map": 84675330,
-                  "dir": "top"
-                }
-              ],
-              "bank": [
-                {
-                  "map": 84674566,
-                  "interactive" : 465440,
-                  "skill" : 140242,
-                },
-                {
-                  "map": 83887104,
-                  "npc" : 0,
-                  "reply" : 259
-                },
-                {
-                "map": 84675330,
-                "dir": "bottom"
-                },
-                {
-                  "map": 84675331,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675332,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675333,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674820,
-                  "dir": "right"
-                },
-                {
-                  "map": 84674821,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674822,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675334,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675846,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675845,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675844,
-                  "dir": "left"
-                },
-                {
-                "map": 84674566,
-                "dir": "top"
-                },
-                {
-                  "map": 84674565,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674564,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674563,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674562,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674561,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84674560,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675072,
-                  "dir": "left"
-                },
-                {
-                  "map": 84675329,
-                  "dir": "bottom"
-                },
-                {
-                  "map": 84675330,
-                  "dir": "bottom"
-                }
-              ]
-            }
-            }//putain d'indenation on s'en blc(ici , seul ici xD)
-            }
+			{
+				id: 1,
+				name: "Incarnoob zaap + phoenix",
+				describ: "tape des mob dans incranoob (passe par les deux zaap sud) avec phoenix",
+				trajet: {
+                    80216580: { "cell": 540, action: "fight" }, 
+                    80216581: { "cell": 555, action: "fight" },
+                    80216582: { "cell": 363, action: "fight" },
+                    80217094: { "cell": 541, action: "fight" },
+                    80217095: { "cell": 556, action: "fight" },
+                    80217096: { "cell": 279, action: "fight" },
+                    80217608: { "cell": 279, action: "fight" },
+                    80218120: { "cell": 10, action: "fight" },
+                    80218119: { "cell": 447, action: "fight" },
+                    80218631: { "cell": 251, action: "fight" },
+                    80219143: { "cell": 4, action: "fight" },
+                    80219142: { "cell": 308, action: "fight" },
+                    80218630: { "cell": 10, action: "fight" },
+                    80218629: { "cell": 112, action: "fight" },
+                    80218117: { "cell": 112, action: "fight" },
+                    80217605: { "cell": 3, action: "fight" },
+                    80217604: { "cell": 280, action: "fight" },
+                    80217092: { "cell": 392, action: "fight" }
+				}
+			}
         ];
     },
 

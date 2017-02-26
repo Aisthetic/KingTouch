@@ -4,6 +4,7 @@
 <link rel="import" href="../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../bower_components/iron-icons/maps-icons.html">
 <link rel="import" href="../bower_components/iron-icons/communication-icons.html">
+<link rel="import" href="../bower_components/iron-icons/av-icons.html">
 
 <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
 <link rel="import" href="../bower_components/paper-menu-button/paper-menu-button.html">
@@ -94,17 +95,21 @@
       }
 
     }
+        
 
     </style>
 	<!-- select trajet dialog -->
-	<paper-dialog style="max-width:50vw; max-height:50vh;" modal name="selecttrajet" id="selecttrajet">
+	<paper-dialog  modal name="selecttrajet" id="selecttrajet">
 		<h2>Charger un trajet</h2>
-        <template style="overlow-y:scroll;" is="dom-repeat" items="{{trajets}}">
+        <!--template style="overlow-y:scroll;" is="dom-repeat" items="{{trajets}}">
             <div class="item">
                 <p><span style="font-weight:bold">{{item.name}}</span><br>{{item.describ}}</p>
                 <paper-fab on-tap="loadTrajet" id="{{item.id}}" style="position: absolute;width: 40px;height: 40px;font-size: 12px;top: auto;right: -20px;margin-top: -55px;" icon="icons:arrow-forward"></paper-fab>
             </div>
-        </template>
+        </template>-->
+        <div style="padding: 40px;margin: 20px;border: 5px #3c3c3c dashed;" class="drop_zone">
+            <span>Glisser / Déposer le trajet ici</span>
+        </div>
         <div class="buttons">
 			<paper-button dialog-dismiss>Annuler</paper-button>
 		</div>
@@ -139,6 +144,8 @@
             </template>
         </div>
         <div class="buttons">
+            <paper-button raised on-tap="inventoryRemoveAll">Retirer tout</paper-button>
+            <paper-button raised on-tap="sellInventoryRequest">Actualisation</paper-button>
             <paper-button dialog-dismiss>Annuler</paper-button>
             <paper-button raised on-tap="saveinventory">Enregistrer</paper-button>
 		</div>
@@ -155,9 +162,9 @@
                         <paper-dropdown-menu>
                           <paper-listbox selected="{{item.type}}" class="dropdown-content">
                             <paper-item id="0">Sur un ennemi</paper-item>
-                            <paper-item id="1">Sur moi</paper-item>
-                            <paper-item id="2">Invoquation</paper-item>
-                            <paper-item id="3">Sur moi proche d'un ennemi</paper-item>
+                            <paper-item id="2">Sur moi</paper-item>
+                            <paper-item id="6">A cote de moi</paper-item>
+                            <paper-item id="1">Sur moi proche d'un ennemi</paper-item>
                           </paper-listbox>
                         </paper-dropdown-menu>
                     </p>
@@ -171,17 +178,26 @@
 		</div>
 	</paper-dialog>
 	<!-- chat dialog -->
-	<paper-dialog modal name="flooddialog" id="flooddialog">
-        <div style="width:90vw; height:60vh">
-            <div id="console-input">{{consoleText}}</div>
+	<paper-dialog modal name="gatherdialog" id="gatherdialog">
+        <h2>Configuration de la récolte</h2>
+        <div style="max-height:70vh; overflow-x:hidden; overflow-y:scroll">
+            <template is="dom-repeat" items="{{jobsInfo}}">
+                <div class="item">
+                    <p>
+                        <paper-checkbox checked="{{item.enlabed}}" >{{item.name}}</paper-checkbox>
+                    </p>
+                </div>
+            </template>
         </div>
         <div class="buttons">
+            <paper-button dialog-dismiss>Annuler</paper-button>
+            <paper-button raised on-tap="savejobs">Enregistrer</paper-button>
 		</div>
 	</paper-dialog>
       
       
     <!-- main panel -->
-    <div style="position:fixed;width:100vw;left:0;right:0;height:350px; background-color:#aa0000;"></div>
+    <div style="position:fixed;width:100vw;left:0;right:0;height:200px; background-color:#aa0000;"></div>
     <app-header-layout>
       <app-header id="header" >
         <!-- top toolbar -->
@@ -210,62 +226,73 @@
                 <paper-button raised on-tap="showUpgradeSpells" style="float: right; margin-top: 15px;" class="red">Sorts a faire evoluer</paper-button>
           </div>
         </paper-card>
-        <paper-fab raised style="right:180px;" on-tap="showInventoryDialog" icon="icons:archive"></paper-fab>
-        <paper-fab raised style="right:110px;" on-tap="showFloodDialog" icon="icons:speaker-notes"></paper-fab>
-        <paper-fab raised on-tap="showLoadTrajet" icon="maps:directions"></paper-fab>
+        <paper-fab raised style="right:250px;" on-tap="showInventoryDialog" icon="icons:archive"></paper-fab>
+        <paper-fab raised style="right:180px;" on-tap="showGatherDialog" icon="icons:group-work"></paper-fab>
+        <paper-fab raised style="right:110px;" on-tap="showLoadTrajet" icon="maps:directions"></paper-fab>
+        <paper-fab raised style=""             on-tap="startStopTrajet" icon="{{stateIcon}}"></paper-fab>                                                                            
       </div>
       <!-- fight config card -->
       <div class="card-container">
 		 <paper-card heading="Configuration des combats">
           <div class="card-content">
-		  
-			<label id="label1">Tactique de combat : </label>
-			<paper-radio-group selected="{{selectedFightSpec}}" aria-labelledby="label1">
-			  <paper-radio-button name="0">Agressife</paper-radio-button>
-			  <paper-radio-button name="1">Fuyard</paper-radio-button>
-			  <paper-radio-button name="2" disabled>Neutre</paper-radio-button>
-			</paper-radio-group>
-			</br>
-			<paper-dropdown-menu label="Type d'ia">
-			  <paper-listbox selected="{{fightMode}}" class="dropdown-content">
-				<paper-item id="0" name="default">Normale</paper-item>
-				<paper-item id="1" name="sacrieur">Sacrieur eau</paper-item>
+            <paper-dropdown-menu label="Type d'ia">
+			  <paper-listbox selected="{{selectedFightSpec}}" class="dropdown-content">
+				<paper-item id="0">Agressife</paper-item>
+				<paper-item id="1">Fuyard</paper-item>
 			  </paper-listbox>
 			</paper-dropdown-menu>
             <paper-dropdown-menu label="Placement en debut de combat">
-			  <paper-listbox selected="{{fightSpec}}" class="dropdown-content">
+			  <paper-listbox selected="{{selectedFightPlacement}}" class="dropdown-content">
 				<paper-item id="0">Proche des ennemies</paper-item>
 				<paper-item id="1">Loin des ennemies</paper-item>
 				<paper-item id="2">Ne rien faire</paper-item>
 			  </paper-listbox>
 			</paper-dropdown-menu>
             <paper-button raised on-tap="showSpellsEdit" class="red btn-right" >Pile de sorts</paper-button>
-             </br>
             <div style="display:inline-block;width:50%;"><paper-input label="Nombre minimum de monstres par combat" min-value="1" max-value="8" value="{{minFighters}}" type="number"></paper-input></div>
             <div style="display:inline-block;width:49%;"><paper-input label="Nombre maximum de monstres par combat" min-value="1" max-value="8" value="{{maxFighters}}" type="number"></paper-input></div>
-
+            <div style="display:inline-block;width:50%;"><paper-input label="Niveau minimum des combats" min-value="1" max-value="99999" value="{{fightMinLevel}}" type="number"></paper-input></div>
+            <div style="display:inline-block;width:49%;"><paper-input label="Niveau maximum des combats" min-value="1" max-value="10000" value="{{fightMaxLevel}}" type="number"></paper-input></div>
           </div>
         </paper-card>
-        <paper-fab raised style="right:110px;" on-tap="" icon="communication:portable-wifi-off"></paper-fab>
-        <paper-fab raised on-tap="" icon="icons:visibility-off"></paper-fab>
       </div>
-      <!-- stats card -->
-       <div class="card-container">
-		 <paper-card heading="Artisanat et récolte">
-          <div class="card-content">
-		  
-          </div>
-        </paper-card>
-        <paper-fab raised on-tap="refreshStats" icon="icons:cached"></paper-fab>
-      </div>
-
     </app-header-layout>
 
   </template>
 
   <script>
       
-var consoleRunning = false;
+  var consoleRunning = false;
+  var sellingState = false;
+  var ready = true;
+    
+  function handleFileSelect(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+
+    var files = evt.dataTransfer.files; // FileList object.
+    var reader = new FileReader();  
+    reader.onload = function(event) {            
+         try{
+            var obj = JSON.parse(event.target.result);
+             if(typeof obj != "undefined"){
+                 console.log("Trajet sended !");
+                 sendToBot("trajet-load",{trajet: obj});
+             }
+         }
+        catch(e){
+            alert("Le trajet n'est pas valide !");
+        }
+    }        
+    reader.readAsText(files[0],"UTF-8");
+  }
+
+  function handleDragOver(evt) {
+    evt.stopPropagation();
+    evt.preventDefault();
+    evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+  }
+
 
   Polymer({
 
@@ -282,12 +309,6 @@ var consoleRunning = false;
             },
         },
         
-        
-        fightMode:{
-          type: Object,
-          value: "0",
-          observer: "fightModeChanged",
-        },
         minFighters:{
             value: "0",
             observer: "minFightersChanged"
@@ -304,8 +325,18 @@ var consoleRunning = false;
             value:"0",
             observer: "selectedFightSpecChange"
         },
-        
-        
+        selectedFightPlacement:{
+            value:"0",
+            observer: "selectedFightPlacementChange"
+        },
+        fightMaxLevel:{
+            value:"0",
+            observer: "fightMaxLevelChange"
+        },
+        fightMinLevel:{
+            value:"1",
+            observer:"fightMinLevelChange"
+        },
         spells:{
             type: Array,
             value: []
@@ -324,7 +355,18 @@ var consoleRunning = false;
 			notify: true,
 			reflectToAttribute: true,
             value: []
-        }
+        },
+        
+        stateIcon: {
+            type: String,
+            observe:true,
+            notify:true,
+        },
+        
+        jobsInfo: {
+            type: Object,
+            reflectToAttribute: true
+        },
     },
       
     ready: function(){
@@ -332,19 +374,64 @@ var consoleRunning = false;
             this.set("client",client.detail);
             this.set("maxFighters",client.detail.config.fight.maxFighter);
             this.set("minFighters",client.detail.config.fight.minFighter);
-            this.set("selectedFightSpec",client.detail.config.fight.mode);
-            //this.set("selectedCharacteristic",client.detail.config.tasks.selectedCharacteristic);
-            if(client.detail.config.fight.type === "default"){
-                this.set("fightMode",0);
+            this.set("selectedFightSpec",client.detail.config.fight.mode.toString());
+            this.set("selectedCharacteristic",client.detail.config.tasks.selectedCharacteristic);
+            this.set("selectedFightPlacement",client.detail.config.fight.placement.toString());
+            this.set("fightMaxLevel",client.detail.config.fight.maxLevel.toString());
+            this.set("fightMinLevel",client.detail.config.fight.minLevel.toString());
+            if(this.client.config.trajet.running === true){
+                this.set("stateIcon","av:pause-circle-filled");
             }
-            else if (client.detail.config.fight.type === "sacri"){
-                this.set("fightMode",1);
+            else{
+                this.set("stateIcon","av:play-circle-filled");
             }
         });
+        
+    },
+      
+    
+    savejobs: function(){
+        var updatedList = [];
+        for(var i = 0;i<this.jobsInfo.length;i++){
+            var f = this.jobsInfo[i];
+            if(typeof f.enlabed != "undefined"){
+                if(f.enlabed === true){
+                    updatedList.push(f);
+                }
+            }
+        }
+        console.log("Sending gather update to server ...");
+        sendUI("gather-update",updatedList);
+        gatherdialog.close();
+    },
+      
+    startStopTrajet: function(){
+     if(this.client.config.trajet.running === true){
+            sendToBot("trajet-stop");
+            this.set("stateIcon","av:play-circle-filled");
+            this.client.config.trajet.running= false;
+        }
+        else{
+            sendToBot("trajet-start");
+            this.set("stateIcon","av:pause-circle-filled");
+            this.client.config.trajet.running = true;
+        }    
+    },
+      
+    fightMinLevelChange: function(){
+        sendToBot("update-fight-min-level",parseInt(this.fightMinLevel));
+    },
+      
+    fightMaxLevelChange: function(){
+        sendToBot("update-fight-max-level",parseInt(this.fightMaxLevel));
+    },
+    
+    selectedFightPlacementChange: function(){
+        sendToBot("update-fight-placement",parseInt(this.selectedFightPlacement));
     },
         
     selectedFightSpecChange: function(){
-        sendToBot("set-ia-mode",parseInt(this.selectedFightSpec));
+        sendToBot("update-fight-mode",parseInt(this.selectedFightSpec));
     },
       
     minFightersChanged: function(){
@@ -356,20 +443,16 @@ var consoleRunning = false;
     },
       
     selectedCharacteristicChanged: function(){
-      sendToBot("update-selected-characteristic",this.selectedCharacteristic)  
+      sendToBot("update-selected-characteristic",this.selectedCharacteristic);
     },
       
-    fightModeChanged: function(){
-        var fm;
-        switch(this.fightMode){
-            case 1:
-                fm="sacri";
-                break;
-            default:
-                fm="default";
-        }
-        sendToBot("set-ia-type",fm);
-        console.log("ia set to "+fm);
+    sellInventoryRequest: function(){
+      if(sellingState === true){ return; }
+      sellingState= true;
+      wrapCurrentBot("inventory-done",()=>{
+          sellingState = false;
+      });
+      sendToBot("sell-inventory-request");  
     },
       
     savespells: function(){
@@ -378,11 +461,24 @@ var consoleRunning = false;
     },
 
     showLoadTrajet: function(){
+        var dropZone = document.getElementsByClassName('drop_zone')[0];
+        dropZone.addEventListener('dragover', handleDragOver);
+        dropZone.addEventListener('drop', hd);
+        function hd(e){
+            dropZone.removeEventListener('dragover',handleDragOver);
+            dropZone.removeEventListener('drop',hd);
+            handleFileSelect(e);
+            selecttrajet.close();
+        }
         selecttrajet.open();
     },
 
-    showFloodDialog: function(){
-       
+    showGatherDialog: function(){
+        wrapCurrentBot("jobs-update",(result)=>{
+            this.set("jobsInfo",result);
+            gatherdialog.open();
+        });
+        sendToBot("jobs-request");
     },
       
       
@@ -393,6 +489,17 @@ var consoleRunning = false;
         });
         sendToBot("spells-request");
         console.log("Request server for spells list ...");
+    },
+      
+    inventoryRemoveAll: function(){//todo afficher un dialog modal (fair sa pour toutes les action longue) sa evite que l'user fasse du caca pendans le chargement
+        if(!ready){ 
+            return;
+        }
+        ready = false;
+        wrapCurrentBot("sell-remove-all-request",()=>{
+            ready = true;
+        });
+        sendToBot("sell-remove-all-request");
     },
       
     saveinventory: function(){

@@ -171,8 +171,7 @@
                 </template>
             </div>
             <div class="buttons">
-                <paper-button>Charger</paper-button>
-                <paper-button>Groupe</paper-button>
+                <paper-button raised on-tap="loadParty">Charger un groupe</paper-button>
             </div>
         </div>
 	</paper-dialog>
@@ -199,8 +198,8 @@
         --><div  class="card-container">
             <paper-card >
               <div   class="card-content">
-                              <paper-fab  on-tap="unloadClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:60px;" icon="icons:close" title="Deconnecter le client"></paper-fab>
-            <a href="#/detail/{{item.id}}"><paper-fab  on-tap="selectClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:10px;" icon="icons:arrow-forward" title="Infos sur le client"></paper-fab></a>
+                <paper-fab  on-tap="unloadClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:60px;" icon="icons:close" title="Deconnecter le client"></paper-fab>
+                <a href="#/detail/{{item.id}}"><paper-fab  on-tap="selectClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:10px;" icon="icons:arrow-forward" title="Infos sur le client"></paper-fab></a>
                 <h2>{{item.characterInfos.name}}<span style="font-size:12px; color:gray;"> <span></span>Niveau {{item.characterInfos.level}}</span></h2>
 				<p><span>Points de vie</span></p>
 				<paper-progress value="{{item.stats.lifePoints}}" min="0" max="{{stats.maxLifePoints}}" class="red"></paper-progress>

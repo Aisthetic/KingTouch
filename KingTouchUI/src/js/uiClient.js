@@ -1,4 +1,5 @@
 const UI_SERVER = "ws://localhost:5555/";
+const INDEX_URL = "http://localhost:8080/";
 var wsClient; 
 var selectedClient;
 function setClient(client){
@@ -42,7 +43,7 @@ function connectUI()
 	{ 
 		console.log("Connection is closed..."); 
         alert("Disconnected from server !");
-		reconnect();
+		window.location.href = INDEX_URL;
 	};
 }
 
