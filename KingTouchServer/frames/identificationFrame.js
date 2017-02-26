@@ -4,6 +4,7 @@ var jsonfile = require("jsonfile");
 var keys;
 
 exports.IdentificationFrame = function(client){
+    
     this.client = client;
     client.on("register-request",(m)=>{
         console.log("Bot request for registering ...");

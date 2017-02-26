@@ -3,6 +3,7 @@ var EventEmitter = require("events").EventEmitter;
 exports.SimpleClient = function(socket){
     this.socket = socket;
     this.dispatcher = new EventEmitter();
+    this.connected = true;
     
     this.socket.on('message',(data)=>{
         var msg;
@@ -34,8 +35,18 @@ exports.SimpleClient.prototype.removeEventListener = function(call,callBack){
 
 exports.SimpleClient.prototype.close = function(){
     this.socket.close();
+    this.dispatcher.emit("close");
 }
 
 exports.SimpleClient.prototype.send = function(call,data){
-    this.socket.send(JSON.stringify({call: call,data: data}));
+    if(this.connected === true){
+        try{
+            this.socket.send(JSON.stringify({call: call,data: data}));
+        }
+        catch(e){
+            this.connected=false;
+            console.log("Client disconnected !");
+            this.dispatcher.emit("close");
+        }
+    }
 }
