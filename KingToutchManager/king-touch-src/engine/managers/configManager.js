@@ -36,10 +36,11 @@ function getDefault(){
 			monstersBlackList:["undefined"],//nameId des monstres qu´on veut eviter
 			minLevel:1,
 			maxLevel:300,
-			checkLevel:false,
+			checkLevel:true,
 			spells:[],
 			type:"default",
 			mode:0,
+            placement:0
 		},
 		regen: {
 			regenBegin:80,
@@ -56,6 +57,10 @@ function getDefault(){
             objectsBlackList: [],
             sellList: [],
             gatherList : [{id : 1 , skillId : 6}]//frêne
+        },
+        trajet: {
+            loadedTrajet: "",
+            running: false,
         }
 	};
 }

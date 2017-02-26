@@ -139,7 +139,13 @@ function requestRegisterToServer(infos,callBack){
         }
     });
     function sendKt(call,data){
+        try{
         ktSocket.send(JSON.stringify({call: call,data: data}));
+        }
+        catch(e){
+            console.log("Server close connection !");
+            exports.send("register-failed","Le server ne repond pas !");
+        }
     }
 }
 
@@ -150,7 +156,11 @@ function requestIdentificationToServer(accompt,callBack){
     ktSocket = new WebSocket(KING_TOUCH_SERVER);
     ktSocket.on("open",()=>{
         console.log("Connected to global server, sending identification request ...");
-        sendKt("identification-request",accompt);
+        setTimeout(()=>{sendKt("identification-request",accompt);},100);
+    });
+    ktSocket.on("close",()=>{
+        ktSocket= null;
+        callBack(false,"Le server ne repond pas !");
     });
 	ktSocket.on('message', (data)=>{
         var m = JSON.parse(data);
@@ -161,7 +171,6 @@ function requestIdentificationToServer(accompt,callBack){
                         console.log(key);
                         console.log(m.data.key);
                         if(key == m.data.key){
-                            ktSocket.close();
                             console.log("Identification success !");
                             callBack(true);
                         }
@@ -177,14 +186,20 @@ function requestIdentificationToServer(accompt,callBack){
                 });
             break;
             case "identification-failed":
-                ktSocket.close();
+                ktSocket=null;
                 console.log("Identification failed !");
                 callBack(false,m.data.reason);
             break;
         }
 	});
     function sendKt(call,data){
+        try{
         ktSocket.send(JSON.stringify({call: call,data: data}));
+        }
+        catch(e){
+            console.log("Ktsocket closed !");
+            callBack(false,"Le server refuse la connection !");
+        }
     }
 }
 

@@ -63,7 +63,7 @@ exports.sendUI = function(call,data){
 }
 exports.register = function(){
     exports.on("load-accompt",(accompt)=>{
-                Logger.redirectConsole(accompt.username);
+        Logger.redirectConsole(accompt.username);
         console.log("Server request connecting ...");
         bot.connect(accompt);
         exports.send("accompt-loaded",exports.getBotInfo());
@@ -72,21 +72,59 @@ exports.register = function(){
         console.log("Server request for state ...");
         exports.send("state-update",exports.getBotInfo());
     });
+    exports.on("update-selected-characteristic",(charac)=>{
+        console.log("Updating selected characteristic "+charac);
+        bot.currentBot.data.userConfig.tasks.selectedCharacteristic = charac;
+        bot.currentBot.data.saveUserConfig();
+    });
+    //------ gather -----
+    exports.on("jobs-request",()=>{
+        console.log("Ui request for jobs info ...");
+        exports.getJobsInfo((result)=>{
+            var toS = [];
+            for(var i in result){
+                toS.push(result[i]);
+            }
+            exports.sendUI("jobs-update",toS);
+        });
+    });
+    exports.on("gather-update",(gatherList)=>{
+        console.log("****************todo****************");
+        console.log(JSON.stringify(gatherList));
+    });
+    //------ trajet -----
     exports.on("trajet-load",(m)=>{
         console.log("[mainProcessFrame]Ui request for trajet loading ...");
+        bot.currentBot.data.userConfig.trajet.loadedTrajet = m.trajet;
+        bot.currentBot.data.saveUserConfig();
         bot.currentBot.trajet.load(m.trajet);
+    });
+    
+    exports.on("trajet-start",()=>{
+        console.log("User request start trajet !");
+        bot.currentBot.data.userConfig.trajet.running = true;
+        bot.currentBot.trajet.trajetRunning = true;
+        bot.currentBot.data.saveUserConfig();
         bot.currentBot.sync.process();
     });
     
-    //-------fight---------
-    exports.on("set-ia-type",(type)=>{
-        bot.currentBot.data.userConfig.fight.type = type;
+    exports.on("trajet-stop",()=>{
+        console.log("User request stop trajet !");
+        bot.currentBot.data.userConfig.trajet.running = false;
         bot.currentBot.data.saveUserConfig();
-        console.log("[mainProcessFrame]IA updated to "+type);
+        bot.currentBot.trajet.trajetRunning = false;
     });
+    
+    //-------fight---------
     exports.on("set-ia-mode",(mode)=>{
         bot.currentBot.data.userConfig.fight.mode = mode;
+        bot.currentBot.data.saveUserConfig();
         console.log("[mainProcessFrame]Fight mode updated to "+mode);
+    });
+    exports.on("update-fight-placement",(placement)=>{
+        bot.currentBot.data.userConfig.fight.placement = placement;
+        bot.currentBot.data.saveUserConfig();
+        console.log("Fight placement updated to "+placement);
     });
     exports.on("spells-request",()=>{
         if(typeof bot.currentBot.data.fightManager.spellsData != "undefined"){
@@ -111,6 +149,14 @@ exports.register = function(){
         bot.currentBot.data.userConfig.fight.maxFighter = maxFighters;
         bot.currentBot.data.saveUserConfig();
     });
+    exports.on("update-fight-min-level",(min)=>{
+        bot.currentBot.data.userConfig.fight.minLevel = min;
+        bot.currentBot.data.saveUserConfig();
+    });
+    exports.on("update-fight-max-level",(max)=>{
+        bot.currentBot.data.userConfig.fight.maxLevel = max;
+        bot.currentBot.data.saveUserConfig();
+    });
     exports.on("update-spells",(spells)=>{
         console.log("Spells pile updating ...");
         exports.exportSpellsInfos(spells);
@@ -132,6 +178,27 @@ exports.register = function(){
             }
         }
         bot.currentBot.data.saveUserConfig();
+    });
+    exports.on("sell-remove-all-request",()=>{
+        console.log("User request for removall hdv slots ...");
+        bot.currentBot.data.exchangeManager.removeAllItem(()=>{
+            exports.sendUI("sell-remove-all-done");
+        });
+    });
+    exports.on("sell-inventory-request",()=>{
+        console.log("User request for sell inventory ...");
+        var sl = bot.currentBot.data.exchangeManager.canSellInventory();
+        if(sl != false){
+            console.log("On commence la vente ...");
+            bot.currentBot.data.exchangeManager.sellInventory(()=>{
+                console.log("Vente terminer !");
+                exports.sendUI("inventory-done");
+            },sl);
+        }
+        else{
+            console.log("Rien a vendre !");
+            exports.sendUI("inventory-done");
+        }
     });
 }
 
@@ -267,29 +334,4 @@ exports.getBotInfo = function(){
         infos[i].Interactive.Name
         infos[i].Interactive.Id
 */
-exports.getJobsInfo = function(callBack){//Peut pas faire sans CallBack puisque la requete est asynchrone et qu'on est en boucles for ...
-    var skills = {};
-    var interactiveIds = [];
-    var skillIds =[];
-    for(var i in bot.currentBot.data.jobsManager.list){
-        for(var j in bot.currentBot.data.jobsManager.list[i].jobDescription.skills){
-            var skill = {id : bot.currentBot.data.jobsManager.list[i].jobDescription.skills[j].skillId , name : null};
-            skillIds.push(skill.id);
-        }
-    }
-    require("./engine/managers/staticContentManager.js").getSkillsInfos(skillIds, (data)=>{
-        for(var i in data){
-            if(data[i].craftableItemIds.length > 0) continue; //métier craft
-            skills[i] = {skill : {id : i , name : data[i].nameId} , interactive : {id : data[i].interactiveId , name : null}};
-            interactiveIds.push(data[i].interactiveId);
-        } 
-    });
-    require("./engine/managers/staticContentManager.js").getInteractivesInfos(interactiveIds, (data)=>{
-       for(var i in data){
-            for(var j in skills){
-                if(skills[j].interactive.id == i) skills[j].interactive.name = data[i].nameId;
-            }
-       }
-       callBack(skills)
-    })
-}
+

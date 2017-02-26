@@ -110,6 +110,7 @@ exports.Sync.prototype.process = function(){
 	//normale execution and regen
 	//--
 	else {
+
         
         if(this.checkTasks(()=>{this.process()}) === true){
            console.log("[Sync]On attends l'execution des taches ...");
@@ -168,11 +169,7 @@ exports.Sync.prototype.checkTasks = function(callBack){
         return true;
     }
     
-    if(this.bot.data.exchangeManager.canSellInventory()){
-        console.log("[Sync]On commence la vente ...");
-        this.bot.data.exchangeManager.sellInventory(callBack);
-        return true;
-    }
+
     
     return false;
 }

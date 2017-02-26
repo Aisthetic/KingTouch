@@ -43,8 +43,7 @@ exports.ProcessFrame.prototype.loadSocket = function(processConnection){
 
 exports.ProcessFrame.prototype.send = function(call,data){
     if(this.loaded === true){
-	   try {this.processConnection.send(JSON.stringify({ call : call, data : data }));}
-       catch(e){console.log("---------------------ERREUR SUR SEND PROCESSFRAME !--------------------)")}
+	   this.processConnection.send(JSON.stringify({ call : call, data : data }));
     }
     else{
         console.log("Process not connected !");

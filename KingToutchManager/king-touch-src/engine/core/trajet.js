@@ -14,10 +14,9 @@ exports.Trajet = function(bot){
 	var self=this;
 }
 exports.Trajet.prototype.load = function(trajet){
-	this.currentTrajet = trajet
+	this.currentTrajet = trajet;
 	this.bot.data.userConfig.trajet = trajet;
 	this.hasTrajet=true;
-	this.trajetRunning=true;
 }
 exports.Trajet.prototype.stop = function(){
 	console.log("Trajet arrêté .");
@@ -38,7 +37,10 @@ exports.Trajet.prototype.startPhoenix = function(){
 }
 exports.Trajet.prototype.trajetExecute = function(){
 	var self = this;
-	if(this.trajetOnExecution) return  console.log("Trajet already on execution ...");//Moche mais pas le choix , impossible de le faire d'une autre façon en JS...
+    console.log(JSON.stringify(this.currentTrahet));
+    if(typeof this.currentTrajet == "undefined") return  console.log("Aucun trajet !");
+    if(typeof this.currentTrajet.trajet == "undefined") return   console.log("Mauvais trajet !");
+	//if(this.trajetOnExecution) return  console.log("Trajet already on execution ...");//Moche mais pas le choix , impossible de le faire d'une autre façon en JS...
 	this.trajetOnExecution = true;
     if(this.bot.data.context != "ROLEPLAY" || typeof this.bot.data.actorsManager.actors[this.bot.data.characterInfos.id] == "undefined"){
         console.log("**Trajet execution canceled !**");

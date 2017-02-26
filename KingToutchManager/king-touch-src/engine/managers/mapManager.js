@@ -5,6 +5,7 @@ const CHANGE_MAP_MASK_TOP    = 32 | 64 | 128;
 var getMapPointFromCellId = require("./../core/utils/pathfinding.js").getMapPoint;
 var EventEmitter = require("events").EventEmitter;
 var request = require("request");
+var staticContentManager = require("./staticContentManager.js");
 var jsonFile = require("jsonFile");
 
 exports.MapManager = function(bot){
@@ -91,8 +92,17 @@ exports.MapManager.prototype.update = function(map,mapId){
 			}
 		}
 	}
-	console.log("-----------Map updated---------------"),
-	this.dispatcher.emit("loaded",map);
+	console.log("-----------Map updated---------------");
+    staticContentManager.getMapPosition([this.mapId],(mapPositions)=>{
+        if(typeof mapPositions[this.mapId] == "undefined"){
+            console.log("Cant read map position for "+mapId);
+        }
+        else{
+            this.coords = { x: mapPositions[this.mapId].posX, y: mapPositions[this.mapId].posY }
+            console.log("Current map position ["+this.coords.x+","+this.coords.y+"]");
+        }
+	    this.dispatcher.emit("loaded",map);
+    });
 };
 exports.MapManager.prototype.refresh = function(){
 	this.bot.connection.sendMessage('MapInformationsRequestMessage', { mapId: this.mapId });

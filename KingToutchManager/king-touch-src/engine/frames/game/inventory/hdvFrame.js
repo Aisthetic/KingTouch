@@ -4,7 +4,7 @@ var bot;
 exports.openHdv = function(bot_,hasBuyer,callBack){//todo peutetre qu'on recoie des erreur en combat ou quoi
     bot=bot_;
     wrap = EventWrapper(bot.connection.dispatcher,(err,result)=>{
-        if(typeof err == "undefined"){
+        if(err == null){
             console.log("Receive hdv categories infos ...");
             callBack(result);
         }
@@ -14,10 +14,10 @@ exports.openHdv = function(bot_,hasBuyer,callBack){//todo peutetre qu'on recoie 
     });
     
     wrap("ExchangeStartedBidBuyerMessage",(m)=>{
-        wrap.done(null,m.objectsInfos);
+        wrap.done(null,m);
     });
     wrap("ExchangeStartedBidSellerMessage",(m)=>{
-        wrap.done(null,m.types);
+        wrap.done(null,m);
     });
     
     if(hasBuyer === true){
@@ -33,35 +33,36 @@ exports.openHdv = function(bot_,hasBuyer,callBack){//todo peutetre qu'on recoie 
 exports.openType = function(type,callBack){
     checkOpened();
     wrap = EventWrapper(bot.connection.dispatcher,(err,result)=>{
-        if(typeof err != "undefined"){
+        if(err != null){
             console.trace(err);
         }
         callBack(result);
     });
     
     wrap("ExchangeTypesExchangerDescriptionForUserMessage",(m)=>{
+        console.log("Categorie opened !");
         wrap.done(null,m.typeDescription);
     });
-    
     bot.connection.sendMessage("ExchangeBidHouseTypeMessage",{type: type});
 }
 
-exports.getItemDescriptions = function(objectGID,callback){
+exports.getItemDescriptions = function(objectGID,callBack){
     checkOpened();
     wrap = EventWrapper(bot.connection.dispatcher,(err,result)=>{
-        if(typeof err != "undefined"){
+        if(err != null){
             console.trace(err);
         }
         callBack(result);
     });
     
     wrap("ExchangeTypesItemsExchangerDescriptionForUserMessage",(m)=>{
-        console.log("Item price recived !");
-        wrap.done(null,itemTypeDescriptions);
+        console.log("Item description recived !");
+        wrap.done(null,m);
     });
     
     wrap("BasicNoOperationMessage",(m)=>{
-        wrap.done("Cant find item !",null);
+       console.log("No operation received !");
+        // wrap.done("Cant find item !",null);
     });
 
     bot.connection.sendMessage("ExchangeBidHouseListMessage",{id: objectGID});
@@ -73,6 +74,18 @@ exports.closeHdv = function(){
     bot=null;
 }
 
+exports.removeItem = function(obj, callBack){
+    wrap = EventWrapper(bot.connection.dispatcher,(result)=>{
+        callBack(result);
+    });
+    
+    wrap("ExchangeBidHouseItemRemoveOkMessage",()=>{
+        wrap.done(true);
+    });
+    
+    bot.connection.sendMessage("ExchangeObjectMoveMessage",{objectUID: obj.objectUID, quantity: obj.quantity - (obj.quantity * 2), price: obj.objectPrice})
+}
+
 exports.sellItem = function(objectUID,quantity,price,callBack){
     wrap = EventWrapper(bot.connection.dispatcher,(result)=>{
         callBack(result);
@@ -81,11 +94,14 @@ exports.sellItem = function(objectUID,quantity,price,callBack){
     var result = false;
     
     wrap("ExchangeBidHouseItemAddOkMessage",(m)=>{
+        console.log("Item describ received !");
         result = true;
+        wrap.done();
     });
     
     wrap("BasicNoOperationMessage",(m)=>{
-        wrap.done(result);
+     //   wrap.done(result);
+        console.log("No operation received !");
     });
     
     bot.connection.sendMessage("ExchangeObjectMovePricedMessage",{ objectUID: objectUID, quantity: quantity, price: price });
@@ -93,7 +109,9 @@ exports.sellItem = function(objectUID,quantity,price,callBack){
 
 
 function checkOpened(){
-    if(typeof bot != "undefined"){ 
+    if(typeof bot == "undefined"){ 
         console.trace("Hdv not opened !");
+        return false;
     }
+    return true;
 }
