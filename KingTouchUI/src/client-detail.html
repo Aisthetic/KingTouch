@@ -269,10 +269,20 @@
   function handleFileSelect(evt) {
     evt.stopPropagation();
     evt.preventDefault();
+
     var files = evt.dataTransfer.files; // FileList object.
     var reader = new FileReader();  
     reader.onload = function(event) {            
-      sendToBot("trajet-load",{trajet: event.target.result});
+         try{
+            var obj = JSON.parse(event.target.result);
+             if(typeof obj != "undefined"){
+                 console.log("Trajet sended !");
+                 sendToBot("trajet-load",{trajet: obj});
+             }
+         }
+        catch(e){
+            alert("Le trajet n'est pas valide !");
+        }
     }        
     reader.readAsText(files[0],"UTF-8");
   }
@@ -297,6 +307,10 @@
             value: function(){
                 return                                                                                               
             },
+        },
+        
+        loadingGroupeStr:{
+          value:"Charger un groupe"  
         },
         
         minFighters:{
@@ -379,34 +393,7 @@
         
     },
       
-    
-    savejobs: function(){
-        var updatedList = [];
-        for(var i = 0;i<this.jobsInfo.length;i++){
-            var f = this.jobsInfo[i];
-            if(typeof f.enlabed != "undefined"){
-                if(f.enlabed === true){
-                    updatedList.push(f);
-                }
-            }
-        }
-        console.log("Sending gather update to server ...");
-        sendUI("gather-update",updatedList);
-        gatherdialog.close();
-    },
-      
-    startStopTrajet: function(){
-     if(this.client.config.trajet.running === true){
-            sendToBot("trajet-stop");
-            this.set("stateIcon","av:play-circle-filled");
-            this.client.config.trajet.running= false;
-        }
-        else{
-            sendToBot("trajet-start");
-            this.set("stateIcon","av:pause-circle-filled");
-            this.client.config.trajet.running = true;
-        }    
-    },
+
       
     fightMinLevelChange: function(){
         sendToBot("update-fight-min-level",parseInt(this.fightMinLevel));
@@ -436,14 +423,7 @@
       sendToBot("update-selected-characteristic",this.selectedCharacteristic);
     },
       
-    sellInventoryRequest: function(){
-      if(sellingState === true){ return; }
-      sellingState= true;
-      wrapCurrentBot("inventory-done",()=>{
-          sellingState = false;
-      });
-      sendToBot("sell-inventory-request");  
-    },
+    /*-------- spells ----------*/
       
     savespells: function(){
         sendToBot("update-spells",this.spells);
@@ -479,6 +459,31 @@
         });
         sendToBot("spells-request");
         console.log("Request server for spells list ...");
+    },
+          
+    
+    startStopTrajet: function(){
+     if(this.client.config.trajet.running === true){
+            sendToBot("trajet-stop");
+            this.set("stateIcon","av:play-circle-filled");
+            this.client.config.trajet.running= false;
+        }
+        else{
+            sendToBot("trajet-start");
+            this.set("stateIcon","av:pause-circle-filled");
+            this.client.config.trajet.running = true;
+        }    
+    },
+      
+    //------ Inventory --------  
+          
+    sellInventoryRequest: function(){
+      if(sellingState === true){ return; }
+      sellingState= true;
+      wrapCurrentBot("inventory-done",()=>{
+          sellingState = false;
+      });
+      sendToBot("sell-inventory-request");  
     },
       
     inventoryRemoveAll: function(){//todo afficher un dialog modal (fair sa pour toutes les action longue) sa evite que l'user fasse du caca pendans le chargement

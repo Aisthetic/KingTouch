@@ -10,6 +10,7 @@
 <link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
 <link rel="import" href="../bower_components/paper-dialog-behavior/paper-dialog-behavior.html">
 <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-icons/av-icons.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/paper-input/paper-input.html">
 <link rel="import" href="../bower_components/paper-progress/paper-progress.html">
@@ -150,31 +151,50 @@
         </div>
     </paper-dialog>
       
-	<!-- login box -->
+	<!-- accompts box -->
 	<paper-dialog heading="Gestionnaire de comptes" modal name="connectd" id="connectd">
         <h2 style="border-bottom:1px solid #737373; padding-bottom:24px;">Gestionnaire de Comptes</h2>
         <div style="display:inline-block;">
             <paper-input value="{{username}}" always-float-label label="Nom de compte"></paper-input>
             <paper-input value="{{password}}" always-float-label label="Mot de passe"></paper-input>
-            <div class="buttons">
-                <paper-button dialog-dismiss>Fermer</paper-button>
-                <paper-button raised on-tap="addClient">Ajouter</paper-button>
-            </div>
         </div>
-
         <div  style="display:inline-block;">
-            <div style="height:128px; overflow-x:hidden; overflow-y:scroll;">
-                <template style="overlow-y:scroll;" is="dom-repeat" items="{{accompts}}">
+            <div style=" width:200px; overflow-x:hidden; overflow-y:scroll;">
+                <template is="dom-repeat" items="{{accompts}}">
                     <div raised on-tap="clientItemTap" username="{{item.username}}" class="item accompt-item">
-                        <span>{{item.username}}</span>
+                        <span>{{item.username}}</span><span style="float:right">-</span>
                     </div>
                 </template>
             </div>
-            <div class="buttons">
-                <paper-button raised on-tap="loadParty">Charger un groupe</paper-button>
-            </div>
+        </div>
+        <div class="buttons">
+            <paper-button style="position: absolute; left: 70px;" raised on-tap="addClient">Ajouter</paper-button>
+
+            <paper-button dialog-dismiss>Fermer</paper-button>
         </div>
 	</paper-dialog>
+    <!-- groupe box -->
+    <paper-dialog heading="Charger un groupe" modal name="loadparty" id="loadparty">
+        <h2 style="border-bottom:1px solid #737373; padding-bottom:24px;">Charger un groupe</h2>
+        <div>
+            <paper-input value="{{groupeName}}" always-float-label label="Nom du groupe" placeholder="Groupe sans nom"></paper-input>
+        </div>
+        <div style="height: 140px;padding-top:0px;width:200px; display:inline-block; overflow-y:scroll;overflow-x:hidden;">
+            <template is="dom-repeat" items="{{leftGroupeItems}}">
+                <span raised on-tap="leftGroupeItemTape" class="item accompt-item" style="display:block">{{item.username}}</span>
+            </template>
+        </div>
+        <div style="padding-top:0px;height: 140px;width:200px; display:inline-block; overflow-y:scroll;overflow-x:hidden;">
+            <template is="dom-repeat" items="{{rightGroupeItems}}">
+                <span style="font-size: 9px; line-height: 0px;">{{item.rangStr}}</span>
+                <span raised on-tap="rightGroupeItemTape" class="item accompt-item" style="display:block">{{item.username}}</span>
+            </template>
+        </div>
+        <div class="buttons">
+            <paper-button dialog-dismiss>Fermer</paper-button>
+            <paper-button raised on-tap="partyConfirm">Charger le groupe</paper-button>
+        </div>
+    </paper-dialog>
     <!-- main panel -->
     <app-header-layout>
 
@@ -192,14 +212,16 @@
 			</paper-menu-button>
         </app-toolbar>
       </app-header>
-
+     <!-- thumb -->
       <div class="content">
         <template is="dom-repeat" items="{{clients}}"><!-- No empty text node
         --><div  class="card-container">
             <paper-card >
               <div   class="card-content">
+                <paper-fab  on-tap="unloadClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:60px;" icon="icons:close" title="Selectioner le client"></paper-fab>
                 <paper-fab  on-tap="unloadClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:60px;" icon="icons:close" title="Deconnecter le client"></paper-fab>
                 <a href="#/detail/{{item.id}}"><paper-fab  on-tap="selectClient" style="position:absolute; top:-15px;width: 45px;height: 45px;right:10px;" icon="icons:arrow-forward" title="Infos sur le client"></paper-fab></a>
+                <span>{{item.groupeSubStr}}{{item.groupe}}</span>
                 <h2>{{item.characterInfos.name}}<span style="font-size:12px; color:gray;"> <span></span>Niveau {{item.characterInfos.level}}</span></h2>
 				<p><span>Points de vie</span></p>
 				<paper-progress value="{{item.stats.lifePoints}}" min="0" max="{{stats.maxLifePoints}}" class="red"></paper-progress>
@@ -217,12 +239,14 @@
       </div>
 
     </app-header-layout>
-    <paper-fab raised on-tap="showLoginBox" icon="icons:add"></paper-fab>
-	
+    <paper-fab raised on-tap="showLoadParty" style="bottom:90px;" icon="av:recent-actors"></paper-fab>
+    <paper-fab raised on-tap="showLoginBox" icon="icons:add"></paper-fab>	
   </template>
 
   <script>
-var readyToLoad = true;
+    var readyToLoad = true;
+    var loadingGroupe = false;  
+    var loadedGroupe = [];
   Polymer({
 
 		is: 'clients-list',
@@ -240,6 +264,12 @@ var readyToLoad = true;
             value: function() { return {username: "", password: "" } },
             reflectToAttribute: true
         },
+        leftGroupeItems:{
+            type:Array
+        },
+        rightGroupeItems:{
+            type:Array,
+        },
         activationKey: String,
         globalPasswordConfirm: String,
         globalUsername: String,
@@ -248,13 +278,10 @@ var readyToLoad = true;
 		password: String,
         registerFailedStr: String,
         loginFailedStr: String,
+        groupeName: String,
     },
-		
-    loginRequest: function() {
-    },
-    
+
 	ready: function(){
-        
 		window.addEventListener("global-update",(m)=>{
 			var clients = []
             var count = 0;
@@ -291,6 +318,7 @@ var readyToLoad = true;
         window.addEventListener("accompts-list",(m)=>{
             let accompts = m.detail;
             this.set("accompts",accompts);
+            this.set("leftGroupeItems",accompts);
             console.log("Accompts list received !");
             console.log(accompts);
         });
@@ -317,11 +345,11 @@ var readyToLoad = true;
             this.set("loginFailedStr",m.detail.reason);
         });
         
-        window.on
         connectUI();
 	},
       
     //---- identification ---
+
       
     registerRequest: function(){
         if(this.globalPassword.length < 8){
@@ -355,7 +383,7 @@ var readyToLoad = true;
     },
       
     //---- client thumb ----
-
+      
     selectClient: function(e){
         sendUI("client-update-request",{ accompt : e.model.get("item").accompt });
     },
@@ -392,6 +420,73 @@ var readyToLoad = true;
       
     //-- accompts manager --**
       
+    showLoadParty: function(){
+        loadingParty = true;
+        this.set("groupeName","Groupe sans nom");
+        sendUI("accompts-request");
+        loadparty.open();
+    },
+      
+    partyConfirm: function(){
+        loadparty.close();
+        var toSend = [];
+        for(var i in this.rightGroupeItems){
+            toSend.push(this.rightGroupeItems[i]);
+        }
+        
+        if(toSend.length < 2){
+            return alert("Le groupe doit contenire au minimum deux personages !");
+        }
+
+        sendUI("load-groupe",{accompts:toSend, name:this.groupeName});
+        this.set("rightGroupeItems",[]);
+    },
+      
+    leftGroupeItemTape: function(e){
+        var leftNew = [];
+        var rightNew = []
+        for(var i in this.rightGroupeItems){
+            rightNew.push(this.rightGroupeItems[i]);
+            rightNew[rightNew.length-1].rangStr = "";
+        }
+        for(var i in this.leftGroupeItems){
+            if(this.leftGroupeItems[i].username != e.target.textContent){
+                leftNew.push(this.leftGroupeItems[i]);
+            }
+            else{
+                rightNew.push(this.leftGroupeItems[i]);
+                rightNew[0].rangStr = "";
+            }
+        }
+
+        rightNew[0].rangStr = "Chef du groupe";
+        this.set("leftGroupeItems",leftNew);
+        this.set("rightGroupeItems",rightNew);
+    },
+      
+    rightGroupeItemTape: function(e){
+        var leftNew = [];
+        var rightNew = []
+        for(var i in this.rightGroupeItems){
+            if(this.rightGroupeItems[i].username != e.target.textContent){
+                rightNew.push(this.rightGroupeItems[i]);
+                rightNew[rightNew.length-1].rangStr = "";
+            }
+            else{
+                leftNew.push(this.rightGroupeItems[i]);
+            }
+        }
+        for(var i in this.leftGroupeItems){
+            leftNew.push(this.leftGroupeItems[i]);
+            leftNew[leftNew.length-1].rangStr = "";
+        }
+        if(typeof rightNew[0] != "undefined"){
+            rightNew[0].rangStr= "Chef du groupe";
+        }
+        this.set("leftGroupeItems",leftNew);
+        this.set("rightGroupeItems",rightNew);
+    },
+      
 	showLoginBox: function(){
          sendUI("accompts-request");
 	     connectd.open();
@@ -410,6 +505,8 @@ var readyToLoad = true;
         else{
             un = e.target.textContent;
         }
+        
+
         
         for(var i in this.accompts){
             var a = this.accompts[i];
