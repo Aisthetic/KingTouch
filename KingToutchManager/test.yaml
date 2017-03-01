@@ -1,0 +1,7 @@
+mouvement :
+  [0,-14] :
+    direction :
+      top
+  [0,-15]:
+    direction : bottom
+    npc : 0

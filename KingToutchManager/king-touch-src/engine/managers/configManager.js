@@ -61,6 +61,7 @@ function getDefault(){
         trajet: {
             loadedTrajet: "",
             running: false,
+           	steps : {}
         }
 	};
 }
