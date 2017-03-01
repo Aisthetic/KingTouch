@@ -6,6 +6,8 @@ var debugState = false;
 exports.Sync = function(bot){
     this.bot=bot;
     this.assuringServer = false; //On rassure le serveur qu'on est pas des bots .
+    this.isWaitingForFollowers = -1;//pour les groupes 
+    
     this.bot.connection.dispatcher.on('LifePointsRegenBeginMessage',(msg)=>{
     	this.bot.player.regenRate = msg.regenRate
     	console.log("Regen rate set to : " + this.bot.player.regenRate);
@@ -89,6 +91,27 @@ exports.Sync.prototype.process = function(){
 	else{
 		console.log("[Sync]Ready to process !");
 	}
+    
+    if(this.bot.party.isFollower === false){
+        if(this.isWaitingForFollowers === -1){
+            this.isWaitingForFollowers = 0;
+            console.log("*********** On informe les stupide mules de notre position ... ************");
+            this.bot.party.waitForFollowers(()=>{
+                console.log("All followers confirmation received !");
+                this.isWaitingForFollowers = 1;
+                this.process();
+            });
+            return this.bot.party.sendToAll("guru-position-updated",this.bot.data.mapManager.mapId);   
+        }
+        else if(this.isWaitingForFollowers === 0){
+            return console.log("******** Sync impossible on attends les followers !");
+        }
+        else if(this.isWaitingForFollowers === 1){
+            this.isWaitingForFollowers = -1;
+            console.log("******* Les followers sont la on syncronise ... ********");
+        }
+    }
+    
 	//get a phoenix or play ghost trajet
     if( this.bot.data.context === "GHOST"){
 		console.log("[Sync]On est un fantome ! ("+this.bot.data.mapManager.mapId+")");

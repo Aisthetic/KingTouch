@@ -61,6 +61,9 @@ exports.send = function(call,data){
 exports.sendUI = function(call,data){
     processSocket.send(JSON.stringify({call : "ui-message",data : {call : call, data : data}}));
 }
+exports.sendGroupe = function(call,data){
+    processSocket.send(JSON.stringify({call: "groupe-message", data:{call:call,data:data}}));
+}
 exports.register = function(){
     exports.on("load-accompt",(accompt)=>{
         Logger.redirectConsole(accompt.username);
@@ -77,10 +80,30 @@ exports.register = function(){
         bot.currentBot.data.userConfig.tasks.selectedCharacteristic = charac;
         bot.currentBot.data.saveUserConfig();
     });
+    //------ groupe -----
+    exports.on("set-groupe",(m)=>{
+        console.log("UI request for groupe update !");
+        
+        bot.currentBot.party.dispatcher.on("send-to-all",(m)=>{
+            sendGroupe("send-to-all",m);
+        });
+        bot.currentBot.party.dispatcher.on("send-to-guru",(m)=>{
+            sendGroupe("send-to-guru",m);
+        });
+        bot.currentBot.party.dispatcher.on("send-to",(m)=>{
+            sendGroupe("send-to",m);
+        });
+        
+        bot.currentBot.party.set(m.name,m.isFollower);
+    });
+    exports.on("groupe-message",(m)=>{
+        console.log("MainProcessFrame receive groupe message !");
+        bot.currentBot.party.receive(m);
+    });
     //------ gather -----
     exports.on("jobs-request",()=>{
         console.log("Ui request for jobs info ...");
-        this.getJobsInfo((result)=>{
+        exports.getJobsInfo((result)=>{
             var toS = [];
             for(var i in result){
                 toS.push(result[i]);
@@ -103,6 +126,7 @@ exports.register = function(){
     exports.on("trajet-start",()=>{
         console.log("User request start trajet !");
         bot.currentBot.data.userConfig.trajet.running = true;
+        bot.currentBot.trajet.trajetRunning = true;
         bot.currentBot.data.saveUserConfig();
         bot.currentBot.sync.process();
     });
@@ -111,6 +135,7 @@ exports.register = function(){
         console.log("User request stop trajet !");
         bot.currentBot.data.userConfig.trajet.running = false;
         bot.currentBot.data.saveUserConfig();
+        bot.currentBot.trajet.trajetRunning = false;
     });
     
     //-------fight---------
@@ -283,23 +308,29 @@ exports.getSpellsInfos = function(){
     }
     
     console.log(JSON.stringify(ret));
+    this.getJobsInfo(function(){})
     return ret;
 }
 
 exports.getBotInfo = function(){
     var infos = {
-        state: bot.currentBot.data.state
+        state: bot.currentBot.data.state,
+        groupe: bot.currentBot.groupe
     };
     infos.id=id;
+    if(bot.currentBot.party.isSet == true && bot.currentBot.party.isFollower == false){
+        infos.groupeSubStr="(chef)";
+    }
     infos.accompt = bot.currentBot.data.accompt.username;
     if(typeof bot.currentBot.data.characterInfos != "undefined"){
         infos.characterInfos = bot.currentBot.data.characterInfos;
+        infos.pos = bot.currentBot.data.mapManager.coords.x+","+bot.currentBot.data.mapManager.coords.y;
     }
     else{
         infos.characterInfos = { 
             name : "[Chargement ...]",
             class : "[Chargement ...]",
-            level : "0"
+            level : "0",
         };
     }
     if(typeof bot.currentBot.data.actorsManager.userActorStats != "undefined"){
@@ -331,36 +362,4 @@ exports.getBotInfo = function(){
         infos[i].Interactive.Name
         infos[i].Interactive.Id
 */
-exports.getJobsInfo = function(callBack){//Peut pas faire sans CallBack puisque la requete est asynchrone et qu'on est en boucles for ...
-    if(bot.currentBot.data.jobsManager.list.length == 0) return callBack({});
-    console.dir(bot.currentBot.data.jobsManager.list);
-    var skills = {};
-    var interactiveIds = [];
-    var skillIds =[];
-    for(var i in bot.currentBot.data.jobsManager.list){
-        for(var j in bot.currentBot.data.jobsManager.list[i].jobDescription.skills){
-            var skill = {id : bot.currentBot.data.jobsManager.list[i].jobDescription.skills[j].skillId , name : null};
-            console.log("Skill detected : " + skill.id);
-            skillIds.push(skill.id);
-        }
-    }
-    require("./engine/managers/staticContentManager.js").getSkillsInfos(skillIds, (data)=>{
-        for(var i in data){
-            if(data[i].craftableItemIds.length > 0) continue; //métier craft
-            skills[i] = {skill : {id : i , name : data[i].nameId} , interactive : {id : data[i].interactiveId , name : null}};
-            interactiveIds.push(data[i].interactiveId);
-        } 
-        require("./engine/managers/staticContentManager.js").getInteractivesInfos(interactiveIds, (data)=>{
-        for(var i in data){
-            for(var j in skills){
-                if(skills[j].interactive.id == i) {
-                    skills[j].interactive.name = data[i].nameId;
-                    skills[j].name = skills[j].interactive.name + ' - ' + skills[j].skill.name
-                }
-            }
-        }
-        console.dir(skills);
-        callBack(skills)
-        });
-    });
-}
+

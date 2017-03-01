@@ -1,28 +1,23 @@
 var worldDataSource = require("./worldDataSource.js");
 var accomptsManager = require("./accomptsManager.js");
 var processFrame = require("./processFrame.js").ProcessFrame;
+var GroupeFrame = require("./groupeFrame.js").GroupeFrame;
 var connection = require("./server.js");
 var cp = require('child_process');
 var eventWrapper = require("event-wrapper");
 var webSocket = require("ws");
 
+var updateRequestCount = 0;
 
-process.argv.forEach(function (val, index, array) {
-    if(val === "clear-log"){
-    }
-    else if(val === "clear-maps"){
-        
-    }
-    else if(val === "clear-all"){
-        
-    }
-});
-
-
+var globalState = {};
+var onlineProcess = {};
+var onlineProcessQueues = {}
+var groupes = {};
 
 var botClientServer = new webSocket.Server({
   port: 8082
 });
+
 botClientServer.on('connection', function connection(acceptedClient) {
     acceptedClient.on('message',recv);
     function recv(message) {
@@ -40,11 +35,8 @@ botClientServer.on('connection', function connection(acceptedClient) {
       }
 });
 
-
-var updateRequestCount = 0;
-var globalState = {};
-var onlineProcess = {};
 console.log("Waiting for global data source ..");
+
 worldDataSource.init(()=>{
     console.log("Waiting for client !");
     acceptConnection();
@@ -79,9 +71,20 @@ function acceptConnection(){
         }
         console.log("Client not found !");
 	});
+    connection.on("load-groupe",(m)=>{
+        console.log("User request for groupe loading ...");
+        loadGroupe(m.accompts,m.name);
+    });
     connection.on("accompts-request",()=>{
         console.log("Send accompt list to client ...");
-        connection.send("accompts-list",accomptsManager.getAccompts());
+        var acs = accomptsManager.getAccompts();
+        toSend = [];
+        for(var i in acs){
+            if(typeof onlineProcess[acs[i].username] == "undefined"){
+                toSend.push(acs[i]);
+            }
+        }
+        connection.send("accompts-list",toSend);
     });
     connection.on("add-accompt",(accompt)=>{
         console.log("Adding accompt ...");
@@ -130,6 +133,32 @@ function acceptConnection(){
 	connection.listen();
 }
 
+function loadGroupe(accompts,name){
+    groupes[name] = new GroupeFrame(name,accompts);
+    
+    loadAllAccompts(0,accompts,name,()=>{
+        console.log("All client loaded for "+name);
+    });
+    
+    function loadAllAccompts(i,accompts,groupe,callBack){
+        if(i<accompts.length){
+            accompts[i].groupe = groupe;
+            console.log("Loading "+accompts[i].username +"in "+groupe+" index "+i);
+            var newProcess = cp.fork(__dirname + "/king-touch-src/main.js");
+            let isFollower = true;
+            if(accompts[i].rangStr == "Chef du groupe"){ // plus crade tu meurs 
+                isFollower = false;
+            }
+            onlineProcess[accompts[i].username] = new processFrame(newProcess,accompts[i],connection,reloadBotProcess,false,groupe,isFollower);
+            var x = i+1
+            setTimeout(()=>{loadAllAccompts(x,accompts,groupe,callBack);},3000);
+        }
+        else{
+            callBack();
+        }
+    }
+}
+
 function createBotProcess(accompt){
     var user = accompt.username;
     console.log("********* Loading bot process ... **********");
@@ -147,8 +176,31 @@ function reloadBotProcess(accompt){
 }
 
 function registerBotProcess(user){
+    onlineProcessQueues[user] = [];
     onlineProcess[user].dispatcher.on("ui-message",(m)=>{
 		connection.send("accompt-"+user, m);
+    });
+    onlineProcess[user].dispatcher.on("add-to-process-queue",(m)=>{
+        console.log("****** add message to "+user+" process frame queue ... ******");
+        onlineProcessQueues.push(m);
+    });
+    onlineProcess[user].dispatcher.on("groupe-message",(m)=>{
+        console.log("**************** groupe message ****************");
+        if(m.call === "send-to-all"){
+            for(var i in onlineProcess){
+                if(uset != i){
+                    console.log("Sending groupe message to "+i);
+                    onlineProcess[i].send("groupe-message",m.data);
+                }
+            }
+            console.log(user+" send to all player of is groupe : "+JSON.stringify(m));
+        }
+        else if(m.call === "send-to-guru"){
+            console.log(user+" send to chef of is groupe : "+JSON.stringify(m));
+        }
+        else if(m.call === "send-to"){
+            console.log(user+" send to  : "+JSON.stringify(m));
+        }
     });
     
     var oldListeners = connection.listeners("accompt-"+user);
@@ -161,3 +213,4 @@ function registerBotProcess(user){
         onlineProcess[user].send(m.call, m.data);
     });
 }
+

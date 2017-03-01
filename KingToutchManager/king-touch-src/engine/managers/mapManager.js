@@ -18,8 +18,8 @@ exports.MapManager = function(bot){
 	this.interactives = {};
 	this.statedes = {};
 	this.identifiedElements = {};
-	this.coords = {};
-	
+    this.coords = {x:0,y:0}
+
 	this.bot.connection.dispatcher.on("CurrentMapMessage",function(m){
         self.mapId=m.mapId;
 		var mapUrl = global.config.assetsUrl+"/maps/"+m.mapId+".json";
@@ -100,8 +100,8 @@ exports.MapManager.prototype.update = function(map,mapId){
         }
         else{
             this.coords = { x: mapPositions[this.mapId].posX, y: mapPositions[this.mapId].posY }
+            console.log("Current map position ["+this.coords.x+","+this.coords.y+"]");
         }
-        console.log("Current map position ["+this.coords.x+","+this.coords.y+"]");
 	    this.dispatcher.emit("loaded",map);
     });
 };

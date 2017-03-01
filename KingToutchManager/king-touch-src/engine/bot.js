@@ -16,6 +16,7 @@ var Player = require("./core/player.js").Player;
 var Fight = require("./core/fight.js").Fight;
 var Sync = require("./core/sync.js").Sync;
 var Gather = require("./core/gather.js").Gather;
+var Party = require("./core/party.js").Party;
 
 exports.Bot = function(groupeName,clientId,reconnectFunction){
 	this.logger = new Logger(groupeName+":"+clientId);
@@ -25,8 +26,11 @@ exports.Bot = function(groupeName,clientId,reconnectFunction){
 
 	this.haapi = new HaapiConnection();
 	this.connection = new ClientConnection();
+    
+    this.party = new Party(this);
+    
 	this.data = new BotData(clientId,groupeName,this);
-
+    
 	this.player = new Player(this);
 	this.trajet = new Trajet(this);
 	this.fight = new Fight(this);
@@ -34,14 +38,16 @@ exports.Bot = function(groupeName,clientId,reconnectFunction){
     this.gather = new Gather(this);
 }
 
+
 exports.Bot.prototype.connect = function(accompt){
+    this.groupe = accompt.groupe;
     this.packetLogger = new NetworkLogger(new Date().getTime() + accompt.username);
 	var reconnecting =false;
 	self=this;
 	this.data.accompt = accompt;
 	this.connection.dispatcher.on("closed",() =>{
 		if(!this.migrating){
-			this.logger.log("<span color=\"red\">Connection closed, reloading client ...</span>");
+			this.logger.log("***************** Connection closed, reloading client ... ****************");
 			this.reconnect(this);
         }
         else{

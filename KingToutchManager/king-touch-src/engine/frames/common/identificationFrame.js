@@ -15,7 +15,11 @@ exports.processIdentification = function(logg,connection,token,username,cb,ident
 	var loginSessionId;
 	var identificationTimeout;
 	var failCount = 0;
-	var wrap = EventWrapper(connection.dispatcher, function (error) {
+	var wrap = EventWrapper(connection.dispatcher, function (error,cancel) {
+        if(typeof cancel != "undefined"){
+            clearTimeout(identificationTimeout);
+            return logger.log("****** Identification canceled !!! *********");
+        }
 		if(typeof error != "undefined"){
 			console.log("Erreur sur l'authentification .");
 			logger.log("[processIdentification]"+JSON.stringify(error),"error");
@@ -59,15 +63,15 @@ exports.processIdentification = function(logg,connection,token,username,cb,ident
 			loginSessionId=msg.login;
 		}
 	);
-
-	wrap(
-		'IdentificationFailedMessage',
-		'IdentificationFailedForBadVersionMessage',
-		'IdentificationFailedBannedMessage',
-		function (msg) {
-			wrap.done(msg);
-		}
-	);
+	wrap('IdentificationFailedForBadVersionMessage',(msg)=>{
+        console.log("Bad verion !!!");
+    });
+    wrap('IdentificationFailedBannedMessage',(msg)=>{
+        console.log("Banned accompt !!!");
+    });
+    wrap('IdentificationFailedMessage',(msg)=>{
+        wrap.done(msg);
+    });
 
 	wrap('ServersListMessage', function (msg) {
 		logger.log("Servers list received !");
