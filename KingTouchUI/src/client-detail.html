@@ -273,16 +273,7 @@
     var files = evt.dataTransfer.files; // FileList object.
     var reader = new FileReader();  
     reader.onload = function(event) {            
-         try{
-            var obj = JSON.parse(event.target.result);
-             if(typeof obj != "undefined"){
-                 console.log("Trajet sended !");
-                 sendToBot("trajet-load",{trajet: obj});
-             }
-         }
-        catch(e){
-            alert("Le trajet n'est pas valide !");
-        }
+      sendToBot("trajet-load",{trajet: event.target.result});
     }        
     reader.readAsText(files[0],"UTF-8");
   }
