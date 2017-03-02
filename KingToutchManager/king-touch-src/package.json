@@ -12,6 +12,7 @@
     "connect": "^3.5.0",
     "engine.io-client": "^2.0.0",
     "event-wrapper": "^1.0.3",
+    "js-yaml": "^3.8.1",
     "jsonfile": "^2.4.0",
     "navigator": "^1.0.1",
     "request": "^2.79.0",

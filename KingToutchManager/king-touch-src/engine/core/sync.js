@@ -92,7 +92,7 @@ exports.Sync.prototype.process = function(){
 		console.log("[Sync]Ready to process !");
 	}
     
-    if(this.bot.party.isFollower === false){
+    if(typeof this.bot.trajet.currentTrajet != "undefined" && this.bot.party.isFollower === false){
         if(this.isWaitingForFollowers === -1){
             this.isWaitingForFollowers = 0;
             console.log("*********** On informe les stupide mules de notre position ... ************");

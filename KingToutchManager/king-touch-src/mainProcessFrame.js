@@ -85,13 +85,13 @@ exports.register = function(){
         console.log("UI request for groupe update !");
         
         bot.currentBot.party.dispatcher.on("send-to-all",(m)=>{
-            sendGroupe("send-to-all",m);
+            exports.sendGroupe("send-to-all",m);
         });
         bot.currentBot.party.dispatcher.on("send-to-guru",(m)=>{
-            sendGroupe("send-to-guru",m);
+            exports.sendGroupe("send-to-guru",m);
         });
         bot.currentBot.party.dispatcher.on("send-to",(m)=>{
-            sendGroupe("send-to",m);
+            exports.sendGroupe("send-to",m);
         });
         
         bot.currentBot.party.set(m.name,m.isFollower);

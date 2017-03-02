@@ -56,7 +56,7 @@ exports.ProcessFrame.prototype.send = function(call,data){
     }
     else{
         console.log("****** Not loaded, request main to do something ******");
-        exports.emit("add-to-process-queue",{call:call,data:data});
+        this.dispatcher.emit("add-to-process-queue",{call:call,data:data});
     }
 }
 

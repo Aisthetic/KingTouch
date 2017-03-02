@@ -176,19 +176,27 @@ function reloadBotProcess(accompt){
 }
 
 function registerBotProcess(user){
-    onlineProcessQueues[user] = [];
+    if(typeof onlineProcessQueues[user] == "undefined"){
+        onlineProcessQueues[user] = [];
+    }
     onlineProcess[user].dispatcher.on("ui-message",(m)=>{
 		connection.send("accompt-"+user, m);
+        for(var i = 0;i<onlineProcessQueues.length;i++){
+            console.log("********************* Processing onlineProcessQueues **********************");
+            console.log(JSON.stringify(onlineProcessQueues[i]));
+            onlineProcess[user].send(onlineProcessQueues[i].call,onlineProcessQueues[i].data);
+        }
+        onlineProcessQueues[user] = [];
     });
     onlineProcess[user].dispatcher.on("add-to-process-queue",(m)=>{
         console.log("****** add message to "+user+" process frame queue ... ******");
-        onlineProcessQueues.push(m);
+        onlineProcessQueues[user].push(m);
     });
     onlineProcess[user].dispatcher.on("groupe-message",(m)=>{
         console.log("**************** groupe message ****************");
         if(m.call === "send-to-all"){
             for(var i in onlineProcess){
-                if(uset != i){
+                if(user != i){
                     console.log("Sending groupe message to "+i);
                     onlineProcess[i].send("groupe-message",m.data);
                 }
@@ -197,9 +205,30 @@ function registerBotProcess(user){
         }
         else if(m.call === "send-to-guru"){
             console.log(user+" send to chef of is groupe : "+JSON.stringify(m));
+            for(var i = 0;i< groupes[onlineProcess[user].groupe].accompts.length;i++){
+                var dest = groupes[onlineProcess[user].groupe].accompts[i];
+                if(dest.rangStr != ""){
+                    console.log("------ Guru finded ("+dest.username+"------");
+                    onlineProcess[dest.username].send("groupe-message",m.data);
+                    return;
+                }
+            }
+            console.log("------ Guru not found !!! -------");
         }
         else if(m.call === "send-to"){
             console.log(user+" send to  : "+JSON.stringify(m));
+            if(typeof onlineProcess[m.dest] != "undefined"){
+                onlineProcess[m.dest].send("groupe-message",m);
+            }
+            else{
+                console.log("Can't find "+m.dest);
+            }
+        }
+        else if(m.call === "followers-count-request"){
+            onlineProcess[user].send("groupe-message",{call:"followers-count",data: this.groupes[onlineProcess[i].groupe].accompts.length})
+        }
+        else{
+            consle.log(user+"Send undefined groupe message : "+JSON.stringify(m));
         }
     });
     
